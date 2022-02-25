@@ -58,6 +58,8 @@ Grundsätzliches Vorgehen
 PayPal Checkout aktivieren
 --------------------------
 
+Aktivieren Sie PayPal Checkout in jedem Subshop, in dem Sie das Modul nutzen wollen.
+
 |procedure|
 
 1. Wählen Sie :menuselection:`Erweiterungen --> Module`. 
@@ -66,7 +68,9 @@ PayPal Checkout aktivieren
 
 |result|
 
-Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist das Modul :guilabel:`PayPal v2` als aktiv gekennzeichnet.
+Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal v2` sowie wichtige weitere Zahlungsarten, als aktiv gekennzeichnet.
+
+.. todo: #Mario: klärt, welche Zahlungsarten sofort aktiv sind?
 
 .. todo: #Bild ergänzen; #Mario: ist das das erwartete Ergebnis?
    .. image:: media/screenshots/oxdaac01.png
@@ -88,7 +92,7 @@ API-Anmeldeinformationen
 
 Registrieren Sie einen Webhook, um Ihren eShop mit PayPal zu verbinden.
 
-Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit beispielsweise Informationen über abgeschlossene Transaktionen zu liefern.
+Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit Statusmeldungen beispielsweise über abgeschlossene Transaktionen zu liefern.
 
 Im ersten Durchgang testen Sie die mit PayPal Checkout bereitgestellten Zahlungsarten mit Test-Zugangsdaten in einer *Sandbox*.
 
@@ -113,6 +117,17 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
 
 .. todo: Bild ergänzen; #Mario: PayPal v2` aktiv: so ist es korrekt, oder? Wie aktiviere ich die anderen Zahlungsarten
 
+.. hint::
+
+   **Neuen Webhook generieren**
+
+   Manchmal kann es nötig sein, den bestehenden Webhook zu löschen und einen neuen zu generieren.
+
+   Um einen Webhook zu löschen, löschen Sie die Anmeldedaten und wählen :guilabel:`Speichern`.
+
+   Die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` erscheint, und Sie können den Webhook neu generieren.
+
+
 
 Einstellungen für die Buttonplatzierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,7 +150,7 @@ Standardmäßig erscheint die PayPal-Schalfläche auf folgenden Seiten.
 
 Ihre Kunden können also jederzeit mit ihrem PayPal-Konto die Bestellung auslösen.
 
-.. todo: #Maria: wovon hängt es ab, ob der Button da ersheint?
+.. todo: #Maria: wovon hängt es ab, ob der Button da erscheint?
 
 |procedure|
 

@@ -21,7 +21,7 @@ Bieten Sie mit PayPal Checkout die in folgenden Märkten beliebten Zahlungsmetho
 
 .. todo: Delta abgrenzen:
    #Mario: Was ist damit gemeint? Rechnungskauf mit Partneruntern von PayPal.;
-   #Mario: Ratepay (PUI) ist vermutlich Abo und fökkt erst mal weg, korrekt?
+   #Mario: Rate pay (PUI) ist vermutlich Abo und fälltt erst mal weg, korrekt?
    #Mario: Unbranded Alternative Payment Methods UAPM: ist das Bancotact, Sofort usw. wie unten oder etwas Separates?
 
 

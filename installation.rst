@@ -4,13 +4,13 @@ Installation
 Installieren Sie das Zahlungsmodul PayPal Checkout für den OXID eShop ab Version 6.3.
 
 .. todo:
-
    #Mario: klärt:
    6.2. kommt wahrcheinlich
    6.1 fraglich
 
 
-.. todo: Altes Paypal modul: Theoretisch kann man beide Versionen konfiguriert haben.: An Stichtag umstellen; Empfehling Testsystem, Sandbox, A/B-Vergleich: z.B. bei Geschftskunden, die immergleiche Optik erwarten  (Vorgehen 12'03)
+.. todo: Altes Paypal-Modul: Theoretisch kann man beide Versionen konfiguriert haben.: An Stichtag umstellen; Empfehling Testsystem, Sandbox, A/B-Vergleich: z.B. bei Geschftskunden, die immergleiche Optik erwarten  (Vorgehen 12'03)
+.. todo: #Mario: Ist das für den Übergang korekt?: Oder eine andere Empfehlug?
 
 .. ATTENTION::
 
@@ -18,10 +18,13 @@ Installieren Sie das Zahlungsmodul PayPal Checkout für den OXID eShop ab Versio
 
    Sie können Bestellungen nicht vom Modul PayPal zum Modul PayPal Checkout migrieren.
 
-   Empfehlung: Wenn Sie von PayPal zum Modul PayPal Checkout umsteigen wollen, tun Sie Folgendes:
+   Empfehlung: Warten Sie mit dem Umstieg zu Paypal Checkout, bis eine Version vorliegt, die Ihre Bestellungen migriert.
+
+   Nicht empfohlen: Wenn Sie von PayPal zum Modul PayPal Checkout bereits jetzt umsteigen wollen, tun Sie Folgendes:
 
       1. Testen Sie PayPal Checkout in einem Testsystem.
       2. Stellen Sie auf PayPal Checkout um, wenn Sie sicher sind, dass es keine offenen PayPal-Bestellungen mehr gibt.
+
 
 Modul installieren
 ------------------
@@ -70,8 +73,8 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Admini
 
 
 
-Update abschließen
-------------------
+Installation abschließen
+------------------------
 
 .. todo: #Mario: /modules/oe/oepaypal/logs gibt es offenbar nicht für PayPal checkout; Schritt überflüssig?
 
