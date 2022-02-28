@@ -5,14 +5,7 @@ Konfiguration
 Machen Sie das PayPal Checkout-Modul für Ihren OXID eShop betriebsbereit.
 
 
-.. ATTENTION::
-
-   **Keine Migration von PayPal zu PayPal Checkout möglich**
-
-   Sie können Bestellungen nicht vom Modul PayPal zum Modul PayPal Checkout migrieren.
-
-   Steigen Sie nur dann vom Modul PayPal zum Modul PayPal Checkout um, wenn Sie sicher sind, dass es keine offenen PayPal-Bestellungen mehr gibt.
-
+.. include:: /_static/reuse/paypal-checkout-migration.rst
 
 Grundsätzliches Vorgehen
 ------------------------
@@ -32,24 +25,25 @@ Grundsätzliches Vorgehen
 
 5. Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen.
 
-#. Konfigurieren Sie die von PayPal Checkout bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop.
-   |br|
-   Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln und führen Sie Testzahlungen in der PayPal Checkout-Sandbox aus.
+#. Konfigurieren Sie die von PayPal Checkout bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
 
-.. todo: #tbd: Verifizieren
+   * Aktivieren Sie die Märkte, die Sie abdecken wollen.
+   * Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln.
+
+#. Führen Sie Testzahlungen in der PayPal Checkout-Sandbox aus.
 
    .. hint::
 
       Hinweis: Die Betriebsart :guilabel:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
 
-7. Testen Sie PayPal Checkout in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
-#. Wenn Sie vom Modul PayPal zu PayPal Checkout umsteigen wollen, tun Sie Folgendes:
-   |br|
+.. todo: #tbd: Verifizieren: Die Betriebsart :guilabel:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
 
-   a. Stellen Sie sicher, dass es keine offenen Bestellungen gibt. PayPal-Bestellungen lassen sich nicht zu PayPal Checkout migrieren.
-   b. Deaktivieren Sie das Modul PayPal.
+8. Testen Sie PayPal Checkout in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
+#. Wenn Sie vom Modul PayPal oder PayPal PLUS zu PayPal Checkout umsteigen wollen, tun Sie Folgendes:
+
+   a. Stellen Sie sicher, dass es keine offenen Bestellungen gibt.
+   b. Deaktivieren Sie das Modul PayPal oder PayPal PLUS.
 #. Schalten Sie PayPal Checkout frei:
-   |br|
 
    a. Legen Sie ein Händlerkonto für den Livebetrieb an.
    b. Wechseln Sie in den Betriebsmodus :guilabel:`Live`.
@@ -70,9 +64,16 @@ Aktivieren Sie PayPal Checkout in jedem Subshop, in dem Sie das Modul nutzen wol
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal v2` sowie wichtige weitere Zahlungsarten, als aktiv gekennzeichnet.
 
-.. todo: #Mario: klärt, welche Zahlungsarten sofort aktiv sind?
+Um eine bestimmte länderspezifisische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
 
-.. todo: #Bild ergänzen; #Mario: ist das das erwartete Ergebnis?
+|example|
+
+Um iDEAL anbieten zu können, müssen Sie sichergestellt haben, dass Sie unter :menuselection:`Stammdaten --> Länder` die Niederlande aktiv haben.
+
+
+.. todo: #tbd: erläutern, wie man den Shop um neue Länder und dedizierte Unzer-Zahlungsmethoden erweitert
+
+.. todo: #Bild ergänzen;
    .. image:: media/screenshots/oxdaac01.png
        :alt: PayPal, Moduleinstellungen
        :class: with-shadow
@@ -105,7 +106,10 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
 1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
 2. Durchlaufen Sie den Registrierungs-Prozess.
 
-.. todo: #Mario: Ich kann bei Paypal ein Land oder Region auswählen: ist das fürs Testen evtl. relevant?
+.. hint::
+
+   Die Zahlungsmethode Rechnungskauf bietet PayPal nur Shop-Betreibern aus Deutschland an.
+
 
 |result|
 
@@ -115,7 +119,7 @@ Modul ist aktiv.
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal v2` aktiv.
 
-.. todo: Bild ergänzen; #Mario: PayPal v2` aktiv: so ist es korrekt, oder? Wie aktiviere ich die anderen Zahlungsarten
+.. todo: Bild ergänzen; #Mario: PayPal v2` aktiv: so ist es korrekt, oder?
 
 .. hint::
 

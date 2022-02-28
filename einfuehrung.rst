@@ -4,7 +4,7 @@
 Nutzen Sie PayPal Checkout,
 
 * wenn Sie die Zahlungsart PayPal in Ihrem eShop bisher noch nicht anbieten
-* wenn PayPal bereits nutzen, aber vor allem internationalen Kunden ein breites Spektrum beliebter Zahlungsmethoden anbieten wollen.
+* wenn PayPal bereits nutzen, aber vor allem internationalen Kunden ein breites Spektrum beliebter Zahlungsmethoden einschließlich Rechnungkauf anbieten wollen
 
 PayPal Checkout prüft und bestätigt Ihre Zahlungsanforderung in Echtzeit. Als Shop-Betreiber sind Sie deshalb gegen Zahlungsausfälle geschützt.
 
@@ -17,83 +17,97 @@ Zahlungsarten in PayPal Checkout
     :height: 38
     :width: 150
 
-Bieten Sie mit PayPal Checkout die in folgenden Märkten beliebten Zahlungsmethoden an:
+Marktabdeckung nach Ländern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo: Delta abgrenzen:
-   #Mario: Was ist damit gemeint? Rechnungskauf mit Partneruntern von PayPal.;
-   #Mario: Rate pay (PUI) ist vermutlich Abo und fälltt erst mal weg, korrekt?
-   #Mario: Unbranded Alternative Payment Methods UAPM: ist das Bancotact, Sofort usw. wie unten oder etwas Separates?
+Bieten Sie mit dem PayPal Checkout-Modul für OXID die in folgenden Märkten beliebten Zahlungsmethoden an.
+
+================= ==========================
+Markt             Zahlungsmethoden
+================= ==========================
+Weltweit	      PayPal
+Belgien	          Bancontact
+Belgien	          Sofort (Klarna Pay now)
+Brasilien	      Boleto Bancário
+Deutschland	      GiroPay
+Deutschland	      Kreditkarte
+Deutschland	      Rechnungskauf
+Deutschland	      Sofort (Klarna Pay now)
+Estland	          Trustly
+Finnland	      Trustly
+Großbritannien	  Sofort (Klarna Pay now)
+Italien	          MyBank
+Italien	          Sofort (Klarna Pay now)
+Mexiko	          OXXO
+Niederlande	      iDEAL
+Niederlande	      Sofort (Klarna Pay now)
+Niederlande	      Trustly
+Österreich	      eps
+Österreich	      Sofort (Klarna Pay now)
+Polen	          BLIK
+Polen	          Przelewy24
+Portugal	      Multibanco
+Schweden	      Trustly
+Spanien	          Sofort (Klarna Pay now)
+================= ==========================
+
+Marktabdeckung nach Zahlungsmethoden
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+========================== ===============
+Zahlungsmethoden           Märkte
+========================== ===============
+Bancontact	               Belgien
+BLIK	                   Polen
+Boleto Bancário	           Brasilien
+eps	                       Österreich
+GiroPay	                   Deutschland
+iDEAL 	                   Niederlande
+Kreditkarte	               Deutschland
+Multibanco	               Portugal
+MyBank	                   Italien
+OXXO	                   Mexiko
+PayPal	                   Weltweit
+Przelewy24	               Polen
+Rechnungskauf	           Deutschland
+Sofort (Klarna Pay now)	   Belgien
+Sofort (Klarna Pay now)	   Deutschland
+Sofort (Klarna Pay now)	   Großbritannien
+Sofort (Klarna Pay now)    Italien
+Sofort (Klarna Pay now)	   Niederlande
+Sofort (Klarna Pay now)	   Österreich
+Sofort (Klarna Pay now)	   Spanien
+Trustly	                   Estland
+Trustly	                   Finnland
+Trustly	                   Niederlande
+Trustly	                   Schweden
+========================== ===============
 
 
-=============== ================
-Markt           Zahlungsmethoden
-=============== ================
-Belgien	        Bancontact,
-    	        Sofort (Klarna Pay now)
-Brasilien	    Mercado Pago
-Dänemark	    Trustly
-Deutschland     Giropay,
-                Sofort (Klarna Pay now),
-            	Trustly
-Estland	        Trustly
-Europa	        SafetyPay
-Finnland	    Trustly
-Großbritannien	Sofort (Klarna Pay now),
-            	Trustly
-Italien	        MyBank,
-    	        Sofort (Klarna Pay now),
-    	        Satispay
-Lettland	    Trustly
-Litauen 	    Trustly
-Mexiko	        Mercado Pago,
-    	        OXXO
-Niederlande	    iDEAL,
-        	    Sofort (Klarna Pay now),
-        	    Trustly
-Norwegen	    Trustly
-Österreich	    eps,
-        	    Sofort (Klarna Pay now)
-Polen	        Przelewy24,
-    	        BLIK,
-    	        Trustly
-Portugal	    Multibanco
-Schweden	    Trustly
-Schweiz	        Sofort (Klarna Pay now)
-Slowakei    	Trustly
-Spanien	        Sofort (Klarna Pay now),
-    	        Trustly
-=============== ================
 
+Sie haben das Modul PayPal?
+---------------------------
 
-Sie haben bereits das Modul PayPal?
-------------------------------------
-
-Wechseln Sie zu PayPal Checkout, um Ihren Kunden zusätzliche Zahlungsmethoden anbieten zu können,
+Wechseln Sie zu PayPal Checkout, um Ihren Kunden zusätzliche Zahlungsmethoden einschließlich Rechnungskauf anbieten zu können,
 die in internationalen Märkten beliebt sind.
 
+Beachten Sie jedoch, dass es in PayPal Checkout V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
 
-Sie nutzen PayPal PLUS?
------------------------
 
-Steigen Sie schon jetzt um auf PayPal Checkout.
+Sie haben das Modul PayPal PLUS?
+--------------------------------
 
 Die API von PayPal PLUS ist veraltet, PayPal wird es zu gegebener Zeit nicht mehr unterstützen und abschalten.
 
-Keine Sorge: Sie werden auf jeden Fall rechtzeitig informiert.
+Keine Sorge: Wir werden Sie rechtzeitig informieren.
 
-.. todo: #Mario: können wir das so formulieren?
-   #Mario: was ist eigentlich PayPal PLUS, gibt es ein separates Modul? #Mario: Abschalttermin einpflegen, sobal bekannt
+Wechseln Sie schon jetzt zu PayPal Checkout, wenn es für Sie wichtig ist, Ihren Kunden Express-Checkout anzubieten.
 
+Damit können Ihre Kunden den Anmeldeprozess in Ihrem eShop überspringen und direkt beispielsweise auf der Produkt-Detailseite die Bestellung und Bezahlung starten (siehe #tbd: ref Konfig/button).
 
+Beachten Sie jedoch, dass es in PayPal Checkout V. 1.0 noch keinen Migratnionsprozess gibt, um alte Bestellungen zu migrieren.
 
-
-
-
-
-
-
-
-
+.. todo: #Mario: Abschalttermin einpflegen, sobald bekannt
 
 
 .. Intern: oxdaaa, Status:
