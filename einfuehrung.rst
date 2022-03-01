@@ -98,17 +98,13 @@ Beachten Sie jedoch, dass es in PayPal Checkout V. 1.0 noch keinen Migrationspro
 Sie haben das Modul PayPal PLUS?
 --------------------------------
 
-Die API von PayPal PLUS ist veraltet, PayPal wird es zu gegebener Zeit nicht mehr unterstützen und abschalten.
+Die API von PayPal PLUS ist veraltet. PayPal entwickelt die API nicht weiter und bietet keine neuen Verträge dafür an.
 
-Keine Sorge: Wir werden Sie rechtzeitig informieren.
-
-Wechseln Sie schon jetzt zu PayPal Checkout, wenn es für Sie wichtig ist, Ihren Kunden Express-Checkout anzubieten.
+Wechseln Sie zu PayPal Checkout, wenn es für Sie wichtig ist, Ihren Kunden die Schnellkauf-Funktion von PayPal Checkout anzubieten.
 
 Damit können Ihre Kunden den Anmeldeprozess in Ihrem eShop überspringen und direkt beispielsweise auf der Produkt-Detailseite die Bestellung und Bezahlung starten (siehe :ref:`Einstellungen für die Buttonplatzierung<Einstellungen-fuer-die-Buttonplatzierung>`).
 
 Beachten Sie jedoch, dass es in PayPal Checkout V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
 
-.. todo: #Mario: Abschalttermin einpflegen, sobald bekannt
 
-
-.. Intern: oxdaaa, Status:
+.. Intern: oxdajp, Status:

@@ -113,7 +113,7 @@ Modul ist aktiv.
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal v2` aktiv.
 
-.. todo: Bild ergänzen; #Mario: PayPal v2` aktiv: so ist es korrekt, oder?
+.. todo: Bild ergänzen; #Mario: "PayPal v2" Name kann sich ändern
 
 .. hint::
 
@@ -133,9 +133,20 @@ Einstellungen für die Buttonplatzierung
 
 .. todo: #Mario: ist das Anwendungsfall?:
 
-Entscheiden Sie, ob Sie die Express-Checkout-Funktion von PayPal Checkout anbieten wollen.
+Entscheiden Sie, ob Sie die Schnellkauf-Funktion von PayPal Checkout anbieten wollen.
 
-Legen Sie dazu fest,
+Mit der Schnellkauf-Funktion überspringt der Kunde die Anmeldung in Ihrem eShop.
+
+|example|
+
+* Ihre Kunden haben typischerweise nur einen einzigen Artikel im Warenkorb, wenn sie eine Bestellung aufgeben?
+  |br|
+  In diesem Fall ist es sinnvoll, die Kunden so schnell und barrierefrei wie möglich zum Ziel zu führen und die Schnellkauf-Funktion zu aktivieren.
+* Einen bedeutenden Teil von Umsatz oder Marge erwirtschaften Sie mit Zubehörartikeln?
+  |br|
+  In diesem Fall kann es sinnvoll sein, das Bezahlen hinauszuzögern und die PayPal-Schaltflächen beispielsweise nur im Warenkorb und im Checkout anzubieten.
+
+Sie legen also fest,
 
 * ob die Kunden Ihren Checkout-Prozess durchlaufen und sich in Ihrem eShop registrieren müssen
 
@@ -143,11 +154,7 @@ Legen Sie dazu fest,
 
 * ob die Kunden ohne Registrierung mit ihrem PayPal-Konto die Bestellung direkt auslösen können (PayPal Checkout).
 
-.. todo: #Mario: Ist das die Definition von "Express-Checkout", PayPal Checkout scheint der offizielle Name der Funktion zu sein?
-
-**Standardmäßig** ist die Express-Checkout-Funktion aktiv.
-
-Die PayPal-Schaltfläche erscheint auf folgenden Seiten.
+**Standardmäßig** ist die Schnellkauf-Funktion aktiv, und die PayPal-Schaltfläche erscheint auf folgenden Seiten.
 
 * auf der Produkt-Detailseite
 * im Warenkorb
@@ -155,7 +162,7 @@ Die PayPal-Schaltfläche erscheint auf folgenden Seiten.
 
 Ihre Kunden können also jederzeit mit ihrem PayPal-Konto die Bestellung auslösen.
 
-Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deaktivieren Sie die Express-Checkout-Funktion.
+Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deaktivieren Sie die Schnellkauf-Funktion.
 
 |procedure|
 
@@ -166,15 +173,11 @@ Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deak
 
 Die PayPal-Schaltfläche erscheint nur auf der Checkout-Seite.
 
-.. todo: #Mario: dieses erwartete Ergebnis ist nicht der Fall, der Button erscheint auf der Zahlungsart-Seite. Ich hätte da aber einen Radiobutton erwartet.
-
-.. todo: #Mario: Was hat es mit dem 2. PayPal-Button "Später bezahlen" auf sich?
+.. todo: #tbd Funktionsbeschreibung "Später bezahlen" (0301, 0'31'10)
 
 
 Login mit PayPal
 ^^^^^^^^^^^^^^^^
-
-.. todo: #Mario: ist das Anwendungsfall? Was kann schiefgehen?
 
 Legen Sie fest, dass Kunden automatisch in Ihrem OXID eShop angemeldet sind,
 
@@ -184,51 +187,85 @@ und
 
 * sobald Ihr Kunde in seinem PayPal-Konto angemeldet ist
 
-Vorteil: Sie gestalten den Anmeldeprozess für Ihre Kunden bequemer, sie überspringen damit den Anmeldemechanismus. Er meldet sich damit ohne Passwort in Ihrem OXID an.
+Vorteil: Sie gestalten den Anmeldeprozess für Ihre Kunden bequemer.
 
-.. todo: #Mario: das setzt aber voraus, dass der Kunde bereits sein eShop-Konto eingerichtet hat, es wird nicht autmatisch angelegt, korrekt?
+Ihre Kunden überspringen damit den Anmeldemechanismus. Ihre Kunden melden sich in Ihrem OXID eShop an, *ohne ihr Passwort eingeben zu müssen*.
 
-.. todo: #Mario: was genau kann schlimmstenfalls schiefgehen?
 
-Nachteil: Oft nutzen beispielsweise Ehepaare dasselbe PayPal-Konto. Einer der Partner könnte
-dadurch die Bestellhistorie oder andere Kundendaten des Partner im OXID eShop einsehen.
+Nachteile:
 
-Potentiell besteht also ein Datenschutz-Risiko. Deshalb ist die Einstellung standardmäßig deaktiviert.
+* Oft nutzen beispielsweise Ehepaare dasselbe PayPal-Konto.
+  |br|
+  Einer der Partner könnte dadurch die Bestellhistorie oder andere Kundendaten des Partner im OXID eShop einsehen.
+  |br|
+  Potentiell besteht also ein Datenschutz-Risiko. Deshalb ist die Einstellung standardmäßig deaktiviert.
+* Müssen sich Ihre Kunden nicht in Ihrem eShop anmelden, gehen Ihnen Daten zur Bestellhistorie der Kunden verloren
+  |br|
+  Solche Daten könnten Sie andernfalls für statistische Auswerungen zur gezielten Ansprache Ihrer Kunden nutzen.
+
+
+Wenn Sie die :guilabel:`Login mit PayPal` *nicht* aktivieren, passiert Folgendes:
+
+* Wenn die PayPal-E-Mail-Adresse des Kunden *bekannt* ist, wird der PayPal-Bezahlvorgang unterbrochen, und der Kunde muss sich in Ihrem eShop anmelden.
+  |br|
+  Die PayPal-Session ist erstellt, und Ihr Kunde ist in Ihrem eShop angemeldet.
+  |br|
+  Die Identität des Kunden steht eindeutig fest, und die aktuelle Bestellung wird zur Bestelhistorie des Kunden hinzugefügt.
+* Wenn die PayPal-E-Mail-Adresse des Kunden *nicht* bekannt ist, führt Ihr Kunde die Bestellung mit einem Gast-Konto aus.
+  |br|
+  Ihr Kunde landet mit den PayPal-Adressdaten auf der Checkout-Seite. Die Daten werden nur für die aktuelle Bestellung einmalig gespeichert, es wird kein Kundenkonto im eShop angelegt.
+
+.. todo: #tbd: Funktionsbeschreibung: Aspekt Bestellhistorie hinzufügen
 
 |procedure|
+
+.. ATTENTION::
+
+   Die Funktion :guilabel:`Login mit PayPal` ist standardmäßig **aktiviert**.
 
 1. Prüfen Sie, was im schlimmsten Fall schiefgehen kann, wenn mehrere Benutzer dasselbe PayPal-Konto nutzen und in Ihrem eShop die Daten der anderen Benutzer einsehen können.
 2. Es besteht kein ernstes Risiko darin besteht, wenn Ihre Kunden sich in Ihrem eShop bequem automatisch mit ihren PayPal-Konten anmelden?
    |br|
-   Dann markieren Sie das Kontrollkästchen :guilabel:`Im Shop beim Kauf automatisch einloggen`.
+   Dann lassen Sie das Kontrollkästchen :guilabel:`Im Shop beim Kauf automatisch einloggen` aktiviert.
+   |br|
+   Andernfalls deaktivieren Sie das Kontrollkästchen.
 3. Speichern Sie Ihre Einstellungen.
-
-
-.. todo: Mario: "Banner-Einstellungen" entfallen, da sie sich alle auf Ratenzahlung = Abo-Optionen beziehen?
-   Oder aktiviere ich Ratenzahlung, indem ich "Ratenzahlung-Banner aktivieren" aktiviere?
-   Muss ich vorher den PayPal,Beantragungsprozess durchlaufen haben: "Bieten Sie Ihren Kunden PayPal Ratenzahlung mit 0% effektiven Jahreszins an. Erfahren Sie hier mehr."
 
 
 Banner-Einstellungen
 ^^^^^^^^^^^^^^^^^^^^
 
-Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen.
+Optional: Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung werben wollen.
 
-Die Paypal-Ratenzahlung ist standardmäßig ausgeschaltet.
+.. todo: #Mario klärt Vorteile für Shopbetreiber
+.. todo: Mario klärt: Blwibt das so:  "Die Werbung für die Paypal-Ratenzahlung ist standardmäßig ausgeschaltet."
 
-Wenn Sie Ratenzahlung anbieten, weisen mit Bannern auf diese Option hin.
+Wenn Sie die Vorteile nutzen wollen, legen Sie fest, wo die Banner erscheinen sollen, beispielsweise auf der Startseite, auf der Detailseite von Artikeln, auf den Kategorieseiten, in den Suchergebnissen und/oder im Bestellprozess.
 
-.. todo: Screenshot ergänzen
+.. hint::
 
-Legen Sie fest, wo die Banner erscheinen sollen, beispielsweise auf der Startseite, auf der Detailseite von Artikeln, auf den Kategorieseiten, in den Suchergebnissen und/oder im Bestellprozess.
+   Um die Banner erscheinen zu lassen, ist eine permanente Kommunikation mit den Servern von PayPal nötig. Die Skripte werden bei jedem Seitenaufruf gestartet.
+
+   Das kann unerwünscht sein, beispielsweise aus Gründen
+
+      * des Datenschutzes
+      * der Performance
+
+   Stellen Sie in diesem Fall sicher, dass die Funktion deaktiviert ist.
+
+.. todo: #tbd: Screenshot ergänzen -- Funktionsbeschreibung 0301,
+
 
 |procedure|
 
-1. Um Ihren Kunden die Paypal-Ratenzahlung anbieten zu können, markieren Sie das Kontrollkästchen :guilabel:`Ratenzahlung-Banner aktivieren`.
+1. Um das Ausführen von Skripten für die PayPal-Bannerwerwerbung zuzulassen, markieren Sie das Kontrollkästchen :guilabel:`Ratenzahlung-Banner aktivieren`.
    |br|
-   Die Paypal-Ratenzahlung ist standardmäßig ausgeschaltet.
-#. Legen Sie fest, auf welchen Seiten das Banner erscheinen soll, indem Sie das entsprechende Kontrollkästchen markieren.
+   Wenn Sie das Kontrollkästchen nicht markieren, dann werden keine Skripte zur Kommunikation mit den Servern von PayPal ausgeführt.
+#. Wenn Sie das Ausführen von Skripten für die PayPal-Bannerwerwerbung zulassen, legen Sie fest, auf welchen Seiten das Banner erscheinen soll.
+   |br|
+   Markieren Sie dazu das entsprechende Kontrollkästchen.
 #. Wenn Sie ein individuelles Theme oder ein angepasstes OXID-Theme verwenden, tun Sie Folgendes:
+
    a. Identifizieren Sie den CSS-Selektor der Seite, hinter dem Sie den Banner platzieren wollen.
    b. Geben Sie den CSS-Selektor in entsprechende Eingabefeld ein.
 #. Legen Sie unter :guilabel:`Farbe des Ratenzahlung-Banners auswählen` die gewünschte Farbe des Banners fest.
@@ -242,7 +279,7 @@ Konfigurieren Sie PayPal Checkout nach Ihren Wünschen und testen Sie das Ergebn
 
 |procedure|
 
-.. todo: #Mario: Wie schalte ich Logging ein? Sollten einmal Probleme auftauchen, kann für eine intensive Fehlersuche das Logging eingeschaltet werden.
+.. todo: #Mario: V. 1.x: Wie schalte ich Logging ein? Sollten einmal Probleme auftauchen, kann für eine intensive Fehlersuche das Logging eingeschaltet werden.
 
 .. todo: #Mario: Stimmt die folgende Aussage mit der Standardversandart?  Wie genau geht es, was meinen wir?
 
@@ -252,14 +289,12 @@ Konfigurieren Sie PayPal Checkout nach Ihren Wünschen und testen Sie das Ergebn
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:
 
    a. Weisen Sie die gewünschten PayPal Checkout-Zahlungsarten den jeweiligen Versandarten zu.
-   b. Stellen Sie sicher, dass eine Versandart als Standard für die Bezahlung mit der PayPal Checkout-Zahlungsart `PayPal v2` angelegt ist.
+   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der PayPal Checkout-Zahlungsart `PayPal v2` angelegt ist.
       |br|
-      Diese Standard-Versandart ist nötig, damit Ihre Kunden mit einem mobilen Endgerät in Ihrem Shop bestellen können.
+      Typischerweise ist das die Standadrd-Zahlungsart.
 
-.. todo: #Mario: Was heißt das: "Die entsprechende Option finden Sie auf der Registerkarte :guilabel:`Stamm` der Versandarten.
-   Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/6.0/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
+.. todo: #tbd: prüfen: Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/6.0/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
 
-.. todo: #Mario: Stimmt das: "Diese Standard-Versandart ist nötig, damit Ihre Kunden mit einem mobilen Endgerät in Ihrem Shop bestellen können."
 
 PayPal Checkout freischalten
 ----------------------------
@@ -310,4 +345,4 @@ Das Modul PayPal Checkout ist aktiv und steht für Bestellungen Ihrer Kunden ber
 
 
 
-.. Intern: oxdaac, Status:
+.. Intern: oxdajr, Status:

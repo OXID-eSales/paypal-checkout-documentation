@@ -47,10 +47,9 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 
 .. todo: #tbd Bild ergänzen
 
-.. todo: Nächster Schritt Konfiguration
+
+Nächster Schritt: Wählen Sie :guilabel:`Weiter`, um PayPal Checkout zu konfigurieren.
 
 
 
-
-
-.. Intern: oxdaab, Status:
+.. Intern: oxdajq, Status:
