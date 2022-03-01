@@ -4,7 +4,7 @@
 
    Sie können Bestellungen nicht vom Modul PayPal oder PayPal PLUS zum Modul PayPal Checkout migrieren.
 
-   Empfehlung: Warten Sie mit dem Umstieg zu Paypal Checkout, bis eine Version vorliegt, die Ihre Bestellungen migriert.
+   Empfehlung: Warten Sie mit dem Umstieg zu PayPal Checkout, bis wir eine Version entwickelt haben, die Ihre Bestellungen migriert.
 
    Nicht empfohlen: Wenn Sie von PayPal zum Modul PayPal Checkout bereits jetzt umsteigen wollen, tun Sie Folgendes:
 

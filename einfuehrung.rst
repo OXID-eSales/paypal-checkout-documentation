@@ -4,7 +4,7 @@
 Nutzen Sie PayPal Checkout,
 
 * wenn Sie die Zahlungsart PayPal in Ihrem eShop bisher noch nicht anbieten
-* wenn PayPal bereits nutzen, aber vor allem internationalen Kunden ein breites Spektrum beliebter Zahlungsmethoden einschließlich Rechnungkauf anbieten wollen
+* wenn Sie PayPal bereits nutzen, aber vor allem internationalen Kunden ein breites Spektrum beliebter Zahlungsmethoden einschließlich Rechnungskauf anbieten wollen
 
 PayPal Checkout prüft und bestätigt Ihre Zahlungsanforderung in Echtzeit. Als Shop-Betreiber sind Sie deshalb gegen Zahlungsausfälle geschützt.
 
@@ -16,6 +16,7 @@ Zahlungsarten in PayPal Checkout
     :class: no-shadow
     :height: 38
     :width: 150
+
 
 Marktabdeckung nach Ländern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -103,9 +104,9 @@ Keine Sorge: Wir werden Sie rechtzeitig informieren.
 
 Wechseln Sie schon jetzt zu PayPal Checkout, wenn es für Sie wichtig ist, Ihren Kunden Express-Checkout anzubieten.
 
-Damit können Ihre Kunden den Anmeldeprozess in Ihrem eShop überspringen und direkt beispielsweise auf der Produkt-Detailseite die Bestellung und Bezahlung starten (siehe #tbd: ref Konfig/button).
+Damit können Ihre Kunden den Anmeldeprozess in Ihrem eShop überspringen und direkt beispielsweise auf der Produkt-Detailseite die Bestellung und Bezahlung starten (siehe :ref:`Einstellungen für die Buttonplatzierung<Einstellungen-fuer-die-Buttonplatzierung>`).
 
-Beachten Sie jedoch, dass es in PayPal Checkout V. 1.0 noch keinen Migratnionsprozess gibt, um alte Bestellungen zu migrieren.
+Beachten Sie jedoch, dass es in PayPal Checkout V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
 
 .. todo: #Mario: Abschalttermin einpflegen, sobald bekannt
 

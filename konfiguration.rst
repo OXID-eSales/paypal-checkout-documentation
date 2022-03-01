@@ -10,7 +10,6 @@ Machen Sie das PayPal Checkout-Modul für Ihren OXID eShop betriebsbereit.
 Grundsätzliches Vorgehen
 ------------------------
 
-.. todo: #Mario: welche Zahlungsmethoden sind automatisch aktiviert?
 
 1. Aktivieren Sie das Modul.
    |br|
@@ -18,16 +17,11 @@ Grundsätzliches Vorgehen
 #. Stellen Sie die Verbindung zu Ihrem PayPal-Händlerkonto her.
    |br|
    Erstellen Sie zum Testen zunächst nur ein Testkonto (PayPal Sandbox).
-#. Legen Sie fest, auf welchen Seiten die PayPal-Schaltfläche erscheinen soll.
-#. Optional: Legen Sie fest, dass sich Kunden mit ihrem PayPal-Konto in Ihrem eShop anmelden können.
-
-.. todo: #Mario: Die ganzen BAnnereinstellungen betreffen Ratenzahlungen = Abo -- fliegen die ebenfalls raus?
-
-5. Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen.
-
+#. Optional: Deaktivieren Sie bei Bedarf die Express-Checkout-Funktion von PayPal Checkout.
+#. Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen.
 #. Konfigurieren Sie die von PayPal Checkout bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
 
-   * Aktivieren Sie die Märkte, die Sie abdecken wollen.
+   * Aktivieren Sie die Länder, die Sie abdecken wollen.
    * Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln.
 
 #. Führen Sie Testzahlungen in der PayPal Checkout-Sandbox aus.
@@ -45,7 +39,7 @@ Grundsätzliches Vorgehen
    b. Deaktivieren Sie das Modul PayPal oder PayPal PLUS.
 #. Schalten Sie PayPal Checkout frei:
 
-   a. Legen Sie ein Händlerkonto für den Livebetrieb an.
+   a. Wenn Sie noch kein Händlerkonto haben, legen Sie für den Livebetrieb eins an.
    b. Wechseln Sie in den Betriebsmodus :guilabel:`Live`.
 
 
@@ -64,11 +58,11 @@ Aktivieren Sie PayPal Checkout in jedem Subshop, in dem Sie das Modul nutzen wol
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal v2` sowie wichtige weitere Zahlungsarten, als aktiv gekennzeichnet.
 
-Um eine bestimmte länderspezifisische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
+Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
 
 |example|
 
-Um iDEAL anbieten zu können, müssen Sie sichergestellt haben, dass Sie unter :menuselection:`Stammdaten --> Länder` die Niederlande aktiv haben.
+Um iDEAL anbieten zu können, müssen Sie sichergestellt haben, dass Sie unter :menuselection:`Stammdaten --> Länder` die Niederlande aktiv gesetzt haben.
 
 
 .. todo: #tbd: erläutern, wie man den Shop um neue Länder und dedizierte Unzer-Zahlungsmethoden erweitert
@@ -132,21 +126,28 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
    Die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` erscheint, und Sie können den Webhook neu generieren.
 
 
+.. _Einstellungen-fuer-die-Buttonplatzierung:
 
 Einstellungen für die Buttonplatzierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. todo: #Mario: ist das Anwendungsfall?:
 
-Legen Sie fest,
+Entscheiden Sie, ob Sie die Express-Checkout-Funktion von PayPal Checkout anbieten wollen.
+
+Legen Sie dazu fest,
 
 * ob die Kunden Ihren Checkout-Prozess durchlaufen und sich in Ihrem eShop registrieren müssen
 
   oder
 
-* ob die Kunden ohne Registrierung mit ihrem PayPal-Konto die Bestellung auslösen können.
+* ob die Kunden ohne Registrierung mit ihrem PayPal-Konto die Bestellung direkt auslösen können (PayPal Checkout).
 
-Standardmäßig erscheint die PayPal-Schalfläche auf folgenden Seiten.
+.. todo: #Mario: Ist das die Definition von "Express-Checkout", PayPal Checkout scheint der offizielle Name der Funktion zu sein?
+
+**Standardmäßig** ist die Express-Checkout-Funktion aktiv.
+
+Die PayPal-Schaltfläche erscheint auf folgenden Seiten.
 
 * auf der Produkt-Detailseite
 * im Warenkorb
@@ -154,18 +155,18 @@ Standardmäßig erscheint die PayPal-Schalfläche auf folgenden Seiten.
 
 Ihre Kunden können also jederzeit mit ihrem PayPal-Konto die Bestellung auslösen.
 
-.. todo: #Maria: wovon hängt es ab, ob der Button da erscheint?
+Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deaktivieren Sie die Express-Checkout-Funktion.
 
 |procedure|
 
-1. Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, dann deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite` und :guilabel:`Warenkorb`.
+1. Um die Express-Checkout-Funktion zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite` und :guilabel:`Warenkorb`.
 2. Speichern Sie Ihre Einstellungen.
 
 |Result|
 
 Die PayPal-Schaltfläche erscheint nur auf der Checkout-Seite.
 
-.. todo: #Mario: dieses erwartete Ergebnis ist nicht der Fall, der Button erscheint auf der Zahlungsart-Seite. Ich hätte da aber einen Radiobutton erwatet.
+.. todo: #Mario: dieses erwartete Ergebnis ist nicht der Fall, der Button erscheint auf der Zahlungsart-Seite. Ich hätte da aber einen Radiobutton erwartet.
 
 .. todo: #Mario: Was hat es mit dem 2. PayPal-Button "Später bezahlen" auf sich?
 
@@ -213,7 +214,9 @@ Banner-Einstellungen
 
 Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen.
 
-Sie weisen mit Bannern auf diese Option hin.
+Die Paypal-Ratenzahlung ist standardmäßig ausgeschaltet.
+
+Wenn Sie Ratenzahlung anbieten, weisen mit Bannern auf diese Option hin.
 
 .. todo: Screenshot ergänzen
 
@@ -243,7 +246,8 @@ Konfigurieren Sie PayPal Checkout nach Ihren Wünschen und testen Sie das Ergebn
 
 .. todo: #Mario: Stimmt die folgende Aussage mit der Standardversandart?  Wie genau geht es, was meinen wir?
 
-1. Aktivieren Sie das Logging.
+
+1. Stellen Sie sicher, dass unter :menuselection:`Stammdaten --> Länder` die Märkte aktiv sind, die Sie abdecken wollen.
 #. Weisen Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` den gewünschten PayPal Checkout-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:
 
@@ -255,6 +259,7 @@ Konfigurieren Sie PayPal Checkout nach Ihren Wünschen und testen Sie das Ergebn
 .. todo: #Mario: Was heißt das: "Die entsprechende Option finden Sie auf der Registerkarte :guilabel:`Stamm` der Versandarten.
    Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/6.0/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
 
+.. todo: #Mario: Stimmt das: "Diese Standard-Versandart ist nötig, damit Ihre Kunden mit einem mobilen Endgerät in Ihrem Shop bestellen können."
 
 PayPal Checkout freischalten
 ----------------------------
@@ -296,6 +301,7 @@ Das Modul PayPal Checkout ist aktiv und steht für Bestellungen Ihrer Kunden ber
    Artikel, die sich im Warenkorb befinden, lassen sich auf der PayPal-Zahlungsseite mit Titel, Artikelnummer und Artikelpreis anzeigen. Dies ist eine generelle Einstellung, welcher der Kunde jedoch bei der Bestellung zustimmen muss. Ob er dabei explizit ein Häkchen setzen muss oder ob die Option zur Anzeige des Warenkorbs auf der PayPal-Zahlungsseite bereits aktiviert ist, kann ebenfalls festgelegt werden. Wir empfehlen, dass der Warenkorb zu PayPal zu übertragen wird und die Option zur Zustimmung des Kunden standardmäßig aktiviert ist.
 
    #Mario: müsste ich nicht konfigurieren können, ob der Button "Später bezahlen" erscheint oder nicht?
+
    Geldeinzug
    ^^^^^^^^^^
    Für den Zeitpunkt, zu dem das Geld eingezogen wird, gibt es grundsätzlich zwei Methoden. PayPal kann den Betrag zum einen sofort beim Kauf vom Kundenkonto einziehen (SALE). Zum anderen wird das Kundenkonto bei Kauf geprüft und die Zahlung wird autorisiert (AUTH). Der Shopbetreiber kann innerhalb von 29 Tagen, beispielsweise vor Versand der Ware, den reservierten Betrag manuell einziehen. Versenden Sie die Ware immer erst dann, wenn der PayPal-Status "Completed" ist.

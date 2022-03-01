@@ -269,6 +269,7 @@ rst_epilog = """
 .. |prerequisites| replace:: **Voraussetzungen**
 .. |result| replace:: **Resultat**
 .. |background| replace:: **Hintergrund**
+.. |example| replace:: **Beispiel**
 .. |br| raw:: html
 
    <br />
