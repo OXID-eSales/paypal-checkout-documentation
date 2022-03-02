@@ -131,8 +131,6 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
 Einstellungen für die Buttonplatzierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo: #Mario: ist das Anwendungsfall?:
-
 Entscheiden Sie, ob Sie die Schnellkauf-Funktion von PayPal Checkout anbieten wollen.
 
 Mit der Schnellkauf-Funktion überspringt der Kunde die Anmeldung in Ihrem eShop.
