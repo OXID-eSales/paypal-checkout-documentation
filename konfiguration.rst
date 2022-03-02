@@ -32,7 +32,7 @@ Grundsätzliches Vorgehen
 
 .. todo: #tbd: Verifizieren: Die Betriebsart :guilabel:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
 
-8. Testen Sie PayPal Checkout in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
+7. Testen Sie PayPal Checkout in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
 #. Wenn Sie vom Modul PayPal oder PayPal PLUS zu PayPal Checkout umsteigen wollen, tun Sie Folgendes:
 
    a. Stellen Sie sicher, dass es keine offenen Bestellungen gibt.
@@ -152,7 +152,7 @@ Sie legen also fest,
 
   oder
 
-* ob die Kunden ohne Registrierung mit ihrem PayPal-Konto die Bestellung direkt auslösen können (PayPal Checkout).
+* ob die Kunden ohne Registrierung mit ihrem PayPal-Konto die Bestellung direkt auslösen können (Schnellkauf).
 
 **Standardmäßig** ist die Schnellkauf-Funktion aktiv, und die PayPal-Schaltfläche erscheint auf folgenden Seiten.
 
@@ -198,10 +198,10 @@ Nachteile:
   |br|
   Einer der Partner könnte dadurch die Bestellhistorie oder andere Kundendaten des Partner im OXID eShop einsehen.
   |br|
-  Potentiell besteht also ein Datenschutz-Risiko. Deshalb ist die Einstellung standardmäßig deaktiviert.
+  Potentiell besteht also ein Datenschutz-Risiko.
 * Müssen sich Ihre Kunden nicht in Ihrem eShop anmelden, gehen Ihnen Daten zur Bestellhistorie der Kunden verloren
   |br|
-  Solche Daten könnten Sie andernfalls für statistische Auswerungen zur gezielten Ansprache Ihrer Kunden nutzen.
+  Solche Daten könnten Sie andernfalls für statistische Auswertungen zur gezielten Ansprache Ihrer Kunden nutzen.
 
 
 Wenn Sie die :guilabel:`Login mit PayPal` *nicht* aktivieren, passiert Folgendes:
@@ -210,7 +210,7 @@ Wenn Sie die :guilabel:`Login mit PayPal` *nicht* aktivieren, passiert Folgendes
   |br|
   Die PayPal-Session ist erstellt, und Ihr Kunde ist in Ihrem eShop angemeldet.
   |br|
-  Die Identität des Kunden steht eindeutig fest, und die aktuelle Bestellung wird zur Bestelhistorie des Kunden hinzugefügt.
+  Die Identität des Kunden steht eindeutig fest, und die aktuelle Bestellung wird zur Bestellhistorie des Kunden hinzugefügt.
 * Wenn die PayPal-E-Mail-Adresse des Kunden *nicht* bekannt ist, führt Ihr Kunde die Bestellung mit einem Gast-Konto aus.
   |br|
   Ihr Kunde landet mit den PayPal-Adressdaten auf der Checkout-Seite. Die Daten werden nur für die aktuelle Bestellung einmalig gespeichert, es wird kein Kundenkonto im eShop angelegt.
@@ -238,15 +238,19 @@ Banner-Einstellungen
 Optional: Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung werben wollen.
 
 .. todo: #Mario klärt Vorteile für Shopbetreiber
-.. todo: Mario klärt: Blwibt das so:  "Die Werbung für die Paypal-Ratenzahlung ist standardmäßig ausgeschaltet."
+.. todo: #Mario klärt: Bleibt das so:  "Die Werbung für die Paypal-Ratenzahlung ist standardmäßig ausgeschaltet."
 
 Wenn Sie die Vorteile nutzen wollen, legen Sie fest, wo die Banner erscheinen sollen, beispielsweise auf der Startseite, auf der Detailseite von Artikeln, auf den Kategorieseiten, in den Suchergebnissen und/oder im Bestellprozess.
 
-.. hint::
+.. attention::
 
-   Um die Banner erscheinen zu lassen, ist eine permanente Kommunikation mit den Servern von PayPal nötig. Die Skripte werden bei jedem Seitenaufruf gestartet.
+   **Datenschutz**
 
-   Das kann unerwünscht sein, beispielsweise aus Gründen
+   Um die Banner erscheinen zu lassen, ist eine permanente Kommunikation mit den Servern von PayPal nötig.
+
+   Dazu werden bei jedem Seitenaufruf Skripte gestartet, die das Nutzerverhalten beobachten und die die für den PayPal-Bezahlprozess nötigen Informationen sammeln und an PayPal übermitteln.
+
+   Diese Kommunikation kann unerwünscht sein, beispielsweise aus Gründen
 
       * des Datenschutzes
       * der Performance
@@ -258,10 +262,10 @@ Wenn Sie die Vorteile nutzen wollen, legen Sie fest, wo die Banner erscheinen so
 
 |procedure|
 
-1. Um das Ausführen von Skripten für die PayPal-Bannerwerwerbung zuzulassen, markieren Sie das Kontrollkästchen :guilabel:`Ratenzahlung-Banner aktivieren`.
+1. Um das Ausführen von Skripten für die PayPal-Bannerwerbung zuzulassen, markieren Sie das Kontrollkästchen :guilabel:`Ratenzahlung-Banner aktivieren`.
    |br|
-   Wenn Sie das Kontrollkästchen nicht markieren, dann werden keine Skripte zur Kommunikation mit den Servern von PayPal ausgeführt.
-#. Wenn Sie das Ausführen von Skripten für die PayPal-Bannerwerwerbung zulassen, legen Sie fest, auf welchen Seiten das Banner erscheinen soll.
+   Wenn Sie das Kontrollkästchen nicht markieren, dann werden die Skripte nicht ausgeführt.
+#. Wenn Sie das Ausführen von Skripten für die PayPal-Bannerwerbung zulassen, legen Sie fest, auf welchen Seiten das Banner erscheinen soll.
    |br|
    Markieren Sie dazu das entsprechende Kontrollkästchen.
 #. Wenn Sie ein individuelles Theme oder ein angepasstes OXID-Theme verwenden, tun Sie Folgendes:
@@ -281,17 +285,19 @@ Konfigurieren Sie PayPal Checkout nach Ihren Wünschen und testen Sie das Ergebn
 
 .. todo: #Mario: V. 1.x: Wie schalte ich Logging ein? Sollten einmal Probleme auftauchen, kann für eine intensive Fehlersuche das Logging eingeschaltet werden.
 
-.. todo: #Mario: Stimmt die folgende Aussage mit der Standardversandart?  Wie genau geht es, was meinen wir?
-
-
 1. Stellen Sie sicher, dass unter :menuselection:`Stammdaten --> Länder` die Märkte aktiv sind, die Sie abdecken wollen.
-#. Weisen Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` den gewünschten PayPal Checkout-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
+#. Tun Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` Folgendes:
+
+   a. Ordnen Sie den gewünschten PayPal Checkout-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
+   b. Stellen Sie sicher, dass Sie den PayPal Checkout-Zahlungsarten auf der Registerkarte :guilabel:`Stamm` den jeweils gewünschten minimalen und maximalen Einkaufswert festgelegt haben.
+      |br|
+      Beispiel: Der maximale Einkaufswert für die Zahlungsart :guilabel:`PayPal v2` ist standardmäßig auf 10.000 € begrenzt. Der Mindest-Einkaufswert ist 10 €.
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:
 
    a. Weisen Sie die gewünschten PayPal Checkout-Zahlungsarten den jeweiligen Versandarten zu.
    b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der PayPal Checkout-Zahlungsart `PayPal v2` angelegt ist.
       |br|
-      Typischerweise ist das die Standadrd-Zahlungsart.
+      Typischerweise ist das die Standard-Zahlungsart.
 
 .. todo: #tbd: prüfen: Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/6.0/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
 
@@ -311,7 +317,8 @@ Sie haben die gewünschten Zahlungsarten konfiguriert und mit Testzahlungen in d
 #. Wählen Sie die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Live)`.
    |br|
    Sie gelangen in ein Dialogfenster zum Anmelden bei PayPal.
-#. Melden Sie sich mit Ihrem bestehenden PayPal-Händlerkonto an oder legen Sie ein PayPal-Händlerkonto neu an.
+#. Melden Sie sich mit Ihrem bestehenden PayPal-Händlerkonto an. Wenn Sie noch keine Zugangsdaten für den Live-Betrieb haben, legen Sie ein PayPal-Händlerkonto neu an.
+#. Speichern Sie Ihre Einstellungen.
 
 
 |result|
@@ -319,29 +326,6 @@ Sie haben die gewünschten Zahlungsarten konfiguriert und mit Testzahlungen in d
 Die PayPal API-Anmeldeinformationen werden eingefügt.
 
 Das Modul PayPal Checkout ist aktiv und steht für Bestellungen Ihrer Kunden bereit.
-
-
-
-..  todo: #Mario: Ist Folgendes alles obsolet?
-   Integration von PayPal
-   ^^^^^^^^^^^^^^^^^^^^^^
-   In diesem Bereich finden Sie einige Einstellungen, wie das Bezahlen mit PayPal in den OXID eShop integriert wird. Mit PayPal Basis wird PayPal am Ende des Bestellprozesses als Zahlungsart angeboten. Wählt der Kunde diese Zahlungsart, bestätigt er auf der PayPal-Zahlungsseite den Kauf und wird anschließend in den Shop zurückgeleitet. PayPal Express bietet die Möglichkeit, dass der Kunde schon im ersten Bestellschritt direkt zur PayPal-Zahlungsseite wechseln kann. Dort bestätigt er den Kauf und gelangt wieder in den Shop zurück. Der Shop übernimmt dabei die für den Kauf relevanten Kundendaten. Auch für den Mini-Warenkorb und die Artikel-Detailseite kann die Schaltfläche für PayPal Express aktiviert werden.
-
-   Anzeige auf PayPal-Zahlungsseite
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   Geben Sie hier den Namen des Shops an, der auf der PayPal-Zahlungsseite angezeigt werden soll. Eine weitere Einstellung ermöglicht es, ein Logo des Shops anstatt des Namens auf der PayPal-Zahlungsseite anzuzeigen. Die Grafik dafür sollte eine maximale Größe (Breite*Höhe) von 190px*60px haben und im Verzeichnis :file:`/out/{theme}/img` gespeichert sein. Für jedes verwendete Theme muss die Datei im jeweiligen Verzeichnis existieren. Das Shop-Logo kann das standardmäßig im Shop verwendete sein. Dieses wird mit dem Parameter "sShopLogo" in der Konfigurationsdatei :file:`config.inc.php` definiert. Es kann aber auch ein spezielles Shop-Logo auf der PayPal-Zahlungsseite angezeigt werden, dessen Dateiname hier angegeben wird.
-
-   Warenkorb auf PayPal-Zahlungsseite
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   Artikel, die sich im Warenkorb befinden, lassen sich auf der PayPal-Zahlungsseite mit Titel, Artikelnummer und Artikelpreis anzeigen. Dies ist eine generelle Einstellung, welcher der Kunde jedoch bei der Bestellung zustimmen muss. Ob er dabei explizit ein Häkchen setzen muss oder ob die Option zur Anzeige des Warenkorbs auf der PayPal-Zahlungsseite bereits aktiviert ist, kann ebenfalls festgelegt werden. Wir empfehlen, dass der Warenkorb zu PayPal zu übertragen wird und die Option zur Zustimmung des Kunden standardmäßig aktiviert ist.
-
-   #Mario: müsste ich nicht konfigurieren können, ob der Button "Später bezahlen" erscheint oder nicht?
-
-   Geldeinzug
-   ^^^^^^^^^^
-   Für den Zeitpunkt, zu dem das Geld eingezogen wird, gibt es grundsätzlich zwei Methoden. PayPal kann den Betrag zum einen sofort beim Kauf vom Kundenkonto einziehen (SALE). Zum anderen wird das Kundenkonto bei Kauf geprüft und die Zahlung wird autorisiert (AUTH). Der Shopbetreiber kann innerhalb von 29 Tagen, beispielsweise vor Versand der Ware, den reservierten Betrag manuell einziehen. Versenden Sie die Ware immer erst dann, wenn der PayPal-Status "Completed" ist.
-
-   Der OXID eShop kann darüber hinaus den Zeitpunkt des Geldtransfers automatisch wählen (AUTOMATIC). Grundlage dafür ist der Lagerbestand der bestellten Artikel und ein definierter Restlagerbestand. Es wird geprüft, ob nach einer Bestellung der Lagerbestand eines der Artikel kleiner als der definierte Restlagerbestand ist. In diesem Fall wird AUTH als Methode des Geldtransfers verwendet, ansonsten SALE.
 
 
 
