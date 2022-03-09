@@ -1,7 +1,7 @@
 Installation
 ============
 
-Installieren Sie das Zahlungsmodul PayPal Checkout für den OXID eShop ab Version 6.2.
+Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID eShop ab Version 6.2.
 
 
 .. include:: /_static/reuse/paypal-checkout-migration.rst
@@ -48,7 +48,7 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 .. todo: #tbd Bild ergänzen
 
 
-Nächster Schritt: Wählen Sie :guilabel:`Weiter`, um PayPal Checkout zu konfigurieren.
+Nächster Schritt: Wählen Sie :guilabel:`Weiter`, um :productname:`PayPal Checkout` zu konfigurieren.
 
 
 

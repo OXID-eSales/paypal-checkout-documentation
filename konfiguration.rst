@@ -2,7 +2,7 @@ Konfiguration
 =============
 
 
-Machen Sie das PayPal Checkout-Modul für Ihren OXID eShop betriebsbereit.
+Machen Sie das :productname:`PayPal Checkout`-Modul für Ihren OXID eShop betriebsbereit.
 
 
 .. include:: /_static/reuse/paypal-checkout-migration.rst
@@ -17,14 +17,14 @@ Grundsätzliches Vorgehen
 #. Stellen Sie die Verbindung zu Ihrem PayPal-Händlerkonto her.
    |br|
    Erstellen Sie zum Testen zunächst nur ein Testkonto (PayPal Sandbox).
-#. Optional: Deaktivieren Sie bei Bedarf die Express-Checkout-Funktion von PayPal Checkout.
+#. Optional: Deaktivieren Sie bei Bedarf die Express-Checkout-Funktion von :productname:`PayPal Checkout`.
 #. Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen.
-#. Konfigurieren Sie die von PayPal Checkout bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
+#. Konfigurieren Sie die von :productname:`PayPal Checkout` bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
 
    * Aktivieren Sie die Länder, die Sie abdecken wollen.
    * Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln.
 
-#. Führen Sie Testzahlungen in der PayPal Checkout-Sandbox aus.
+#. Führen Sie Testzahlungen in der :productname:`PayPal Checkout`-Sandbox aus.
 
    .. hint::
 
@@ -32,12 +32,12 @@ Grundsätzliches Vorgehen
 
 .. todo: #tbd: Verifizieren: Die Betriebsart :guilabel:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
 
-7. Testen Sie PayPal Checkout in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
-#. Wenn Sie vom Modul PayPal oder PayPal PLUS zu PayPal Checkout umsteigen wollen, tun Sie Folgendes:
+7. Testen Sie :productname:`PayPal Checkout` in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
+#. Wenn Sie vom Modul PayPal oder PayPal PLUS zu :productname:`PayPal Checkout` umsteigen wollen, tun Sie Folgendes:
 
    a. Stellen Sie sicher, dass es keine offenen Bestellungen gibt.
    b. Deaktivieren Sie das Modul PayPal oder PayPal PLUS.
-#. Schalten Sie PayPal Checkout frei:
+#. Schalten Sie :productname:`PayPal Checkout` frei:
 
    a. Wenn Sie noch kein Händlerkonto haben, legen Sie für den Livebetrieb eins an.
    b. Wechseln Sie in den Betriebsmodus :guilabel:`Live`.
@@ -46,7 +46,7 @@ Grundsätzliches Vorgehen
 PayPal Checkout aktivieren
 --------------------------
 
-Aktivieren Sie PayPal Checkout in jedem Subshop, in dem Sie das Modul nutzen wollen.
+Aktivieren Sie :productname:`PayPal Checkout` in jedem Subshop, in dem Sie das Modul nutzen wollen.
 
 |procedure|
 
@@ -89,7 +89,7 @@ Registrieren Sie einen Webhook, um Ihren eShop mit PayPal zu verbinden.
 
 Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit Statusmeldungen beispielsweise über abgeschlossene Transaktionen zu liefern.
 
-Im ersten Durchgang testen Sie die mit PayPal Checkout bereitgestellten Zahlungsarten mit Test-Zugangsdaten in einer *Sandbox*.
+Im ersten Durchgang testen Sie die mit :productname:`PayPal Checkout` bereitgestellten Zahlungsarten mit Test-Zugangsdaten in einer *Sandbox*.
 
 Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdaten für den *Live*-betrieb.
 
@@ -131,7 +131,7 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
 Einstellungen für die Buttonplatzierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Entscheiden Sie, ob Sie die Schnellkauf-Funktion von PayPal Checkout anbieten wollen.
+Entscheiden Sie, ob Sie die Schnellkauf-Funktion von :productname:`PayPal Checkout` anbieten wollen.
 
 Mit der Schnellkauf-Funktion überspringt der Kunde die Anmeldung in Ihrem eShop.
 
@@ -277,7 +277,7 @@ Wenn Sie die Vorteile nutzen wollen, legen Sie fest, wo die Banner erscheinen so
 PayPal Checkout testen
 ----------------------
 
-Konfigurieren Sie PayPal Checkout nach Ihren Wünschen und testen Sie das Ergebnis.
+Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen Sie das Ergebnis.
 
 |procedure|
 
@@ -286,14 +286,14 @@ Konfigurieren Sie PayPal Checkout nach Ihren Wünschen und testen Sie das Ergebn
 1. Stellen Sie sicher, dass unter :menuselection:`Stammdaten --> Länder` die Märkte aktiv sind, die Sie abdecken wollen.
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` Folgendes:
 
-   a. Ordnen Sie den gewünschten PayPal Checkout-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
-   b. Stellen Sie sicher, dass Sie den PayPal Checkout-Zahlungsarten auf der Registerkarte :guilabel:`Stamm` den jeweils gewünschten minimalen und maximalen Einkaufswert festgelegt haben.
+   a. Ordnen Sie den gewünschten :productname:`PayPal Checkout`-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
+   b. Stellen Sie sicher, dass Sie den :productname:`PayPal Checkout`-Zahlungsarten auf der Registerkarte :guilabel:`Stamm` den jeweils gewünschten minimalen und maximalen Einkaufswert festgelegt haben.
       |br|
       Beispiel: Der maximale Einkaufswert für die Zahlungsart :guilabel:`PayPal v2` ist standardmäßig auf 10.000 € begrenzt. Der Mindest-Einkaufswert ist 10 €.
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:
 
-   a. Weisen Sie die gewünschten PayPal Checkout-Zahlungsarten den jeweiligen Versandarten zu.
-   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der PayPal Checkout-Zahlungsart `PayPal v2` angelegt ist.
+   a. Weisen Sie die gewünschten :productname:`PayPal Checkout`-Zahlungsarten den jeweiligen Versandarten zu.
+   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der :productname:`PayPal Checkout`-Zahlungsart `PayPal v2` angelegt ist.
       |br|
       Typischerweise ist das die Standard-Zahlungsart.
 
@@ -303,7 +303,7 @@ Konfigurieren Sie PayPal Checkout nach Ihren Wünschen und testen Sie das Ergebn
 PayPal Checkout freischalten
 ----------------------------
 
-Schalten Sie PayPal Checkout nach dem Testen frei.
+Schalten Sie :productname:`PayPal Checkout` nach dem Testen frei.
 
 |prerequisites|
 
@@ -323,7 +323,7 @@ Sie haben die gewünschten Zahlungsarten konfiguriert und mit Testzahlungen in d
 
 Die PayPal API-Anmeldeinformationen werden eingefügt.
 
-Das Modul PayPal Checkout ist aktiv und steht für Bestellungen Ihrer Kunden bereit.
+Das Modul :productname:`PayPal Checkout` ist aktiv und steht für Bestellungen Ihrer Kunden bereit.
 
 
 

@@ -1,12 +1,12 @@
 ﻿Wofür/Wofür nicht?
 ==================
 
-Nutzen Sie PayPal Checkout,
+Nutzen Sie :productname:`PayPal Checkout`,
 
 * wenn Sie die Zahlungsart PayPal in Ihrem eShop bisher noch nicht anbieten
 * wenn Sie PayPal bereits nutzen, aber vor allem internationalen Kunden ein breites Spektrum beliebter Zahlungsmethoden einschließlich Rechnungskauf anbieten wollen
 
-PayPal Checkout prüft und bestätigt Ihre Zahlungsanforderung in Echtzeit. Als Shop-Betreiber sind Sie deshalb gegen Zahlungsausfälle geschützt.
+:productname:`PayPal Checkout` prüft und bestätigt Ihre Zahlungsanforderung in Echtzeit. Als Shop-Betreiber sind Sie deshalb gegen Zahlungsausfälle geschützt.
 
 Zahlungsarten in PayPal Checkout
 --------------------------------
@@ -21,7 +21,7 @@ Zahlungsarten in PayPal Checkout
 Marktabdeckung nach Ländern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Bieten Sie mit dem PayPal Checkout-Modul für OXID die in folgenden Märkten beliebten Zahlungsmethoden an.
+Bieten Sie mit dem :productname:`PayPal Checkout`-Modul für OXID die in folgenden Märkten beliebten Zahlungsmethoden an.
 
 ================= ==========================
 Markt             Zahlungsmethoden
@@ -89,10 +89,10 @@ Trustly	                   Schweden
 Sie haben das Modul PayPal?
 ---------------------------
 
-Wechseln Sie zu PayPal Checkout, um Ihren Kunden zusätzliche Zahlungsmethoden einschließlich Rechnungskauf anbieten zu können,
+Wechseln Sie zu :productname:`PayPal Checkout`, um Ihren Kunden zusätzliche Zahlungsmethoden einschließlich Rechnungskauf anbieten zu können,
 die in internationalen Märkten beliebt sind.
 
-Beachten Sie jedoch, dass es in PayPal Checkout V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
+Beachten Sie jedoch, dass es in :productname:`PayPal Checkout` V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
 
 
 Sie haben das Modul PayPal PLUS?
@@ -100,11 +100,11 @@ Sie haben das Modul PayPal PLUS?
 
 Die API von PayPal PLUS ist veraltet. PayPal entwickelt die API nicht weiter und bietet keine neuen Verträge dafür an.
 
-Wechseln Sie zu PayPal Checkout, wenn es für Sie wichtig ist, Ihren Kunden die Schnellkauf-Funktion von PayPal Checkout anzubieten.
+Wechseln Sie zu :productname:`PayPal Checkout`, wenn es für Sie wichtig ist, Ihren Kunden die Schnellkauf-Funktion von :productname:`PayPal Checkout` anzubieten.
 
 Damit können Ihre Kunden den Anmeldeprozess in Ihrem eShop überspringen und direkt beispielsweise auf der Produkt-Detailseite die Bestellung und Bezahlung starten (siehe :ref:`Einstellungen für die Buttonplatzierung<Einstellungen-fuer-die-Buttonplatzierung>`).
 
-Beachten Sie jedoch, dass es in PayPal Checkout V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
+Beachten Sie jedoch, dass es in :productname:`PayPal Checkout` V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
 
 
 .. Intern: oxdajp, Status:
