@@ -192,12 +192,12 @@ Ihre Kunden überspringen damit den Anmeldemechanismus. Ihre Kunden melden sich 
 
 Nachteile:
 
-* Oft nutzen beispielsweise Ehepaare dasselbe PayPal-Konto.
+* Oft nutzen beispielsweise Ehepartner dasselbe PayPal-Konto.
   |br|
   Einer der Partner könnte dadurch die Bestellhistorie oder andere Kundendaten des Partner im OXID eShop einsehen.
   |br|
   Potentiell besteht also ein Datenschutz-Risiko.
-* Müssen sich Ihre Kunden nicht in Ihrem eShop anmelden, gehen Ihnen Daten zur Bestellhistorie der Kunden verloren
+* Müssen sich Ihre Kunden nicht in Ihrem eShop anmelden, gehen Ihnen Daten zur Bestellhistorie der Kunden verloren.
   |br|
   Solche Daten könnten Sie andernfalls für statistische Auswertungen zur gezielten Ansprache Ihrer Kunden nutzen.
 
