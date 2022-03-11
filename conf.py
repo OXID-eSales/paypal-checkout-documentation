@@ -262,7 +262,16 @@ html_show_sphinx = False
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'PayPaldoc'
 
+#custom roles; associated classes are defined in the css
+rst_prolog = """
+.. role:: productname
+.. role:: technicalname
+"""
+
+
 # A string of reStructuredText that will be included at the beginning of every source file that is read.
+
+
 rst_epilog = """
 .. |link| image:: /media/icons/link.png
 .. |procedure| replace:: **Vorgehen**

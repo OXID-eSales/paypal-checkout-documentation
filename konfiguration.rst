@@ -2,7 +2,7 @@ Konfiguration
 =============
 
 
-Machen Sie das :productname:`PayPal Checkout`-Modul für Ihren OXID eShop betriebsbereit.
+Machen Sie das Modul :productname:`PayPal Checkout` für Ihren OXID eShop betriebsbereit.
 
 
 .. include:: /_static/reuse/paypal-checkout-migration.rst
@@ -64,6 +64,7 @@ Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können,
 
 Um iDEAL anbieten zu können, müssen Sie sichergestellt haben, dass Sie unter :menuselection:`Stammdaten --> Länder` die Niederlande aktiv gesetzt haben.
 
+.. todo: #Mario: Zahlungsartname PayPal v2 klären
 
 .. todo: #tbd: erläutern, wie man den Shop um neue Länder und dedizierte Unzer-Zahlungsmethoden erweitert
 
@@ -113,7 +114,7 @@ Modul ist aktiv.
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal v2` aktiv.
 
-.. todo: Bild ergänzen; #Mario: "PayPal v2" Name kann sich ändern
+.. todo: Bild ergänzen;
 
 .. hint::
 
@@ -235,8 +236,6 @@ Banner-Einstellungen
 
 Optional: Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung werben wollen.
 
-.. todo: #Mario klärt Vorteile für Shopbetreiber
-.. todo: #Mario klärt: Bleibt das so:  "Die Werbung für die Paypal-Ratenzahlung ist standardmäßig ausgeschaltet."
 
 Wenn Sie die Vorteile nutzen wollen, legen Sie fest, wo die Banner erscheinen sollen, beispielsweise auf der Startseite, auf der Detailseite von Artikeln, auf den Kategorieseiten, in den Suchergebnissen und/oder im Bestellprozess.
 
@@ -255,15 +254,17 @@ Wenn Sie die Vorteile nutzen wollen, legen Sie fest, wo die Banner erscheinen so
 
    Stellen Sie in diesem Fall sicher, dass die Funktion deaktiviert ist.
 
+   Standardmäßig ist die Funktion eingeschaltet.
+
 .. todo: #tbd: Screenshot ergänzen -- Funktionsbeschreibung 0301,
 
 
 |procedure|
 
-1. Um das Ausführen von Skripten für die PayPal-Bannerwerbung zuzulassen, markieren Sie das Kontrollkästchen :guilabel:`Ratenzahlung-Banner aktivieren`.
+1. Um das Ausführen von Skripten für die PayPal-Bannerwerbung auszuschalten, deaktivieren Sie das Kontrollkästchen :guilabel:`Ratenzahlung-Banner aktivieren`.
    |br|
    Wenn Sie das Kontrollkästchen nicht markieren, dann werden die Skripte nicht ausgeführt.
-#. Wenn Sie das Ausführen von Skripten für die PayPal-Bannerwerbung zulassen, legen Sie fest, auf welchen Seiten das Banner erscheinen soll.
+#. Wenn Sie das Ausführen von Skripten für die PayPal-Bannerwerbung :emphasis:`zulassen`, legen Sie fest, auf welchen Seiten das Banner erscheinen soll.
    |br|
    Markieren Sie dazu das entsprechende Kontrollkästchen.
 #. Wenn Sie ein individuelles Theme oder ein angepasstes OXID-Theme verwenden, tun Sie Folgendes:
@@ -281,7 +282,6 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
 
 |procedure|
 
-.. todo: #Mario: V. 1.x: Wie schalte ich Logging ein? Sollten einmal Probleme auftauchen, kann für eine intensive Fehlersuche das Logging eingeschaltet werden.
 
 1. Stellen Sie sicher, dass unter :menuselection:`Stammdaten --> Länder` die Märkte aktiv sind, die Sie abdecken wollen.
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` Folgendes:
@@ -293,10 +293,11 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:
 
    a. Weisen Sie die gewünschten :productname:`PayPal Checkout`-Zahlungsarten den jeweiligen Versandarten zu.
-   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der :productname:`PayPal Checkout`-Zahlungsart `PayPal v2` angelegt ist.
+   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der Zahlungsart :guilabel:`PayPal v2` angelegt ist.
       |br|
       Typischerweise ist das die Standard-Zahlungsart.
 
+.. todo: #tbd: prüfen Zahlungsart :guilabel:`PayPal` oder PP v2?
 .. todo: #tbd: prüfen: Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/6.0/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
 
 
