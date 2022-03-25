@@ -13,13 +13,13 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
 * Sie haben Transportverschlüsselung (`https`) konfiguriert.
 
    a. Öffnen Sie im Verzeichnis :file:`<Rootverzeichnis des eShops>/source` die Datei :file:`config.inc.php`.
-   b. Stellen Sie sicher, dass für die eShop base URL (Parameter `sShopURL`) https eingestellt ist.
+   b. Stellen Sie sicher, dass für die Basis-URL (Parameter `sShopURL`) https eingestellt ist.
       |br|
       Beispiel:
 
       .. code::
 
-         $this->sShopURL     = 'https://192.168.123.20';
+         $this->sShopURL     = 'https://www.example.org';
 
 |procedure|
 
