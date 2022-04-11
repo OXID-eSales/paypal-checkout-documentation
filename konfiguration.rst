@@ -10,7 +10,6 @@ Machen Sie das Modul :productname:`PayPal Checkout` für Ihren OXID eShop betrie
 Grundsätzliches Vorgehen
 ------------------------
 
-
 1. Aktivieren Sie das Modul.
    |br|
    Die wichtigsten Zahlungsmethoden sind damit automatisch aktiviert.
@@ -99,9 +98,27 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
 
 
 1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
-2. Durchlaufen Sie den Registrierungs-Prozess.
+#. Durchlaufen Sie den Registrierungs-Prozess.
+#. Wenn Sie die Zahlungsmethoden Rechnungskauf oder Kreditkarte nutzen wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt`, ob die Freischaltung erfolgt ist.
+   |br|
+   Wenn die Freischaltung nicht automatisch erfolgt ist, wenden Sie sich an Ihren Ansprechpartner bei PayPal.
+
+.. todo: #Mario: welche PayPal-Kreditkarte wird bei Ablehnung als Ersatz-Kreditkarte angeboten? Was wäre die "richtge" Kreditkarte? Was ist der Unterschied?
 
 .. hint::
+
+   **Zahlungsmethode Kreditkarte**
+
+   Wenn die Freischaltung für die Zahlungsmethode Kreditkarte nicht automatisch erfolgt ist, dann erscheint die Zahlungsmethode als separate Schaltfläche.
+
+   .. image:: media/screenshots/config-creditcard.png
+       :alt: Zahlungsmethode Kreditkarte
+       :class: no-shadow
+
+
+.. hint::
+
+   **Zahlungsmethode Rechnungskauf**
 
    Die Zahlungsmethode Rechnungskauf bietet PayPal nur Shop-Betreibern aus Deutschland an.
 
@@ -127,7 +144,7 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
    Die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` erscheint, und Sie können den Webhook neu generieren.
 
 
-.. _Einstellungen-fuer-die-Buttonplatzierung:
+
 
 Einstellungen für die Buttonplatzierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -188,7 +205,7 @@ und
 
 Vorteil: Sie gestalten den Anmeldeprozess für Ihre Kunden bequemer.
 
-Ihre Kunden überspringen damit den Anmeldemechanismus. Ihre Kunden melden sich in Ihrem OXID eShop an, *ohne ihr Passwort eingeben zu müssen*.
+Ihre Kunden überspringen damit den Anmeldemechanismus. Ihre Kunden melden sich in Ihrem OXID eShop an, :emphasis:`ohne ihr Passwort eingeben zu müssen`.
 
 
 Nachteile:
@@ -203,14 +220,14 @@ Nachteile:
   Solche Daten könnten Sie andernfalls für statistische Auswertungen zur gezielten Ansprache Ihrer Kunden nutzen.
 
 
-Wenn Sie die :guilabel:`Login mit PayPal` *nicht* aktivieren, passiert Folgendes:
+Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Folgendes:
 
-* Wenn die PayPal-E-Mail-Adresse des Kunden *bekannt* ist, wird der PayPal-Bezahlvorgang unterbrochen, und der Kunde muss sich in Ihrem eShop anmelden.
+* Wenn die PayPal-E-Mail-Adresse des Kunden :emphasis:`bekannt` ist, wird der PayPal-Bezahlvorgang unterbrochen, und der Kunde muss sich in Ihrem eShop anmelden.
   |br|
   Die PayPal-Session ist erstellt, und Ihr Kunde ist in Ihrem eShop angemeldet.
   |br|
   Die Identität des Kunden steht eindeutig fest, und die aktuelle Bestellung wird zur Bestellhistorie des Kunden hinzugefügt.
-* Wenn die PayPal-E-Mail-Adresse des Kunden *nicht* bekannt ist, führt Ihr Kunde die Bestellung mit einem Gast-Konto aus.
+* Wenn die PayPal-E-Mail-Adresse des Kunden :emphasis:`nicht` bekannt ist, führt Ihr Kunde die Bestellung mit einem Gast-Konto aus.
   |br|
   Ihr Kunde landet mit den PayPal-Adressdaten auf der Checkout-Seite. Die Daten werden nur für die aktuelle Bestellung einmalig gespeichert, es wird kein Kundenkonto im eShop angelegt.
 
@@ -287,7 +304,7 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` Folgendes:
 
    a. Ordnen Sie den gewünschten :productname:`PayPal Checkout`-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
-   b. Stellen Sie sicher, dass Sie den :productname:`PayPal Checkout`-Zahlungsarten auf der Registerkarte :guilabel:`Stamm` den jeweils gewünschten minimalen und maximalen Einkaufswert festgelegt haben.
+   b. Stellen Sie sicher, dass Sie für die :productname:`PayPal Checkout`-Zahlungsarten auf der Registerkarte :guilabel:`Stamm` den jeweils gewünschten minimalen und maximalen Einkaufswert festgelegt haben.
       |br|
       Beispiel: Der maximale Einkaufswert für die Zahlungsart :guilabel:`PayPal v2` ist standardmäßig auf 10.000 € begrenzt. Der Mindest-Einkaufswert ist 10 €.
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:

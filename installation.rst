@@ -10,10 +10,10 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
 |prerequisites|
 
 * Sie haben den OXID eShop 6.2 oder höher installiert.
-* Sie haben Transportverschlüsselung (`https`) konfiguriert.
+* Sie haben `https` konfiguriert.
 
    a. Öffnen Sie im Verzeichnis :file:`<Rootverzeichnis des eShops>/source` die Datei :file:`config.inc.php`.
-   b. Stellen Sie sicher, dass für die Basis-URL (Parameter `sShopURL`) https eingestellt ist.
+   b. Stellen Sie sicher, dass für die Basis-URL (Parameter :technicalname:`sShopURL`) `https` eingestellt ist.
       |br|
       Beispiel:
 
@@ -59,7 +59,7 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 .. todo: #tbd Bild ergänzen
 
 
-Nächster Schritt: Wählen Sie :guilabel:`Weiter`, um :productname:`PayPal Checkout` zu konfigurieren.
+Nächster Schritt: Um :productname:`PayPal Checkout` zu konfigurieren, wählen Sie :guilabel:`Weiter`.
 
 
 

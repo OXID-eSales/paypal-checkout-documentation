@@ -9,4 +9,4 @@
    Nicht empfohlen: Wenn Sie von PayPal zum Modul PayPal Checkout bereits jetzt umsteigen wollen, tun Sie Folgendes:
 
       1. Testen Sie PayPal Checkout in einem Testsystem.
-      2. Stellen Sie auf PayPal Checkout um, wenn Sie sicher sind, dass es keine offenen PayPal- oder PayPal PLUS Bestellungen mehr gibt.
+      2. Stellen Sie auf PayPal Checkout um, wenn Sie sicher sind, dass es in Ihrem Produktionssystem keine offenen PayPal- oder PayPal PLUS Bestellungen mehr gibt.
