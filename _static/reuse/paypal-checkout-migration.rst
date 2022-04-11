@@ -1,12 +1,12 @@
 .. ATTENTION::
 
-   **Keine Migration von PayPal oder PayPal PLUS zu PayPal Checkout möglich**
+   **No migration possible from PayPal or PayPal PLUS to PayPal Checkout**.
 
-   Sie können Bestellungen nicht vom Modul PayPal oder PayPal PLUS zum Modul PayPal Checkout migrieren.
+   You cannot migrate orders from the PayPal or PayPal PLUS modules to the PayPal Checkout module.
 
-   Empfehlung: Warten Sie mit dem Umstieg zu PayPal Checkout, bis wir eine Version entwickelt haben, die Ihre Bestellungen migriert.
+   Recommendation: Before moving to PayPal Checkout, wait until we have developed a version that migrates your orders.
 
-   Nicht empfohlen: Wenn Sie von PayPal zum Modul PayPal Checkout bereits jetzt umsteigen wollen, tun Sie Folgendes:
+   Not recommended: If you want to migrate from PayPal to the PayPal Checkout module right now, do the following:
 
-      1. Testen Sie PayPal Checkout in einem Testsystem.
-      2. Stellen Sie auf PayPal Checkout um, wenn Sie sicher sind, dass es keine offenen PayPal- oder PayPal PLUS Bestellungen mehr gibt.
+      1. Test PayPal Checkout in a test system.
+      2. Switch to PayPal Checkout when you are sure that there are no more open PayPal or PayPal PLUS orders in your production system.

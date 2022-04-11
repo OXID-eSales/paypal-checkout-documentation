@@ -1,5 +1,5 @@
-Moduldokumentation
-==================
+Module Documentation
+====================
 
 .. image:: media/paypal-logo.png
     :alt: PayPal-Logo
@@ -11,9 +11,10 @@ Moduldokumentation
    :maxdepth: 1
    :caption: PayPal Checkout
 
-   Wofür/Wofür nicht? <einfuehrung>
+   For what?/Where not? <introduction>
    Installation <installation>
-   Konfiguration <konfiguration>
+   Configuration <configuration>
+
 ..
    Funktionsbeschreibung <funktionsbeschreibung/index>
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/paypal/blob/v6.2.1/CHANGELOG.md>

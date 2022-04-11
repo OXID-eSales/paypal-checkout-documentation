@@ -1,7 +1,7 @@
 Installation
 ============
 
-Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID eShop ab Version 6.2.
+Install the payment module :productname:`PayPal Checkout` for OXID eShop version 6.2 and higher.
 
 
 .. include:: /_static/reuse/paypal-checkout-migration.rst
@@ -9,29 +9,29 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
 
 |prerequisites|
 
-* Sie haben den OXID eShop 6.2 oder höher installiert.
-* Sie haben Transportverschlüsselung (`https`) konfiguriert.
+* You have installed OXID eShop 6.2 or higher.
+* You have configured `https`.
 
-   a. Öffnen Sie im Verzeichnis :file:`<Rootverzeichnis des eShops>/source` die Datei :file:`config.inc.php`.
-   b. Stellen Sie sicher, dass für die Basis-URL (Parameter `sShopURL`) https eingestellt ist.
+   a. In the :file:`<root directory of the eShop>/source` directory, open the :file:`config.inc.php` file.
+   b. Make sure that `https` is set for the base URL (:technicalname:`shopURL` parameter).
       |br|
-      Beispiel:
+      Example:
 
       .. code::
 
-         $this->sShopURL     = 'https://www.example.org';
+         $this->sShopURL = 'https://www.example.org';
 
 |procedure|
 
-1. Öffnen Sie eine Shell und wechseln Sie ins Root-Verzeichnis des eShops (in dem die Datei :file:`composer.json` liegt).
+1. Open a shell and change to the root directory of the eShop (where the file :file:`composer.json` is located).
    |br|
-   Beispiel:
+   Example:
 
    .. code:: bash
 
       cd /var/www/oxideshop
 
-#. Führen Sie folgende Befehle aus:
+#. Execute the following commands:
 
    .. code:: bash
 
@@ -41,26 +41,27 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
       ./vendor/bin/oe-console oe:module:install-configuration source/modules/osc/paypal
       ./vendor/bin/oe-console oe:module:apply-configuration
 
-#. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
+#. Optional: To activate the module, run the following command.
    |br|
-   Alternativ: Aktivieren Sie das Modul im Zuge der Konfiguration manuell (siehe :ref:`konfiguration:PayPal Checkout aktivieren`).
+   Alternatively: activate the module manually during configuration (see :ref:`configuration:Activating PayPal Checkout`).
 
    .. code:: bash
 
       ./vendor/bin/oe-console oe:module:activate osc_paypal
 
-#. Bestätigen Sie die Abfragen.
+#. Confirm the queries.
 
 |result|
 
-Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel:`OSC :: PayPal - Online-Bezahldienst` im Administrationsbereich unter :menuselection:`Erweiterungen --> Module`.
+When the installation process is finished, the module :guilabel:`OSC :: PayPal - Online Payment Service` appears in the administration area under :menuselection:`Extensions --> Modules`.
 
 
-.. todo: #tbd Bild ergänzen
+.. todo: #tbd Add image
 
 
-Nächster Schritt: Wählen Sie :guilabel:`Weiter`, um :productname:`PayPal Checkout` zu konfigurieren.
+Next step: To configure :productname:`PayPal Checkout`, choose :guilabel:`Next`.
 
 
 
-.. Intern: oxdajq, Status:
+.. Internal: oxdajq, status:
+
