@@ -50,7 +50,7 @@ Aktivieren Sie :productname:`PayPal Checkout` in jedem Subshop, in dem Sie das M
 |procedure|
 
 1. Wählen Sie :menuselection:`Erweiterungen --> Module`. 
-2. Wählen Sie das Modul :guilabel:`OSC :: PayPal - Online-Bezahldienst` und wählen Sie :menuselection:`Stamm --> Aktivieren`.
+2. Wählen Sie das Modul :guilabel:`PayPal Checkout für OXID` und wählen Sie :menuselection:`Stamm --> Aktivieren`.
 
 
 |result|
@@ -240,7 +240,7 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
    Die Funktion :guilabel:`Login mit PayPal` ist standardmäßig **aktiviert**.
 
 1. Prüfen Sie, was im schlimmsten Fall schiefgehen kann, wenn mehrere Benutzer dasselbe PayPal-Konto nutzen und in Ihrem eShop die Daten der anderen Benutzer einsehen können.
-2. Es besteht kein ernstes Risiko darin besteht, wenn Ihre Kunden sich in Ihrem eShop bequem automatisch mit ihren PayPal-Konten anmelden?
+2. Es besteht kein ernstes Risiko darin, wenn Ihre Kunden sich in Ihrem eShop bequem automatisch mit ihren PayPal-Konten anmelden?
    |br|
    Dann lassen Sie das Kontrollkästchen :guilabel:`Im Shop beim Kauf automatisch einloggen` aktiviert.
    |br|
@@ -252,7 +252,6 @@ Banner-Einstellungen
 ^^^^^^^^^^^^^^^^^^^^
 
 Optional: Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung werben wollen.
-
 
 Wenn Sie die Vorteile nutzen wollen, legen Sie fest, wo die Banner erscheinen sollen, beispielsweise auf der Startseite, auf der Detailseite von Artikeln, auf den Kategorieseiten, in den Suchergebnissen und/oder im Bestellprozess.
 

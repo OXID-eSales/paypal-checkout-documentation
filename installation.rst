@@ -53,7 +53,7 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
 
 |result|
 
-Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel:`OSC :: PayPal - Online-Bezahldienst` im Administrationsbereich unter :menuselection:`Erweiterungen --> Module`.
+Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel:`PayPal Checkout für OXID` im Administrationsbereich unter :menuselection:`Erweiterungen --> Module`.
 
 
 .. todo: #tbd Bild ergänzen
