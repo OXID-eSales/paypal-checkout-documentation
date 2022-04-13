@@ -27,11 +27,13 @@ With :productname:`PayPal Checkout`, offer payment methods popular in the follow
 Market            Payment Methods
 ================= ==========================
 Worldwide         PayPal
+Worldwide         PayPal Express
+Worldwide         PayPal- pay later
 Belgium           Bancontact
 Belgium           Sofort (Klarna Pay now)
 Brazil            Boleto Bancário
 Germany           GiroPay
-Germany           Credit Card
+Germany           Creditcard
 Germany           Pay upon Invoice
 Germany           Sofort (Klarna Pay now)
 Estonia           Trustly
@@ -65,11 +67,13 @@ Boleto Bancário                 Brazil
 eps                             Austria
 GiroPay                         Germany
 iDEAL                           Netherlands
-Credit Card                     Germany
+Creditcard                      Germany
 Multibanco                      Portugal
 MyBank                          Italy
 OXXO                            Mexico
 PayPal                          Worldwide
+PayPal Express                  Worldwide
+PayPal- pay later               Worldwide
 Przelewy24                      Poland
 Pay upon Invoice                Germany
 Sofort (Klarna Pay now)         Belgium
