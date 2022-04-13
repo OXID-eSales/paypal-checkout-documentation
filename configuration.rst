@@ -48,7 +48,7 @@ Enable :productname:`PayPal Checkout` in each subshop where you want to use the 
 |Procedure|
 
 1. Choose :menuselection:`Extensions --> Modules`.
-#. Choose the module :guilabel:`PayPal Checkout for OXID` and choose :menuselection:`Overview --> Activate`.
+#. Choose the :guilabel:`PayPal Checkout for OXID` module and choose :menuselection:`Overview --> Activate`.
 
 
 |result|
