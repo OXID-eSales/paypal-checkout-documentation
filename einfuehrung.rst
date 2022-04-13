@@ -27,6 +27,8 @@ Bieten Sie mit dem :productname:`PayPal Checkout`-Modul für OXID die in folgend
 Markt             Zahlungsmethoden
 ================= ==========================
 Weltweit	      PayPal
+Weltweit	      PayPal Express
+Weltweit          PayPal - später bezahlen
 Belgien	          Bancontact
 Belgien	          Sofort (Klarna Pay now)
 Brasilien	      Boleto Bancário
@@ -69,6 +71,8 @@ Multibanco	               Portugal
 MyBank	                   Italien
 OXXO	                   Mexiko
 PayPal	                   Weltweit
+PayPal Express             Weltweit
+PayPal - später bezahlen   Weltweit
 Przelewy24	               Polen
 Rechnungskauf	           Deutschland
 Sofort (Klarna Pay now)	   Belgien
