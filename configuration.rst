@@ -97,7 +97,20 @@ Only when everything works as you want, use the credentials for *live* operation
 
 .. hint::
 
-   PayPal offers the payment method Pay upon Invoice only to store owners from Germany.
+   **Payment method credit card**.
+
+   If the activation for the payment method credit card has not been done automatically, the payment method appears as a separate :guilabel:`creditcard` button under the Paypal button.
+
+   .. image:: media/screenshots/oxdajr02.png
+       :alt: Payment method credit card
+       :class: no-shadow
+
+
+.. hint::
+
+   **Payment method Pay upon Invoice**
+
+   PayPal offers the payment method Pay upon Invoice only to shop owners from Germany.
 
 
 |result|
@@ -164,7 +177,6 @@ If you want your customers to have to register in your eShop, disable the quick 
 
 The PayPal button appears only on the checkout page.
 
-.. todo: #tbd Funktionsbeschreibung "Später bezahlen" (0301, 0'31'10)
 
 
 Login with PayPal
