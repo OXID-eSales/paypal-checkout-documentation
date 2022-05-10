@@ -63,12 +63,11 @@ Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können,
 
 Um iDEAL anbieten zu können, müssen Sie sichergestellt haben, dass Sie unter :menuselection:`Stammdaten --> Länder` die Niederlande aktiv gesetzt haben.
 
-.. todo: #Mario: Zahlungsartname PayPal v2 klären
 
-.. todo: #tbd: erläutern, wie man den Shop um neue Länder und dedizierte Unzer-Zahlungsmethoden erweitert
+
 
 .. todo: #Bild ergänzen;
-   .. image:: media/screenshots/oxdaac01.png
+   .. image:: media/screenshots/oxdajr01.png
        :alt: PayPal, Moduleinstellungen
        :class: with-shadow
        :height: 344
@@ -103,15 +102,15 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
    |br|
    Wenn die Freischaltung nicht automatisch erfolgt ist, wenden Sie sich an Ihren Ansprechpartner bei PayPal.
 
-.. todo: #Mario: welche PayPal-Kreditkarte wird bei Ablehnung als Ersatz-Kreditkarte angeboten? Was wäre die "richtge" Kreditkarte? Was ist der Unterschied?
+.. todo: #ML: :guilabel:`Kreditkarte` bei Ablehnung
 
 .. hint::
 
    **Zahlungsmethode Kreditkarte**
 
-   Wenn die Freischaltung für die Zahlungsmethode Kreditkarte nicht automatisch erfolgt ist, dann erscheint die Zahlungsmethode als separate Schaltfläche.
+   Wenn die Freischaltung für die Zahlungsmethode Kreditkarte nicht automatisch erfolgt ist, dann erscheint die Zahlungsmethode als separate Schaltfläche :guilabel:`Kreditkarte` unter der Paypal-Schaltfläche.
 
-   .. image:: media/screenshots/config-creditcard.png
+   .. image:: media/screenshots/oxdajr02.png
        :alt: Zahlungsmethode Kreditkarte
        :class: no-shadow
 
