@@ -4,8 +4,6 @@ Installation
 Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID eShop ab Version 6.2.
 
 
-.. include:: /_static/reuse/paypal-checkout-migration.rst
-
 
 |prerequisites|
 
@@ -44,6 +42,10 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
 #. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
    |br|
    Alternativ: Aktivieren Sie das Modul im Zuge der Konfiguration manuell (siehe :ref:`konfiguration:PayPal Checkout aktivieren`).
+   |br|
+   Das ist beispielsweise sinnvoll, wenn Sie bereits das Modul :productname:`PayPal` oder :productname:`PayPal Plus` nutzen.
+   |br|
+   In diesem Fall wollen Sie sicherstellen, dass die Module nur während einer Downtime zum Migrieren der Altdaten gleichzeitig aktiv sind.
 
    .. code:: bash
 

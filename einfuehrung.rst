@@ -3,7 +3,7 @@
 
 Nutzen Sie :productname:`PayPal Checkout`,
 
-* wenn Sie die Zahlungsart PayPal in Ihrem OXID eShop bisher noch nicht anbieten
+* wenn Sie die Zahlungsart PayPal in Ihrem OXID eShop bisher noch nicht anbieten.
 * wenn Sie PayPal bereits nutzen, aber vor allem internationalen Kunden ein breites Spektrum beliebter Zahlungsmethoden einschließlich Rechnungskauf anbieten wollen
 
 :productname:`PayPal Checkout` prüft und bestätigt Ihre Zahlungsanforderung in Echtzeit. Als Shop-Betreiber sind Sie deshalb gegen Zahlungsausfälle geschützt.
@@ -96,8 +96,6 @@ Sie haben das Modul PayPal?
 Wechseln Sie zu :productname:`PayPal Checkout`, um Ihren Kunden zusätzliche Zahlungsmethoden einschließlich Rechnungskauf anbieten zu können,
 die in internationalen Märkten beliebt sind.
 
-Beachten Sie jedoch, dass es in :productname:`PayPal Checkout` V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
-
 
 Sie haben das Modul PayPal PLUS?
 --------------------------------
@@ -108,7 +106,6 @@ Wechseln Sie zu :productname:`PayPal Checkout`, wenn es für Sie wichtig ist, Ih
 
 Damit können Ihre Kunden den Anmeldeprozess in Ihrem eShop überspringen und direkt beispielsweise auf der Produkt-Detailseite die Bestellung und Bezahlung starten (siehe :ref:`konfiguration:Einstellungen für die Buttonplatzierung`).
 
-Beachten Sie jedoch, dass es in :productname:`PayPal Checkout` V. 1.0 noch keinen Migrationsprozess gibt, um alte Bestellungen zu migrieren.
 
 
 .. Intern: oxdajp, Status:

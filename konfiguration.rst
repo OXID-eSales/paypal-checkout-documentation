@@ -5,7 +5,59 @@ Konfiguration
 Machen Sie das Modul :productname:`PayPal Checkout` für Ihren OXID eShop betriebsbereit.
 
 
-.. include:: /_static/reuse/paypal-checkout-migration.rst
+PayPal- oder PayPal Plus-Bestellungen verwalten
+-----------------------------------------------
+
+Wenn Sie bereits das Modul :productname:`PayPal` oder :productname:`PayPal Plus` nutzen, beachten Sie folgende Einschränkung:
+
+Um bereits existierende Bestellungen verwalten zu können, müssen beide Module, beispielsweise :productname:`PayPal Checkout` und :productname:`PayPal` gleichzeitig aktiv sein.
+
+Damit jedoch in unserem Beispiel die Zahlungsart PayPal im Frontend nicht redundant angezeigt wird, müssen Sie die :emphasis:`Zahlungsart` :guilabel:`PayPal` deaktivieren.
+
+Wir empfehlen folgendes Vorgehen.
+
+|procedure|
+
+.. tip::
+
+   Planen Sie für den Schritt des Deaktivierens der zu :productname:`PayPal`- oder :productname:`PayPal Plus` gehörende Zahlungsart eine kurze Downtime ein.
+
+1. Installieren Sie :productname:`PayPal Checkout`.
+#. Aktivieren und konfigurieren Sie :productname:`PayPal Checkout` wie im Folgenden unter :ref:`konfiguration:Grundsätzliches Vorgehen` beschrieben.
+   |br|
+   Resultat: Um Ihre Bestellungen zu verwalten, finden Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` separate Registerkarten für die Module :productname:`PayPal Checkout` und :productname:`PayPal` oder :productname:`PayPal PLUS`.
+   |br|
+   Die Bestellungen Ihres jeweiligen bereits genutzten Moduls, beispielsweise :productname:`PayPal`, können Sie auf der Registerkarte :guilabel:`PayPal Checkout` jedoch nur :emphasis:`anzeigen`.
+   |br|
+   :emphasis:`Aktionen` zur Bestellverwaltung, beispielsweise Rückerstattung, sind auf der Registerarte des betreffenden bereits installierten Moduls möglich.
+#. Schalten Sie :productname:`PayPal Checkout` für den Live-Betrieb frei wie unter :ref:`konfiguration:PayPal Checkout freischalten`.
+#. Wählen Sie :menuselection:`Shopeinstellungen --> Zahlungsarten`.
+#. Identifizieren Sie die Zahlungsarten, die zu :productname:`PayPal`- oder :productname:`PayPal Plus` gehören:
+
+   * :guilabel:`PayPal` (ID: :technicalname:`oxidpaypal`)
+   * :guilabel:`PayPal Plus` (ID: :technicalname:`payppaypalplus`)
+
+   .. hint::
+
+      Die ID wird in der linken unteren Ecke des Fensters angezeigt, wenn Sie mit der Maus über den Namen der Zahlungsart fahren.
+
+#. Deaktivieren Sie die zu :productname:`PayPal`- oder :productname:`PayPal Plus` gehörende Zahlungsart.
+   |br|
+   Dazu deaktivieren Sie auf der Registerkarte :guilabel:`Stamm` das Kontrollkästchen :guilabel:`Aktiv`.
+   |br|
+   Resultat: Das Modul :productname:`PayPal` oder :productname:`PayPal Plus` ist noch aktiv, aber die zugehörigen Zahlungsarten werden Ihren Kunden nicht mehr angeboten. Nur die Zahlungsarten von :productname:`PayPal Checkout` werden angeboten.
+   |br|
+   Sie können bereits existierende Bestellungen unter :menuselection:`Bestellungen verwalten --> Bestellungen` auf der betreffenden Registerkarte weiterhin wie gewohnt bearbeiten.
+#. Empfohlen: Sobald Sie sicher sind, dass bei bestehenden Bestellungen keine Aktionen (beispielsweise Rückerstattung) mehr nötig sein werden, deaktivieren Sie :productname:`PayPal` oder :productname:`PayPal Plus` unter :menuselection:`Erweiterungen --> Module`.
+
+   .. hint::
+
+      **Bestellungen im PayPal-Händlerkonto verwalten**
+
+      Schiefgehen kann nichts, wenn Sie :productname:`PayPal` oder :productname:`PayPal Plus` deaktivieren.
+
+      Sie können Bestellungen jederzeit in Ihrem PayPal-Händlerkonto verwalten.
+
 
 Grundsätzliches Vorgehen
 ------------------------
@@ -32,10 +84,6 @@ Grundsätzliches Vorgehen
 .. todo: #tbd: Verifizieren: Die Betriebsart :guilabel:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
 
 7. Testen Sie :productname:`PayPal Checkout` in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
-#. Wenn Sie vom Modul PayPal oder PayPal PLUS zu :productname:`PayPal Checkout` umsteigen wollen, tun Sie Folgendes:
-
-   a. Stellen Sie sicher, dass es keine offenen Bestellungen gibt.
-   b. Deaktivieren Sie das Modul PayPal oder PayPal PLUS.
 #. Schalten Sie :productname:`PayPal Checkout` frei:
 
    a. Wenn Sie noch kein Händlerkonto haben, legen Sie für den Livebetrieb eins an.
@@ -55,7 +103,7 @@ Aktivieren Sie :productname:`PayPal Checkout` in jedem Subshop, in dem Sie das M
 
 |result|
 
-Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal v2` sowie wichtige weitere Zahlungsarten, als aktiv gekennzeichnet.
+Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal v2` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
 
 Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
 
@@ -108,7 +156,7 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
 
    **Zahlungsmethode Kreditkarte**
 
-   Wenn die Freischaltung für die Zahlungsmethode Kreditkarte nicht automatisch erfolgt ist, dann erscheint die Zahlungsmethode als separate Schaltfläche :guilabel:`Kreditkarte` unter der Paypal-Schaltfläche.
+   Wenn die Freischaltung für die Zahlungsmethode Kreditkarte nicht automatisch erfolgt ist, dann erscheint die Zahlungsmethode als separate Schaltfläche :guilabel:`Kreditkarte` unter der PayPal-Schaltfläche.
 
    .. image:: media/screenshots/oxdajr02.png
        :alt: Zahlungsmethode Kreditkarte
@@ -169,7 +217,7 @@ Sie legen also fest,
 
 * ob die Kunden ohne Registrierung mit ihrem PayPal-Konto die Bestellung direkt auslösen können (Schnellkauf).
 
-**Standardmäßig** ist die Schnellkauf-Funktion aktiv, und die PayPal-Schaltfläche erscheint auf folgenden Seiten.
+:emphasis:`Standardmäßig` ist die Schnellkauf-Funktion :emphasis:`aktiv`, und die PayPal-Schaltfläche erscheint auf folgenden Seiten:
 
 * auf der Produkt-Detailseite
 * im Warenkorb
@@ -213,7 +261,7 @@ Nachteile:
   |br|
   Einer der Partner könnte dadurch die Bestellhistorie oder andere Kundendaten des Partner im OXID eShop einsehen.
   |br|
-  Potentiell besteht also ein Datenschutz-Risiko.
+  Potenziell besteht also ein Datenschutz-Risiko.
 * Müssen sich Ihre Kunden nicht in Ihrem eShop anmelden, gehen Ihnen Daten zur Bestellhistorie der Kunden verloren.
   |br|
   Solche Daten könnten Sie andernfalls für statistische Auswertungen zur gezielten Ansprache Ihrer Kunden nutzen.
@@ -247,12 +295,34 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
 3. Speichern Sie Ihre Einstellungen.
 
 
-Banner-Einstellungen
-^^^^^^^^^^^^^^^^^^^^
+Banner-Einstellungen übernehmen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Optional: Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung werben wollen.
+Optional: Wenn Sie bereits das Modul :productname:`PayPal` nutzen, übernehmen Sie bequem die Bannereinstellungen für :productname:`PayPal Checkout`.
 
-Wenn Sie die Vorteile nutzen wollen, legen Sie fest, wo die Banner erscheinen sollen, beispielsweise auf der Startseite, auf der Detailseite von Artikeln, auf den Kategorieseiten, in den Suchergebnissen und/oder im Bestellprozess.
+Alternativ: Legen Sie die Bannereinstellungen manuell fest wie beschrieben unter :ref:`konfiguration:Banner-Einstellungen festlegen`.
+
+|prerequisites|
+
+:productname:`PayPal` ist installiert.
+
+.. todo: #ML oder auch aktiviert?
+
+|procedure|
+
+1. Um die bestehende Einstellungen für die PayPal-Bannerwerbung zu übernehmen, wählen Sie die Schaltfläche :guilabel:`Einstellungen` aus dem klassischen PayPal-Modul übernehmen`.
+   |br|
+   Die Schaltfläche erscheint nur, wenn das Modul :productname:`PayPal` installiert ist.
+#. Speichern Sie Ihre Einstellungen.
+
+
+
+Banner-Einstellungen festlegen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung werben wollen.
+
+Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, legen Sie fest, wo die Banner erscheinen sollen, beispielsweise auf der Startseite, auf der Detailseite von Artikeln, auf den Kategorieseiten, in den Suchergebnissen und/oder im Bestellprozess.
 
 .. attention::
 
@@ -308,11 +378,10 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:
 
    a. Weisen Sie die gewünschten :productname:`PayPal Checkout`-Zahlungsarten den jeweiligen Versandarten zu.
-   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der Zahlungsart :guilabel:`PayPal v2` angelegt ist.
+   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der Zahlungsart :guilabel:`PayPal` angelegt ist.
       |br|
       Typischerweise ist das die Standard-Zahlungsart.
 
-.. todo: #tbd: prüfen Zahlungsart :guilabel:`PayPal` oder PP v2?
 .. todo: #tbd: prüfen: Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/6.0/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
 
 
@@ -333,7 +402,7 @@ Sie haben die gewünschten Zahlungsarten konfiguriert und mit Testzahlungen in d
    Sie gelangen in ein Dialogfenster zum Anmelden bei PayPal.
 #. Melden Sie sich mit Ihrem bestehenden PayPal-Händlerkonto an. Wenn Sie noch keine Zugangsdaten für den Live-Betrieb haben, legen Sie ein PayPal-Händlerkonto neu an.
 #. Speichern Sie Ihre Einstellungen.
-
+#. Wenn Sie :productname:`PayPal` oder :productname:`PayPal Plus` nutzen, folgen Sie den Empfehlungen unter :ref:`konfiguration:PayPal- oder PayPal Plus-Bestellungen verwalten`.
 
 |result|
 

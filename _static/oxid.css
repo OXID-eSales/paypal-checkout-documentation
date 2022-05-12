@@ -68,6 +68,16 @@ h1 {
     padding: 0;
 }
 
+.rst-content .technicalname {
+    border: 0;
+    background: none;
+    color: black;
+    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0;
+}
+
 .rst-content .docutils{
     padding: 0;
 }
