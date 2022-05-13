@@ -317,7 +317,6 @@ Alternativ: Legen Sie die Bannereinstellungen manuell fest wie beschrieben unter
 #. Speichern Sie Ihre Einstellungen.
 
 
-
 Banner-Einstellungen festlegen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
