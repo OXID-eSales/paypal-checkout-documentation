@@ -112,7 +112,7 @@ To actually use a certain country-specific payment method, you must have marked 
 
 To be able to offer iDEAL, you must have made sure that you have set the Netherlands as active under :menuselection:`Master Settings --> Countries`.
 
-.. todo: #Mario: Zahlungsartname PayPal v2 klären
+.. todo: #ML: Zahlungsartname PayPal v2 klären
 
 .. todo: #Bild ergänzen;
    .. image:: media/screenshots/oxdaac01.png
