@@ -20,12 +20,14 @@ Wir empfehlen folgendes Vorgehen.
 
 .. tip::
 
-   Planen Sie für den Schritt des Deaktivierens der zu :productname:`PayPal`- oder :productname:`PayPal Plus` gehörende Zahlungsart eine kurze Downtime ein.
+   **Downtime einplanen**
+
+   Planen Sie für den Schritt des Deaktivierens der zu :productname:`PayPal`- oder :productname:`PayPal Plus` gehörenden Zahlungsart eine kurze Downtime ein.
 
 1. Installieren Sie :productname:`PayPal Checkout`.
 #. Aktivieren und konfigurieren Sie :productname:`PayPal Checkout` wie im Folgenden unter :ref:`konfiguration:Grundsätzliches Vorgehen` beschrieben.
    |br|
-   Resultat: Um Ihre Bestellungen zu verwalten, finden Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` separate Registerkarten für die Module :productname:`PayPal Checkout` und :productname:`PayPal` oder :productname:`PayPal PLUS`.
+   Resultat: Um Ihre Bestellungen zu verwalten, finden Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` separate Registerkarten für die Module :productname:`PayPal Checkout` und :productname:`PayPal` oder :productname:`PayPal Plus`.
    |br|
    Die Bestellungen Ihres jeweiligen bereits genutzten Moduls, beispielsweise :productname:`PayPal`, können Sie auf der Registerkarte :guilabel:`PayPal Checkout` jedoch nur :emphasis:`anzeigen`.
    |br|
