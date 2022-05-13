@@ -31,10 +31,10 @@ Wir empfehlen folgendes Vorgehen.
    |br|
    Die Bestellungen Ihres jeweiligen bereits genutzten Moduls, beispielsweise :productname:`PayPal`, können Sie auf der Registerkarte :guilabel:`PayPal Checkout` jedoch nur :emphasis:`anzeigen`.
    |br|
-   :emphasis:`Aktionen` zur Bestellverwaltung, beispielsweise Rückerstattung, sind auf der Registerarte des betreffenden bereits installierten Moduls möglich.
+   :emphasis:`Aktionen` zur Bestellverwaltung, beispielsweise Rückerstattung, sind nur auf der Registerarte des Zahlungsmoduls möglich, das Sie bisher genutzt haben, beispielsweise :productname:`PayPal`.
 #. Schalten Sie :productname:`PayPal Checkout` für den Live-Betrieb frei wie unter :ref:`konfiguration:PayPal Checkout freischalten`.
 #. Wählen Sie :menuselection:`Shopeinstellungen --> Zahlungsarten`.
-#. Identifizieren Sie die Zahlungsarten, die zu :productname:`PayPal`- oder :productname:`PayPal Plus` gehören:
+#. Identifizieren Sie die Zahlungsarten, die zu :productname:`PayPal` oder :productname:`PayPal Plus` gehören:
 
    * :guilabel:`PayPal` (ID: :technicalname:`oxidpaypal`)
    * :guilabel:`PayPal Plus` (ID: :technicalname:`payppaypalplus`)
@@ -43,7 +43,7 @@ Wir empfehlen folgendes Vorgehen.
 
       Die ID wird in der linken unteren Ecke des Fensters angezeigt, wenn Sie mit der Maus über den Namen der Zahlungsart fahren.
 
-#. Deaktivieren Sie die zu :productname:`PayPal`- oder :productname:`PayPal Plus` gehörende Zahlungsart.
+#. Deaktivieren Sie die zu :productname:`PayPal` oder :productname:`PayPal Plus` gehörende Zahlungsart.
    |br|
    Dazu deaktivieren Sie auf der Registerkarte :guilabel:`Stamm` das Kontrollkästchen :guilabel:`Aktiv`.
    |br|
@@ -378,7 +378,7 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:
 
    a. Weisen Sie die gewünschten :productname:`PayPal Checkout`-Zahlungsarten den jeweiligen Versandarten zu.
-   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der Zahlungsart :guilabel:`PayPal` angelegt ist.
+   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der Zahlungsart :guilabel:`PayPal v2` angelegt ist.
       |br|
       Typischerweise ist das die Standard-Zahlungsart.
 
