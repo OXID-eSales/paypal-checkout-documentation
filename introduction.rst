@@ -96,20 +96,14 @@ You have the PayPal module?
 Switch to :productname:`PayPal Checkout` to offer your customers additional payment methods including purchase on account,
 which are popular in international markets.
 
-However, note that in :productname:`PayPal Checkout` V. 1.0 there is no migration process yet to migrate open orders.
-
-
-
-You have the PayPal PLUS module?
+You have the PayPal Plus module?
 --------------------------------
 
-The API of PayPal PLUS is outdated. PayPal does not develop the API and does not offer new contracts for it.
+The API of PayPal Plus is outdated. PayPal does not develop the API and does not offer new contracts for it.
 
 Switch to :productname:`PayPal Checkout` if it is important for you to offer your customers the quick purchase feature of :productname:`PayPal Checkout`.
 
 This allows your customers to skip the registration process in your eShop and start ordering and paying directly on the product detail page, for example (see :ref:`configuration:Button placement settings`).
-
-Note, however, that in :productname:`PayPal Checkout` V. 1.0 there is no migration process yet to migrate open orders.
 
 
 

@@ -4,11 +4,66 @@ Configuration
 
 Make the :productname:`PayPal Checkout` module operational for your OXID eShop.
 
+Administering PayPal or PayPal Plus orders
+------------------------------------------
 
-.. include:: /_static/reuse/paypal-checkout-migration.rst
+If you already use :productname:`PayPal` or :productname:`PayPal Plus` module, please note the following limitation:
+
+To manage existing orders, both modules, :productname:`PayPal Checkout` and :productname:`PayPal` for example, must be active at the same time.
+
+However, to prevent that, in our example, the PayPal payment method redundantly displayed in the frontend, you must deactivate the :emphasis:`payment method` :guilabel:`PayPal`.
+
+We recommend the following procedure.
+
+|procedure|
+
+.. tip::
+
+   **Scheduling a downtime**
+
+   Schedule a short downtime for the step of deactivating the payment method belonging to :productname:`PayPal` or :productname:`PayPal Plus`.
+
+.. todo: #tbd: check navig paths
+
+1. Install :productname:`PayPal Checkout`.
+#. Activate and configure :productname:`PayPal Checkout` as described below under :ref:`configuration:Basic procedure`.
+   |br|
+   Result: To manage your orders, under :menuselection:`Administer Orders --> Orders`, you will find separate tabs for the :productname:`PayPal Checkout` and :productname:`PayPal` or :productname:`PayPal Plus` modules.
+   |br|
+   However, on the :guilabel:`PayPal Checkout` tab, you can only :emphasis:`display` the orders of your respective module already in use, :productname:`PayPal`, for example.
+   |br|
+   :emphasis:`Actions` for order management, for example refunds, are only possible on the tab corresponding to the payment module you have used, :productname:`PayPal`, for example.
+#. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout`.
+#. Select :menuselection:`Shop Settings --> Payment Methods`.
+#. Identify the payment methods corresponding to :productname:`PayPal` or :productname:`PayPal Plus`:
+
+   * :guilabel:`PayPal` (ID: :technicalname:`oxidpaypal`)
+   * :guilabel:`PayPal Plus` (ID: :technicalname:`payppaypalplus`)
+
+   .. hint::
+
+      The ID is displayed in the lower left corner of the window when you hover over the payment type name.
+
+#. Disable the payment type corresponding to :productname:`PayPal` or :productname:`PayPal Plus`.
+   |br|
+   To do this, on the :guilabel:`Main` tab, uncheck the :guilabel:`Active` checkbox.
+   |br|
+   Result: The :productname:`PayPal` or :productname:`PayPal Plus` module is still active, but the associated payment methods are no longer offered to your customers. Only the payment methods of :productname:`PayPal Checkout` are offered.
+   |br|
+   You can still edit existing orders as usual under :menuselection:`Administer Orders --> Orders` on the tab corresponding to the payment module.
+#. Recommended: As soon as you are sure that existing orders will no longer require any actions (refunds, for example), under :menuselection:`Extensions --> Modules` disable :productname:`PayPal` or :productname:`PayPal Plus`.
+
+   .. hint::
+
+      **Administering orders in the PayPal merchant account**
+
+      Nothing can go wrong if you deactivate :productname:`PayPal` or :productname:`PayPal Plus`.
+
+      You can always manage existing orders in your PayPal merchant account.
+
 
 Basic procedure
-------------------------
+---------------
 
 1. Activate the module.
    |br|
@@ -30,10 +85,6 @@ Basic procedure
       Note: The :guilabel:`Sandbox` mode is set by default after enabling.
 
 #. Test :productname:`PayPal Checkout` in the PayPal sandbox and adjust the configuration until all payment processes works as you want.
-#. If you want to switch from the PayPal or PayPal PLUS module to :productname:`PayPal Checkout`, do the following:
-
-   a. Make sure there are no open orders.
-   b. Disable the PayPal or PayPal PLUS module.
 #. Enable :productname:`PayPal Checkout`:
 
    a. If you do not have a merchant account yet, create one for live operation.
@@ -55,7 +106,7 @@ Enable :productname:`PayPal Checkout` in each subshop where you want to use the 
 
 Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal v2` as well as important additional payment methods, are marked as active.
 
-In order to actually use a certain country-specific payment method, you must have marked the respective country as active under :menuselection:`Master Settings --> Countries`.
+To actually use a certain country-specific payment method, you must have marked the respective country as active under :menuselection:`Master Settings --> Countries`.
 
 |example|
 
@@ -158,7 +209,7 @@ So, you determine,
 
 * whether customers can directly trigger the order without registering with their PayPal account (quick purchase).
 
-**By default**, the Quick Purchase feature is active, and the PayPal button appears on the following pages:
+:emphasis:`By default`, the Quick Purchase feature is :emphasis:`active`, and the PayPal button appears on the following pages:
 
 * on the product detail page
 * in the shopping cart
@@ -235,13 +286,34 @@ If you do :emphasis:`not` enable :guilabel:`Login with PayPal`, the following ha
 #. Save your settings.
 
 
+Banner settings: re-use
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Optional: If you already use the :productname:`PayPal` module, conveniently re-use your banner settings for :productname:`PayPal Checkout`.
+
+Alternatively, set the banner settings manually as described below under :ref:`configuration:Banner Settings`.
+
+|prerequisites|
+
+:productname:`PayPal` is activated.
+
+
+|procedure|
+
+.. todo #ML: verify button name
+
+1. To apply the existing PayPal banner advertising settings, choose the :guilabel:`Apply settings from the classic PayPal module` button.
+   |br|
+   The button appears only if the :productname:`PayPal` module is still activated.
+#. Save your settings.
+
+
 Banner settings
 ^^^^^^^^^^^^^^^
 
 Optional: specify whether you want to advertise PayPal installments with banners.
 
-
-If you want to take advantage of it, specify where you want the banners to appear, for example, on the home page, on the detail page of items, on category pages, in search results, and/or in the checkout process.
+If you want to take advantage of advertising PayPal installments, specify where you want the banners to appear, for example, on the home page, on the detail page of items, on category pages, in search results, and/or in the checkout process.
 
 .. attention::
 
@@ -321,6 +393,7 @@ You have configured the desired payment methods and tested them successfully wit
    A dialog box for logging in to PayPal appears.
 #. Log in with your existing PayPal merchant account. If you don't have a live login yet, create a new PayPal merchant account.
 #. Save your settings.
+#. If you use :productname:`PayPal` or :productname:`PayPal Plus`, follow the recommendations under :ref:`configuration:Administering PayPal or PayPal Plus orders`.
 
 
 |result|
