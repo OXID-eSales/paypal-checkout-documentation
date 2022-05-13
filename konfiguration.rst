@@ -306,9 +306,8 @@ Alternativ: Legen Sie die Bannereinstellungen manuell fest wie beschrieben unter
 
 |prerequisites|
 
-:productname:`PayPal` ist installiert.
+:productname:`PayPal` ist aktiviert.
 
-.. todo: #ML oder auch aktiviert?
 
 |procedure|
 
