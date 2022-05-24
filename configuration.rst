@@ -9,7 +9,7 @@ Administering PayPal or PayPal Plus orders
 
 If you already use :productname:`PayPal` or :productname:`PayPal Plus` module, please note the following limitation:
 
-To manage existing orders, both modules, :productname:`PayPal Checkout` and :productname:`PayPal` for example, must be active at the same time.
+To administer existing orders, both modules, :productname:`PayPal Checkout` and :productname:`PayPal` for example, must be active at the same time.
 
 However, to prevent that, in our example, the PayPal payment method redundantly displayed in the frontend, you must deactivate the :emphasis:`payment method` :guilabel:`PayPal`.
 
@@ -28,11 +28,26 @@ We recommend the following procedure.
 1. Install :productname:`PayPal Checkout`.
 #. Activate and configure :productname:`PayPal Checkout` as described below under :ref:`configuration:Basic procedure`.
    |br|
-   Result: To manage your orders, under :menuselection:`Administer Orders --> Orders`, you will find separate tabs for the :productname:`PayPal Checkout` and :productname:`PayPal` or :productname:`PayPal Plus` modules.
-   |br|
-   However, on the :guilabel:`PayPal Checkout` tab, you can only :emphasis:`display` the orders of your respective module already in use, :productname:`PayPal`, for example.
-   |br|
-   :emphasis:`Actions` for order management, for example refunds, are only possible on the tab corresponding to the payment module you have used, :productname:`PayPal`, for example.
+   Result: To administer your orders, under :menuselection:`Administer Orders --> Orders` you will find separate tabs for :productname:`PayPal Checkout` and for :productname:`PayPal` or :productname:`PayPal Plus` (depending on which of the two modules you use).
+
+   .. note::
+
+      **Administering orders in PayPal merchant account**
+
+      Nothing can go wrong if you disable :productname:`PayPal` or :productname:`PayPal Plus` as described below.
+
+      You can administer orders in your PayPal merchant account at any time.
+
+      **Technical dependencies**
+
+      On the separate tab for :productname:`PayPal` or :productname:`PayPal Plus` you can :emphasis:`edit` your old orders until you deactivate your previously used module.
+
+      Once you deactivate your previously used module, you can still :emphasis:`view` your old orders on the :guilabel:`PayPal Checkout` tab, but :emphasis:`not` edit them.
+
+      If you clean up your system after deactivating your previously used module and therefore also delete the module's database, your old orders will also no longer be displayed on the :guilabel:`PayPal Checkout` tab.
+
+      After deleting the database, you will still be able to view and administer the old orders in your PayPal merchant account.
+
 #. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout`.
 #. Select :menuselection:`Shop Settings --> Payment Methods`.
 #. Identify the payment methods corresponding to :productname:`PayPal` or :productname:`PayPal Plus`:
@@ -52,15 +67,6 @@ We recommend the following procedure.
    |br|
    You can still edit existing orders as usual under :menuselection:`Administer Orders --> Orders` on the tab corresponding to the payment module.
 #. Recommended: As soon as you are sure that existing orders will no longer require any actions (refunds, for example), under :menuselection:`Extensions --> Modules` disable :productname:`PayPal` or :productname:`PayPal Plus`.
-
-   .. hint::
-
-      **Administering orders in the PayPal merchant account**
-
-      Nothing can go wrong if you deactivate :productname:`PayPal` or :productname:`PayPal Plus`.
-
-      You can always manage existing orders in your PayPal merchant account.
-
 
 Basic procedure
 ---------------
