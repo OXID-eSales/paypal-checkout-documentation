@@ -9,7 +9,7 @@ Administering PayPal or PayPal Plus orders
 
 If you already use the :productname:`PayPal` or :productname:`PayPal Plus` module, please note the following limitation:
 
-To manage existing orders, both modules, :productname:`PayPal Checkout` and :productname:`PayPal` for example, must be active at the same time.
+To administer existing orders, both modules, :productname:`PayPal Checkout` and :productname:`PayPal` for example, must be active at the same time.
 
 However, to prevent that, in our example, the PayPal payment method redundantly displayed in the frontend, you must deactivate the :emphasis:`payment method` :guilabel:`PayPal`.
 
@@ -28,15 +28,15 @@ We recommend the following procedure.
 1. Install :productname:`PayPal Checkout`.
 #. Activate and configure :productname:`PayPal Checkout` as described below under :ref:`configuration:Basic procedure`.
    |br|
-   Result: To manage your orders, under :menuselection:`Manage Orders --> Orders` you will find separate tabs for :productname:`PayPal Checkout` and for :productname:`PayPal` or :productname:`PayPal Plus` (depending on which of the two modules you use).
+   Result: To administer your orders, under :menuselection:`Administer Orders --> Orders` you will find separate tabs for :productname:`PayPal Checkout` and for :productname:`PayPal` or :productname:`PayPal Plus` (depending on which of the two modules you use).
 
    .. note::
 
-      **Manage orders in PayPal merchant account**
+      **Administering orders in PayPal merchant account**
 
       Nothing can go wrong if you disable :productname:`PayPal` or :productname:`PayPal Plus` as described below.
 
-      You can manage orders in your PayPal merchant account at any time.
+      You can administer orders in your PayPal merchant account at any time.
 
       **Technical dependencies**
 
@@ -46,7 +46,7 @@ We recommend the following procedure.
 
       If you clean up your system after deactivating your previously used module and therefore also delete the module's database, your old orders will also no longer be displayed on the :guilabel:`PayPal Checkout` tab.
 
-      After deleting the database, you will still be able to view and manage the old orders in your PayPal merchant account.
+      After deleting the database, you will still be able to view and administer the old orders in your PayPal merchant account.
 
 
 #. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout`.
