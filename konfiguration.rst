@@ -22,16 +22,31 @@ Wir empfehlen folgendes Vorgehen.
 
    **Downtime einplanen**
 
-   Planen Sie für den Schritt des Deaktivierens der zu :productname:`PayPal`- oder :productname:`PayPal Plus` gehörenden Zahlungsart eine kurze Downtime ein.
+   Planen Sie für den Schritt des Deaktivierens der zu :productname:`PayPal` oder :productname:`PayPal Plus` gehörenden Zahlungsart eine kurze Downtime ein.
 
 1. Installieren Sie :productname:`PayPal Checkout`.
 #. Aktivieren und konfigurieren Sie :productname:`PayPal Checkout` wie im Folgenden unter :ref:`konfiguration:Grundsätzliches Vorgehen` beschrieben.
    |br|
-   Resultat: Um Ihre Bestellungen zu verwalten, finden Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` separate Registerkarten für die Module :productname:`PayPal Checkout` und :productname:`PayPal` oder :productname:`PayPal Plus`.
-   |br|
-   Die Bestellungen Ihres jeweiligen bereits genutzten Moduls, beispielsweise :productname:`PayPal`, können Sie auf der Registerkarte :guilabel:`PayPal Checkout` jedoch nur :emphasis:`anzeigen`.
-   |br|
-   :emphasis:`Aktionen` zur Bestellverwaltung, beispielsweise Rückerstattung, sind nur auf der Registerarte des Zahlungsmoduls möglich, das Sie bisher genutzt haben, beispielsweise :productname:`PayPal`.
+   Resultat: Um Ihre Bestellungen zu verwalten, finden Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` separate Registerkarten für die Module :productname:`PayPal Checkout` sowie für :productname:`PayPal` oder :productname:`PayPal Plus` (je nach dem, welches der beiden Module Sie nutzen).
+
+   ..  note::
+
+       **Bestellungen im PayPal-Händlerkonto verwalten**
+
+       Schiefgehen kann nichts, wenn Sie wie im Folgenden beschrieben :productname:`PayPal` oder :productname:`PayPal Plus` deaktivieren.
+
+       Sie können Bestellungen jederzeit in Ihrem PayPal-Händlerkonto verwalten.
+
+       **Technische Abhängigkeiten**
+
+       Auf der separaten Registerkarte für :productname:`PayPal` oder :productname:`PayPal Plus` können Sie Ihre alten Bestellungen so lange :emphasis:`bearbeiten`, bis Sie Ihr bisher genutztes Modul deaktivieren.
+
+       Sobald Sie Ihr bisher genutztes Modul deaktivieren, können Sie Ihre alten Bestellungen auf der Registerkarte :guilabel:`PayPal Checkout` noch :emphasis:`anzeigen`, aber :emphasis:`nicht` bearbeiten.
+
+       Wenn Sie nach dem Deaktivieren Ihres bisher genutzten Moduls Ihr System aufräumen und deshalb auch die Datenbank des Moduls löschen, werden Ihre alten Bestellungen auch auf der Registerkarte :guilabel:`PayPal Checkout` nicht mehr angezeigt.
+
+       Nach dem Löschen der Datenbank können Sie Ihre alten Bestellungen weiterhin im PayPal-Händlerkonto anzeigen und verwalten.
+
 #. Schalten Sie :productname:`PayPal Checkout` für den Live-Betrieb frei wie unter :ref:`konfiguration:PayPal Checkout freischalten`.
 #. Wählen Sie :menuselection:`Shopeinstellungen --> Zahlungsarten`.
 #. Identifizieren Sie die Zahlungsarten, die zu :productname:`PayPal` oder :productname:`PayPal Plus` gehören:
@@ -52,13 +67,6 @@ Wir empfehlen folgendes Vorgehen.
    Sie können bereits existierende Bestellungen unter :menuselection:`Bestellungen verwalten --> Bestellungen` auf der betreffenden Registerkarte weiterhin wie gewohnt bearbeiten.
 #. Empfohlen: Sobald Sie sicher sind, dass bei bestehenden Bestellungen keine Aktionen (beispielsweise Rückerstattung) mehr nötig sein werden, deaktivieren Sie :productname:`PayPal` oder :productname:`PayPal Plus` unter :menuselection:`Erweiterungen --> Module`.
 
-   .. hint::
-
-      **Bestellungen im PayPal-Händlerkonto verwalten**
-
-      Schiefgehen kann nichts, wenn Sie :productname:`PayPal` oder :productname:`PayPal Plus` deaktivieren.
-
-      Sie können Bestellungen jederzeit in Ihrem PayPal-Händlerkonto verwalten.
 
 
 Grundsätzliches Vorgehen
