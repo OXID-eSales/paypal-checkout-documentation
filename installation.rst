@@ -4,7 +4,6 @@ Installation
 Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID eShop ab Version 6.2.
 
 
-
 |prerequisites|
 
 * Sie haben den OXID eShop 6.2 oder höher installiert.
@@ -47,14 +46,19 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
 
       ./vendor/bin/oe-console oe:module:activate osc_paypal
 
-#. Bestätigen Sie die Abfragen.
 
 |result|
 
-Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel:`PayPal Checkout für OXID` im Administrationsbereich unter :menuselection:`Erweiterungen --> Module`.
+Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel:`PayPal Checkout für OXID` im Administrationsbereich unter :menuselection:`Erweiterungen --> Module` (:ref:`oxdajq01`).
 
+.. _oxdajq01:
 
-.. todo: #tbd Bild ergänzen
+.. figure:: /media/screenshots/oxdajq01.png
+   :alt: PayPal Checkout für OXID erf0lgreich installiert
+
+   Abb.: PayPal Checkout für OXID erfolgreich installiert
+
+.. todo: #tbd Bild ergänzen EN
 
 
 Nächster Schritt: Um :productname:`PayPal Checkout` zu konfigurieren, wählen Sie :guilabel:`Weiter`.

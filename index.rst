@@ -15,8 +15,11 @@ Moduldokumentation
    Installation <installation>
    Konfiguration <konfiguration>
 ..
-   Funktionsbeschreibung <funktionsbeschreibung/index>
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/paypal/blob/v6.2.1/CHANGELOG.md>
+
+.. image:: media/Hero_Visual.png
+    :alt: Bezahlen mit PayPal Checkout
+    :class: no-shadow
 
 .. image:: media/icons/home.png
    :width: 0 px

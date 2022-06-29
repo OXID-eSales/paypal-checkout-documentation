@@ -1,12 +1,47 @@
 Konfiguration
 =============
 
-
 Machen Sie das Modul :productname:`PayPal Checkout` für Ihren OXID eShop betriebsbereit.
 
+Sie haben bereits PayPal oder PayPal Plus?
+------------------------------------------
 
-PayPal- oder PayPal Plus-Bestellungen verwalten
------------------------------------------------
+Sorgen Sie für einen reibungslosen beim Übergang zum neuen Modul :productname:`PayPal Checkout`.
+
+Beachten Sie dazu die beiden folgenden Einschränkungen:
+
+* Sie können :productname:`PayPal Checkout` nicht mit Ihren :productname:`PayPal Plus`-Zugangsdaten betreiben.
+  |br|
+  Folgen Sie den Anweisungen unter :ref:`konfiguration:Registrierung für PayPal Checkout neu durchlaufen`.
+* Um bereits existierende Bestellungen verwalten zu können, müssen beide Module, beispielsweise :productname:`PayPal Checkout` und :productname:`PayPal`, gleichzeitig aktiv sein.
+  |br|
+  Folgen Sie den Anweisungen unter :ref:`konfiguration:Existierende PayPal- oder PayPal Plus-Bestellungen verwalten`.
+
+Registrierung für PayPal Checkout neu durchlaufen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn Sie :productname:`PayPal Plus` haben, beachten Sie Folgendes:
+
+Die Zugangsdaten und der Anmeldeprozess von :productname:`PayPal Checkout` sind äußerlich ähnlich wie bei :productname:`PayPal Plus`.
+
+Lassen Sie sich dadurch jedoch nicht dazu verleiten, die Zugangsdaten von :productname:`PayPal Plus` wiederzuverwenden.
+
+Dies würde zu folgenden Enttäuschungen führen:
+
+* Die Webhooks werden nicht korrekt aktiviert, Informationen werden nicht korrekt übermittelt, ohne dass jedoch die Fehler sofort erkennbar sind.
+* Zahlungsarten wie Ratenkauf stehen nicht zur Verfügung, die Zahlung mit Kreditkarte wird nicht freigeschaltet.
+
+|procedure|
+
+Tun Sie Folgendes:
+
+1. Testen Sie :productname:`PayPal Checkout` in der PayPal-Sandbox mit :emphasis:`Test`-Konten wie beschrieben unter :ref:`konfiguration:PayPal Checkout konfigurieren`.
+#. Generieren Sie für das Freischalten Ihres :emphasis:`Live`-Systems die Zugangsdaten neu.
+   |br|
+   Durchlaufen Sie dazu den PayPal-Registrierungs-Prozess mit Ihren PayPal-Geschäftskontodaten erneut.
+
+Existierende PayPal- oder PayPal Plus-Bestellungen verwalten
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wenn Sie bereits das Modul :productname:`PayPal` oder :productname:`PayPal Plus` nutzen, beachten Sie folgende Einschränkung:
 
@@ -14,9 +49,9 @@ Um bereits existierende Bestellungen verwalten zu können, müssen beide Module,
 
 Damit jedoch in unserem Beispiel die Zahlungsart PayPal im Frontend nicht redundant angezeigt wird, müssen Sie die :emphasis:`Zahlungsart` :guilabel:`PayPal` deaktivieren.
 
-Wir empfehlen folgendes Vorgehen.
-
 |procedure|
+
+Wir empfehlen folgendes Vorgehen.
 
 .. tip::
 
@@ -76,9 +111,13 @@ Grundsätzliches Vorgehen
 1. Aktivieren Sie das Modul.
    |br|
    Die wichtigsten Zahlungsmethoden sind damit automatisch aktiviert.
-#. Stellen Sie die Verbindung zu Ihrem PayPal-Händlerkonto her.
-   |br|
-   Erstellen Sie zum Testen zunächst nur ein Testkonto (PayPal Sandbox).
+#. Stellen Sie über einen Webhook die Verbindung zu PayPal her.
+
+   .. attention::
+
+      * Benutzen Sie zum Herstellen der Verbindung nicht die Zugangsdaten für :productname:`PayPal Plus`.
+      * Testen Sie :productname:`PayPal Plus` zunächst in der PayPal-Sandbox.
+
 #. Optional: Deaktivieren Sie bei Bedarf die Express-Checkout-Funktion von :productname:`PayPal Checkout`.
 #. Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen.
 #. Konfigurieren Sie die von :productname:`PayPal Checkout` bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
@@ -87,14 +126,7 @@ Grundsätzliches Vorgehen
    * Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln.
 
 #. Führen Sie Testzahlungen in der :productname:`PayPal Checkout`-Sandbox aus.
-
-   .. hint::
-
-      Hinweis: Die Betriebsart :guilabel:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
-
-.. todo: #tbd: Verifizieren: Die Betriebsart :guilabel:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
-
-7. Testen Sie :productname:`PayPal Checkout` in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
+#. Testen Sie :productname:`PayPal Checkout` in der PayPal-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
 #. Schalten Sie :productname:`PayPal Checkout` frei:
 
    a. Wenn Sie noch kein Händlerkonto haben, legen Sie für den Livebetrieb eins an.
@@ -104,7 +136,7 @@ Grundsätzliches Vorgehen
 PayPal Checkout aktivieren
 --------------------------
 
-Aktivieren Sie :productname:`PayPal Checkout` in jedem Subshop, in dem Sie das Modul nutzen wollen.
+Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktiviert ist, in dem Sie das Modul nutzen wollen.
 
 |procedure|
 
@@ -114,23 +146,13 @@ Aktivieren Sie :productname:`PayPal Checkout` in jedem Subshop, in dem Sie das M
 
 |result|
 
-Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal v2` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
+Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
 
 Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
 
 |example|
 
 Um iDEAL anbieten zu können, müssen Sie sichergestellt haben, dass Sie unter :menuselection:`Stammdaten --> Länder` die Niederlande aktiv gesetzt haben.
-
-
-
-
-.. todo: #Bild ergänzen;
-   .. image:: media/screenshots/oxdajr01.png
-       :alt: PayPal, Moduleinstellungen
-       :class: with-shadow
-       :height: 344
-       :width: 650
 
 
 PayPal Checkout konfigurieren
@@ -149,19 +171,94 @@ Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit 
 
 Im ersten Durchgang testen Sie die mit :productname:`PayPal Checkout` bereitgestellten Zahlungsarten mit Test-Zugangsdaten in einer *Sandbox*.
 
+.. hint::
+
+   **Was bringt mir das Testen in der Sandbox?**
+
+   `sandbox.paypal.com` ist ein Spiegel-System.
+   |br|
+   Alle Funktionen und die API sind identisch zu `sandbox.paypal.com`.
+
+   Das heißt: Jeden Fehler, den Sie hier erzeugen können, wird es auch im Live-System geben.
+   |br|
+   Umgekehrt: Jeder nicht erzeugte Fehler tritt auch im Produktions-System nicht auf.
+
+   Testen Sie Ihre :productname:`PayPal Checkout`-Integration deshalb zuerst mit einem Sandbox-System.
+
+   Es kann nichts schiefgehen:
+
+   * Testzahlungen in der Sandbox kosten nichts.
+   * Sie vermeiden Rückbuchungen wie sie bei Testzahlungen mit dem Live-Konto nötig wären.
+
 Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdaten für den *Live*-betrieb.
+
+|prerequisites|
+
+* Sie haben auf der Entwickler-Seite von PayPal ein Sandbox-Händlerkonto und ein Sandbox-Kundenkonto eingerichtet.
+  |br|
+  Weitere Informationen finden Sie unter :ref:`paypal-sandbox:PayPal-Sandbox-Accounts generieren`.
+
+* Ihre Testumgebung hat SSL.
+  |br|
+  Wenn Sie :productname:`PayPal Checkout` in einer lokalen Entwicklungs-Umgebung testen, die nur über :technicalname:`http://` erreichbar ist (also :emphasis:`ohne SSL` über :technicalname:`https://`), dann benutzen Sie beispielsweise NGROK, um Ihre Testumgebung mit temporärem SSL auszustatten.
+  |br|
+  Weitere Informationen finden Sie unter :ref:`paypal-sandbox:Temporäres SSL einrichten`.
 
 
 |procedure|
 
+Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess ist analog.
 
-1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
-#. Durchlaufen Sie den Registrierungs-Prozess.
-#. Wenn Sie die Zahlungsmethoden Rechnungskauf oder Kreditkarte nutzen wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt`, ob die Freischaltung erfolgt ist.
+1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Händler PayPal-Integration (Sandbox) im neuen Fenster starten`.
+#. Wählen Sie :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
+#. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
+
+   a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
+
+      .. todo: #tbd: screenshot EN
+
+      .. _oxdajr01:
+
+      .. figure:: /media/screenshots/oxdajr01.png
+         :alt: Registrierung des Sandbox-Händler-Kontos starten
+
+         Abb.: Registrierung des Sandbox-Händler-Kontos starten
+
+   #. Wählen Sie zum Abschluss :guilabel:`Zurück zu John Doe`s Test Store` (:ref:`oxdajr03`).
+
+      .. _oxdajr03:
+
+      .. figure:: /media/screenshots/oxdajr03.png
+         :alt: Registrierung des Händlerkontos abschließen
+
+         Abb.: Registrierung des Händlerkontos abschließen
+
+      Eine Meldung zeigt den Erfolg an (:ref:`oxdajr04`).
+
+      .. _oxdajr04:
+
+      .. figure:: /media/screenshots/oxdajr04.png
+         :alt: Meldung Onboarding erfolgreich
+
+         Abb.: Meldung Onboarding erfolgreich
+
+#. Wechseln Sie zurück in Ihren OXID eShop.
+
+   Der Webhook ist erzeugt.
+
+   Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`).
+
+   .. _oxdajr05:
+
+   .. figure:: /media/screenshots/oxdajr05.png
+      :alt: Webhook erzeugt
+
+      Abb.: Webhook erzeugt
+
+
+#. Wenn Sie die Zahlungsmethoden Rechnungskauf oder Kreditkarte nutzen wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`), ob die Freischaltung erfolgt ist.
    |br|
    Wenn die Freischaltung nicht automatisch erfolgt ist, wenden Sie sich an Ihren Ansprechpartner bei PayPal.
-
-.. todo: #ML: :guilabel:`Kreditkarte` bei Ablehnung
 
 .. hint::
 
@@ -173,6 +270,11 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
        :alt: Zahlungsmethode Kreditkarte
        :class: no-shadow
 
+   Ist die Freischaltung erfolgt, sieht Ihr Kunde die PayPal-Schalfläche, und die Zahlungsart Kreditkarte steht im Checkout-Schritt Versand & Zahlungsart zur Verfügung.
+
+   .. image:: media/screenshots/oxdajr06.png
+       :alt: Zahlungsmethode Kreditkarte
+       :class: no-shadow
 
 .. hint::
 
@@ -185,11 +287,18 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
 
 Sobald Sie PayPal die Genehmigung erteilt haben, Ihr Sandbox-Konto mit dem
 PayPal Test Store zu verbinden, werden die API-Anmeldeinformationen angezeigt, und das
-Modul ist aktiv.
+Modul ist aktiv :ref:`oxdajr05`.
 
-Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal v2` aktiv.
+Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal` (technischer Name :technicalname:`oscpaypal`) aktiv (:ref:`oxdajr07`).
 
-.. todo: Bild ergänzen;
+.
+
+   .. _oxdajr07:
+
+   .. figure:: /media/screenshots/oxdajr07.png
+      :alt: Zahlungsart PayPal aktiv
+
+      Abb.: Zahlungsart PayPal aktiv
 
 .. hint::
 
@@ -202,14 +311,12 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
    Die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` erscheint, und Sie können den Webhook neu generieren.
 
 
+Einstellungen für die Buttonplatzierung: Schnellkauf-Funktion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Entscheiden Sie, ob Sie die Schnellkauf-Funktion von :productname:`PayPal Checkout` anbieten wollen
 
-Einstellungen für die Buttonplatzierung
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Entscheiden Sie, ob Sie die Schnellkauf-Funktion von :productname:`PayPal Checkout` anbieten wollen.
-
-Mit der Schnellkauf-Funktion überspringt der Kunde die Anmeldung in Ihrem eShop.
+Mit der Schnellkauf-Funktion überspringen Ihre Kunden die Anmeldung in Ihrem eShop.
 
 |example|
 
@@ -232,22 +339,45 @@ Sie legen also fest,
 
 * auf der Produkt-Detailseite
 * im Warenkorb
+* im Mini-Warenkorb (:ref:`oxdajr09`, Pos. 1)
 * auf der Checkout-Seite
 
 Ihre Kunden können also jederzeit mit ihrem PayPal-Konto die Bestellung auslösen.
 
 Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deaktivieren Sie die Schnellkauf-Funktion.
 
+.. todo: #tbd: Screenshot EN
+
+.. _oxdajr09:
+
+.. figure:: /media/screenshots/oxdajr09.png
+   :alt: Mini-Warenkorb und Später bezahlen
+
+   Abb.: Mini-Warenkorb und Später bezahlen
+
 |procedure|
 
-1. Um die Express-Checkout-Funktion zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite` und :guilabel:`Warenkorb`.
-2. Speichern Sie Ihre Einstellungen.
+1. Um die Express-Checkout-Funktion zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Warenkorb`.
+#. Speichern Sie Ihre Einstellungen.
 
 |Result|
 
 Die PayPal-Schaltfläche erscheint nur auf der Checkout-Seite.
 
-.. todo: #tbd Funktionsbeschreibung "Später bezahlen" (0301, 0'31'10)
+Einstellungen für die Buttonplatzierung: Später Bezahlen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Entscheiden Sie, ob Sie die Später Bezahlen-Funktion (:ref:`oxdajr07`, Pos. 2) anbieten wollen
+
+Später Bezahlen bedeutet beispielsweise, dass PayPal Kunden in Deutschland die Option "Bezahlung nach 30 Tagen" oder PayPal-Ratenzahlung anbietet.
+
+Weitere Informationen über Länder-Abdeckung und landesspezifische Funktionen der Später Bezahlen-Funktion finden Sie unter `developer.paypal.com/docs/checkout/pay-later/de <https://developer.paypal.com/docs/checkout/pay-later/de/>`_.
+
+
+|procedure|
+
+1. Um Ihren Später Bezahlen-Funktionen anzubieten, aktivieren Sie das Kontrollkästchen :guilabel:`"Später Bezahlen"-Button anzeigen?`.
+#. Speichern Sie Ihre Einstellungen.
 
 
 Login mit PayPal
@@ -289,7 +419,6 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
   |br|
   Ihr Kunde landet mit den PayPal-Adressdaten auf der Checkout-Seite. Die Daten werden nur für die aktuelle Bestellung einmalig gespeichert, es wird kein Kundenkonto im eShop angelegt.
 
-.. todo: #tbd: Funktionsbeschreibung: Aspekt Bestellhistorie hinzufügen
 
 |procedure|
 
@@ -329,9 +458,18 @@ Alternativ: Legen Sie die Bannereinstellungen manuell fest wie beschrieben unter
 Banner-Einstellungen festlegen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung werben wollen.
+Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung (:ref:`oxdajr08`) werben wollen.
 
 Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, legen Sie fest, wo die Banner erscheinen sollen, beispielsweise auf der Startseite, auf der Detailseite von Artikeln, auf den Kategorieseiten, in den Suchergebnissen und/oder im Bestellprozess.
+
+.. todo: #tbd: Screenshot EN
+
+.. _oxdajr08:
+
+.. figure:: /media/screenshots/oxdajr08.png
+   :alt: Beispiel: Ratenzahlungs-Banner auf einer Kategorieseite
+
+   Abb.: Beispiel: Ratenzahlungs-Banner auf einer Kategorieseite
 
 .. attention::
 
@@ -350,7 +488,7 @@ Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, le
 
    Standardmäßig ist die Funktion eingeschaltet.
 
-.. todo: #tbd: Screenshot ergänzen -- Funktionsbeschreibung 0301,
+
 
 
 |procedure|
@@ -383,25 +521,34 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
    a. Ordnen Sie den gewünschten :productname:`PayPal Checkout`-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
    b. Stellen Sie sicher, dass Sie für die :productname:`PayPal Checkout`-Zahlungsarten auf der Registerkarte :guilabel:`Stamm` den jeweils gewünschten minimalen und maximalen Einkaufswert festgelegt haben.
       |br|
-      Beispiel: Der maximale Einkaufswert für die Zahlungsart :guilabel:`PayPal v2` ist standardmäßig auf 10.000 € begrenzt. Der Mindest-Einkaufswert ist 10 €.
+      Beispiel: Der maximale Einkaufswert für die Zahlungsart :guilabel:`PayPal` ist standardmäßig auf 10.000 € begrenzt. Der Mindest-Einkaufswert ist 10 €.
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Versandarten` Folgendes:
 
    a. Weisen Sie die gewünschten :productname:`PayPal Checkout`-Zahlungsarten den jeweiligen Versandarten zu.
-   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der Zahlungsart :guilabel:`PayPal v2` angelegt ist.
+   b. Stellen Sie sicher, dass mindestens eine Versandart für die Bezahlung mit der Zahlungsart :guilabel:`PayPal` angelegt ist.
       |br|
       Typischerweise ist das die Standard-Zahlungsart.
 
-.. todo: #tbd: prüfen: Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/6.0/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
+   Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/latest/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
 
+.. todo: #tbd: For more info... auf EN nachziehen
 
 PayPal Checkout freischalten
 ----------------------------
 
 Schalten Sie :productname:`PayPal Checkout` nach dem Testen frei.
 
+.. attention::
+
+   **Keine PayPal Plus-Zugangsdaten verwenden**
+
+   Sie haben bereits :productname:`PayPal Plus`? Dann verwenden Sie die Zugangsdaten **nicht** für :productname:`PayPal Checkout`.
+
+   Generieren Sie die Zugangsdaten für :productname:`PayPal Checkout` wie im Folgenden beschrieben mit Ihrem PayPal-Händlerkonto neu.
+
 |prerequisites|
 
-Sie haben die gewünschten Zahlungsarten konfiguriert und mit Testzahlungen in der PayPal-Sandbox erfolgreich getestet.
+* Sie haben die gewünschten Zahlungsarten konfiguriert und mit Testzahlungen in der PayPal-Sandbox erfolgreich getestet (siehe :ref:`konfiguration:PayPal Checkout testen`).
 
 |procedure|
 
@@ -409,9 +556,11 @@ Sie haben die gewünschten Zahlungsarten konfiguriert und mit Testzahlungen in d
 #. Wählen Sie die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Live)`.
    |br|
    Sie gelangen in ein Dialogfenster zum Anmelden bei PayPal.
-#. Melden Sie sich mit Ihrem bestehenden PayPal-Händlerkonto an. Wenn Sie noch keine Zugangsdaten für den Live-Betrieb haben, legen Sie ein PayPal-Händlerkonto neu an.
+#. Melden Sie sich mit Ihrem bestehenden PayPal-Händlerkonto an.
+   |br|
+   Wenn Sie noch keine Zugangsdaten für den Live-Betrieb haben, legen Sie ein PayPal-Händlerkonto neu an.
 #. Speichern Sie Ihre Einstellungen.
-#. Wenn Sie :productname:`PayPal` oder :productname:`PayPal Plus` nutzen, folgen Sie den Empfehlungen unter :ref:`konfiguration:PayPal- oder PayPal Plus-Bestellungen verwalten`.
+#. Wenn Sie :productname:`PayPal` oder :productname:`PayPal Plus` nutzen, folgen Sie den Empfehlungen unter :ref:`konfiguration:Existierende PayPal- oder PayPal Plus-Bestellungen verwalten`.
 
 |result|
 

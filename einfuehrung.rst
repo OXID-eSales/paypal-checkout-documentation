@@ -93,8 +93,9 @@ Trustly	                   Schweden
 Sie haben das Modul PayPal?
 ---------------------------
 
-Wechseln Sie zu :productname:`PayPal Checkout`, um Ihren Kunden zusätzliche Zahlungsmethoden einschließlich Rechnungskauf anbieten zu können,
-die in internationalen Märkten beliebt sind.
+Wechseln Sie zu :productname:`PayPal Checkout`, um Ihren Kunden zusätzliche Zahlungsmethoden einschließlich Rechnungskauf anbieten zu können, die in internationalen Märkten beliebt sind.
+
+Weitere Informationen finden Sie unter `developer.paypal.com/docs/checkout/apm/ <https://developer.paypal.com/docs/checkout/apm/>`_.
 
 
 Sie haben das Modul PayPal Plus?
@@ -102,10 +103,11 @@ Sie haben das Modul PayPal Plus?
 
 Die API von :productname:`PayPal Plus` ist veraltet. PayPal entwickelt die API nicht weiter und bietet keine neuen Verträge dafür an.
 
-Wechseln Sie zu :productname:`PayPal Checkout`, wenn es für Sie wichtig ist, Ihren Kunden die Schnellkauf-Funktion von :productname:`PayPal Checkout` anzubieten.
+Wechseln Sie zu :productname:`PayPal Checkout`, wenn es für Sie wichtig ist, Ihren Kunden die Schnellkauf-Funktion oder die Später Bezahlen-Funktion von :productname:`PayPal Checkout` anzubieten:
 
-Damit können Ihre Kunden den Anmeldeprozess in Ihrem eShop überspringen und direkt beispielsweise auf der Produkt-Detailseite die Bestellung und Bezahlung starten (siehe :ref:`konfiguration:Einstellungen für die Buttonplatzierung`).
-
-
+* Mit der Schnellkauf-Funktion können Ihre Kunden den Anmeldeprozess in Ihrem eShop überspringen und direkt beispielsweise auf der Produkt-Detailseite die Bestellung und Bezahlung starten (siehe :ref:`konfiguration:Einstellungen für die Buttonplatzierung: Schnellkauf-Funktion`).
+* Mit der Später Bezahlen-Funktion können Kunden in Deutschland beispielsweise mit 30 Tagen Aufschub oder per PayPal Ratenzahlung bezahlen (siehe :ref:`konfiguration:Einstellungen für die Buttonplatzierung: Später Bezahlen`).
+  |br|
+  Weitere Informationen über Länder-Abdeckung und landesspezifische Funktionen der Später Bezahlen-Funktion finden Sie unter `developer.paypal.com/docs/checkout/pay-later/de/ <https://developer.paypal.com/docs/checkout/pay-later/de/>`_.
 
 .. Intern: oxdajp, Status:
