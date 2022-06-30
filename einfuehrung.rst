@@ -23,56 +23,75 @@ Marktabdeckung nach Ländern
 
 Bieten Sie mit dem :productname:`PayPal Checkout`-Modul für OXID die in folgenden Märkten beliebten Zahlungsmethoden an.
 
-================= ==========================
-Markt             Zahlungsmethoden
-================= ==========================
-Weltweit	      PayPal
-Weltweit	      PayPal Express
-Weltweit          PayPal - später bezahlen
-Belgien	          Bancontact
-Belgien	          Sofort (Klarna Pay now)
-Brasilien	      Boleto Bancário
-Deutschland	      GiroPay
-Deutschland	      Kreditkarte
-Deutschland	      Rechnungskauf
-Deutschland	      Sofort (Klarna Pay now)
-Estland	          Trustly
-Finnland	      Trustly
-Großbritannien	  Sofort (Klarna Pay now)
-Italien	          MyBank
-Italien	          Sofort (Klarna Pay now)
-Mexiko	          OXXO
-Niederlande	      iDEAL
-Niederlande	      Sofort (Klarna Pay now)
-Niederlande	      Trustly
-Österreich	      eps
-Österreich	      Sofort (Klarna Pay now)
-Polen	          BLIK
-Polen	          Przelewy24
-Portugal	      Multibanco
-Schweden	      Trustly
-Spanien	          Sofort (Klarna Pay now)
-================= ==========================
+Beachten Sie jeweils die Währungsabdeckung der einzelnen Zahlungsmethoden (siehe :ref:`einfuehrung:Währungsabdeckung nach Zahlungsmethode`).
+
+==================  ==========================
+Markt               Zahlungsmethoden
+==================  ==========================
+Weltweit	        PayPal
+Weltweit	        PayPal Express
+Belgien	            Bancontact
+Belgien	            Sofort (Klarna Pay now)
+Deutschland	        GiroPay
+Deutschland	        Kreditkarte
+Deutschland	        PayPal - Später bezahlen
+Deutschland	        Rechnungskauf
+Deutschland	        Sofort (Klarna Pay now)
+Frankreich	        Kreditkarte
+Frankreich	        PayPal - Später bezahlen
+Großbritannien      Kreditkarte
+Großbritannien      PayPal - Später bezahlen
+Großbritannien	    Sofort (Klarna Pay now)
+Italien 	        Kreditkarte
+Italien	            MyBank
+Italien	            Sofort (Klarna Pay now)
+Italien             PayPal - Später bezahlen
+Kanada  	        Kreditkarte
+Niederlande	        iDEAL
+Niederlande	        Sofort (Klarna Pay now)
+Österreich	        eps
+Österreich	        Kreditkarte
+Österreich 	        PayPal - Später bezahlen
+Österreich	        Sofort (Klarna Pay now)
+Polen	            BLIK
+Polen	            Przelewy24
+Spanien 	        Kreditkarte
+Spanien 	        PayPal - Später bezahlen
+Spanien	            Sofort (Klarna Pay now)
+Vereinigte Staaten  Kreditkarte
+Vereinigte Staaten  PayPal - Später bezahlen
+==================  ==========================
 
 Marktabdeckung nach Zahlungsmethoden
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Beachten Sie jeweils die Währungsabdeckung der einzelnen Zahlungsmethoden (siehe :ref:`einfuehrung:Währungsabdeckung nach Zahlungsmethode`).
 
 ========================== ===============
 Zahlungsmethoden           Märkte
 ========================== ===============
 Bancontact	               Belgien
 BLIK	                   Polen
-Boleto Bancário	           Brasilien
 eps	                       Österreich
 GiroPay	                   Deutschland
 iDEAL 	                   Niederlande
-Kreditkarte	               Deutschland
-Multibanco	               Portugal
+Kreditkarte                Deutschland
+Kreditkarte                Frankreich
+Kreditkarte                Großbritannien
+Kreditkarte                Italien
+Kreditkarte                Österreich
+Kreditkarte                Spanien
+Kreditkarte                Vereinigte Staaten
 MyBank	                   Italien
-OXXO	                   Mexiko
 PayPal	                   Weltweit
 PayPal Express             Weltweit
-PayPal - später bezahlen   Weltweit
+PayPal - Später bezahlen   Deutschland
+PayPal - Später bezahlen   Frankreich
+PayPal - Später bezahlen   Großbritannien
+PayPal - Später bezahlen   Italien
+PayPal - Später bezahlen   Österreich
+PayPal - Später bezahlen   Spanien
+PayPal - Später bezahlen   Vereinigte Staaten
 Przelewy24	               Polen
 Rechnungskauf	           Deutschland
 Sofort (Klarna Pay now)	   Belgien
@@ -82,11 +101,24 @@ Sofort (Klarna Pay now)    Italien
 Sofort (Klarna Pay now)	   Niederlande
 Sofort (Klarna Pay now)	   Österreich
 Sofort (Klarna Pay now)	   Spanien
-Trustly	                   Estland
-Trustly	                   Finnland
-Trustly	                   Niederlande
-Trustly	                   Schweden
 ========================== ===============
+
+Währungsabdeckung nach Zahlungsmethode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* PayPal - Später bezahlen: AUD, EUR, GBP, USD
+* PayPal: AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
+* PayPal Express: AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
+* Rechnungskauf: EUR
+* Kreditkarte: AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY, NOK, NZD, PLN, SEK, SGD, USD
+* Bancontact: EUR
+* BLIK: PLN
+* EPS: EUR
+* GiroPay: EUR
+* Ideal: EUR
+* MyBank: EUR
+* Przelewy24: EUR, PLN
+* Sofort (Klarna Pay now): EUR, GBP
 
 
 
