@@ -45,14 +45,17 @@ Install the payment module :productname:`PayPal Checkout` for OXID eShop version
 
       ./vendor/bin/oe-console oe:module:activate osc_paypal
 
-#. Confirm the queries.
-
 |result|
 
-When the installation process is finished, the module :guilabel:`PayPal Checkout for OXID` appears in the administration area under :menuselection:`Extensions --> Modules`.
+When the installation process is finished, the module :guilabel:`PayPal Checkout for OXID` appears in the administration area under :menuselection:`Extensions --> Modules` (:ref:`oxdajq01`).
 
+.. _oxdajq01:
 
-.. todo: #tbd Add image
+.. figure:: /media/screenshots/oxdajq01.png
+   :alt: PayPal Checkout for OXID installed successfully
+
+   Abb.: PayPal Checkout for OXID installed successfully
+
 
 
 Next step: To configure :productname:`PayPal Checkout`, choose :guilabel:`Next`.

@@ -96,15 +96,19 @@ You have the PayPal module?
 Switch to :productname:`PayPal Checkout` to offer your customers additional payment methods including purchase on account,
 which are popular in international markets.
 
+For more information, see `developer.paypal.com/docs/checkout/apm/ <https://developer.paypal.com/docs/checkout/apm/>`_.
+
+
 You have the PayPal Plus module?
 --------------------------------
 
 The API of PayPal Plus is outdated. PayPal does not develop the API and does not offer new contracts for it.
 
-Switch to :productname:`PayPal Checkout` if it is important for you to offer your customers the quick purchase feature of :productname:`PayPal Checkout`.
+Switch to :productname:`PayPal Checkout` if it is important for you to offer your customers the Quick Purchase feature or the Pay Later feature of :productname:`PayPal Checkout`:
 
-This allows your customers to skip the registration process in your eShop and start ordering and paying directly on the product detail page, for example (see :ref:`configuration:Button placement settings`).
-
-
+* With the Quick Purchase feature, your customers can skip the registration process in your eShop and start ordering and paying directly on the product detail page, for example (see :ref:`configuration:Button placement settings: Quick purchase`).
+* With the Pay Later function, customers in Germany can pay with a 30-day deferral or by PayPal installment, for example (see :ref:`configuration:Button Placement Settings: Pay Later`).
+  |br|
+  For more information about country coverage and country-specific features of the Pay Later feature, see `developer.paypal.com/docs/checkout/pay-later/de/ <https://developer.paypal.com/docs/checkout/pay-later/de/>`_.
 
 .. Intern: oxdajp, Status:

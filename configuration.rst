@@ -4,8 +4,45 @@ Configuration
 
 Make the :productname:`PayPal Checkout` module operational for your OXID eShop.
 
-Administering PayPal or PayPal Plus orders
-------------------------------------------
+You already have PayPal or PayPal Plus?
+---------------------------------------
+
+Ensure a smooth transition to the new :productname:`PayPal Checkout` module.
+
+To do this, note the following two restrictions:
+
+* You cannot run :productname:`PayPal Checkout` with your :productname:`PayPal Plus` credentials.
+  |br|
+  Follow the instructions under :ref:`configuration:Re-running the registration for PayPal Checkout`.
+* To manage existing orders, both modules, for example :productname:`PayPal Checkout` and :productname:`PayPal`, must be active at the same time.
+  |br|
+  Follow the instructions under :ref:`configuration:Administering existing PayPal or PayPal Plus orders`.
+
+Re-running the registration for PayPal Checkout
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have :productname:`PayPal Plus`, please note the following:
+
+The credentials and registration process of :productname:`PayPal Checkout` are outwardly similar to :productname:`PayPal Plus`.
+
+However, do not let this tempt you to reuse the credentials from :productname:`PayPal Plus`.
+
+This would lead to the following disappointments:
+
+* Webhooks are not activated correctly, information is not transmitted correctly, but without the errors being immediately apparent.
+* Payment methods such as installment purchase are not available, payment by credit card is not enabled.
+
+|procedure|
+
+Do the following:
+
+1. Test :productname:`PayPal Checkout` in the PayPal sandbox with :emphasis:`test` accounts as described in :ref:`configuration:Configuring PayPal Checkout`.
+#. To unlock your :emphasis:`live` system, generate new credentials.
+   |br|
+   To do this, go through the PayPal registration process again with your PayPal merchant account details.
+
+Administering existing PayPal or PayPal Plus orders
+---------------------------------------------------
 
 If you already use the :productname:`PayPal` or :productname:`PayPal Plus` module, please note the following limitation:
 
@@ -13,9 +50,10 @@ To administer existing orders, both modules, :productname:`PayPal Checkout` and 
 
 However, to prevent that, in our example, the PayPal payment method redundantly displayed in the frontend, you must deactivate the :emphasis:`payment method` :guilabel:`PayPal`.
 
-We recommend the following procedure.
 
 |procedure|
+
+We recommend the following procedure.
 
 .. tip::
 
@@ -23,16 +61,15 @@ We recommend the following procedure.
 
    Schedule a short downtime for the step of deactivating the payment method belonging to :productname:`PayPal` or :productname:`PayPal Plus`.
 
-.. todo: #tbd: check navig paths
 
 1. Install :productname:`PayPal Checkout`.
 #. Activate and configure :productname:`PayPal Checkout` as described below under :ref:`configuration:Basic procedure`.
    |br|
-   Result: To administer your orders, under :menuselection:`Administer Orders --> Orders` you will find separate tabs for :productname:`PayPal Checkout` and for :productname:`PayPal` or :productname:`PayPal Plus` (depending on which of the two modules you use).
+   Result: To administer your orders, under :menuselection:`Administer Orders --> Orders` you find separate tabs for :productname:`PayPal Checkout` and for :productname:`PayPal` or :productname:`PayPal Plus` (depending on which of the two modules you use).
 
    .. note::
 
-      **Administering orders in PayPal merchant account**
+      **Administering orders in the PayPal merchant account**
 
       Nothing can go wrong if you disable :productname:`PayPal` or :productname:`PayPal Plus` as described below.
 
@@ -70,30 +107,27 @@ We recommend the following procedure.
 #. Recommended: As soon as you are sure that existing orders will no longer require any actions (refunds, for example), under :menuselection:`Extensions --> Modules` disable :productname:`PayPal` or :productname:`PayPal Plus`.
 
 
-
 Basic procedure
 ---------------
 
 1. Activate the module.
    |br|
    The most important payment methods are automatically activated.
-#. Connect to your PayPal merchant account.
-   |br|
-   For testing purposes, create only a test account (PayPal Sandbox) at first.
+#. Connect to PayPal via a webhook.
+
+   .. attention::
+
+      * Do not use the credentials for :productname:`PayPal Plus` to establish the connection.
+      * Test :productname:`PayPal Plus` in the PayPal sandbox first.
+
 #. Optional: Disable the express checkout feature of :productname:`PayPal Checkout` if needed.
-#. Optional: Specify if you want to offer PayPal installment payment to your customers.
+#. Optional: Specify if you want to offer PayPal installment payment (see :ref:`oxdajr08`) to your customers.
 #. Configure the payment methods provided by :productname:`PayPal Checkout` as payment methods in your eShop:
 
    * Enable the countries you want to cover.
    * Link the payment methods to your shipping methods and shipping rules.
 
-#. Run test payments in the :productname:`PayPal Checkout` sandbox.
-
-   .. hint::
-
-      Note: The :guilabel:`Sandbox` mode is set by default after enabling.
-
-#. Test :productname:`PayPal Checkout` in the PayPal sandbox and adjust the configuration until all payment processes works as you want.
+#. Run test payments in the :productname:`PayPal Checkout` sandbox. and adjust the configuration until all payment processes works as you want.
 #. Enable :productname:`PayPal Checkout`:
 
    a. If you do not have a merchant account yet, create one for live operation.
@@ -103,7 +137,7 @@ Basic procedure
 Activating PayPal Checkout
 --------------------------
 
-Enable :productname:`PayPal Checkout` in each subshop where you want to use the module.
+Ensure :productname:`PayPal Checkout` is activated in each subshop where you want to use the module.
 
 |Procedure|
 
@@ -113,7 +147,7 @@ Enable :productname:`PayPal Checkout` in each subshop where you want to use the 
 
 |result|
 
-Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal v2` as well as important additional payment methods, are marked as active.
+Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal` as well as important additional payment methods, are marked as active.
 
 To actually use a certain country-specific payment method, you must have marked the respective country as active under :menuselection:`Master Settings --> Countries`.
 
@@ -121,14 +155,6 @@ To actually use a certain country-specific payment method, you must have marked 
 
 To be able to offer iDEAL, you must have made sure that you have set the Netherlands as active under :menuselection:`Master Settings --> Countries`.
 
-.. todo: #ML: Zahlungsartname PayPal v2 klären
-
-.. todo: #Bild ergänzen;
-   .. image:: media/screenshots/oxdaac01.png
-       :alt: PayPal, Moduleinstellungen
-       :class: with-shadow
-       :height: 344
-       :width: 650
 
 
 Configuring PayPal Checkout
@@ -146,69 +172,159 @@ The webhook allows PayPal to contact your OXID eShop and provide real-time statu
 
 In the first run, you test the payment methods provided with :productname:`PayPal Checkout` with test credentials in a *sandbox*.
 
+.. hint::
+
+   **What does testing in the sandbox do for me?**
+
+   `sandbox.paypal.com` is a mirror system.
+   |br|
+   All functions and the API are identical to `sandbox.paypal.com`.
+
+   This means that any error you can create here will also exist in the live system.
+   |br|
+   Conversely, any error not generated will not occur in the production system either.
+
+   Therefore, test your :productname:`PayPal Checkout` integration with a sandbox system first.
+
+   Nothing can go wrong:
+
+   * Test payments in the sandbox cost nothing.
+   * You avoid chargebacks as they would be necessary with test payments with the live account.
+
 Only when everything works as you want, use the credentials for *live* operation.
 
+|prerequisites|
+
+* On PayPal's developer page, you have created a sandbox merchant account and a sandbox customer account.
+  |br|
+  For more information, see :ref:`paypal-sandbox:Generating PayPal sandbox accounts`.
+
+* Your test environment has SSL.
+  |br|
+  If you are testing :productname:`PayPal Checkout` in a local development environment that is only accessible via :technicalname:`http://` (i.e. :emphasis:`without SSL` via :technicalname:`https://`), then use, for example, NGROK to provide your test environment with temporary SSL.
+  |br|
+  For more information, see :ref:`paypal-sandbox:Setting up temporary SSL`.
 
 |procedure|
 
+We describe the process using a sandbox account as an example. The live process is analogous.
 
-1. To log in to the sandbox, choose :guilabel:`API credentials` and click :guilabel:`Start Merchant Integration (Sandbox)`.
-2. Go through the registration process.
+1. To log in to the sandbox, under :guilabel:`API credentials` choose the :guilabel:`Start Merchant Integration (Sandbox) in a new window` button.
+#. Select :guilabel:`Sign Up Merchant Integration (Sandbox)`.
+#. Go through the registration process with the sandbox merchant account email address.
+
+   a. Log in (:ref:`oxdajr01`), and confirm the prompts.
+
+      .. todo: #tbd: screenshot EN
+
+      .. _oxdajr01:
+
+      .. figure:: /media/screenshots/oxdajr01.png
+         :alt: Starting the registration of the sandbox merchant account
+
+         Figure: Starting the registration of the sandbox merchant account
+
+   #. Finally, choose :guilabel:`Back to John Doe`s Test Store` (:ref:`oxdajr03`).
+
+      .. _oxdajr03:
+
+      .. figure:: /media/screenshots/oxdajr03.png
+         :alt: Completing the registration of the merchant account
+
+         Figure: Completing the registration of the merchant account
+
+      A message indicates success (:ref:`oxdajr04`).
+
+      .. _oxdajr04:
+
+      .. figure:: /media/screenshots/oxdajr04.png
+         :alt: Message onboarding successful
+
+         Figure: Message onboarding successful
+
+#. Switch back to your OXID eShop.
+
+   The webhook is created.
+
+   The client ID and the webhook ID are displayed (:ref:`oxdajr05`).
+
+   .. _oxdajr05:
+
+   .. figure:: /media/screenshots/oxdajr05.png
+      :alt: Webhook created
+
+      Figure: Webhook created
+
+
+#. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`) check whether the activation has been done.
+   |br|
+   If the activation did not happen automatically, contact your PayPal representative.
 
 .. hint::
 
-   **Payment method credit card**.
+   **Credit card payment method**.
 
-   If the activation for the payment method credit card has not been done automatically, the payment method appears as a separate :guilabel:`creditcard` button under the Paypal button.
+   If the credit card payment method has not been activated automatically, the payment method will appear as a separate :guilabel:`credit card` button below the PayPal button.
 
    .. image:: media/screenshots/oxdajr02.png
-       :alt: Payment method credit card
+       :alt: Payment method credit card not activated
        :class: no-shadow
 
+   Once the activation is done, your customer sees the PayPal button, and the credit card payment method is available in the Shipping & Payment Method checkout step.
+
+   .. image:: media/screenshots/oxdajr06.png
+       :alt: Payment method credit card activated
+       :class: no-shadow
 
 .. hint::
 
    **Payment method Pay upon Invoice**
 
-   PayPal offers the payment method Pay upon Invoice only to shop owners from Germany.
+   PayPal offers the payment method Pay upon Invoice only to show owners from Germany.
 
 
 |result|
 
-Once you have given PayPal permission to connect your Sandbox account to the PayPal Test Store, the API credentials are displayed, and the module is active.
+Once you have given PayPal permission to connect your sandbox account to the
+PayPal test store, the API credentials are displayed and the module is active (:ref:`oxdajr05`).
 
-Under :menuselection:`Shop Settings --> Payment Methods` the payment method :guilabel:`PayPal v2` is active.
+Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :guilabel:`PayPal` (technical name :technicalname:`oscpaypal`) is active (:ref:`oxdajr07`).
 
-.. todo: Add picture;
+   .. _oxdajr07:
+
+   .. figure:: /media/screenshots/oxdajr07.png
+      :alt: Payment method PayPal active
+
+      Figure: Payment method PayPal active
 
 .. hint::
 
-   **Generate new webhook**.
+   **Generating a new webhook**.
 
    Sometimes it may be necessary to delete the existing webhook and generate a new one.
 
    To delete a webhook, delete the credentials and select :guilabel:`Save`.
 
-   The :guilabel:`Start Merchant Integration` button appears, and you can regenerate the webhook.
+   The :guilabel:`Register Merchant PayPal Integration` button appears and you can regenerate the webhook.
 
 
 
 
-Button placement settings
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Button placement settings: Quick purchase
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Decide if you want to offer the quick purchase feature of :productname:`PayPal Checkout`.
 
-With the quick purchase feature, the customer skips logging into your eShop.
+With the quick purchase feature, your customers skip logging into your eShop.
 
 |example|
 
 * Your customers typically have only one item in their shopping cart when they place an order?
   |br|
-  In this case, it makes sense to guide customers to their destination as quickly and barrier-free as possible and activate the quick purchase function.
+  In this case it makes sense to guide customers to their destination as quickly and barrier-free as possible and activate the quick purchase function.
 * Do you generate a significant portion of sales or margin from accessory items?
   |br|
-  In this case, it may make sense to delay payment and offer the PayPal buttons only in the shopping cart and checkout, for example.
+  In this case it may make sense to delay payment and offer the PayPal buttons only in the shopping cart and checkout, for example.
 
 So, you determine,
 
@@ -222,11 +338,21 @@ So, you determine,
 
 * on the product detail page
 * in the shopping cart
+* in the mini shopping cart (:ref:`oxdajr09`, Pos. 1)
 * on the checkout page
 
 So, your customers can use their PayPal account to trigger the order at any time.
 
 If you want your customers to have to register in your eShop, disable the quick purchase feature.
+
+.. todo: #tbd: Screenshot EN
+
+.. _oxdajr09:
+
+.. figure:: /media/screenshots/oxdajr09.png
+   :alt: Mini shopping cart and Pay Later
+
+   Abb.: Mini shopping cart and Pay Later
 
 |procedure|
 
@@ -237,6 +363,20 @@ If you want your customers to have to register in your eShop, disable the quick 
 
 The PayPal button appears only on the checkout page.
 
+Button placement settings: Pay later
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Decide whether you want to offer the Pay Later feature (:ref:`oxdajr09`, pos. 2).
+
+Pay Later means, for example, that PayPal offers customers in Germany the "Pay after 30 days" or PayPal installments options.
+
+For more information about country coverage and country-specific features of the Pay Later feature, see `developer.paypal.com/docs/checkout/pay-later/en <https://developer.paypal.com/docs/checkout/pay-later/de/>`_.
+
+
+|procedure|
+
+1. To offer your customers Pay Later features, choose the :guilabel:`"Show Pay Later" button?` checkbox.
+#. Save your settings.
 
 
 Login with PayPal
@@ -278,7 +418,7 @@ If you do :emphasis:`not` enable :guilabel:`Login with PayPal`, the following ha
   |br|
   Your customer lands on the checkout page with the PayPal address data. The data is stored only once for the current order, no customer account is created in the eShop.
 
-.. todo: #tbd: function description: add aspect order history
+
 
 |procedure|
 
@@ -295,12 +435,12 @@ If you do :emphasis:`not` enable :guilabel:`Login with PayPal`, the following ha
 #. Save your settings.
 
 
-Banner settings: re-use
-^^^^^^^^^^^^^^^^^^^^^^^
+Banner settings: Re-using your PayPal banner settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Optional: If you already use the :productname:`PayPal` module, conveniently re-use your banner settings for :productname:`PayPal Checkout`.
 
-Alternatively, set the banner settings manually as described below under :ref:`configuration:Banner Settings`.
+Alternatively, set the banner settings manually as described below under :ref:`configuration:Banner settings`.
 
 |prerequisites|
 
@@ -320,9 +460,18 @@ Alternatively, set the banner settings manually as described below under :ref:`c
 Banner settings
 ^^^^^^^^^^^^^^^
 
-Optional: specify whether you want to advertise PayPal installments with banners.
+Specify whether you want to advertise PayPal installments with banners (:ref:`oxdajr08`).
 
 If you want to take advantage of advertising PayPal installments, specify where you want the banners to appear, for example, on the home page, on the detail page of items, on category pages, in search results, and/or in the checkout process.
+
+.. todo: screenshot EN
+
+.. _oxdajr08:
+
+.. figure:: /media/screenshots/oxdajr08.png
+   :alt: Example: Installment payment banner on a category page
+
+   Figure: Example: installment banner on a category page
 
 .. attention::
 
@@ -340,8 +489,6 @@ If you want to take advantage of advertising PayPal installments, specify where 
    In this case, make sure that the feature is disabled.
 
    By default, the feature is turned on.
-
-.. todo: #tbd: add screenshot -- function description 0301,
 
 
 |procedure|
@@ -373,16 +520,17 @@ Configure :productname:`PayPal Checkout` according to your needs and test the re
    a. Assign at least one user group to each of the desired :productname:`PayPal Checkout` payment methods (for example :guilabel:`iDEAL (via PayPal)`.
    b. On corresponding :guilabel:`Master` tab, make sure that you have set the desired minimum and maximum purchase value for the :productname:`PayPal Checkout` payment methods.
       |br|
-      Example: The maximum purchase value for :guilabel:`PayPal v2` payment type is limited to €10,000 by default. The minimum purchase value is €10.
+      Example: The maximum purchase value for :guilabel:`PayPal` payment type is limited to €10,000 by default. The minimum purchase value is €10.
 #. Under :menuselection:`Shop Settings --> Shipping Methods`, do the following:
 
    a. Assign the desired :productname:`PayPal Checkout` payment methods to the respective shipping methods.
-   b. Make sure that at least one shipping method is created for payment with the :guilabel:`PayPal v2` payment method.
+   b. Make sure that at least one shipping method is created for payment with the :guilabel:`PayPal` payment method.
       |br|
       Typically, this is the default payment method.
 
-.. todo: #tbd: prüfen Zahlungsart :guilabel:`PayPal` oder PP v2?
-.. todo: #tbd: prüfen: Weitere Informationen finden Sie unter `Zahlungsarten <https://docs.oxid-esales.com/eshop/de/6.0/einrichtung/zahlungsarten/zahlungsarten.html>`_ der Anwenderdokumentation des OXID eShop. Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
+   For more information, see `Payment methods <https://docs.oxid-esales.com/eshop/en/latest/setup/payment-methods/payment-methods.html>`_ of the OXID eShop user documentation.
+   |br|
+   If required, change the purchase value (€) in 0 to 99999.
 
 
 Unlocking PayPal Checkout
@@ -390,9 +538,17 @@ Unlocking PayPal Checkout
 
 Unlock :productname:`PayPal Checkout` after testing.
 
+.. attention::
+
+   **Do not use PayPal Plus credentials**
+
+   You already have :productname:`PayPal Plus`? In this case do **not** use the credentials for :productname:`PayPal Checkout`.
+
+   Generate the credentials for :productname:`PayPal Checkout` with your PayPal merchant account again, as described below.
+
 |prerequisites|
 
-You have configured the desired payment methods and tested them successfully with test payments in the PayPal sandbox.
+You have configured the desired payment methods and tested them successfully with test payments in the PayPal sandbox (see :ref:`configuration:Testing PayPal Checkout`).
 
 |procedure|
 
@@ -402,12 +558,12 @@ You have configured the desired payment methods and tested them successfully wit
    A dialog box for logging in to PayPal appears.
 #. Log in with your existing PayPal merchant account. If you don't have a live login yet, create a new PayPal merchant account.
 #. Save your settings.
-#. If you use :productname:`PayPal` or :productname:`PayPal Plus`, follow the recommendations under :ref:`configuration:Administering PayPal or PayPal Plus orders`.
+#. If you use :productname:`PayPal` or :productname:`PayPal Plus`, follow the recommendations under :ref:`configuration:Administering existing PayPal or PayPal Plus orders`.
 
 
 |result|
 
-The PayPal API credentials will be inserted.
+The PayPal API credentials are inserted.
 
 The :productname:`PayPal Checkout` module is active and ready for orders from your customers.
 
