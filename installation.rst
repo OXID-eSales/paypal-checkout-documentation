@@ -54,11 +54,10 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 .. _oxdajq01:
 
 .. figure:: /media/screenshots/oxdajq01.png
-   :alt: PayPal Checkout für OXID erf0lgreich installiert
+   :alt: PayPal Checkout für OXID erfolgreich installiert
 
    Abb.: PayPal Checkout für OXID erfolgreich installiert
 
-.. todo: #tbd Bild ergänzen EN
 
 
 Nächster Schritt: Um :productname:`PayPal Checkout` zu konfigurieren, wählen Sie :guilabel:`Weiter`.

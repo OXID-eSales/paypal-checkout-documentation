@@ -26,7 +26,7 @@ Zeigen Sie die Zugangsdaten für Ihre Sandbox-Test-Konten im PayPal-Entwickler-P
 
 |procedure|
 
-1. Rufen Sie das im PayPal-Entwickler-Portal unter `developer.paypal.com <https://developer.paypal.com/home>`_ auf.
+1. Rufen Sie das PayPal-Entwickler-Portal unter `developer.paypal.com <https://developer.paypal.com/home>`_ auf.
 #. Wählen Sie :guilabel:`Log Into Dashboard`.
 #. Melden Sie sich mit den Zugangsdaten Ihres echten PayPal-Kontos an
    |br|
@@ -36,12 +36,12 @@ Zeigen Sie die Zugangsdaten für Ihre Sandbox-Test-Konten im PayPal-Entwickler-P
 |result|
 
 
-Zwei Sandbox-Test-Konten werden angezeigt, ein Business- und ein Personal-Sandbox-Konto (:ref:`oxdaju01`).
+Zwei Sandbox-Test-Konten werden angezeigt, ein Business-Sandbox-Konto (Händler-Konto) und ein Personal-Sandbox-Konto (Kunden-Konto) (:ref:`oxdaju01`).
 
 .. _oxdaju01:
 
 .. figure:: /media/screenshots/oxdaju01.png
-   :alt: Business- und Personal-Sandbox-Konten
+   :alt: Business- und Personal-Sandbox-Konten anzeigen
 
    Abb.: Business- und Personal-Sandbox-Konto anzeigen
 
@@ -57,7 +57,7 @@ Melden Sie sich mit den beiden Accounts auf dem PayPal-“Spiegel”-System, der
 
 |procedure|
 
-Wählen Sie https://sandbox.paypal.com.
+Wählen Sie `sandbox.paypal.com <https://sandbox.paypal.com>`_. und melden Sie sich an.
 
 |result|
 
@@ -100,7 +100,7 @@ Ihr Test-System hat kein SSL?
 
 Benutzen Sie beispielsweise NGROK, um für das Testen in der PayPal-Sandbox eine lokale OXID eShop-URL mit SSL und Webzugriff auszustatten.
 
-Wie Sie die temporäre URL generieren, hängt von Ihrem System ab. Wir beschreiben folgende Beispiele:
+Wie Sie die temporäre URL generieren, hängt von Ihrem System ab. Wir beschreiben folgende Beispiele mit NGROK:
 
 * Sie haben ein Alias unterhalb von ``localhost``.
   |br|
@@ -155,7 +155,7 @@ Wie Sie die temporäre URL generieren, hängt von Ihrem System ab. Wir beschreib
 
       Abb.: NGROK-Weiterleitungsseite
 
-#. Wählen Sie :guilabel:`Visist Site`.
+#. Wählen Sie :guilabel:`Visit Site`.
    |br|
    Ihr Shop wird nur mit den Elementen angezeigt, die ohne SSL erreichbar sind (:ref:`oxdaju06`).
 
