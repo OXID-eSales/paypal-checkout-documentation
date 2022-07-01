@@ -106,20 +106,23 @@ Sofort (Klarna Pay now)	   Spanien
 Währungsabdeckung nach Zahlungsmethode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* PayPal - Später bezahlen: AUD, EUR, GBP, USD
-* PayPal: AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
-* PayPal Express: AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
-* Rechnungskauf: EUR
-* Kreditkarte: AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY, NOK, NZD, PLN, SEK, SGD, USD
-* Bancontact: EUR
-* BLIK: PLN
-* EPS: EUR
-* GiroPay: EUR
-* Ideal: EUR
-* MyBank: EUR
-* Przelewy24: EUR, PLN
-* Sofort (Klarna Pay now): EUR, GBP
-
+=============================== ===============
+Payment methods                 Currencies
+=============================== ===============
+PayPal                          AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
+PayPal Express                  AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
+PayPal - Später bezahlen        AUD, EUR, GBP, USD
+Rechnungskauf                   EUR
+Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY, NOK, NZD, PLN, SEK, SGD, USD
+Bancontact                      EUR
+BLIK                            PLN
+EPS                             EUR
+GiroPay                         EUR
+Ideal                           EUR
+MyBank                          EUR
+Przelewy24                      EUR, PLN
+Sofort (Klarna Pay now)         EUR, GBP
+=============================== ===============
 
 
 Sie haben das Modul PayPal?
