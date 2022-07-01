@@ -23,57 +23,77 @@ Market coverage by country
 
 With :productname:`PayPal Checkout`, offer payment methods popular in the following markets.
 
+In each case, note the currency coverage of each payment method (see :ref:`introduction:currency coverage by payment method`).
+
 ================= ==========================
 Market            Payment Methods
 ================= ==========================
 Worldwide         PayPal
 Worldwide         PayPal Express
-Worldwide         PayPal- pay later
+Austria           Creditcard
+Austria           eps
+Austria           PayPal- Pay later
+Austria           Sofort (Klarna Pay now)
 Belgium           Bancontact
 Belgium           Sofort (Klarna Pay now)
-Brazil            Boleto Bancário
+Canada            Creditcard
+France            Creditcard
+France            PayPal- Pay later
 Germany           GiroPay
 Germany           Creditcard
+Germany           PayPal- Pay later
 Germany           Pay upon Invoice
 Germany           Sofort (Klarna Pay now)
-Estonia           Trustly
-Finland           Trustly
+Great Britain     Creditcard
 Great Britain     Sofort (Klarna Pay now)
+Great Britain     PayPal- Pay later
 Italy             MyBank
 Italy             Sofort (Klarna Pay now)
-Mexico            OXXO
+Italy             PayPal- Pay later
+Italy             Creditcard
 Netherlands       iDEAL
 Netherlands       Sofort (Klarna Pay now)
-Netherlands       Trustly
-Austria           eps
-Austria           Sofort (Klarna Pay now)
 Poland            BLIK
 Poland            Przelewy24
-Portugal          Multibanco
-Sweden            Trustly
+Spain             Creditcard
 Spain             Sofort (Klarna Pay now)
+Spain             PayPal- Pay later
+United States     Creditcard
+United States     PayPal- Pay later
 ================= ==========================
 
 
 Market coverage by payment methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+In each case, note the currency coverage of each payment method (see :ref:`introduction:currency coverage by payment method`).
+
 =============================== ===============
 Payment methods                 Markets
 =============================== ===============
 Bancontact                      Belgium
 BLIK                            Poland
-Boleto Bancário                 Brazil
 eps                             Austria
 GiroPay                         Germany
 iDEAL                           Netherlands
+Creditcard                      Canada
 Creditcard                      Germany
-Multibanco                      Portugal
+Creditcard                      Fance
+Creditcard                      Great Britain
+Creditcard                      Italy
+Creditcard                      Austria
+Creditcard                      Spain
+Creditcard                      United States
 MyBank                          Italy
-OXXO                            Mexico
 PayPal                          Worldwide
 PayPal Express                  Worldwide
-PayPal- pay later               Worldwide
+PayPal- Pay later               Austria
+PayPal- Pay later               France
+PayPal- Pay later               Germany
+PayPal- Pay later               Great Britain
+PayPal- Pay later               Italy
+PayPal- Pay later               Spain
+PayPal- Pay later               United States
 Przelewy24                      Poland
 Pay upon Invoice                Germany
 Sofort (Klarna Pay now)         Belgium
@@ -83,12 +103,28 @@ Sofort (Klarna Pay now)         Italy
 Sofort (Klarna Pay now)         Netherlands
 Sofort (Klarna Pay now)         Austria
 Sofort (Klarna Pay now)         Spain
-Trustly                         Estonia
-Trustly                         Finland
-Trustly                         Netherlands
-Trustly                         Sweden
 =============================== ===============
 
+Currency coverage by payment method
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+=============================== ===============
+Payment methods                 Currencies
+=============================== ===============
+PayPal                          AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
+PayPal Express                  AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
+PayPal - Später bezahlen        AUD, EUR, GBP, USD
+Rechnungskauf                   EUR
+Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY, NOK, NZD, PLN, SEK, SGD, USD
+Bancontact                      EUR
+BLIK                            PLN
+EPS                             EUR
+GiroPay                         EUR
+Ideal                           EUR
+MyBank                          EUR
+Przelewy24                      EUR, PLN
+Sofort (Klarna Pay now)         EUR, GBP
+=============================== ===============
 
 You have the PayPal module?
 ---------------------------
