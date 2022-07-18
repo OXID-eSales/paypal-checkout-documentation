@@ -7,7 +7,7 @@ Make the :productname:`PayPal Checkout` module operational for your OXID eShop.
 Administering PayPal or PayPal Plus orders
 ------------------------------------------
 
-If you already use :productname:`PayPal` or :productname:`PayPal Plus` module, please note the following limitation:
+If you already use :productname:`PayPal` or :productname:`PayPal Plus` module, note the following limitation:
 
 To administer existing orders, both modules, :productname:`PayPal Checkout` and :productname:`PayPal` for example, must be active at the same time.
 
@@ -22,8 +22,6 @@ We recommend the following procedure.
    **Scheduling a downtime**
 
    Schedule a short downtime for the step of deactivating the payment method belonging to :productname:`PayPal` or :productname:`PayPal Plus`.
-
-.. todo: #tbd: check navig paths
 
 1. Install :productname:`PayPal Checkout`.
 #. Activate and configure :productname:`PayPal Checkout` as described below under :ref:`configuration:Basic procedure`.
@@ -117,15 +115,6 @@ To actually use a certain country-specific payment method, you must have marked 
 |example|
 
 To be able to offer iDEAL, you must have made sure that you have set the Netherlands as active under :menuselection:`Master Settings --> Countries`.
-
-.. todo: #ML: Zahlungsartname PayPal v2 klären
-
-.. todo: #Bild ergänzen;
-   .. image:: media/screenshots/oxdaac01.png
-       :alt: PayPal, Moduleinstellungen
-       :class: with-shadow
-       :height: 344
-       :width: 650
 
 
 Configuring PayPal Checkout
@@ -275,7 +264,6 @@ If you do :emphasis:`not` enable :guilabel:`Login with PayPal`, the following ha
   |br|
   Your customer lands on the checkout page with the PayPal address data. The data is stored only once for the current order, no customer account is created in the eShop.
 
-.. todo: #tbd: function description: add aspect order history
 
 |procedure|
 
@@ -317,9 +305,11 @@ Alternatively, set the banner settings manually as described below under :ref:`c
 Banner settings
 ^^^^^^^^^^^^^^^
 
-Optional: specify whether you want to advertise PayPal installments with banners.
+Optional: Specify whether you want to advertise PayPal installments with banners.
 
 If you want to take advantage of advertising PayPal installments, specify where you want the banners to appear, for example, on the home page, on the detail page of items, on category pages, in search results, and/or in the checkout process.
+
+
 
 .. attention::
 
