@@ -43,8 +43,6 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
       composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
       composer require oxid-solution-catalysts/paypal-module ^2.0.0
       composer install
-      ./vendor/bin/oe-console oe:module:install-configuration source/modules/osc/paypal
-      ./vendor/bin/oe-console oe:module:apply-configuration
 
 #. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
    |br|
