@@ -18,6 +18,13 @@ Payment methods in PayPal Checkout
     :height: 38
     :width: 150
 
+Restriction for B2B stores
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have set prices to be net prices (typically in B2B stores), the Pay upon Invoice payment method is not available.
+
+In the typical case, you specify all prices as gross prices in your OXID eShop, and you can offer the Pay upon Invoice payment method to your private customers.
+
 Market coverage by country
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
