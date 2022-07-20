@@ -17,6 +17,12 @@ Zahlungsarten in PayPal Checkout
     :height: 38
     :width: 150
 
+Einschränkung bei B2B-Shops
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn Sie eingestellt haben, dass die Preise Netto-Preise sind (typischerweise in B2B-Shops), dann steht die Zahlungsart Rechnungskauf nicht zur Verfügung.
+
+Im typischen Fall geben Sie in Ihrem OXID eShop alle Preise als Bruttopreise an, und Sie können Ihren Privatkunden können die Zahlungsart Rechnungskauf anbieten.
 
 Marktabdeckung nach Ländern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
