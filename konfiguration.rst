@@ -500,15 +500,19 @@ Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, le
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
 
-Bieten Sie bestimmte :productname:`PayPal Checkout`-Zahlungsmethoden nur in bestimmten Ländern an.
+Bei der Erstinstallation sind den :productname:`PayPal Checkout`-Zahlungsmethoden automatich die entsprechenden Länder zugeordnet.
+
+Schränken Sie bei Bedarf bestimmte :productname:`PayPal Checkout`-Zahlungsmethoden auf bestimmte Ländern ein.
+
+Die meisten :productname:`PayPal Checkout`-Zahlungsmethoden decken mehrere Länder ab. Die Zahlungsmethode :productname:`Kreditkarte` beispielsweise ist Kunden weltweit zugänglich, die Zahlungsmethode :productname:`Pay Later` steht Ihren Kunden in Ländern in Europa, den USA und Australien zur Verfügung.
+
+Weitere Informationen über die Länderabdeckung der einzelnen :productname:`PayPal Checkout`-Zahlungsmethoden finden Sie unter :ref:`einfuehrung:Marktabdeckung nach Zahlungsmethoden`.
+
 
 Standardmäßig gilt dabei: Die Rechnungsadresse und nicht die Lieferadresse eines Kunden bestimmt, ob eine :productname:`PayPal Checkout`-Zahlungsmethode dem Kunden zur Auswahl steht.
 |br|
 Beispiel: Nur Kunden mit einer Rechnungsadresse in Polen erhalten die Zahlungsmethode :productname:`Przelewy24` angeboten.
 
-Bestimmte :productname:`PayPal Checkout`-Zahlungsmethoden decken mehrere Länder ab. Die Zahlungsmethode :productname:`Kreditkarte` beispielsweise ist Kunden weltweit zugänglich, die Zahlungsmethode :productname:`Pay Later` steht Ihren Kunden in Ländern in Europa, den USA und Australien zur Verfügung.
-
-Weitere Informationen über die Länderabdeckung der einzelnen :productname:`PayPal Checkout`-Zahlungsmethoden finden Sie unter :ref:`einfuehrung:Marktabdeckung nach Zahlungsmethoden`.
 
 |procedure|
 
