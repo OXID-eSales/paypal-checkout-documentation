@@ -82,5 +82,42 @@ Execute the commands as follows:
       composer require oxid-solution-catalysts/paypal-module ^1.0.0
       composer install
 
+Installing a patch update
+-------------------------
+
+If required, install a patch update (from :productname:`PayPal Checkout` version 2.1.4 to version 2.1.5, for example).
+
+
+|procedure|
+
+1. Execute the following command:
+
+   .. code:: bash
+
+      composer update
+
+#. Confirm the prompt whether to overwrite the :file:`oxid-solution-catalysts/paypal-module` files.
+
+
+.. attention::
+
+   **Check country mappings after update to PayPal Checkout version 2.1.5**.
+
+   With version 2.1.4 the country coverage of individual :productname:`PayPal Checkout` payment methods has been extended.
+
+   Make sure that you can use the extended country coverage.
+
+   Background: With :productname:`PayPal Checkout` version 2.1.5, countries are automatically assigned to payment methods during initial installation (see :ref:`configuration:Optional: Configuring the country mapping of PayPal Checkout payment methods`).
+
+   This may cause configuration settings of your existing version to block the use of extended country mappings.
+
+   Do the following:
+
+   1. Choose :menuselection:`Shop Settings --> Payment Methods --> <payment method> --> Country --> Assign Countries`.
+   #. To use the entire country coverage of a payment type, delete existing mappings.
+
+
+
+
 .. Internal: oxdajq, status:
 
