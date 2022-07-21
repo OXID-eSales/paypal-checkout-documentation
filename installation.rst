@@ -8,6 +8,7 @@ Wenn Sie OXID eShop Version 6.2 oder höher haben, installieren Sie :productname
 |prerequisites|
 
 * Sie haben den OXID eShop 6.1 installiert.
+* Ihre Umgebung verwendet PHP 7.1.
 * Sie haben `https` konfiguriert.
 
    a. Öffnen Sie im Verzeichnis :file:`<Rootverzeichnis des eShops>/source` die Datei :file:`config.inc.php`.
