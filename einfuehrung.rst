@@ -36,35 +36,28 @@ Markt               Zahlungsmethoden
 ==================  ==========================
 Weltweit	        PayPal
 Weltweit	        PayPal Express
+Weltweit            Kreditkarte
 Belgien	            Bancontact
 Belgien	            Sofort (Klarna Pay now)
 Deutschland	        GiroPay
-Deutschland	        Kreditkarte
 Deutschland	        PayPal - Später bezahlen
 Deutschland	        Rechnungskauf
 Deutschland	        Sofort (Klarna Pay now)
-Frankreich	        Kreditkarte
 Frankreich	        PayPal - Später bezahlen
-Großbritannien      Kreditkarte
 Großbritannien      PayPal - Später bezahlen
 Großbritannien	    Sofort (Klarna Pay now)
-Italien 	        Kreditkarte
 Italien	            MyBank
 Italien	            Sofort (Klarna Pay now)
 Italien             PayPal - Später bezahlen
-Kanada  	        Kreditkarte
 Niederlande	        iDEAL
 Niederlande	        Sofort (Klarna Pay now)
 Österreich	        eps
-Österreich	        Kreditkarte
 Österreich 	        PayPal - Später bezahlen
 Österreich	        Sofort (Klarna Pay now)
 Polen	            BLIK
 Polen	            Przelewy24
-Spanien 	        Kreditkarte
 Spanien 	        PayPal - Später bezahlen
 Spanien	            Sofort (Klarna Pay now)
-Vereinigte Staaten  Kreditkarte
 Vereinigte Staaten  PayPal - Später bezahlen
 ==================  ==========================
 
@@ -81,13 +74,7 @@ BLIK	                   Polen
 eps	                       Österreich
 GiroPay	                   Deutschland
 iDEAL 	                   Niederlande
-Kreditkarte                Deutschland
-Kreditkarte                Frankreich
-Kreditkarte                Großbritannien
-Kreditkarte                Italien
-Kreditkarte                Österreich
-Kreditkarte                Spanien
-Kreditkarte                Vereinigte Staaten
+Kreditkarte                Weltweit
 MyBank	                   Italien
 PayPal	                   Weltweit
 PayPal Express             Weltweit
