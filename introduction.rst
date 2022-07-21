@@ -35,37 +35,30 @@ In each case, note the currency coverage of each payment method (see :ref:`intro
 ================= ==========================
 Market            Payment Methods
 ================= ==========================
+Worldwide         Creditcard
 Worldwide         PayPal
 Worldwide         PayPal Express
-Austria           Creditcard
 Austria           eps
 Austria           PayPal - Pay Later
 Austria           Sofort (Klarna Pay now)
 Belgium           Bancontact
 Belgium           Sofort (Klarna Pay now)
-Canada            Creditcard
-France            Creditcard
 France            PayPal - Pay Later
 Germany           GiroPay
-Germany           Creditcard
 Germany           PayPal - Pay Later
 Germany           Pay upon Invoice
 Germany           Sofort (Klarna Pay now)
-Great Britain     Creditcard
 Great Britain     Sofort (Klarna Pay now)
 Great Britain     PayPal - Pay Later
 Italy             MyBank
 Italy             Sofort (Klarna Pay now)
 Italy             PayPal - Pay Later
-Italy             Creditcard
 Netherlands       iDEAL
 Netherlands       Sofort (Klarna Pay now)
 Poland            BLIK
 Poland            Przelewy24
-Spain             Creditcard
 Spain             Sofort (Klarna Pay now)
 Spain             PayPal - Pay Later
-United States     Creditcard
 United States     PayPal - Pay Later
 ================= ==========================
 
@@ -80,17 +73,10 @@ Payment methods                 Markets
 =============================== ===============
 Bancontact                      Belgium
 BLIK                            Poland
+Creditcard                      Worldwide
 eps                             Austria
 GiroPay                         Germany
 iDEAL                           Netherlands
-Creditcard                      Canada
-Creditcard                      Germany
-Creditcard                      Fance
-Creditcard                      Great Britain
-Creditcard                      Italy
-Creditcard                      Austria
-Creditcard                      Spain
-Creditcard                      United States
 MyBank                          Italy
 PayPal                          Worldwide
 PayPal Express                  Worldwide
