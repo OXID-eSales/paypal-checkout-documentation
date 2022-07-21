@@ -507,6 +507,24 @@ If you want to take advantage of advertising PayPal installments, specify where 
 #. Save your settings.
 
 
+Optional: Configure country mapping of PayPal Checkout payment methods
+----------------------------------------------------------------------------
+
+Offer certain :productname:`PayPal Checkout` payment methods only in certain countries.
+
+By default, a customer's billing address, not the shipping address, determines whether a :productname:`PayPal Checkout` payment method is available for the customer.
+|br|
+Example: Only customers with a billing address in Poland will be offered the :productname:`Przelewy24` payment method.
+
+Certain :productname:`PayPal Checkout` payment methods cover multiple countries. For example, the :productname:`Credit Card` payment method is available to customers worldwide, and the :productname:`Pay Later` payment method is available to your customers in countries in Europe, the USA and Australia.
+
+For more information about the country coverage of each :productname:`PayPal Checkout` payment method, see :ref:`introduction:Market coverage by payment methods`.
+
+|procedure|
+
+To restrict the accessibility of a :productname:`PayPal Checkout` payment method to specific countries if needed, choose :menuselection:`Shop Settings --> Payment Methods --> <payment method> --> Country --> Assign Countries`.
+
+
 Testing PayPal Checkout
 -----------------------
 

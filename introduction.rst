@@ -26,7 +26,7 @@ If you have set prices to be net prices (typically in B2B stores), the Pay upon 
 In the typical case, you specify all prices as gross prices in your OXID eShop, and you can offer the Pay upon Invoice payment method to your private customers.
 
 Market coverage by country
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With :productname:`PayPal Checkout`, offer payment methods popular in the following markets.
 
