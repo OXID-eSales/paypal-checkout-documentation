@@ -8,6 +8,7 @@ If you have OXID eShop version 6.2 or higher, install :productname:`PayPal Check
 |prerequisites|
 
 * You have installed OXID eShop 6.1.
+* Your environment is running PHP 7.1.
 * You have configured `https`.
 
    a. In the :file:`<root directory of the eShop>/source` directory, open the :file:`config.inc.php` file.
