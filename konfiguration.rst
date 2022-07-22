@@ -6,7 +6,7 @@ Machen Sie das Modul :productname:`PayPal Checkout` für Ihren OXID eShop betrie
 Sie haben bereits PayPal oder PayPal Plus?
 ------------------------------------------
 
-Sorgen Sie für einen reibungslosen beim Übergang zum neuen Modul :productname:`PayPal Checkout`.
+Sorgen Sie für einen reibungslosen Übergang zum neuen Modul :productname:`PayPal Checkout`.
 
 Beachten Sie dazu die beiden folgenden Einschränkungen:
 
@@ -39,6 +39,7 @@ Tun Sie Folgendes:
 #. Generieren Sie für das Freischalten Ihres :emphasis:`Live`-Systems die Zugangsdaten neu.
    |br|
    Durchlaufen Sie dazu den PayPal-Registrierungs-Prozess mit Ihren PayPal-Händlerkonto-Daten erneut.
+
 
 Existierende PayPal- oder PayPal Plus-Bestellungen verwalten
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -108,6 +109,9 @@ Wir empfehlen folgendes Vorgehen.
 
 Grundsätzliches Vorgehen
 ------------------------
+
+.. include:: /_static/reuse/note-ee-onboarding.rst
+
 
 1. Aktivieren Sie das Modul.
    |br|
@@ -208,6 +212,8 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
 |procedure|
 
 Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess ist analog.
+
+.. include:: /_static/reuse/note-ee-onboarding.rst
 
 1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Händler PayPal-Integration (Sandbox) im neuen Fenster starten`.
 #. Wählen Sie :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
@@ -500,16 +506,19 @@ Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, le
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
 
+
+Stellen Sie sicher, dass bestimmte :productname:`PayPal Checkout`-Zahlungsmethoden ausschließlich in den von Ihnen gewünschten Ländern zur Verfügung stehen.
+
+|background|
+
 Bei der Erstinstallation sind den :productname:`PayPal Checkout`-Zahlungsmethoden automatich die entsprechenden Länder zugeordnet.
 
-Schränken Sie bei Bedarf bestimmte :productname:`PayPal Checkout`-Zahlungsmethoden auf bestimmte Ländern ein.
-
-Die meisten :productname:`PayPal Checkout`-Zahlungsmethoden decken mehrere Länder ab. Die Zahlungsmethode :productname:`Kreditkarte` beispielsweise ist Kunden weltweit zugänglich, die Zahlungsmethode :productname:`Pay Later` steht Ihren Kunden in Ländern in Europa, den USA und Australien zur Verfügung.
+Die meisten :productname:`PayPal Checkout`-Zahlungsmethoden decken mehrere Länder ab. Die Zahlungsmethode :productname:`Kreditkarte` beispielsweise ist Kunden weltweit zugänglich, die Zahlungsmethode :productname:`Pay Later` steht Ihren Kunden beispielsweise in Ländern in Europa, den USA und Australien zur Verfügung.
 
 Weitere Informationen über die Länderabdeckung der einzelnen :productname:`PayPal Checkout`-Zahlungsmethoden finden Sie unter :ref:`einfuehrung:Marktabdeckung nach Zahlungsmethoden`.
 
 
-Standardmäßig gilt dabei: Die Rechnungsadresse und nicht die Lieferadresse eines Kunden bestimmt, ob eine :productname:`PayPal Checkout`-Zahlungsmethode dem Kunden zur Auswahl steht.
+Grundsätzlich gilt dabei: Die :emphasis:`Rechnungsadresse` und nicht die Lieferadresse eines Kunden bestimmt, ob eine :productname:`PayPal Checkout`-Zahlungsmethode dem Kunden zur Auswahl steht.
 |br|
 Beispiel: Nur Kunden mit einer Rechnungsadresse in Polen erhalten die Zahlungsmethode :productname:`Przelewy24` angeboten.
 
