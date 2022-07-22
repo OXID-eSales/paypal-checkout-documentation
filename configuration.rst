@@ -110,6 +110,8 @@ We recommend the following procedure.
 Basic procedure
 ---------------
 
+.. include:: /_static/reuse/note-ee-onboarding.rst
+
 1. Activate the module.
    |br|
    The most important payment methods are automatically activated.
@@ -208,6 +210,8 @@ Only when everything works as you want, use the credentials for *live* operation
 |procedure|
 
 We describe the process using a sandbox account as an example. The live process is analogous.
+
+.. include:: /_static/reuse/note-ee-onboarding.rst
 
 1. To log in to the sandbox, under :guilabel:`API credentials` choose the :guilabel:`Start Merchant Integration (Sandbox) in a new window` button.
 #. Select :guilabel:`Sign Up Merchant Integration (Sandbox)`.
@@ -510,16 +514,18 @@ If you want to take advantage of advertising PayPal installments, specify where 
 Optional: Configuring the country mapping of PayPal Checkout payment methods
 ----------------------------------------------------------------------------
 
+Make sure that certain :productname:`PayPal Checkout` payment methods are only available in the countries you choose.
+
+|background|
+
 With the initial installation, the :productname:`PayPal Checkout` payment methods are automatically assigned to the corresponding countries.
 
-If necessary, limit certain :productname:`PayPal Checkout` payment methods to specific countries.
-
-Most :productname:`PayPal Checkout` payment methods cover multiple countries. For example, the :productname:`Credit Card` payment method is available to customers worldwide, and the :productname:`Pay Later` payment method is available to your customers in countries in Europe, the USA, and Australia.
+Most :productname:`PayPal Checkout` payment methods cover multiple countries. For example, the :productname:`Credit Card` payment method is available to customers worldwide, and the :productname:`Pay Later` payment method is available to your customers in countries in Europe, the USA, and Australia, for example.
 
 For more information about the country coverage of each :productname:`PayPal Checkout` payment method, see :ref:`introduction:Market coverage by payment methods`.
 
 
-By default, a customer's billing address, not the shipping address, determines whether a :productname:`PayPal Checkout` payment method is available for the customer.
+The basic rule here is: A customer's :emphasis:`billing address`, not the shipping address, determines whether a :productname:`PayPal Checkout` payment method is available for the customer.
 |br|
 Example: Only customers with a billing address in Poland will be offered the :productname:`Przelewy24` payment method.
 
