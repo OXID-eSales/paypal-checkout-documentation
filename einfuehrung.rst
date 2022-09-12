@@ -125,6 +125,8 @@ Wechseln Sie zu :productname:`PayPal Checkout`, um Ihren Kunden zusätzliche Zah
 
 Weitere Informationen finden Sie unter `developer.paypal.com/docs/checkout/apm/ <https://developer.paypal.com/docs/checkout/apm/>`_.
 
+Wie Sie für einen reibungslosen Übergang zum neuen Modul :productname:`PayPal Checkout` sorgen, beschreiben wir im Kapitel :ref:`konfiguration:Konfiguration` unter :ref:`konfiguration:Sie haben bereits PayPal oder PayPal Plus?`.
+
 
 Sie haben das Modul PayPal Plus?
 --------------------------------
@@ -137,5 +139,7 @@ Wechseln Sie zu :productname:`PayPal Checkout`, wenn es für Sie wichtig ist, Ih
 * Mit der Später Bezahlen-Funktion können Kunden in Deutschland beispielsweise mit 30 Tagen Aufschub oder per PayPal Ratenzahlung bezahlen (siehe :ref:`konfiguration:Einstellungen für die Buttonplatzierung: Später Bezahlen`).
   |br|
   Weitere Informationen über Länder-Abdeckung und landesspezifische Funktionen der Später Bezahlen-Funktion finden Sie unter `developer.paypal.com/docs/checkout/pay-later/de/ <https://developer.paypal.com/docs/checkout/pay-later/de/>`_.
+
+Wie Sie für einen reibungslosen Übergang zum neuen Modul :productname:`PayPal Checkout` sorgen, beschreiben wir im Kapitel :ref:`konfiguration:Konfiguration` unter :ref:`konfiguration:Sie haben bereits PayPal oder PayPal Plus?`.
 
 .. Intern: oxdajp, Status:
