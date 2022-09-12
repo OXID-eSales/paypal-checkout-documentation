@@ -127,6 +127,7 @@ which are popular in international markets.
 
 For more information, see `developer.paypal.com/docs/checkout/apm/ <https://developer.paypal.com/docs/checkout/apm/>`_.
 
+How to ensure a smooth transition to the new :productname:`PayPal Checkout` module is described in :ref:`configuration:Configuration` under :ref:`configuration:You already have PayPal or PayPal Plus?`.
 
 You have the PayPal Plus module?
 --------------------------------
@@ -139,5 +140,7 @@ Switch to :productname:`PayPal Checkout` if it is important for you to offer you
 * With the Pay Later function, customers in Germany can pay with a 30-day deferral or by PayPal installment, for example (see :ref:`configuration:Button Placement Settings: Pay Later`).
   |br|
   For more information about country coverage and country-specific features of the Pay Later feature, see `developer.paypal.com/docs/checkout/pay-later/de/ <https://developer.paypal.com/docs/checkout/pay-later/de/>`_.
+
+How to ensure a smooth transition to the new :productname:`PayPal Checkout` module is described in :ref:`configuration:Configuration` under :ref:`configuration:You already have PayPal or PayPal Plus?`.
 
 .. Intern: oxdajp, Status:
