@@ -364,8 +364,15 @@ Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deak
 
 |procedure|
 
-1. Um die Express-Checkout-Funktion zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Warenkorb`.
+1. Um die Express-Checkout-Funktion zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Mini-Warenkorb` (:ref:`oxdajr10`, Pos. 1).
 #. Speichern Sie Ihre Einstellungen.
+
+.. _oxdajr10:
+
+.. figure:: /media/screenshots/oxdajr10.png
+   :alt: Anzeige der PayPal-Buttons steuern
+
+   Abb.: Anzeige der PayPal-Buttons steuern
 
 |Result|
 
@@ -383,7 +390,7 @@ Weitere Informationen über Länder-Abdeckung und landesspezifische Funktionen d
 
 |procedure|
 
-1. Um Ihren Kunden Später Bezahlen-Funktionen anzubieten, aktivieren Sie das Kontrollkästchen :guilabel:`"Später Bezahlen"-Button anzeigen?`.
+1. Um Ihren Kunden Später Bezahlen-Funktionen anzubieten, aktivieren Sie das Kontrollkästchen :guilabel:`"Später Bezahlen"-Button anzeigen?` (:ref:`oxdajr10`, Pos. 2).
 #. Speichern Sie Ihre Einstellungen.
 
 
