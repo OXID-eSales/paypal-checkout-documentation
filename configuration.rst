@@ -358,8 +358,15 @@ If you want your customers to have to register in your eShop, disable the quick 
 
 |procedure|
 
-1. To disable the express checkout feature, uncheck :guilabel:`Product details page` and :guilabel:`Basket`.
+1. To disable the express checkout feature, uncheck :guilabel:`Product details page`, :guilabel:`Basket`, and :guilabel:`Mini-Basket` (:ref:`oxdajr10`, item 1).
 2. Save your settings.
+
+.. _oxdajr10:
+
+.. figure:: /media/screenshots/oxdajr10.png
+   :alt: Controlling the display of PayPal buttons
+
+   Fig.: Controlling the display of PayPal buttons
 
 |Result|
 
@@ -377,7 +384,7 @@ For more information about country coverage and country-specific features of the
 
 |procedure|
 
-1. To offer your customers Pay Later features, choose the :guilabel:`"Show Pay Later" button?` checkbox.
+1. To offer your customers Pay Later features, choose the :guilabel:`"Show Pay Later" button?` checkbox (:ref:`oxdajr10`, item 2).
 #. Save your settings.
 
 
