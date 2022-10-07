@@ -1,6 +1,11 @@
 Konfiguration
 =============
 
+.. todo: 3D secure Sicherheitsverfahren bei Kreditkarte ja oder nein
+    ja: immer: Achtung: Kreditkarten ohne 3D secure würden nicht funktionieren: aber höchste Sicherheit: alte Kreditkarte wird abgelehn:
+    nein: für max Umsatz, niedrigste
+    von Paypal entschieden: PayPal würde ohne 3D secure versuchen; 3D ist Prio oder Fallback bei nein
+
 Machen Sie das Modul :productname:`PayPal Checkout` für Ihren OXID eShop betriebsbereit.
 
 Sie haben bereits PayPal oder PayPal Plus?
