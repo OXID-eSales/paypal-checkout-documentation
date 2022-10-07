@@ -217,9 +217,7 @@ We describe the process using a sandbox account as an example. The live process 
 #. Select :guilabel:`Sign Up Merchant Integration (Sandbox)`.
 #. Go through the registration process with the sandbox merchant account email address.
 
-   a. Log in (:ref:`oxdajr01`), and confirm the prompts.
-
-      .. todo: #tbd: screenshot EN
+   a. Log in with your (sandbox) merchant account (:ref:`oxdajr01`), and confirm the prompts.
 
       .. _oxdajr01:
 
