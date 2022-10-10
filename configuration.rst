@@ -496,13 +496,10 @@ Alternatively, set the banner settings manually as described below under :ref:`c
 
 |procedure|
 
-.. todo #ML: verify button name
-
 1. To apply the existing PayPal banner advertising settings, choose the :guilabel:`Apply settings from the classic PayPal module` button.
    |br|
    The button appears only if the :productname:`PayPal` module is still activated.
 #. Save your settings.
-
 
 Banner settings
 ^^^^^^^^^^^^^^^
