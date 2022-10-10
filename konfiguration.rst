@@ -1,11 +1,6 @@
 Konfiguration
 =============
 
-.. todo: 3D secure Sicherheitsverfahren bei Kreditkarte ja oder nein
-    ja: immer: Achtung: Kreditkarten ohne 3D secure würden nicht funktionieren: aber höchste Sicherheit: alte Kreditkarte wird abgelehn:
-    nein: für max Umsatz, niedrigste
-    von Paypal entschieden: PayPal würde ohne 3D secure versuchen; 3D ist Prio oder Fallback bei nein
-
 Machen Sie das Modul :productname:`PayPal Checkout` für Ihren OXID eShop betriebsbereit.
 
 Sie haben bereits PayPal oder PayPal Plus?
@@ -110,8 +105,6 @@ Wir empfehlen folgendes Vorgehen.
 #. Empfohlen: Sobald Sie sicher sind, dass bei bestehenden Bestellungen keine Aktionen (beispielsweise Rückerstattung) mehr nötig sein werden, deaktivieren Sie :productname:`PayPal` oder :productname:`PayPal Plus` unter :menuselection:`Erweiterungen --> Module`.
 
 
-
-
 Grundsätzliches Vorgehen
 ------------------------
 
@@ -129,7 +122,8 @@ Grundsätzliches Vorgehen
       * Testen Sie :productname:`PayPal Plus` zunächst in der PayPal-Sandbox.
 
 #. Optional: Deaktivieren Sie bei Bedarf die Express-Checkout-Funktion von :productname:`PayPal Checkout`.
-#. Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen.
+#. Optional: Legen Sie fest, ob Sie Ihren Kunden die PayPal-Ratenzahlung anbieten wollen (siehe :ref:`oxdajr08`).
+#. Kontaktieren Sie bei Bedarf den PayPal-Kundenservice, um das für Ihren Fall optimale Verfahren festzulegen, wie PayPal mit der 3D Secure-Authentifizierung umgeht (siehe :ref:`oxdajr11`).
 #. Konfigurieren Sie die von :productname:`PayPal Checkout` bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
 
    * Aktivieren Sie die Länder, die Sie abdecken wollen.
@@ -448,6 +442,38 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
    Andernfalls deaktivieren Sie das Kontrollkästchen.
 3. Speichern Sie Ihre Einstellungen.
 
+
+3D Secure für Debit- und Kreditkarten konfigurieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Um die gesetzlichen Anforderungen an Online-Zahlungen mit Kreditkarte zu erfüllen, nutzen Sie die 3D Secure-Authentifizierung.
+
+Dabei wird der Kunde während der Transaktion von der ausstellenden Bank aufgefordert, sich durch Eingabe eines Passworts als rechtmäßiger Karteninhaber zu identifizieren.
+
+Diese Authentifizierung durch die ausstellende Bank ist in bestimmten Situationen europaweit vorgeschrieben – etwa beim Hinterlegen einer Kreditkarte in ein E-Wallet (z.B. PayPal) oder bei riskanten Transaktionen.
+
+Weitere Informationen über die die 3D Secure-Authentifizierung finden Sie unter `paypal.com/de/webapps/mpp/3dsecure-faqs <https://www.paypal.com/de/webapps/mpp/3dsecure-faqs>`_.
+
+Sie haben folgende Möglichkeiten:
+
+* Um die höchstmögliche Sicherheit zu erreichen, erzwingen Sie eine 3D Secure-Abfrage für jede Kreditkartentransaktion.
+* Lassen Sie PayPal sicherstellen, dass 3D Secure nur im Bedarfsfall eingesetzt wird.
+  |br|
+  PayPal sorgt dafür, dass der Großteil Ihrer Kunden ungestört einkaufen kann.
+* 3D Secure-Ergebnis ignorieren: Um zu erfahren, in welchen Fällen diese Einstellung für Sie sinnvoll sein kann, wenden Sie sich an den PayPal-Kundenservice unter `paypal.com/de/webapps/helpcenter/helphub/home/ <https://www.paypal.com/de/webapps/helpcenter/helphub/home/>`_.
+
+|procedure|
+
+1. Bei Bedarf: Um die für Ihre Zwecke optimale Einstellung zu bestimmen, kontaktieren Sie den PayPal-Kundenservice unter `paypal.com/de/webapps/helpcenter/helphub/home/ <https://www.paypal.com/de/webapps/helpcenter/helphub/home/>`_.
+#. Wählen Sie die gewünschte Einstellung (:ref:`oxdajr11`).
+#. Speichern Sie Ihre Einstellungen.
+
+.. _oxdajr11:
+
+.. figure:: /media/screenshots/oxdajr11.png
+   :alt: 3D Secure-Authentifizierung konfigurieren
+
+   Abb.: 3D Secure-Authentifizierung konfigurieren
 
 Banner-Einstellungen übernehmen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
