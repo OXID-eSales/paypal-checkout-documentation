@@ -124,6 +124,7 @@ Basic procedure
 
 #. Optional: Disable the express checkout feature of :productname:`PayPal Checkout` if needed.
 #. Optional: Specify if you want to offer PayPal installment payment (see :ref:`oxdajr08`) to your customers.
+#. If necessary, contact PayPal Customer Service to determine the best way for PayPal to handle 3D Secure authentication in your case (see :ref:`oxdajr11`).
 #. Configure the payment methods provided by :productname:`PayPal Checkout` as payment methods in your eShop:
 
    * Enable the countries you want to cover.
@@ -442,6 +443,43 @@ If you do :emphasis:`not` enable :guilabel:`Login with PayPal`, the following ha
    |br|
    Otherwise, deselect the checkbox.
 #. Save your settings.
+
+
+Configuring 3D Secure for debit and credit cards
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To meet the legal requirements for online payments with credit cards, use 3D Secure authentication.
+
+With 3D Secure authentication, during the transaction, the issuing bank asks the customer to identify himself as the legitimate cardholder by entering a password.
+
+This authentication by the issuing bank is mandatory throughout Europe in certain situations -- for example, when depositing a credit card in an e-wallet (PayPal, for example) or for risky transactions.
+
+For more information about 3D Secure authentication, see `paypal.com/en/webapps/mpp/3dsecure-faqs <https://www.paypal.com/en/webapps/mpp/3dsecure-faqs>`_.
+
+You have the following options:
+
+* For the highest possible security, enforce a 3D Secure query for every credit card transaction.
+* Have PayPal ensure that 3D Secure is only used when necessary.
+  |br|
+  PayPal ensures that the majority of your customers can shop undisturbed.
+* Disable 3D Secure result evaluation: To learn in which cases this setting may be useful for you, contact PayPal Customer Service at `paypal.com/en/webapps/helpcenter/helphub/home/ <https://www.paypal.com/en/webapps/helpcenter/helphub/home/>`_.
+
+|procedure|
+
+1. If needed: To determine the best setting for your purposes, contact PayPal Customer Service at `paypal.com/en/webapps/helpcenter/helphub/home/ <https://www.paypal.com/de/webapps/helpcenter/helphub/home/>`_.
+#. Choose the desired setting (:ref:`oxdajr11`).
+#. Save your settings.
+
+.. _oxdajr11:
+
+.. figure:: /media/screenshots/oxdajr11.png
+   :alt: Configuring 3D Secure authentication
+
+   Figure: Configuring 3D Secure authentication
+
+
+
+
 
 
 Banner settings: Re-using your PayPal banner settings
