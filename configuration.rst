@@ -466,7 +466,7 @@ You have the following options:
 
 |procedure|
 
-1. If needed: To determine the best setting for your purposes, contact PayPal Customer Service at `paypal.com/en/webapps/helpcenter/helphub/home/ <https://www.paypal.com/de/webapps/helpcenter/helphub/home/>`_.
+1. If needed: To determine the best setting for your purposes, contact PayPal Customer Service at `paypal.com/en/webapps/helpcenter/helphub/home <https://www.paypal.com/de/webapps/helpcenter/helphub/home/>`_.
 #. Choose the desired setting (:ref:`oxdajr11`).
 #. Save your settings.
 
