@@ -80,8 +80,8 @@ Execute the commands as follows:
 
    .. code:: bash
 
+      composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
       composer require oxid-solution-catalysts/paypal-module ^1.2.0
-
 
 Installing a patch update
 -------------------------
