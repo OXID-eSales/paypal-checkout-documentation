@@ -87,7 +87,6 @@ Führen Sie dabei die Befehle wie folgt aus:
 
    composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
    composer require oxid-solution-catalysts/paypal-module ^1.0.0
-   composer install
 
 
 Patch-Update installieren
