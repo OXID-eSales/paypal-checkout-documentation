@@ -176,6 +176,11 @@ Register a webhook to connect your eShop with PayPal.
 
 The webhook allows PayPal to contact your OXID eShop and provide real-time status messages about, for example, completed transactions.
 
+.. hint::
+
+  It's possible to let the shop track the incoming webhooks by setting the config parameter `$this->sLogLevel` in the file `config.inc.php` to `debug`. After that, the webhook calls by PayPal are written to the file `oxideshop.log`.
+
+
 In the first run, you test the payment methods provided with :productname:`PayPal Checkout` with test credentials in a *sandbox*.
 
 .. hint::
