@@ -164,6 +164,10 @@ PayPal Checkout konfigurieren
 
 Um die Konfiguration zu starten, wählen Sie :menuselection:`PayPal --> Konfiguration`. 
 
+.. note::
+
+   Um das Modul konfigurieren zu können, muss dieses zunächst aktiviert werden.
+   Nach der Aktivierung erscheint links in der Navigation der neue Menüpunkt **PayPal**.
 
 
 API-Anmeldeinformationen
