@@ -163,6 +163,10 @@ PayPal Checkout konfigurieren
 
 Um die Konfiguration zu starten, wählen Sie :menuselection:`PayPal --> Konfiguration`. 
 
+.. note::
+
+   Um das Modul konfigurieren zu können, muss dieses zunächst aktiviert werden.
+   Nach der Aktivierung erscheint links in der Navigation der neue Menüpunkt **PayPal**.
 
 
 API-Anmeldeinformationen
@@ -171,6 +175,10 @@ API-Anmeldeinformationen
 Registrieren Sie einen Webhook, um Ihren eShop mit PayPal zu verbinden.
 
 Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit Statusmeldungen beispielsweise über abgeschlossene Transaktionen zu liefern.
+
+.. hint::
+
+  Wenn die Webhooks des Modul geprüft werden müssen, dann bietet es sich an den Parameter `$this->sLogLevel` in der Datei `config.inc.php` auf den Wert `debug` zu setzen. Auf diese Weise werden die an den Shop gesendeten Webhook Calls von PayPal im Log `oxideshop.log` aufgezeichnet.
 
 Im ersten Durchgang testen Sie die mit :productname:`PayPal Checkout` bereitgestellten Zahlungsarten mit Test-Zugangsdaten in einer *Sandbox*.
 
