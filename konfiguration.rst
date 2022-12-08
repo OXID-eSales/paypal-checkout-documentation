@@ -26,7 +26,7 @@ Die Zugangsdaten und der Anmeldeprozess von :productname:`PayPal Checkout` sind 
 
 Lassen Sie sich dadurch jedoch nicht dazu verleiten, die Zugangsdaten von :productname:`PayPal Plus` wiederzuverwenden.
 
-Dies würde zu folgenden Enttäuschungen führen:
+Dies würde zu den folgenden unerwünschten Verhalten führen:
 
 * Die Webhooks werden nicht korrekt aktiviert, Informationen werden nicht korrekt übermittelt, ohne dass jedoch die Fehler sofort erkennbar sind.
 * Zahlungsarten wie Ratenkauf stehen nicht zur Verfügung, die Zahlung mit Kreditkarte wird nicht freigeschaltet.
