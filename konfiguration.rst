@@ -366,7 +366,7 @@ Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deak
 
 |procedure|
 
-1. Um die Express-Checkout-Funktion zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Mini-Warenkorb` (:ref:`oxdajr10`, Pos. 1).
+1. Um die Schnellkauf-Funktion von :productname:`PayPal Checkout` zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Mini-Warenkorb` (:ref:`oxdajr10`, Pos. 1).
 #. Speichern Sie Ihre Einstellungen.
 
 .. _oxdajr10:
@@ -450,6 +450,61 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
    Andernfalls deaktivieren Sie das Kontrollkästchen.
 3. Speichern Sie Ihre Einstellungen.
 
+Geldeinzug festlegen
+^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob für Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen nur reserviert werden sollen.
+
+.. todo: #ML: use case wie Amazon?:
+
+
+|example|
+
+Typischerweise wird das Geld sofort eingezogen.
+
+In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Auslieferung ausgelöst wird:
+
+* Sie vertreiben bestimmte individualisierte Produkte, die Sie erst nach Eingang der Bestellung herstellen, in Auftrag geben oder bestellen.
+* Sie haben einen eShop für Geschäftskunden. Hier sind die Liefermengen und Zahlungsbeträge größer als bei Privatkunden.
+  |br|
+  Im Fall eines Fehlers wäre das Retourenmanagement entsprechend schwieriger.
+  |br|
+  Deshalb wollen Sie sicherstellen, dass die Zahlung nur ausgelöst wird, wenn die Ware da oder auf dem Weg zum Versand ist.
+
+|procedure|
+
+1. Sie haben unter :guilabel:`PayPal Standard - Geldeinzug` folgende Möglichkeiten (:ref:`oxdajr12`):
+
+   * Um Zahlungen direkt auszulösen, wählen Sie :guilabel:`Direkt`.
+   * Um die Zahlung nur zu reservieren und später auszulösen, haben Sie folgende Möglichkeiten:
+
+     * :guilabel:`automatisch bei Lieferung`: Die Zahlung wird ausgelöst, sobald Sie in Ihrem eShop den bestellten Artikel auf den Status :technicalname:`Geliefert` gesetzt haben.
+
+     .. todo: #ML: * :guilabel:`manuell`: Die Zahlung wird ausgelöst, die Zahlung #tbd
+
+     .. todo: #ML: Was ist die manuelle Auslösen bei PayPal? Bei Amazon eht es so: ... "in Ihrem Seller Central-Händlerkonto unter :menuselection:`Bestellungen --> Transaktionen verwalten` bestätigen".
+
+#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
+   |br|
+   Die verzögerte Zahlung für Zahlungen mit :productname:`PayPal Checkout` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsart zugeordnet haben.
+   |br|
+   Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
+#. Speichern Sie Ihre Einstellungen.
+
+.. todo: #ML: Was genau folgt daraus: "Bitte beachten! Die Autorisierung einer Bestellung gilt drei Tage. Sie wird maximal bis 29 Tage nach Bestellung automatisch aufgefrischt. Anschließend ist ein Geldeinzug nicht mehr möglich." -- Wer frischt auf? Geht es automatisch?
+
+.. todo: #ML:  Auf welche PayPal Checkout Versionen trifft es zu?
+
+.. _oxdajr12:
+
+.. figure:: /media/screenshots/oxdajr12.png
+   :alt: Verzögerte Zahlung konfigurieren
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Verzögerte Zahlung konfigurieren
+
+
 
 3D Secure für Debit- und Kreditkarten konfigurieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -482,6 +537,7 @@ Sie haben folgende Möglichkeiten:
    :alt: 3D Secure-Authentifizierung konfigurieren
 
    Abb.: 3D Secure-Authentifizierung konfigurieren
+
 
 Banner-Einstellungen übernehmen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
