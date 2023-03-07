@@ -453,14 +453,14 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
 Geldeinzug festlegen
 ^^^^^^^^^^^^^^^^^^^^
 
-Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen nur reserviert werden sollen.
+Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen für maximal 30 Tage aufgeschoben werden sollen.
 
-.. todo: #ML: use case wie Amazon?: autorisiert wird sofort, Paypal darf holen; tatsächlich holen: manuell
+.. todo: #tbd:  Auf welche PayPal Checkout Versionen trifft es zu? -- alle Version 1.0, 1.1, 2.0
 
 
 |example|
 
-Typischerweise wird das Geld sofort eingezogen.
+Typischerweise wird der Rechnungsbetrag sofort eingezogen.
 
 In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Auslieferung ausgelöst wird:
 
@@ -470,6 +470,17 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
   Im Fall eines Fehlers wäre das Retourenmanagement entsprechend schwieriger.
   |br|
   Deshalb wollen Sie sicherstellen, dass die Zahlung nur ausgelöst wird, wenn die Ware da oder auf dem Weg zum Versand ist.
+
+.. important::
+
+   Sie müssen das Produkt innerhalb von 30 Tagen liefern und die Transaktion beenden oder mit dem Kunden gemeinsam eine Lösung finden.
+
+   Hintergrund: Durch das Bestellen ist PayPal initial für 3 Tage autorisiert, das Geld bei Ihrem Kunden einzuziehen. Die Autorisierung wird bis maximal 29 Tage nach Bestellung automatisch verlängert.
+
+   Nach dreißig Tagen verfällt die Autorisierung, und PayPal kann den Rechnungsbetrag nicht mehr einziehen.
+
+   .. todo: #ML: Gibt es eine solche Frist bei Amazon auch?
+
 
 |procedure|
 
@@ -491,10 +502,6 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
    Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
 #. Speichern Sie Ihre Einstellungen.
 
-.. todo: #ML bezieht sich auf das Manuelle auslösen per Button: muss in 30 Tahen gliefert haben; sonst bei Kunden melden Was genau folgt daraus: "Bitte beachten! Die Autorisierung einer Bestellung gilt drei Tage. Sie wird maximal bis 29 Tage nach Bestellung automatisch aufgefrischt. Anschließend ist ein Geldeinzug nicht mehr möglich." -- Wer frischt auf? Geht es automatisch?
-
-
-.. todo: #ML:  Auf welche PayPal Checkout Versionen trifft es zu? -- alle Version 1.0
 
 .. _oxdajr12:
 
