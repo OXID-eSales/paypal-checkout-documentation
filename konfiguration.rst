@@ -453,9 +453,9 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
 Geldeinzug festlegen
 ^^^^^^^^^^^^^^^^^^^^
 
-Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob für Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen nur reserviert werden sollen.
+Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen nur reserviert werden sollen.
 
-.. todo: #ML: use case wie Amazon?:
+.. todo: #ML: use case wie Amazon?: autorisiert wird sofort, Paypal darf holen; tatsächlich holen: manuell
 
 
 |example|
@@ -480,9 +480,9 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
 
      * :guilabel:`automatisch bei Lieferung`: Die Zahlung wird ausgelöst, sobald Sie in Ihrem eShop den bestellten Artikel auf den Status :technicalname:`Geliefert` gesetzt haben.
 
-     .. todo: #ML: * :guilabel:`manuell`: Die Zahlung wird ausgelöst, die Zahlung #tbd
+     .. todo: #ML: prüft: wo ist der Button im Shop-Backend? * :guilabel:`manuell`: Die Zahlung wird ausgelöst, die Zahlung #tbd
 
-     .. todo: #ML: Was ist die manuelle Auslösen bei PayPal? Bei Amazon eht es so: ... "in Ihrem Seller Central-Händlerkonto unter :menuselection:`Bestellungen --> Transaktionen verwalten` bestätigen".
+     .. todo: #ML: nicht so bei Paypal: Was ist die manuelle Auslösen bei PayPal? Bei Amazon eht es so: ... "in Ihrem Seller Central-Händlerkonto unter :menuselection:`Bestellungen --> Transaktionen verwalten` bestätigen".
 
 #. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
    |br|
@@ -491,9 +491,10 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
    Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
 #. Speichern Sie Ihre Einstellungen.
 
-.. todo: #ML: Was genau folgt daraus: "Bitte beachten! Die Autorisierung einer Bestellung gilt drei Tage. Sie wird maximal bis 29 Tage nach Bestellung automatisch aufgefrischt. Anschließend ist ein Geldeinzug nicht mehr möglich." -- Wer frischt auf? Geht es automatisch?
+.. todo: #ML bezieht sich auf das Manuelle auslösen per Button: muss in 30 Tahen gliefert haben; sonst bei Kunden melden Was genau folgt daraus: "Bitte beachten! Die Autorisierung einer Bestellung gilt drei Tage. Sie wird maximal bis 29 Tage nach Bestellung automatisch aufgefrischt. Anschließend ist ein Geldeinzug nicht mehr möglich." -- Wer frischt auf? Geht es automatisch?
 
-.. todo: #ML:  Auf welche PayPal Checkout Versionen trifft es zu?
+
+.. todo: #ML:  Auf welche PayPal Checkout Versionen trifft es zu? -- alle Version 1.0
 
 .. _oxdajr12:
 
