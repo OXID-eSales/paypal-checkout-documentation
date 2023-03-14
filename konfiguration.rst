@@ -455,8 +455,6 @@ Geldeinzug festlegen
 
 Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen für maximal 30 Tage aufgeschoben werden sollen.
 
-.. todo: #tbd:  Auf welche PayPal Checkout Versionen trifft es zu? -- alle Version 1.0, 1.1, 2.0
-
 
 |example|
 
@@ -479,28 +477,25 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
 
    Nach dreißig Tagen verfällt die Autorisierung, und PayPal kann den Rechnungsbetrag nicht mehr einziehen.
 
-   .. todo: #ML: Gibt es eine solche Frist bei Amazon auch?
-
 
 |procedure|
 
-1. Sie haben unter :guilabel:`PayPal Standard - Geldeinzug` folgende Möglichkeiten (:ref:`oxdajr12`):
+1. Sie haben unter :guilabel:`PayPal Standard - Geldeinzug` (:ref:`oxdajr12`) folgende Möglichkeiten:
 
-   * Um Zahlungen direkt auszulösen, wählen Sie :guilabel:`Direkt`.
+   * Damit Zahlungen immer direkt ausgelöst werden, wählen Sie :guilabel:`Direkt`.
    * Um die Zahlung nur zu reservieren und später auszulösen, haben Sie folgende Möglichkeiten:
 
      * :guilabel:`automatisch bei Lieferung`: Die Zahlung wird ausgelöst, sobald Sie in Ihrem eShop den bestellten Artikel auf den Status :technicalname:`Geliefert` gesetzt haben.
+     * :guilabel:`manuell`: Die Zahlung wird ausgelöst, wenn Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
 
-     .. todo: #ML: prüft: wo ist der Button im Shop-Backend? * :guilabel:`manuell`: Die Zahlung wird ausgelöst, die Zahlung #tbd
+     .. todo: #tbd: Kap. Betrieb ergänzen und Screenshot hinzufügen.
 
-     .. todo: #ML: nicht so bei Paypal: Was ist die manuelle Auslösen bei PayPal? Bei Amazon eht es so: ... "in Ihrem Seller Central-Händlerkonto unter :menuselection:`Bestellungen --> Transaktionen verwalten` bestätigen".
-
+#. Speichern Sie Ihre Einstellungen.
 #. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
    |br|
    Die verzögerte Zahlung für Zahlungen mit :productname:`PayPal Checkout` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsart zugeordnet haben.
    |br|
    Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
-#. Speichern Sie Ihre Einstellungen.
 
 
 .. _oxdajr12:
@@ -621,7 +616,7 @@ Stellen Sie sicher, dass bestimmte :productname:`PayPal Checkout`-Zahlungsmethod
 
 |background|
 
-Bei der Erstinstallation sind den :productname:`PayPal Checkout`-Zahlungsmethoden automatich die entsprechenden Länder zugeordnet.
+Bei der Erstinstallation sind den :productname:`PayPal Checkout`-Zahlungsmethoden automatisch die entsprechenden Länder zugeordnet.
 
 Die meisten :productname:`PayPal Checkout`-Zahlungsmethoden decken mehrere Länder ab. Die Zahlungsmethode :productname:`Kreditkarte` beispielsweise ist Kunden weltweit zugänglich, die Zahlungsmethode :productname:`Pay Later` steht Ihren Kunden beispielsweise in Ländern in Europa, den USA und Australien zur Verfügung.
 
