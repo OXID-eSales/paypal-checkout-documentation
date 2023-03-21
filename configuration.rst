@@ -27,7 +27,7 @@ The credentials and registration process of :productname:`PayPal Checkout` are o
 
 However, do not let this tempt you to reuse the credentials from :productname:`PayPal Plus`.
 
-This would lead to the following disappointments:
+This would lead to the following undesirable behaviors:
 
 * Webhooks are not activated correctly, information is not transmitted correctly, but without the errors being immediately apparent.
 * Payment methods such as installment purchase are not available, payment by credit card is not enabled.
@@ -452,6 +452,63 @@ If you do :emphasis:`not` enable :guilabel:`Login with PayPal`, the following ha
    |br|
    Otherwise, deselect the checkbox.
 #. Save your settings.
+
+Configuring money collection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For the :guilabel:`PayPal` payment type, specify whether payments are to be collected immediately, or whether payments should be deferred for a maximum of 30 days.
+
+|example|
+
+Typically, the invoice amount is collected immediately.
+
+However, in certain cases it makes sense that the payment is only triggered by the delivery:
+
+* You sell certain individualized products that you do not manufacture, commission or order until the order is received.
+* You have an eShop for business customers. Here, the delivery quantities and payment amounts are larger than for private customers.
+  |br|
+  In the event of an error, returns management would be correspondingly more difficult.
+  |br|
+  That's why you want to make sure that payment is only triggered when the goods are there or on their way to be shipped.
+
+.. important::
+
+   You need to deliver the product within 30 days and complete the transaction or work with the customer to find a solution.
+
+   Background: By placing an order PayPal is initially authorized for 3 days to collect the money from your customer. The authorization is automatically extended up to a maximum of 29 days after ordering.
+
+   After thirty days, the authorization expires and PayPal can no longer collect the invoice amount.
+
+
+|procedure|
+
+1. Under :guilabel:`PayPal Standard - Money Collection` (:ref:`oxdajr12`), you have the following options:
+
+   * To have payments always triggered directly, choose :guilabel:`Directly`.
+   * To reserve the payment only and trigger it later, you have the following options:
+
+     * :guilabel:`Automatically on delivery`: The payment is triggered as soon as you have set the ordered item to the :technicalname:`Delivered` status in your eShop.
+     * :guilabel:`Manually`: Payment is triggered when you go to :menuselection:`Administer Orders --> Orders`, select the order, and, on the :guilabel:`PayPal Checkout` tab, choose the :guilabel:`Collect` button.
+
+     .. todo: #tbd: choose the :guilabel:`Collect` button.
+     .. todo: #tbd: add chap. operation and add screenshot.
+
+#. Save your settings.
+#. Make sure you have assigned the :guilabel:`PayPal` payment method only to the customized products in your eShop.
+   |br|
+   The delayed payment for :productname:`PayPal Checkout` payments will take effect for all items in your eShop to which you have assigned this payment method.
+   |br|
+   Reservation is not possible for the :emphasis:`Fast Checkout` feature of :productname:`PayPal Checkout` (payment method :guilabel:`PayPal Express`).  For the :guilabel:`PayPal Express` payment method, the invoice amount is always collected immediately.
+
+
+.. _oxdajr12:
+
+.. figure:: /media/screenshots/oxdajr12.png
+   :alt: Configuring delayed payment
+   :width: 450
+   :class: with-shadow
+
+   Figure: Configuring delayed payment
 
 
 Configuring 3D Secure for debit and credit cards
