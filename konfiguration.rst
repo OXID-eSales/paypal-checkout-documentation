@@ -366,7 +366,7 @@ Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deak
 
 |procedure|
 
-1. Um die Express-Checkout-Funktion zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Mini-Warenkorb` (:ref:`oxdajr10`, Pos. 1).
+1. Um die Schnellkauf-Funktion von :productname:`PayPal Checkout` zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Mini-Warenkorb` (:ref:`oxdajr10`, Pos. 1).
 #. Speichern Sie Ihre Einstellungen.
 
 .. _oxdajr10:
@@ -450,6 +450,64 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
    Andernfalls deaktivieren Sie das Kontrollkästchen.
 3. Speichern Sie Ihre Einstellungen.
 
+Geldeinzug festlegen
+^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen für maximal 30 Tage aufgeschoben werden sollen.
+
+
+|example|
+
+Typischerweise wird der Rechnungsbetrag sofort eingezogen.
+
+In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Auslieferung ausgelöst wird:
+
+* Sie vertreiben bestimmte individualisierte Produkte, die Sie erst nach Eingang der Bestellung herstellen, in Auftrag geben oder bestellen.
+* Sie haben einen eShop für Geschäftskunden. Hier sind die Liefermengen und Zahlungsbeträge größer als bei Privatkunden.
+  |br|
+  Im Fall eines Fehlers wäre das Retourenmanagement entsprechend schwieriger.
+  |br|
+  Deshalb wollen Sie sicherstellen, dass die Zahlung nur ausgelöst wird, wenn die Ware da oder auf dem Weg zum Versand ist.
+
+.. important::
+
+   Sie müssen das Produkt innerhalb von 30 Tagen liefern und die Transaktion beenden oder mit dem Kunden gemeinsam eine Lösung finden.
+
+   Hintergrund: Durch das Bestellen ist PayPal initial für 3 Tage autorisiert, das Geld bei Ihrem Kunden einzuziehen. Die Autorisierung wird bis maximal 29 Tage nach Bestellung automatisch verlängert.
+
+   Nach dreißig Tagen verfällt die Autorisierung, und PayPal kann den Rechnungsbetrag nicht mehr einziehen.
+
+
+|procedure|
+
+1. Sie haben unter :guilabel:`PayPal Standard - Geldeinzug` (:ref:`oxdajr12`) folgende Möglichkeiten:
+
+   * Damit Zahlungen immer direkt ausgelöst werden, wählen Sie :guilabel:`Direkt`.
+   * Um die Zahlung nur zu reservieren und später auszulösen, haben Sie folgende Möglichkeiten:
+
+     * :guilabel:`automatisch bei Lieferung`: Die Zahlung wird ausgelöst, sobald Sie in Ihrem eShop den bestellten Artikel auf den Status :technicalname:`Geliefert` gesetzt haben.
+     * :guilabel:`manuell`: Die Zahlung wird ausgelöst, wenn Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
+
+     .. todo: #tbd: Kap. Betrieb ergänzen und Screenshot hinzufügen.
+
+#. Speichern Sie Ihre Einstellungen.
+#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
+   |br|
+   Die verzögerte Zahlung für Zahlungen mit :productname:`PayPal Checkout` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsart zugeordnet haben.
+   |br|
+   Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
+
+
+.. _oxdajr12:
+
+.. figure:: /media/screenshots/oxdajr12.png
+   :alt: Verzögerte Zahlung konfigurieren
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Verzögerte Zahlung konfigurieren
+
+
 
 3D Secure für Debit- und Kreditkarten konfigurieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -482,6 +540,7 @@ Sie haben folgende Möglichkeiten:
    :alt: 3D Secure-Authentifizierung konfigurieren
 
    Abb.: 3D Secure-Authentifizierung konfigurieren
+
 
 Banner-Einstellungen übernehmen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -557,7 +616,7 @@ Stellen Sie sicher, dass bestimmte :productname:`PayPal Checkout`-Zahlungsmethod
 
 |background|
 
-Bei der Erstinstallation sind den :productname:`PayPal Checkout`-Zahlungsmethoden automatich die entsprechenden Länder zugeordnet.
+Bei der Erstinstallation sind den :productname:`PayPal Checkout`-Zahlungsmethoden automatisch die entsprechenden Länder zugeordnet.
 
 Die meisten :productname:`PayPal Checkout`-Zahlungsmethoden decken mehrere Länder ab. Die Zahlungsmethode :productname:`Kreditkarte` beispielsweise ist Kunden weltweit zugänglich, die Zahlungsmethode :productname:`Pay Later` steht Ihren Kunden beispielsweise in Ländern in Europa, den USA und Australien zur Verfügung.
 
