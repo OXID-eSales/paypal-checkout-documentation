@@ -6,7 +6,7 @@ To install the :productname:`PayPal Checkout` payment module, follow different p
 * If you have OXID eShop version 6.3.x or higher, install :productname:`PayPal Checkout` 2.2.x.
 * If you have OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` 1.2.x.
 
-Earlier versions of OXID eShop prior to version 6.1 are not supported.
+Versions of OXID eShop prior to version 6.1 are not supported.
 
 
 Installing PayPal Checkout for OXID eShop version 6.3 and higher
