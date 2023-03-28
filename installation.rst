@@ -48,14 +48,7 @@ Installieren Sie :productname:`PayPal Checkout` V. 1.2.
       composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
       composer require oxid-solution-catalysts/paypal-module ^1.2.0
 
-   Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel:`PayPal Checkout für OXID` im Administrationsbereich unter :menuselection:`Erweiterungen --> Module` (:ref:`oxdajq01`).
-
-   .. _oxdajq01:
-
-   .. figure:: /media/screenshots/oxdajq01.png
-      :alt: PayPal Checkout für OXID erfolgreich installiert
-
-      Abb.: PayPal Checkout für OXID erfolgreich installiert
+   Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel:`PayPal Checkout für OXID` im Administrationsbereich unter :menuselection:`Erweiterungen --> Module`.
 
 #. Aktivieren Sie das Modul.
 
