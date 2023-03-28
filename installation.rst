@@ -65,7 +65,7 @@ Nächster Schritt: Um :productname:`PayPal Checkout` zu konfigurieren, wählen S
 Minor Update installieren
 -------------------------
 
-Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 1.1.4 auf Version 1.2.0.
+Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 1.1.4 auf Version 1.2.3.
 
    .. code:: bash
 
@@ -88,8 +88,6 @@ Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`P
       composer update
 
 #. Bestätigen Sie die Abfrage, ob die :file:`oxid-solution-catalysts/paypal-module`-Dateien überschrieben werden sollen.
-
-
 
 
 
