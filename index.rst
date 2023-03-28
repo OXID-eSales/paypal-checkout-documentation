@@ -14,7 +14,7 @@ Moduldokumentation
    Wofür/Wofür nicht? <einfuehrung>
    Installation <installation>
    Konfiguration <konfiguration>
-   Changelog (GitHub) ➜ <https://github.com/OXID-eSales/paypal-module/blob/v2.2.3/CHANGELOG.md>
+   Changelog (GitHub) ➜ <https://github.com/OXID-eSales/paypal-module/blob/v1.2.3/CHANGELOG.md>
 
 .. image:: media/Hero_Visual.png
     :alt: Bezahlen mit PayPal Checkout
