@@ -178,7 +178,12 @@ Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit 
 
 .. hint::
 
-  Wenn die Webhooks des Modul geprüft werden müssen, dann bietet es sich an den Parameter `$this->sLogLevel` in der Datei `config.inc.php` auf den Wert `debug` zu setzen. Auf diese Weise werden die an den Shop gesendeten Webhook Calls von PayPal im Log `oxideshop.log` aufgezeichnet.
+  .. todo: #tbd/#ML: Hinweis überarbeiten, was ist der use case für Webhooks des Modul prüfen?
+        **#tbd: Überschrift**
+
+  Wenn die Webhooks des Modul geprüft werden müssen, dann bietet es sich an, den Parameter `$this->sLogLevel` in der Datei `config.inc.php` auf den Wert `debug` zu setzen.
+
+  Auf diese Weise werden die an den Shop gesendeten Webhook Calls von PayPal im Log `oxideshop.log` aufgezeichnet.
 
 Im ersten Durchgang testen Sie die mit :productname:`PayPal Checkout` bereitgestellten Zahlungsarten mit Test-Zugangsdaten in einer *Sandbox*.
 
@@ -226,6 +231,9 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 #. Wählen Sie :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
 #. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
 
+   .. todo: #ML: Neu ist der Hinweis unter API-Anmeldeinformationen: "Tragen Sie die API-Anmeldeinformationen (Client-ID, Client Passwort, Webhook-ID) nur dann per Hand ein, wenn Sie auf die Zahlarten "Kreditkarte" und "Kauf auf Rechnung" nicht benötigen und in der Lage sind einen Webhook im PayPal- Backend selbst zu konfigurieren."
+            #ML: Hatten wir bereits den Fall, dass man die Infos manuell eintragen muss? Was ist der Use Case?
+
    a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
 
       .. todo: #tbd: screenshot EN
@@ -259,31 +267,38 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
    Der Webhook ist erzeugt.
 
-   Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`).
+   Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 1, 2).
+
+   .. todo: #tbd: Bild neu en
 
    .. _oxdajr05:
 
    .. figure:: /media/screenshots/oxdajr05.png
       :alt: Webhook erzeugt
+      :width: 650
+      :class: with-shadow
 
       Abb.: Webhook erzeugt
 
+.. _freischaltung-kreditkarte:
 
-#. Wenn Sie die Zahlungsmethoden Rechnungskauf oder Kreditkarte nutzen wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`), ob die Freischaltung erfolgt ist.
-   |br|
-   Wenn die Freischaltung nicht automatisch erfolgt ist, wenden Sie sich an Ihren Ansprechpartner bei PayPal.
+#. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 3), ob die Freischaltung erfolgt ist.
+
+   .. todo: #tbd: Fallback-Lösung einbauen
 
 .. hint::
 
-   **Zahlungsmethode Kreditkarte**
+   **Zahlungsmethode Fallback-Kreditkarte**
 
-   Wenn die Freischaltung für die Zahlungsmethode Kreditkarte nicht automatisch erfolgt ist, dann erscheint die Zahlungsmethode als separate Schaltfläche :guilabel:`Kreditkarte` unter der PayPal-Schaltfläche.
+   Wenn die Freischaltung nicht automatisch erfolgt ist, wenden Sie sich an Ihren Ansprechpartner bei PayPal.
+
+   Sie können aber Wenn die Freischaltung für die Zahlungsmethode Kreditkarte nicht automatisch erfolgt ist, dann erscheint die Zahlungsmethode als separate Schaltfläche :guilabel:`Kreditkarte` unter der PayPal-Schaltfläche.
 
    .. image:: media/screenshots/oxdajr02.png
        :alt: Zahlungsmethode Kreditkarte aktiviert
        :class: no-shadow
 
-   Ist die Freischaltung erfolgt, sieht Ihr Kunde die PayPal-Schalfläche, und die Zahlungsart Kreditkarte steht im Checkout-Schritt Versand & Zahlungsart zur Verfügung.
+   Ist die Freischaltung erfolgt, sieht Ihr Kunde die PayPal-Schaltfläche, und die Zahlungsart Kreditkarte steht im Checkout-Schritt Versand & Zahlungsart zur Verfügung.
 
    .. image:: media/screenshots/oxdajr06.png
        :alt: Zahlungsmethode Kreditkarte nicht aktiviert
@@ -542,6 +557,32 @@ Sie haben folgende Möglichkeiten:
    Abb.: 3D Secure-Authentifizierung konfigurieren
 
 
+Behandlung nicht beendeter Bestellungen festlegen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie fest, ob Sie unvollständige Bestellungen automatisch oder manuell löschen wollen.
+
+* Das automatische Löschen ist beispielsweise empfohlen, wenn Sie beispielsweise niedrigpreisige Massenartikel vertreiben.
+  |br|
+  Es wäre unbequem für Sie, zahlreiche unabgeschlossene Bestellungen manuell zu löschen.
+* Das manuelle Löschen kann beispielsweise sinnvoll sein, wenn Sie hochpreisige Waren mit kleinen Absatzzahlen vertreiben.
+
+  Springen Kunden während des Bestellprozesses ab, können Sie durch das manuelle Löschen feststellen, ob es eventuell Schwierigkeiten bei bestimmten Zahlungsarten gibt.
+
+|procedure|
+
+1. Wenn das System unvollständige Bestellungen automatisch löschen soll, markieren Sie das Kontrollkästchen :guilabel:` Automatically delete not finished orders?`.
+   |br|
+   Passen Sie bei Bedarf die standardmäßige Rückhaltezeit von 60 Minuten an.
+#. Speichern Sie Ihre Einstellungen.
+
+|result|
+
+Unvollständige Bestellungen erscheinen unter :menuselection:`Bestellungen --> Bestellungen verwalten --> #tbd`.
+
+.. todo: #tbd: Woran erkenne ich sie, wie lösche ich sie manuell?
+
+
 Banner-Einstellungen übernehmen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -610,7 +651,6 @@ Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, le
 
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
-
 
 Stellen Sie sicher, dass bestimmte :productname:`PayPal Checkout`-Zahlungsmethoden ausschließlich in den von Ihnen gewünschten Ländern zur Verfügung stehen.
 

@@ -31,6 +31,8 @@ Bieten Sie mit dem :productname:`PayPal Checkout`-Modul für OXID die in folgend
 
 Beachten Sie jeweils die Währungsabdeckung der einzelnen Zahlungsmethoden (siehe :ref:`einfuehrung:Währungsabdeckung nach Zahlungsmethode`).
 
+.. todo: neue Zahlngsarten: SEPA Lastschrift, nur D: done de,
+
 ==================  ==========================
 Markt               Zahlungsmethoden
 ==================  ==========================
@@ -43,6 +45,7 @@ Deutschland	        GiroPay
 Deutschland	        PayPal - Später bezahlen
 Deutschland	        Rechnungskauf
 Deutschland	        Sofort (Klarna Pay now)
+Deutschland         SEPA Lastschrift
 Frankreich	        PayPal - Später bezahlen
 Großbritannien      PayPal - Später bezahlen
 Großbritannien	    Sofort (Klarna Pay now)
@@ -87,6 +90,7 @@ PayPal - Später bezahlen   Spanien
 PayPal - Später bezahlen   Vereinigte Staaten
 Przelewy24	               Polen
 Rechnungskauf	           Deutschland
+SEPA Lastschrift           Deutschland
 Sofort (Klarna Pay now)	   Belgien
 Sofort (Klarna Pay now)	   Deutschland
 Sofort (Klarna Pay now)	   Großbritannien
