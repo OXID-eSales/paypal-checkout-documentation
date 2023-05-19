@@ -180,6 +180,7 @@ Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit 
 
   .. todo: #tbd/#ML: Hinweis überarbeiten, was ist der use case für Webhooks des Modul prüfen?
         **#tbd: Überschrift**
+        Prüfen: Hinweis in EN vorhanden?
 
   Wenn die Webhooks des Modul geprüft werden müssen, dann bietet es sich an, den Parameter `$this->sLogLevel` in der Datei `config.inc.php` auf den Wert `debug` zu setzen.
 
@@ -269,7 +270,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
    Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 1, 2).
 
-   .. todo: #tbd: Bild neu en
+   .. todo: #tbd: Bild neu en; oxdajr06 entfällt
 
    .. _oxdajr05:
 
@@ -280,40 +281,42 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
       Abb.: Webhook erzeugt
 
-.. _freischaltung-kreditkarte:
+   .. _freischaltung-kreditkarte:
 
 #. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 3), ob die Freischaltung erfolgt ist.
 
    .. todo: #tbd: Fallback-Lösung einbauen
 
-.. hint::
+   .. hint::
 
-   **Zahlungsmethode Fallback-Kreditkarte**
+      **Zahlungsmethode Fallback-Kreditkarte**
 
-   Wenn die Freischaltung nicht automatisch erfolgt ist, wenden Sie sich an Ihren Ansprechpartner bei PayPal.
+      Wenn die Freischaltung :emphasis:`nicht` automatisch erfolgt ist (:guilabel:`Kreditkarte: Nein`), wenden Sie sich an Ihren Ansprechpartner bei PayPal.
 
-   Sie können aber Wenn die Freischaltung für die Zahlungsmethode Kreditkarte nicht automatisch erfolgt ist, dann erscheint die Zahlungsmethode als separate Schaltfläche :guilabel:`Kreditkarte` unter der PayPal-Schaltfläche.
+      Ist die Freischaltung erfolgt, steht die Zahlungsart Kreditkarte im Checkout-Schritt Versand & Zahlungsart zur Verfügung (:ref:`oxdajr02`, Pos. 1).
 
-   .. image:: media/screenshots/oxdajr02.png
-       :alt: Zahlungsmethode Kreditkarte aktiviert
-       :class: no-shadow
+      Wenn eine Freischaltung nicht möglich ist, steht alternativ eine Fallback-Lösung bereit (:ref:`oxdajr02`, Pos. 2).
 
-   Ist die Freischaltung erfolgt, sieht Ihr Kunde die PayPal-Schaltfläche, und die Zahlungsart Kreditkarte steht im Checkout-Schritt Versand & Zahlungsart zur Verfügung.
+      .. _oxdajr02:
 
-   .. image:: media/screenshots/oxdajr06.png
-       :alt: Zahlungsmethode Kreditkarte nicht aktiviert
-       :class: no-shadow
+      .. figure:: media/screenshots/oxdajr02.png
+         :alt: Kreditkarten-Optionen und SEPA
+         :width: 650
+         :class: with-shadow
 
-.. hint::
+         Abb.: Kreditkarten-Optionen und SEPA
 
-   **Zahlungsmethode Rechnungskauf**
 
-   Die Zahlungsmethode Rechnungskauf bietet PayPal nur Shop-Betreibern aus Deutschland an.
+   .. hint::
+
+      **Zahlungsmethode Rechnungskauf**
+
+      Die Zahlungsmethode Rechnungskauf bietet PayPal nur Shop-Betreibern aus Deutschland an.
 
 
 |result|
 
-Sobald Sie PayPal die Genehmigung erteilt haben, Ihr Sandbox-Konto mit dem PayPal Test Store zu verbinden, werden die API-Anmeldeinformationen angezeigt, und das Modul ist aktiv :ref:`oxdajr05`.
+Sobald Sie PayPal die Genehmigung erteilt haben, Ihr Sandbox-Konto mit dem PayPal-Test Store zu verbinden, werden die API-Anmeldeinformationen angezeigt, und das Modul ist aktiv :ref:`oxdajr05`.
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal` (technischer Name :technicalname:`oscpaypal`) aktiv (:ref:`oxdajr07`).
 
@@ -503,8 +506,6 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
      * :guilabel:`automatisch bei Lieferung`: Die Zahlung wird ausgelöst, sobald Sie in Ihrem eShop den bestellten Artikel auf den Status :technicalname:`Geliefert` gesetzt haben.
      * :guilabel:`manuell`: Die Zahlung wird ausgelöst, wenn Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
 
-     .. todo: #tbd: Kap. Betrieb ergänzen und Screenshot hinzufügen.
-
 #. Speichern Sie Ihre Einstellungen.
 #. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
    |br|
@@ -578,9 +579,22 @@ Legen Sie fest, ob Sie unvollständige Bestellungen automatisch oder manuell lö
 
 |result|
 
-Unvollständige Bestellungen erscheinen unter :menuselection:`Bestellungen --> Bestellungen verwalten --> #tbd`.
+.. todo: #ES/#ML: Was ist das erwartete Ergebnis? Bestellungen mit Bezahlt = 0000-00-00 00:00:00 werden bei mir nicht gelöscht.
 
-.. todo: #tbd: Woran erkenne ich sie, wie lösche ich sie manuell?
+Wenn Sie das automatische Löschen deaktiviert lassen, müssen Sie unvollständige Bestellungen regelmäßig manuel löschen.
+
+Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellungen manuell löschen`.
+
+.. _oxdajr13:
+
+.. figure:: /media/screenshots/oxdajr13.png
+   :alt: Automatisches LöschenUnvollständigen Bestellungen konfigurieren
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Automatisches LöschenUnvollständigen Bestellungen konfigurieren
+
+
 
 
 Banner-Einstellungen übernehmen
