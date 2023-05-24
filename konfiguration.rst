@@ -510,9 +510,10 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
 #. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
    |br|
    Die verzögerte Zahlung für Zahlungen mit :productname:`PayPal Checkout` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsart zugeordnet haben.
+   .. todo: #ES/#ML: Wie ordne ich eine Zahlungsart/Versandkostenregel  exklusiv einem Artikel zu?
+
    |br|
    Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
-
 
 .. _oxdajr12:
 
@@ -523,6 +524,11 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
 
    Abb.: Verzögerte Zahlung konfigurieren
 
+.. todo: #tbd: EN: result erg.:
+
+|result|
+
+Unter :menuselection:`Bestellungen verwalten --> Bestellungen` können Sie den Rechnungsbeträge manuell einziehen (siehe :ref:`betrieb:Reservierte Zahlung auslösen`.
 
 
 3D Secure für Debit- und Kreditkarten konfigurieren
