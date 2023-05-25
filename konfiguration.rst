@@ -508,11 +508,11 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
 
 #. Speichern Sie Ihre Einstellungen.
 #. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
-   |br|
+
    Die verzögerte Zahlung für Zahlungen mit :productname:`PayPal Checkout` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsart zugeordnet haben.
+
    .. todo: #ES/#ML: Wie ordne ich eine Zahlungsart/Versandkostenregel  exklusiv einem Artikel zu?
 
-   |br|
    Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
 
 .. _oxdajr12:
@@ -569,38 +569,53 @@ Behandlung nicht beendeter Bestellungen festlegen
 
 Legen Sie fest, ob Sie unvollständige Bestellungen automatisch oder manuell löschen wollen.
 
-* Das automatische Löschen ist beispielsweise empfohlen, wenn Sie beispielsweise niedrigpreisige Massenartikel vertreiben.
-  |br|
-  Es wäre unbequem für Sie, zahlreiche unabgeschlossene Bestellungen manuell zu löschen.
-* Das manuelle Löschen kann beispielsweise sinnvoll sein, wenn Sie hochpreisige Waren mit kleinen Absatzzahlen vertreiben.
 
-  Springen Kunden während des Bestellprozesses ab, können Sie durch das manuelle Löschen feststellen, ob es eventuell Schwierigkeiten bei bestimmten Zahlungsarten gibt.
+-----------------------------------------------------------
+
+
+|background|
+
+Aus technischen Gründen erzeugt PayPal Bestellungen, auch wenn die Bestellungen am Ende nicht abgeschlossen werden.
+
+Das ist der Fall, wenn der Kunde im Checkout die Schaltfläche :guilabel:`Zahlungspflichtig bestellen` wählt, sich dann aber nicht bei PayPal anmeldet und den Bezahlvorgang abschließt.
+
+Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellungen manuell löschen`.
+
+-----------------------------------------------------------
+
+* Das :emphasis:`automatische` Löschen ist beispielsweise empfohlen, wenn Sie beispielsweise niedrigpreisige Massenartikel vertreiben.
+  |br|
+  Es wäre unbequem für Sie, zahlreiche unabgeschlossene Bestellungen einzeln manuell zu löschen.
+* Das :emphasis:`manuelle` Löschen kann beispielsweise sinnvoll sein, wenn Sie hochpreisige Waren mit kleinen Absatzzahlen vertreiben.
+
+  Springen Kunden während des Bestellprozesses ab, können Sie durch das manuelle Löschen feststellen, ob es eventuell Schwierigkeiten bei bestimmten PayPal-Zahlungsarten gibt.
 
 |procedure|
 
-1. Wenn das System unvollständige Bestellungen automatisch löschen soll, markieren Sie das Kontrollkästchen :guilabel:` Automatically delete not finished orders?`.
-   |br|
-   Passen Sie bei Bedarf die standardmäßige Rückhaltezeit von 60 Minuten an.
+.. todo: #tbd: EN: :guilabel:`Automatically delete not finished orders?`
+
+1. Wenn das System unvollständige Bestellungen automatisch löschen soll, markieren Sie das Kontrollkästchen :guilabel:`Nicht beendete Bestellungen automatisch löschen?` (:ref:`oxdajr13`, Pos. 1).
+
+   Passen Sie bei Bedarf die standardmäßige Rückhaltezeit von 60 Minuten an :ref:`oxdajr13`, Pos. 2).
+
 #. Speichern Sie Ihre Einstellungen.
 
 |result|
 
 .. todo: #ES/#ML: Was ist das erwartete Ergebnis? Bestellungen mit Bezahlt = 0000-00-00 00:00:00 werden bei mir nicht gelöscht.
 
-Wenn Sie das automatische Löschen deaktiviert lassen, müssen Sie unvollständige Bestellungen regelmäßig manuel löschen.
+Wenn Sie das automatische Löschen deaktiviert lassen, müssen Sie unvollständige Bestellungen regelmäßig manuell löschen.
 
 Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellungen manuell löschen`.
 
 .. _oxdajr13:
 
 .. figure:: /media/screenshots/oxdajr13.png
-   :alt: Automatisches LöschenUnvollständigen Bestellungen konfigurieren
+   :alt: Automatisches Löschen unvollständiger Bestellungen konfigurieren
    :width: 650
    :class: with-shadow
 
-   Abb.: Automatisches LöschenUnvollständigen Bestellungen konfigurieren
-
-
+   Abb.: Automatisches Löschen unvollständiger Bestellungen konfigurieren
 
 
 Banner-Einstellungen übernehmen

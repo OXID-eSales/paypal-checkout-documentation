@@ -9,6 +9,7 @@ Neue oder geänderte Funktionen
 ------------------------------
 
 .. todo: https://github.com/OXID-eSales/paypal-module/blob/v2.3.0-rc.3/CHANGELOG.md
+.. todo: #ML: Folgendes prüfen:
 
 * Bieten Sie Ihren Kunden für Überweisungen in Deutschland die neue Zahlungsart SEPA an.
 
@@ -16,13 +17,13 @@ Neue oder geänderte Funktionen
 
 * Wenn Sie Ihren Kunden bisher keine Zahlung per Kreditkarte anbieten konnten, nutzen Sie die Fallback-Lösung von PayPal.
 
-  Weitere Informatinen finden Sie unter :ref:`Freischaltung für besondere Zahlarten prüfen <freischaltung-kreditkarte>`.
+  Weitere Informationen finden Sie unter :ref:`Freischaltung für besondere Zahlarten prüfen <freischaltung-kreditkarte>`.
 
 * Weisen Sie durch Senden eines Tracking-Codes nach, dass Sie bestellte Waren abgesendet haben.
 
   Der Tracking-Code macht es PayPal im Fall von Auseinandersetzungen mit Kunden leichter, Ihren Schaden zu regulieren.
 
-  Weitere Informationen finden Sie unter :ref:`betrieb:Tracking-Code senden`.
+  Weitere Informationen finden Sie unter :ref:`betrieb:Artikel als versendet markieren`.
 
 * Machen Sie sich bei einem Minor Update beispielsweise von PayPal Checkout V. 2.2 auf V. 2.3 keine Sorgen um die Konfiguration Ihrer Zahlungsarten: Ihre Konfiguration bleibt erhalten, Sie müssen Zahlungsarten nach einem Update nicht neu konfigurieren.
 
