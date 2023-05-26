@@ -1,7 +1,7 @@
 PayPal Checkout V. 2.3
 ======================
 
-.. todo: #ML: wann ist Release?
+.. todo: #ML: wann ist Release? ist schon: prüfen:
 
 Release-Datum: 30.05.2023
 

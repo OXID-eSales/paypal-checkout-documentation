@@ -74,7 +74,7 @@ Mit dem Tracking-Code können Sie
 Der Tracking-Code wird an PayPal übermittelt.
 
 .. todo: Done Erneut testen: Bestellung anlegen, Code erfassen: KJD0123456789012345678910, prüfen ob Auswahl Dienstleister zwingend: ja
-.. todo: #ML: Was ist maßgeblich für "Versanddienstleister (Land): ": das Zielland der Lieferung, das Ausgangsland, der Sitz des Providers?
+.. todo: #ML: Was ist maßgeblich für "Versanddienstleister (Land): ": das Zielland der Lieferung, das Ausgangsland, der Sitz des Providers? -- ML: Sitz des Providers gemeint: siehe https://developer.paypal.com/docs/tracking/reference/carriers/
 .. todo: #tbd: EN: :guilabel:`Main`; Tracking Carrier (Country); Tracking Carrier (Provider)
 
 .. _oxdajt03:

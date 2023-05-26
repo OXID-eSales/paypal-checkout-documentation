@@ -181,8 +181,9 @@ Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit 
   .. todo: #tbd/#ML: Hinweis überarbeiten, was ist der use case für Webhooks des Modul prüfen?
         **#tbd: Überschrift**
         Prüfen: Hinweis in EN vorhanden?
+        Beispiel: etwas funktioniert nicht: debug einschalten: standard $this->sLogLevel = 'error';; wenn PP support fragt, OXD eshop log
 
-  Wenn die Webhooks des Modul geprüft werden müssen, dann bietet es sich an, den Parameter `$this->sLogLevel` in der Datei `config.inc.php` auf den Wert `debug` zu setzen.
+  Wenn die Webhooks des Moduls geprüft werden müssen, dann bietet es sich an, den Parameter `$this->sLogLevel` in der Datei `config.inc.php` auf den Wert `debug` zu setzen.
 
   Auf diese Weise werden die an den Shop gesendeten Webhook Calls von PayPal im Log `oxideshop.log` aufgezeichnet.
 
@@ -233,7 +234,8 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 #. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
 
    .. todo: #ML: Neu ist der Hinweis unter API-Anmeldeinformationen: "Tragen Sie die API-Anmeldeinformationen (Client-ID, Client Passwort, Webhook-ID) nur dann per Hand ein, wenn Sie auf die Zahlarten "Kreditkarte" und "Kauf auf Rechnung" nicht benötigen und in der Lage sind einen Webhook im PayPal- Backend selbst zu konfigurieren."
-            #ML: Hatten wir bereits den Fall, dass man die Infos manuell eintragen muss? Was ist der Use Case?
+            #ML: Hatten wir bereits den Fall, dass man die Infos manuell eintragen muss? -- ja, das passiert: Cred. us altem Modul
+        Beim Onboarding werden nur überButton Kreditkarte und Rechnung freigeschaltet -- kein use case
 
    a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
 
@@ -602,7 +604,7 @@ Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellunge
 
 |result|
 
-.. todo: #ES/#ML: Was ist das erwartete Ergebnis? Bestellungen mit Bezahlt = 0000-00-00 00:00:00 werden bei mir nicht gelöscht.
+.. todo: #ML: : Fabian nach eigener URL fragen; Was ist das erwartete Ergebnis? Bestellungen mit Bezahlt = 0000-00-00 00:00:00 werden bei mir nicht gelöscht.
 
 Wenn Sie das automatische Löschen deaktiviert lassen, müssen Sie unvollständige Bestellungen regelmäßig manuell löschen.
 
