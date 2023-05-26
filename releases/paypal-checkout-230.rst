@@ -1,14 +1,15 @@
 PayPal Checkout V. 2.3
 ======================
 
-.. todo: #ML: wann ist Release? ist schon: prüfen:
+.. todo: #tbd: ReleaseDatum 2.3: 24.05.2023; 1.3: tbd
 
-Release-Datum: 30.05.2023
+Release-Datum: 24.05.2023
 
 Neue oder geänderte Funktionen
 ------------------------------
 
-.. todo: https://github.com/OXID-eSales/paypal-module/blob/v2.3.0-rc.3/CHANGELOG.md
+.. todo: https://github.com/OXID-eSales/paypal-module/blob/v2.3.0/CHANGELOG.md
+.. todo: ML: Folgendes nicht doku-relevant: improved tests and static code analysis
 .. todo: #ML: Folgendes prüfen:
 
 * Bieten Sie Ihren Kunden für Überweisungen in Deutschland die neue Zahlungsart SEPA an.
@@ -31,16 +32,6 @@ Neue oder geänderte Funktionen
 
   Weitere Informationen finden Sie unter :ref:`konfiguration:Behandlung nicht beendeter Bestellungen festlegen`.
 
-
-
-
-
-
-
-
-
-
-
 Korrekturen
 -----------
 
@@ -55,16 +46,14 @@ Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 2.3 zu n
 Voraussetzungen
 ^^^^^^^^^^^^^^^
 
-.. todo: #tbd:
-        done: für OXID >=6.3 und OXID <=6.5 lautet die Version: v2.3.0-rc.3
-        für OXID >=6.1 und OXID <=6.2 lautet die Version: v1.3.0-rc.3
+.. todo: #tbd: x.3
+        done: für OXID >=6.3 und OXID <=6.5 lautet die Version: v2.3.0
+        für OXID >=6.1 und OXID <=6.2 lautet die Version: v1.3.0
 
 * Sie haben OXID eShop V. 6.3.x bis 6.5.x.
 
 Vorgehen
 ^^^^^^^^
-
-.. todo: #tbd: verifizieren: stimmt
 
 Führen Sie den folgenden Befehl aus.
 

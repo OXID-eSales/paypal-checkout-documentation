@@ -15,6 +15,7 @@ Moduldokumentation
    Installation <installation>
    Konfiguration <konfiguration>
    Betrieb <betrieb>
+   Troubleshooting <troubleshooting>
    Release Notes <releases/paypal-checkout-230>
 
 .. image:: media/Hero_Visual.png

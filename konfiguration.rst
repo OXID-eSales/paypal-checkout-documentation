@@ -178,7 +178,7 @@ Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit 
 
 .. hint::
 
-  .. todo: #tbd/#ML: Hinweis überarbeiten, was ist der use case für Webhooks des Modul prüfen?
+  .. todo: #tbd: gehört zu x.2 *und* x.3: also als separaten branch anlegen
         **#tbd: Überschrift**
         Prüfen: Hinweis in EN vorhanden?
         Beispiel: etwas funktioniert nicht: debug einschalten: standard $this->sLogLevel = 'error';; wenn PP support fragt, OXD eshop log
@@ -229,13 +229,20 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
 .. include:: /_static/reuse/note-ee-onboarding.rst
 
+
+.. hint::
+
+   **Verfügbarkeit aller Zahlungsarten**
+
+   Damit Ihnen :emphasis:`alle` PayPal-Zahlungsarten zur Verfügung stehen, generieren Sie den Webhook wie im Folgenden beschrieben mit der Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
+
+   Hintergrund: Technisch ist es auch möglich, bereits existierende Anmeldeinformationen :emphasis:`manuell` einzugeben, statt sie neu zu generieren. Aber das würde zu Enischränkungen führen (siehe :ref:`troubleshooting:"Kreditkarte" und "Rechnungskauf" nicht verfügbar`).
+
+
+
 1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Händler PayPal-Integration (Sandbox) im neuen Fenster starten`.
 #. Wählen Sie :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
 #. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
-
-   .. todo: #ML: Neu ist der Hinweis unter API-Anmeldeinformationen: "Tragen Sie die API-Anmeldeinformationen (Client-ID, Client Passwort, Webhook-ID) nur dann per Hand ein, wenn Sie auf die Zahlarten "Kreditkarte" und "Kauf auf Rechnung" nicht benötigen und in der Lage sind einen Webhook im PayPal- Backend selbst zu konfigurieren."
-            #ML: Hatten wir bereits den Fall, dass man die Infos manuell eintragen muss? -- ja, das passiert: Cred. us altem Modul
-        Beim Onboarding werden nur überButton Kreditkarte und Rechnung freigeschaltet -- kein use case
 
    a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
 
@@ -287,7 +294,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
 #. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 3), ob die Freischaltung erfolgt ist.
 
-   .. todo: #tbd: Fallback-Lösung einbauen
+   .. todo: #tbd: Fallback-Lösung einbauen EN
 
    .. hint::
 
@@ -328,6 +335,8 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
       :alt: Zahlungsart PayPal aktiv
 
       Abb.: Zahlungsart PayPal aktiv
+
+Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung? Folgen Sie den Anweisungen unter :ref:`troubleshooting:"Kreditkarte" und "Rechnungskauf" nicht verfügbar`.
 
 .. hint::
 
@@ -604,7 +613,7 @@ Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellunge
 
 |result|
 
-.. todo: #ML: : Fabian nach eigener URL fragen; Was ist das erwartete Ergebnis? Bestellungen mit Bezahlt = 0000-00-00 00:00:00 werden bei mir nicht gelöscht.
+.. todo: #ML: Was ist das erwartete Ergebnis? Bestellungen mit Bezahlt = 0000-00-00 00:00:00 werden bei mir nicht gelöscht.
 
 Wenn Sie das automatische Löschen deaktiviert lassen, müssen Sie unvollständige Bestellungen regelmäßig manuell löschen.
 

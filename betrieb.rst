@@ -64,8 +64,15 @@ Mit dem Tracking-Code können Sie
 #. Erfassen Sie auf der Registerkarte :guilabel:`Stamm` wie gewohnt den Tracking Code im gleichnamigen Eingabefeld (:ref:`oxdajt03`, Pos. 2).
 #. Erfassen Sie zusätzlich auch folgende Informationen in den entsprechenden Auswahllisten (:ref:`oxdajt03`, Pos. 1):
 
-   * Versanddienstleister (Land):
-   * Versanddienstleister (Anbieter): beispielsweise DHL
+   * Versanddienstleister (Land): Landespezifische Version des Versanddienstleisters
+
+     Einige Versandunternehmen haben eine globale Version und eine oder mehrere länderspezifische Versionen, beispielsweise DHL Deutsche Post.
+
+     Beispiel: Im Fall von DHL Deutsche Post als Versanddienstleister steht :technicalname:`Österreich` für DHL Austria.
+
+     Weitere Informationen finden Sie bei PayPal unter `developer.paypal.com/docs/tracking/reference/carriers/ <https://developer.paypal.com/docs/tracking/reference/carriers/>`_.
+
+   * Versanddienstleister (Anbieter): beispielsweise DHL Deutsche Post
 
 #. Speichern Sie Ihre Einstellungen.
 
@@ -73,8 +80,6 @@ Mit dem Tracking-Code können Sie
 
 Der Tracking-Code wird an PayPal übermittelt.
 
-.. todo: Done Erneut testen: Bestellung anlegen, Code erfassen: KJD0123456789012345678910, prüfen ob Auswahl Dienstleister zwingend: ja
-.. todo: #ML: Was ist maßgeblich für "Versanddienstleister (Land): ": das Zielland der Lieferung, das Ausgangsland, der Sitz des Providers? -- ML: Sitz des Providers gemeint: siehe https://developer.paypal.com/docs/tracking/reference/carriers/
 .. todo: #tbd: EN: :guilabel:`Main`; Tracking Carrier (Country); Tracking Carrier (Provider)
 
 .. _oxdajt03:
