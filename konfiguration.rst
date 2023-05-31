@@ -178,7 +178,7 @@ Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit 
 
 .. hint::
 
-  .. todo: #tbd: gehört zu x.2 *und* x.3: also als separaten branch anlegen
+  .. todo: #tbd: gehört zu x.2 *und* x.3: also als separaten branch anlegen -- ML 26.5., 15:40
         **#tbd: Überschrift**
         Prüfen: Hinweis in EN vorhanden?
         Beispiel: etwas funktioniert nicht: debug einschalten: standard $this->sLogLevel = 'error';; wenn PP support fragt, OXD eshop log
@@ -484,7 +484,6 @@ Geldeinzug festlegen
 
 Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen für maximal 30 Tage aufgeschoben werden sollen.
 
-
 |example|
 
 Typischerweise wird der Rechnungsbetrag sofort eingezogen.
@@ -518,11 +517,16 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
      * :guilabel:`manuell`: Die Zahlung wird ausgelöst, wenn Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
 
 #. Speichern Sie Ihre Einstellungen.
-#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
+#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop ausschließlich die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
 
-   Die verzögerte Zahlung für Zahlungen mit :productname:`PayPal Checkout` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsart zugeordnet haben.
+   a. Legen Sie eine Versandkostenregel an und ordnen Sie ihr die betreffenden Artikel zu.
+      |br|
+      Achten Sie darauf, dass die Bedingungen Menge richtig spezifiziert ist.
+   b. Legen Sie eine Versandart an ordnen sie ihr die Zahlungsart :guilabel:`PayPal` sowie die Versandkostenregel individualisierten Produkte zu.
 
-   .. todo: #ES/#ML: Wie ordne ich eine Zahlungsart/Versandkostenregel  exklusiv einem Artikel zu?
+   Die verzögerte Zahlung für Zahlungen mit Zahlungsart :guilabel:`PayPal` greift für alle Artikel in Ihrem eShop, denen Sie die betreffende Versandkostenregel zugeordnet haben.
+
+   .. todo: #ML: In der Praxis: muss der Kunde aus der Dropdownliste die dedizierte Versandart (z.B. "Customized") wählen, damit exklusiv PayPal angezeigt wird; Zuordnung zu Artikel ginge nur über ein Modul; Abhilfe: Im Artikel-Beschreibungstext beschreiben, dass nur Versandart "Customized" oder Zahlungsart PayPal möglich ist?
 
    Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
 
@@ -539,7 +543,7 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
 
 |result|
 
-Unter :menuselection:`Bestellungen verwalten --> Bestellungen` können Sie den Rechnungsbeträge manuell einziehen (siehe :ref:`betrieb:Reservierte Zahlung auslösen`.
+Unter :menuselection:`Bestellungen verwalten --> Bestellungen` ziehen Sie den Rechnungsbeträge manuell ein (siehe :ref:`betrieb:Reservierte Zahlung auslösen`.
 
 
 3D Secure für Debit- und Kreditkarten konfigurieren
@@ -613,7 +617,7 @@ Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellunge
 
 |result|
 
-.. todo: #ML: Was ist das erwartete Ergebnis? Bestellungen mit Bezahlt = 0000-00-00 00:00:00 werden bei mir nicht gelöscht.
+.. todo: #ML: Was ist das erwartete Ergebnis? Bestellungen mit Bestellnr. = 0 werden bei mir nicht gelöscht.
 
 Wenn Sie das automatische Löschen deaktiviert lassen, müssen Sie unvollständige Bestellungen regelmäßig manuell löschen.
 
