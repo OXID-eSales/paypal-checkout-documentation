@@ -279,7 +279,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
    Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 1, 2).
 
-   .. todo: #tbd: Bild neu en; oxdajr06 entfällt
+   .. todo: #tbd: Bild neu en;
 
    .. _oxdajr05:
 
@@ -516,28 +516,38 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
      * :guilabel:`automatisch bei Lieferung`: Die Zahlung wird ausgelöst, sobald Sie in Ihrem eShop den bestellten Artikel auf den Status :technicalname:`Geliefert` gesetzt haben.
      * :guilabel:`manuell`: Die Zahlung wird ausgelöst, wenn Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
 
-#. Speichern Sie Ihre Einstellungen.
-#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop ausschließlich die Zahlungsart :guilabel:`PayPal` zugeordnet haben.
-
-   a. Legen Sie eine Versandkostenregel an und ordnen Sie ihr die betreffenden Artikel zu.
-      |br|
-      Achten Sie darauf, dass die Bedingungen Menge richtig spezifiziert ist.
-   b. Legen Sie eine Versandart an ordnen sie ihr die Zahlungsart :guilabel:`PayPal` sowie die Versandkostenregel individualisierten Produkte zu.
-
-   Die verzögerte Zahlung für Zahlungen mit Zahlungsart :guilabel:`PayPal` greift für alle Artikel in Ihrem eShop, denen Sie die betreffende Versandkostenregel zugeordnet haben.
-
-   .. todo: #ML: In der Praxis: muss der Kunde aus der Dropdownliste die dedizierte Versandart (z.B. "Customized") wählen, damit exklusiv PayPal angezeigt wird; Zuordnung zu Artikel ginge nur über ein Modul; Abhilfe: Im Artikel-Beschreibungstext beschreiben, dass nur Versandart "Customized" oder Zahlungsart PayPal möglich ist?
-
    Für die :emphasis:`Schnellkauf`-Funktion von :productname:`PayPal Checkout` (Zahlungsart :guilabel:`PayPal Express`) ist das Reservieren nicht möglich. Der Rechnungsbetrag wird bei der Zahlungsart :guilabel:`PayPal Express` immer sofort eingezogen.
 
-.. _oxdajr12:
+   .. _oxdajr12:
 
-.. figure:: /media/screenshots/oxdajr12.png
-   :alt: Verzögerte Zahlung konfigurieren
-   :width: 650
-   :class: with-shadow
+   .. figure:: /media/screenshots/oxdajr12.png
+      :alt: Verzögerte Zahlung konfigurieren
+      :width: 650
+      :class: with-shadow
 
-   Abb.: Verzögerte Zahlung konfigurieren
+      Abb.: Verzögerte Zahlung konfigurieren
+
+#. Speichern Sie Ihre Einstellungen.
+#. Ordnen Sie den individualisierten Produkten in Ihrem eShop die Zahlungsart :guilabel:`PayPal` zu.
+
+   Es ist technisch nicht möglich, bestimmten Artikeln bestimmte Zahlungsarten ausschließlich zuzuweisen. Wir schlagen folgenden Workaround vor:
+
+   a. Legen Sie eine dedizierte Versandkostenregel an und ordnen Sie ihr die betreffenden Artikel zu.
+      |br|
+      Achten Sie darauf, dass die Bedingung :guilabel:`Menge` richtig spezifiziert ist.
+   b. Legen Sie eine dedizierte Versandart an und ordnen Sie ihr die Zahlungsart :guilabel:`PayPal` sowie die Versandkostenregel individualisierten Produkte zu.
+   c. Weisen Sie Ihre Kunden im Beschreibungstext des Artikels an, zum Bezahlen ausschließlich die dedizierte Versandart zu wählen (:ref:`oxdajr06`, Pos. 1).
+
+      .. _oxdajr06:
+
+      .. figure:: /media/screenshots/oxdajr06.png
+         :alt: Dedizierte Versandart im Checkout wählen
+         :width: 650
+         :class: with-shadow
+
+         Abb.: Dedizierte Versandart im Checkout wählen
+
+   .. todo: #ML: Oben beschriebenen Workaround prüfen: In der Praxis: muss der Kunde aus der Dropdownliste die dedizierte Versandart (z.B. "Customized") wählen, damit exklusiv PayPal angezeigt wird; Zuordnung zu Artikel ginge nur über ein Modul; Abhilfe: Im Artikel-Beschreibungstext beschreiben, dass nur Versandart "Customized" oder Zahlungsart PayPal möglich ist? -- LS: ja
 
 .. todo: #tbd: EN: result erg.:
 
