@@ -627,7 +627,7 @@ Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellunge
 
 |result|
 
-.. todo: #ML: Was ist das erwartete Ergebnis? Bestellungen mit Bestellnr. = 0 werden bei mir nicht gelöscht.
+.. todo: #ML: Geht bei mir immer noch nicht; alle alten Bestellungen noch da -- Was ist das erwartete Ergebnis? Bestellungen mit Bestellnr. = 0 werden bei mir nicht gelöscht.
 
 Wenn Sie das automatische Löschen deaktiviert lassen, müssen Sie unvollständige Bestellungen regelmäßig manuell löschen.
 
