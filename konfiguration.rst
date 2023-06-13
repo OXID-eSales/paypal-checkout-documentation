@@ -488,7 +488,7 @@ Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort eing
 
 Typischerweise wird der Rechnungsbetrag sofort eingezogen.
 
-In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Auslieferung ausgelöst wird:
+In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst verzögert durch die Auslieferung ausgelöst wird:
 
 * Sie vertreiben bestimmte individualisierte Produkte, die Sie erst nach Eingang der Bestellung herstellen, in Auftrag geben oder bestellen.
 * Sie haben einen eShop für Geschäftskunden. Hier sind die Liefermengen und Zahlungsbeträge größer als bei Privatkunden.
@@ -497,21 +497,14 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
   |br|
   Deshalb wollen Sie sicherstellen, dass die Zahlung nur ausgelöst wird, wenn die Ware da oder auf dem Weg zum Versand ist.
 
-.. important::
-
-   Sie müssen das Produkt innerhalb von 30 Tagen liefern und die Transaktion beenden oder mit dem Kunden gemeinsam eine Lösung finden.
-
-   Hintergrund: Durch das Bestellen ist PayPal initial für 3 Tage autorisiert, das Geld bei Ihrem Kunden einzuziehen. Die Autorisierung wird bis maximal 29 Tage nach Bestellung automatisch verlängert.
-
-   Nach dreißig Tagen verfällt die Autorisierung, und PayPal kann den Rechnungsbetrag nicht mehr einziehen.
-
+.. include:: /_static/reuse/note-capture-deferred.rst
 
 |procedure|
 
 1. Sie haben unter :guilabel:`PayPal Standard - Geldeinzug` (:ref:`oxdajr12`) folgende Möglichkeiten:
 
    * Damit Zahlungen immer direkt ausgelöst werden, wählen Sie :guilabel:`Direkt`.
-   * Um die Zahlung nur zu reservieren und später auszulösen, haben Sie folgende Möglichkeiten:
+   * Um die Zahlung nur zu reservieren und verzögert auszulösen, haben Sie folgende Möglichkeiten:
 
      * :guilabel:`automatisch bei Lieferung`: Die Zahlung wird ausgelöst, sobald Sie in Ihrem eShop den bestellten Artikel auf den Status :technicalname:`Geliefert` gesetzt haben.
      * :guilabel:`manuell`: Die Zahlung wird ausgelöst, wenn Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
@@ -553,7 +546,10 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst durch die Au
 
 |result|
 
-Unter :menuselection:`Bestellungen verwalten --> Bestellungen` ziehen Sie den Rechnungsbeträge manuell ein (siehe :ref:`betrieb:Reservierte Zahlung auslösen`.
+Bei verzögertem Geldeinzug ziehen Sie die Rechnungsbeträge unter :menuselection:`Bestellungen verwalten --> Bestellungen` wie folgt ein (siehe :ref:`betrieb:Reservierte Zahlung manuell auslösen`):
+
+* Wenn Sie :guilabel:`automatisch bei Lieferung` gwählt haben: Sie lösen die Zahlung aus, sobald Sie die Schaltfläche :guilabel:`Jetzt versenden` wählen und damit den bestellten Artikel auf den Status :technicalname:`Geliefert` gesetzt haben.
+* Wenn Sie :guilabel:`manuell` gewählt haben: Sie lösen die Zahlung aus, indem Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
 
 
 3D Secure für Debit- und Kreditkarten konfigurieren

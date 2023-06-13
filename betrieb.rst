@@ -1,37 +1,40 @@
 Betrieb
 =======
 
-Reservierte Zahlung auslösen
-----------------------------
+Reservierte Zahlung manuell auslösen
+------------------------------------
 
-Bei der Zahlungsart :technicalname:`PayPal` können Sie die Zahlung manuell auslösen.
+Bei der Zahlungsart :technicalname:`PayPal` können Sie den Geldeinzug verzögern und manuell auslösen.
 
 Wenn Sie diese Möglichkeit nutzen, dann überwachen Sie die noch nicht bezahlten Bestellungen.
 
-|background|
-
-Sie haben für die Zahlungsart :technicalname:`PayPal` festgelegt, dass Sie die Bezahlung manuell anstoßen wollen (siehe :ref:`konfiguration:Geldeinzug festlegen`).
+.. include:: /_static/reuse/note-capture-deferred.rst
 
 |prerequisites|
 
-* Sie haben den Artikel versendet (siehe :ref:`betrieb:Artikel als versendet markieren`).
+Sie haben für die Zahlungsart :technicalname:`PayPal` festgelegt, wie Sie den verzögerten Geldeinzug auslösen wollen (siehe :ref:`konfiguration:Geldeinzug festlegen`).
 
 |procedure|
 
 1. Wählen Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die noch nicht bezahlte Bestellung (:ref:`oxdajt01`, Pos. 1).
-#. Optional: Markieren Sie den Artikel als versendet.
-   |br|
-   Dazu wählen Sie auf der Registerkarte :guilabel:`Übersicht` die Schaltfläche :guilabel:`Jetzt versenden`.
-#. Wählen Sie auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` (:ref:`oxdajt01`, Pos. 2).
+#. Tun Sie Folgendes, abhängig davon, wie Sie den verzögerten Geldeinzug konfiguriert haben:
+
+   * Wenn Sie :guilabel:`automatisch bei Lieferung` gewählt haben, markieren Sie den Artikel als versendet.
+     |br|
+     Dazu wählen Sie auf der Registerkarte :guilabel:`Übersicht` die Schaltfläche :guilabel:`Jetzt versenden` (siehe :ref:`betrieb:Artikel als versendet markieren`).
+   * Wenn Sie :guilabel:`manuell` gewählt haben, tun Sie Folgendes:
+
+     a. Technisch optional: Markieren Sie den Artikel als versendet (siehe :ref:`betrieb:Artikel als versendet markieren`).
+     #. Wählen Sie auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` (:ref:`oxdajt01`, Pos. 2).
 
 .. _oxdajt01:
 
 .. figure:: /media/screenshots/oxdajt01.png
-   :alt: Reservierte Zahlung auslösen
+   :alt: Reservierte Zahlung manuell auslösen
    :width: 650
    :class: with-shadow
 
-   Abb.: Reservierte Zahlung auslösen
+   Abb.: Reservierte Zahlung manuell auslösen
 
 |result|
 
