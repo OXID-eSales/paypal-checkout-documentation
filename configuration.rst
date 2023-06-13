@@ -179,7 +179,9 @@ The webhook allows PayPal to contact your OXID eShop and provide real-time statu
 
 .. hint::
 
-  It's possible to let the shop track the incoming webhooks by setting the config parameter `$this->sLogLevel` in the file `config.inc.php` to `debug`. After that, the webhook calls by PayPal are written to the file `oxideshop.log`.
+   It's possible to let the shop track the incoming webhooks by setting the config parameter `$this->sLogLevel` in the file `config.inc.php` to `debug`.
+
+   In this way, the webhook calls by PayPal are written to the file `oxideshop.log`.
 
 
 In the first run, you test the payment methods provided with :productname:`PayPal Checkout` with test credentials in a *sandbox*.
@@ -223,11 +225,20 @@ We describe the process using a sandbox account as an example. The live process 
 
 .. include:: /_static/reuse/note-ee-onboarding.rst
 
-1. To log in to the sandbox, under :guilabel:`API credentials` choose the :guilabel:`Start Merchant Integration (Sandbox) in a new window` button.
-#. Select :guilabel:`Sign Up Merchant Integration (Sandbox)`.
+.. hint::
+
+   **Availability of all payment methods**
+
+   To make :emphasis:`all` PayPal payment methods available to you, generate the webhook as described below using the :guilabel:`Signup Merchant PayPal Integration (Sandbox)` button.
+
+   Background: Technically, it is also possible to enter already existing credentials :emphasis:`manually` instead of generating them again. But this would lead to restrictions (see :ref:`troubleshooting:"Credit card" and "Purchase upon invoice" not available`).
+
+.. todo: #tbd: Verify :guilabel:`Start Merchant Integration (Sandbox) in a new window` and :guilabel:`Sign Up Merchant Integration (Sandbox)`
+
+1. Under :guilabel:`API credentials` choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button.
 #. Go through the registration process with the sandbox merchant account email address.
 
-   a. Log in with your (sandbox) merchant account (:ref:`oxdajr01`), and confirm the prompts.
+   a. Log in with your (sandbox) merchant account (:ref:`oxdajr01`) and confirm the prompts.
 
       .. _oxdajr01:
 
@@ -258,47 +269,51 @@ We describe the process using a sandbox account as an example. The live process 
 
    The webhook is created.
 
-   The client ID and the webhook ID are displayed (:ref:`oxdajr05`).
+   The client ID and the webhook ID are displayed (:ref:`oxdajr05`, items 1, 2).
 
    .. _oxdajr05:
 
    .. figure:: /media/screenshots/oxdajr05.png
       :alt: Webhook created
+      :width: 650
+      :class: with-shadow
 
       Figure: Webhook created
 
+   .. _activation-creditcard:
 
-#. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`) check whether the activation has been done.
-   |br|
-   If the activation did not happen automatically, contact your PayPal representative.
+#. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`, item 3), check whether the activation has been done.
 
-.. hint::
+   .. hint::
 
-   **Credit card payment method**.
+      **Payment method fallback credit card**.
 
-   If the credit card payment method has not been activated automatically, the payment method will appear as a separate :guilabel:`credit card` button below the PayPal button.
+      If the activation :emphasis:`did not` happen automatically (:guilabel:`credit card: No`), contact your PayPal representative.
 
-   .. image:: media/screenshots/oxdajr02.png
-       :alt: Payment method credit card not activated
-       :class: no-shadow
+      If the activation has taken place, the credit card payment method is available in the checkout step Shipping & Payment Method (:ref:`oxdajr02`, item 1).
 
-   Once the activation is done, your customer sees the PayPal button, and the credit card payment method is available in the Shipping & Payment Method checkout step.
+      If activation is :emphasis:`not` possible, a fallback solution is available as an alternative (:ref:`oxdajr02`, ìtem 2).
 
-   .. image:: media/screenshots/oxdajr06.png
-       :alt: Payment method credit card activated
-       :class: no-shadow
+      .. _oxdajr02:
 
-.. hint::
+      .. figure:: media/screenshots/oxdajr02.png
+         :alt: Credit card options and SEPA Direct Debit
+         :width: 650
+         :class: with-shadow
 
-   **Payment method Pay upon Invoice**
+         Figure: Credit card options and SEPA Direct Debit
 
-   PayPal offers the payment method Pay upon Invoice only to show owners from Germany.
+
+   .. hint::
+
+      **Payment method Purchase upon invoice**
+
+      PayPal offers the payment method Purchase upon invoice only to store operators from Germany.
 
 
 |result|
 
-Once you have given PayPal permission to connect your sandbox account to the
-PayPal test store, the API credentials are displayed and the module is active (:ref:`oxdajr05`).
+Once you have given PayPal permission to connect your sandbox account to the PayPal test store, the API credentials are displayed, and the module is active :ref:`oxdajr05`.
 
 Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :guilabel:`PayPal` (technical name :technicalname:`oscpaypal`) is active (:ref:`oxdajr07`).
 
@@ -306,8 +321,12 @@ Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :gu
 
    .. figure:: /media/screenshots/oxdajr07.png
       :alt: Payment method PayPal active
+      :width: 650
+      :class: with-shadow
 
       Figure: Payment method PayPal active
+
+The payment methods "Credit card" and "Purchase upon invoice" are not available? Follow the instructions under :ref:`troubleshooting:"Credit card" and "Purchase upon invoice" not available`.
 
 .. hint::
 
@@ -317,9 +336,7 @@ Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :gu
 
    To delete a webhook, delete the credentials and select :guilabel:`Save`.
 
-   The :guilabel:`Register Merchant PayPal Integration` button appears and you can regenerate the webhook.
-
-
+   The :guilabel:`Register Merchant PayPal Integration` button appears, and you can regenerate the webhook.
 
 
 Button placement settings: Quick purchase
@@ -368,7 +385,7 @@ If you want your customers to have to register in your eShop, disable the quick 
 
 |procedure|
 
-1. To disable the express checkout feature, uncheck :guilabel:`Product details page`, :guilabel:`Basket`, and :guilabel:`Mini-Basket` (:ref:`oxdajr10`, item 1).
+1. To disable :productname:`PayPal Checkout`'s express checkout feature, uncheck :guilabel:`Product details page`, :guilabel:`Basket`, and :guilabel:`Mini-Basket` (:ref:`oxdajr10`, item 1).
 2. Save your settings.
 
 .. _oxdajr10:
@@ -396,7 +413,6 @@ For more information about country coverage and country-specific features of the
 
 1. To offer your customers Pay Later features, choose the :guilabel:`"Show Pay Later" button?` checkbox (:ref:`oxdajr10`, item 2).
 #. Save your settings.
-
 
 Login with PayPal
 ^^^^^^^^^^^^^^^^^
@@ -437,8 +453,6 @@ If you do :emphasis:`not` enable :guilabel:`Login with PayPal`, the following ha
   |br|
   Your customer lands on the checkout page with the PayPal address data. The data is stored only once for the current order, no customer account is created in the eShop.
 
-
-
 |procedure|
 
 .. ATTENTION::
@@ -471,13 +485,7 @@ However, in certain cases it makes sense that the payment is only triggered by t
   |br|
   That's why you want to make sure that payment is only triggered when the goods are there or on their way to be shipped.
 
-.. important::
-
-   You need to deliver the product within 30 days and complete the transaction or work with the customer to find a solution.
-
-   Background: By placing an order PayPal is initially authorized for 3 days to collect the money from your customer. The authorization is automatically extended up to a maximum of 29 days after ordering.
-
-   After thirty days, the authorization expires and PayPal can no longer collect the invoice amount.
+.. include:: /_static/reuse/note-capture-deferred.rst
 
 
 |procedure|
@@ -487,11 +495,19 @@ However, in certain cases it makes sense that the payment is only triggered by t
    * To have payments always triggered directly, choose :guilabel:`Directly`.
    * To reserve the payment only and trigger it later, you have the following options:
 
-     * :guilabel:`Automatically on delivery`: The payment is triggered as soon as you have set the ordered item to the :technicalname:`Delivered` status in your eShop.
-     * :guilabel:`Manually`: Payment is triggered when you go to :menuselection:`Administer Orders --> Orders`, select the order, and, on the :guilabel:`PayPal Checkout` tab, choose the :guilabel:`Collect` button.
+     * :guilabel:`automatically upon delivery`: The payment is triggered as soon as you have set the ordered item to the status :technicalname:`delivered` in your eShop.
+     * :guilabel:`manually`: The payment is triggered when you select the order under :menuselection:`Administer Orders --> Orders` and, on the :guilabel:`PayPal Checkout` tab, choose the :guilabel:`Collect` button.
 
-     .. todo: #tbd: choose the :guilabel:`Collect` button.
-     .. todo: #tbd: add chap. operation and add screenshot.
+   Reservation is not possible for the :emphasis:`Quick Purchase` function of :productname:`PayPal Checkout` (payment method :guilabel:`PayPal Express`). The invoice amount is always collected immediately for :guilabel:`PayPal Express` payment method.
+
+   .. _oxdajr12:
+
+   .. figure:: /media/screenshots/oxdajr12.png
+      :alt: Configuring deferred payment
+      :width: 650
+      :class: with-shadow
+
+      Figure: Configuring deferred payment
 
 #. Save your settings.
 #. Make sure you have assigned the :guilabel:`PayPal` payment method only to the customized products in your eShop.
@@ -500,15 +516,31 @@ However, in certain cases it makes sense that the payment is only triggered by t
    |br|
    Reservation is not possible for the :emphasis:`Fast Checkout` feature of :productname:`PayPal Checkout` (payment method :guilabel:`PayPal Express`).  For the :guilabel:`PayPal Express` payment method, the invoice amount is always collected immediately.
 
+#. Assign the :guilabel:`PayPal` payment method to the customized products in your eShop.
 
-.. _oxdajr12:
+   It is technically not possible to assign certain payment methods exclusively to certain items. We suggest the following workaround:
 
-.. figure:: /media/screenshots/oxdajr12.png
-   :alt: Configuring delayed payment
-   :width: 450
-   :class: with-shadow
+   a. Create a dedicated shipping cost rule and assign the items in question to it.
+      |br|
+      Make sure that the :guilabel:`Quantity` condition is correctly specified.
+   b. Create a dedicated shipping method and assign the :guilabel:`PayPal` payment method and shipping cost rule for individualized products to it.
+   c. In the description text of the item, instruct your customers to choose only the dedicated shipping method for payment (:ref:`oxdajr06`, item 1).
 
-   Figure: Configuring delayed payment
+      .. _oxdajr06:
+
+      .. figure:: /media/screenshots/oxdajr06.png
+         :alt: Choosing a dedicated shipping method in checkout
+         :width: 650
+         :class: with-shadow
+
+         Figure: Choosing a dedicated shipping method in checkout
+
+|result|
+
+In case of deferred money collection, under :menuselection:`Administer orders --> Orders`, collect the invoice amounts as follows (see :ref:`operation:Triggering reserved payments manually`):
+
+* If you have chosen :guilabel:`automatically upon delivery`: You will trigger the payment as soon as you select the :guilabel:`Ship Now` button, setting the ordered item to the :technicalname:`Delivered` status.
+* If you have chosen :guilabel:`manually`: You trigger the payment by choosing the order under :menuselection:`Administer Orders --> Orders` and choosing the :guilabel:`PayPal Checkout` button on the :guilabel:`Collect` tab.
 
 
 Configuring 3D Secure for debit and credit cards
@@ -543,9 +575,54 @@ You have the following options:
 
    Figure: Configuring 3D Secure authentication
 
+Configuring the handling of incomplete orders
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Specify whether to delete incomplete orders automatically or manually.
 
+-----------------------------------------------------------
 
+|background|
+
+For technical reasons, PayPal creates orders even if the orders are not completed at the end.
+
+This is the case when the customer chooses the :guilabel:`Payment order` button in the checkout, but then does not log in to PayPal and complete the payment process.
+
+For more information, see :ref:`operation:Deleting incomplete orders manually`.
+
+-----------------------------------------------------------
+
+* The :emphasis:`automatic` deletion is recommended, for example, if you sell low-priced bulk items.
+  |br|
+  It would be inconvenient for you to manually delete numerous incomplete orders one by one.
+* :emphasis:`manual` deletion may be useful, for example, if you sell high-priced goods with small sales volumes.
+
+  If customers bounce during the order process, manual deletion allows you to determine if there may be difficulties with certain PayPal payment methods.
+
+|procedure|
+
+.. todo: #tbd: EN: :guilabel:`Automatically delete not finished orders?`
+
+1. If you want the system to automatically delete incomplete orders, choose the :guilabel:`Automatically delete not finished orders?` checkbox (:ref:`oxdajr13`, item 1).
+
+   If necessary, adjust the default retention time of 60 minutes :ref:`oxdajr13`, item 2).
+
+#. Save your settings.
+
+|result|
+
+If you leave automatic deletion disabled, you will have to delete incomplete orders manually on a regular basis.
+
+For more information see :ref:`operation:Deleting incomplete orders manually`.
+
+.. _oxdajr13:
+
+.. figure:: /media/screenshots/oxdajr13.png
+   :alt: Configuring automatic deletion of incomplete orders.
+   :width: 650
+   :class: with-shadow
+
+   Figure: Configuring automatic deletion of incomplete orders
 
 
 Banner settings: Re-using your PayPal banner settings
@@ -688,7 +765,7 @@ You have configured the desired payment methods and tested them successfully wit
 |procedure|
 
 1. Under :guilabel:`API credentials` choose the :guilabel:`Live` operating mode.
-#. Choose the :guilabel:`Start Merchant Integration (Live)` button.
+#. Choose the :guilabel:`Sign Up Merchant Integration (Live)` button.
    |br|
    A dialog box for logging in to PayPal appears.
 #. Log in with your existing PayPal merchant account. If you don't have a live login yet, create a new PayPal merchant account.

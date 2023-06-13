@@ -47,6 +47,7 @@ France            PayPal - Pay Later
 Germany           GiroPay
 Germany           PayPal - Pay Later
 Germany           Pay upon Invoice
+Germany           SEPA Direct Debit
 Germany           Sofort (Klarna Pay now)
 Great Britain     Sofort (Klarna Pay now)
 Great Britain     PayPal - Pay Later
@@ -89,6 +90,7 @@ PayPal - Pay Later               Spain
 PayPal - Pay Later               United States
 Przelewy24                      Poland
 Pay upon Invoice                Germany
+SEPA Direct Debit               Germany
 Sofort (Klarna Pay now)         Belgium
 Sofort (Klarna Pay now)         Germany
 Sofort (Klarna Pay now)         Great Britain

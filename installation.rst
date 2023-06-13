@@ -3,10 +3,12 @@ Installation
 
 To install the :productname:`PayPal Checkout` payment module, follow different procedures depending on your OXID eShop version:
 
-* If you have OXID eShop version 6.3.x or higher, install :productname:`PayPal Checkout` 2.2.x.
-* If you have OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` 1.2.x.
+* If you have OXID eShop version 6.3.x or higher, install :productname:`PayPal Checkout` 2.3.0.
+* If you have OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` 1.3.0.
 
-Versions of OXID eShop prior to version 6.1 are not supported.
+Earlier versions of OXID eShop are not supported.
+
+Run the same Composer commands to install a patch update of :productname:`PayPal Checkout`
 
 
 Installing PayPal Checkout for OXID eShop version 6.3 and higher
@@ -43,7 +45,7 @@ Install the payment module :productname:`PayPal Checkout` for OXID eShop version
    .. code:: bash
 
       composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
-      composer require oxid-solution-catalysts/paypal-module ^2.2.0
+      composer require oxid-solution-catalysts/paypal-module ^2.3.0
 
 #. Optional: To activate the module, run the following command.
    |br|
@@ -70,7 +72,7 @@ Next step: To configure :productname:`PayPal Checkout`, choose :guilabel:`Next`.
 Installing PayPal Checkout for OXID eShop version 6.1.x or 6.2.x
 ----------------------------------------------------------------
 
-To install :productname:`PayPal Checkout` for OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` V. 1.2.x.
+To install :productname:`PayPal Checkout` for OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` V. 1.3.x.
 
 |procedure|
 
@@ -81,18 +83,17 @@ Execute the commands as follows:
    .. code:: bash
 
       composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
-      composer require oxid-solution-catalysts/paypal-module ^1.2.0
+      composer require oxid-solution-catalysts/paypal-module ^1.3.0
+
 
 Installing a Minor Update
 -------------------------
 
-If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.1.4 to version 2.2.0.
+If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.2.1 to version 2.3.0.
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.2.0
-
-
+      composer require oxid-solution-catalysts/paypal-module ^2.3.0
 
 Installing a patch update
 -------------------------
