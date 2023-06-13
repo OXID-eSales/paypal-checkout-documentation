@@ -1,9 +1,8 @@
-PayPal Checkout V. 2.3
+PayPal Checkout V. 1.3
 ======================
 
-.. todo: #tbd: ReleaseDatum 2.3: 24.05.2023; 1.3: tbd
-
-Release-Datum: 24.05.2023
+.. todo: #tbd: ReleaseDatum 1.3: tbd
+        Release-Datum: 24.05.2023
 
 Neue oder geänderte Funktionen
 ------------------------------
@@ -41,7 +40,7 @@ Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSale
 Update
 ------
 
-Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 2.3 zu nutzen, machen Sie ein Update.
+Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 1.3 zu nutzen, machen Sie ein Update.
 
 Voraussetzungen
 ^^^^^^^^^^^^^^^
@@ -50,7 +49,7 @@ Voraussetzungen
         done: für OXID >=6.3 und OXID <=6.5 lautet die Version: v2.3.0
         für OXID >=6.1 und OXID <=6.2 lautet die Version: v1.3.0
 
-* Sie haben OXID eShop V. 6.3.x bis 6.5.x.
+* Sie haben OXID eShop V. 6.1.x bis 6.2.x.
 
 Vorgehen
 ^^^^^^^^
