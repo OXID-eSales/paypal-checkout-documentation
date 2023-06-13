@@ -482,7 +482,9 @@ Wenn Sie :guilabel:`Login mit PayPal` :emphasis:`nicht` aktivieren, passiert Fol
 Geldeinzug festlegen
 ^^^^^^^^^^^^^^^^^^^^
 
-Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen für maximal 30 Tage aufgeschoben werden sollen.
+Legen Sie für die Zahlungsart :guilabel:`PayPal` fest, ob Zahlungen sofort oder verzögert eingezogen werden sollen.
+
+Sie können den Geldeinzug für maximal 30 Tage aufschieben.
 
 |example|
 
