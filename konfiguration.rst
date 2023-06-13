@@ -238,10 +238,9 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
    Hintergrund: Technisch ist es auch möglich, bereits existierende Anmeldeinformationen :emphasis:`manuell` einzugeben, statt sie neu zu generieren. Aber das würde zu Enischränkungen führen (siehe :ref:`troubleshooting:"Kreditkarte" und "Rechnungskauf" nicht verfügbar`).
 
+.. todo: #tbd 2.3, 1.3 / EN: Screenshot für Schritt 1, sonst. Felder leer
 
-
-1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Händler PayPal-Integration (Sandbox) im neuen Fenster starten`.
-#. Wählen Sie :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
+1. Wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`nmeldung Händler PayPal-Integration (Sandbox)`.
 #. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
 
    a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
@@ -294,8 +293,6 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
 #. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 3), ob die Freischaltung erfolgt ist.
 
-   .. todo: #tbd: Fallback-Lösung einbauen EN
-
    .. hint::
 
       **Zahlungsmethode Fallback-Kreditkarte**
@@ -304,16 +301,16 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
       Ist die Freischaltung erfolgt, steht die Zahlungsart Kreditkarte im Checkout-Schritt Versand & Zahlungsart zur Verfügung (:ref:`oxdajr02`, Pos. 1).
 
-      Wenn eine Freischaltung nicht möglich ist, steht alternativ eine Fallback-Lösung bereit (:ref:`oxdajr02`, Pos. 2).
+      Wenn eine Freischaltung :emphasis:`nicht möglich ist, steht alternativ eine Fallback-Lösung bereit (:ref:`oxdajr02`, Pos. 2).
 
       .. _oxdajr02:
 
       .. figure:: media/screenshots/oxdajr02.png
-         :alt: Kreditkarten-Optionen und SEPA
+         :alt: Kreditkarten-Optionen und SEPA Lastschrift
          :width: 650
          :class: with-shadow
 
-         Abb.: Kreditkarten-Optionen und SEPA
+         Abb.: Kreditkarten-Optionen und SEPA Lastschrift
 
 
    .. hint::
@@ -333,6 +330,8 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
 
    .. figure:: /media/screenshots/oxdajr07.png
       :alt: Zahlungsart PayPal aktiv
+      :width: 650
+      :class: with-shadow
 
       Abb.: Zahlungsart PayPal aktiv
 
@@ -530,7 +529,7 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst verzögert d
    a. Legen Sie eine dedizierte Versandkostenregel an und ordnen Sie ihr die betreffenden Artikel zu.
       |br|
       Achten Sie darauf, dass die Bedingung :guilabel:`Menge` richtig spezifiziert ist.
-   b. Legen Sie eine dedizierte Versandart an und ordnen Sie ihr die Zahlungsart :guilabel:`PayPal` sowie die Versandkostenregel individualisierten Produkte zu.
+   b. Legen Sie eine dedizierte Versandart an und ordnen Sie ihr die Zahlungsart :guilabel:`PayPal` sowie die Versandkostenregel für individualisierten Produkte zu.
    c. Weisen Sie Ihre Kunden im Beschreibungstext des Artikels an, zum Bezahlen ausschließlich die dedizierte Versandart zu wählen (:ref:`oxdajr06`, Pos. 1).
 
       .. _oxdajr06:

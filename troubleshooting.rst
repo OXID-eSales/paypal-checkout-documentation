@@ -12,7 +12,7 @@ Das ist der Fall, wenn Sie zum Generieren eines Webhooks bei PayPal die API-Anme
 
 Um sicherzustellen, dass alle Zahlungsarten verfügbar sind, tun Sie (am Beispiel eines Sandbox-Kontos) Folgendes:
 
-1. Wählen. Sie :menuselection:`PayPal --> Konfiguration`.
+1. Wählen Sie :menuselection:`PayPal --> Konfiguration`.
 #. Löschen Sie unter :guilabel:`API-Anmeldeinformationen` alle Anmeldeinformationen und wählen :guilabel:`Speichern`.
    |br|
    Die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` erscheint.

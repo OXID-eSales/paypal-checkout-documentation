@@ -12,7 +12,7 @@ Wenn Sie diese Möglichkeit nutzen, dann überwachen Sie die noch nicht bezahlte
 
 |prerequisites|
 
-Sie haben für die Zahlungsart :technicalname:`PayPal` festgelegt, wie Sie den verzögerten Geldeinzug auslösen wollen (siehe :ref:`konfiguration:Geldeinzug festlegen`).
+* Sie haben für die Zahlungsart :technicalname:`PayPal` festgelegt, wie Sie den verzögerten Geldeinzug auslösen wollen (siehe :ref:`konfiguration:Geldeinzug festlegen`).
 
 |procedure|
 
@@ -115,7 +115,7 @@ Sie haben das manuelle Löschen unvollständiger Bestellungen aktiviert (siehe :
 
 |procedure|
 
-1. Wählen Sie :menuselection:`Bestellungen --> Bestellungen verwalten`.
+1. Wählen Sie :menuselection:`Bestellungen verwalten --> Bestellungen`.
 
    Unabgeschlossene Bestellungen haben die Bestellnummer :technicalname:`0` (:ref:`oxdajt04`, Pos. 1a, 1b).
 
