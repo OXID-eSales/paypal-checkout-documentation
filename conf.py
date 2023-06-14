@@ -137,6 +137,7 @@ html_context = {
     'versions':
         [
          ('2.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.2/'),
+         ('2.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.3/'),
          ],
     'languages':
        [('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.2/'),
