@@ -176,17 +176,6 @@ Registrieren Sie einen Webhook, um Ihren eShop mit PayPal zu verbinden.
 
 Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit Statusmeldungen beispielsweise über abgeschlossene Transaktionen zu liefern.
 
-.. hint::
-
-  .. todo: #tbd: gehört zu x.2 *und* x.3: also als separaten branch anlegen -- ML 26.5., 15:40
-        **#tbd: Überschrift**
-        Prüfen: Hinweis in EN vorhanden?
-        Beispiel: etwas funktioniert nicht: debug einschalten: standard $this->sLogLevel = 'error';; wenn PP support fragt, OXD eshop log
-
-  Wenn die Webhooks des Moduls geprüft werden müssen, dann bietet es sich an, den Parameter `$this->sLogLevel` in der Datei `config.inc.php` auf den Wert `debug` zu setzen.
-
-  Auf diese Weise werden die an den Shop gesendeten Webhook Calls von PayPal im Log `oxideshop.log` aufgezeichnet.
-
 Im ersten Durchgang testen Sie die mit :productname:`PayPal Checkout` bereitgestellten Zahlungsarten mit Test-Zugangsdaten in einer *Sandbox*.
 
 .. hint::
@@ -347,6 +336,7 @@ Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung?
 
    Die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` erscheint, und Sie können den Webhook neu generieren.
 
+.. include:: /_static/reuse/hint-debugmode.rst
 
 Einstellungen für die Buttonplatzierung: Schnellkauf-Funktion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
