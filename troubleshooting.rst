@@ -31,7 +31,7 @@ Wenn beispielsweise Verbindungsprobleme auftreten oder Zahlungsvorgänge mit :pr
 
 Es ist hilfreich, wenn Sie bereits Log-Dateien haben, wenn Sie den PayPal-Support kontaktieren. Dazu aktivieren Sie den Debug-Modus.
 
-Damit zeichnen Sie die an den Shop gesendeten Webhook Calls von PayPal in der Log-Datei :file:`oxideshop.log` auf.
+Damit zeichnen Sie die an den OXID eShop gesendeten Webhook Calls von PayPal in der Log-Datei :file:`oxideshop.log` auf.
 
 |procedure|
 
