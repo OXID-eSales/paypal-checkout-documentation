@@ -8,7 +8,7 @@ It is possible that the payment methods "Credit card" and "Purchase on account" 
 
 This is the case if, in order to generate a webhook at PayPal, you have entered the API credentials (for example, from an existing version of PayPal Checkout) :emphasis:`manually` instead of starting the process with the :guilabel:`Sign Up Merchant Integration` button.
 
-**Remedy**
+|procedure|
 
 To ensure that all payment types are available, do the following (using a Sandbox account as an example):
 
@@ -21,6 +21,23 @@ To ensure that all payment types are available, do the following (using a Sandbo
 
 For more information, see :ref:`configuration:configuration` in chapter :ref:`configuration:API credentials`.
 
-.. todo: Inhalt aus Hinweis in Konfig erg.:
-        Wenn die Webhooks des Moduls geprüft werden müssen, dann bietet es sich an, den Parameter $this->sLogLevel in der Datei config.inc.php auf den Wert debug zu setzen.
-        Auf diese Weise werden die an den Shop gesendeten Webhook Calls von PayPal im Log oxideshop.log aufgezeichnet.
+Switching on the debug mode
+---------------------------
+
+If, for example, you experience connection problems, or payment transactions with :productname:`PayPal Checkout` do not work as expected, contact PayPal support.
+
+It is helpful if you already have log files when you contact PayPal support. To do this, activate the debug mode.
+
+This will record the webhook calls sent to the OXID eShop by PayPal in the :file:`oxideshop.log` log file.
+
+|procedure|
+
+1. Open the file :file:`source/source/config.inc.php`.
+#. Change the value of the :technicalname:`sLogLevel` parameter to :technicalname:`debug`.
+
+   .. code::
+
+      $this->sLogLevel = 'debug';
+
+#. Provide the :file:`/source/log/oxideshop.log` to the PayPal support.
+#. Once the problem is solved, change the value of the :technicalname:`sLogLevel` parameter back to the default :technicalname:`error` value.

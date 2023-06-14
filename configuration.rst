@@ -338,6 +338,7 @@ The payment methods "Credit card" and "Purchase upon invoice" are not available?
 
    The :guilabel:`Register Merchant PayPal Integration` button appears, and you can regenerate the webhook.
 
+.. include:: /_static/reuse/hint-debugmode.rst
 
 Button placement settings: Quick purchase
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
