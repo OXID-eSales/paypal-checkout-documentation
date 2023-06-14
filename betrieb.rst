@@ -83,8 +83,6 @@ Mit dem Tracking-Code können Sie
 
 Der Tracking-Code wird an PayPal übermittelt.
 
-.. todo: #tbd: EN: :guilabel:`Main`; Tracking Carrier (Country); Tracking Carrier (Provider)
-
 .. _oxdajt03:
 
 .. figure:: /media/screenshots/oxdajt03.png

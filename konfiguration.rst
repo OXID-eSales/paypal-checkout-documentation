@@ -341,7 +341,7 @@ Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung?
 Einstellungen für die Buttonplatzierung: Schnellkauf-Funktion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Entscheiden Sie, ob Sie die Schnellkauf-Funktion von :productname:`PayPal Checkout` anbieten wollen
+Entscheiden Sie, ob Sie die Schnellkauf-Funktion von :productname:`PayPal Checkout` anbieten wollen.
 
 Mit der Schnellkauf-Funktion überspringen Ihre Kunden die Anmeldung in Ihrem eShop.
 
