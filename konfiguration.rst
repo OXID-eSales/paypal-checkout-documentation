@@ -532,6 +532,9 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst verzögert d
          Abb.: Dedizierte Versandart im Checkout wählen
 
    .. todo: #ML: Oben beschriebenen Workaround prüfen: In der Praxis: muss der Kunde aus der Dropdownliste die dedizierte Versandart (z.B. "Customized") wählen, damit exklusiv PayPal angezeigt wird; Zuordnung zu Artikel ginge nur über ein Modul; Abhilfe: Im Artikel-Beschreibungstext beschreiben, dass nur Versandart "Customized" oder Zahlungsart PayPal möglich ist? -- LS: ja
+    ML: Allen nicht-customized-Artikel das gleich machen: ausdrücklich einer Versandart/Versandkostenregel zuordnen
+
+
 
 .. todo: #tbd: EN: result erg.:
 
