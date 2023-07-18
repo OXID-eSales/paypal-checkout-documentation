@@ -180,9 +180,12 @@ div.section img {
     display: inline-block !important;
 }
   
-.wy-side-nav-search {
+.wy-side-nav-search  {
     background: #fff;
-    color: #000;
+}
+
+.wy-side-nav-search>a {
+    color: #C02124;
 }
   
 .wy-side-nav-search > div.version {
