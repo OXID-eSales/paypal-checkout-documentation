@@ -1,8 +1,7 @@
 PayPal Checkout V. 1.3
 ======================
 
-.. todo: #tbd: ReleaseDatum 1.3: tbd
-        Release-Datum: 24.05.2023
+Release-Datum: 25.07.2023
 
 Neue oder geänderte Funktionen
 ------------------------------
@@ -34,7 +33,9 @@ Neue oder geänderte Funktionen
 Korrekturen
 -----------
 
-Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/paypal-module/blob/v2.3.0/CHANGELOG.md.
+.. todo: URL verifiz.
+
+Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/paypal-module/blob/v1.3.0/CHANGELOG.md.
 
 
 Update

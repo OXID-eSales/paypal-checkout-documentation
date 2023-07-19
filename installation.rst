@@ -3,7 +3,7 @@ Installation
 
 Um das Zahlungsmodul :productname:`PayPal Checkout` zu installieren, folgen Sie verschiedenen Verfahren je nach der Version Ihres OXID eShops:
 
-* Wenn Sie OXID eShop Version 6.3.x oder höher haben, installieren Sie :productname:`PayPal Checkout` 2.3.0 (siehe :ref:`installation:PayPal Checkout für OXID eShop ab Version 6.3 installieren`).
+* Wenn Sie OXID eShop Version 6.3.x bis 6.5.x haben, installieren Sie :productname:`PayPal Checkout` 2.3.0 (siehe :ref:`installation:PayPal Checkout für OXID eShop ab Version 6.3 installieren`).
 * Wenn Sie OXID eShop Version 6.1.x oder 6.2.x haben, installieren Sie :productname:`PayPal Checkout` 1.3.0 (siehe :ref:`installation:PayPal Checkout für OXID eShop Version 6.1.x oder 6.2.x installieren`).
 
 Frühere Versionen des OXID eShops werden nicht unterstützt.
@@ -19,7 +19,7 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
 
 |prerequisites|
 
-* Sie haben den OXID eShop 6.3 oder höher installiert.
+* Sie haben den OXID eShop 6.3.x bis 6.5.x installiert.
 * Sie haben `https` konfiguriert.
 
    a. Öffnen Sie im Verzeichnis :file:`<Rootverzeichnis des eShops>/source` die Datei :file:`config.inc.php`.
@@ -94,18 +94,18 @@ Führen Sie dabei die Befehle wie folgt aus:
 Minor Update installieren
 -------------------------
 
-Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.2.1 auf Version 2.3.0.
+Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 1.2.1 auf Version 1.3.0.
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.2.0
+      composer require oxid-solution-catalysts/paypal-module ^1.3.0
 
 
 
 Patch-Update installieren
 -------------------------
 
-Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
+Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 1.1.4 auf Version 1.1.5.
 
 
 |procedure|
@@ -121,13 +121,13 @@ Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`P
 
 .. attention::
 
-   **Länderzuordnungen prüfen nach Update auf PayPal Checkout Version 2.1.5**
+   **Länderzuordnungen prüfen nach Update auf PayPal Checkout Version 1.1.5**
 
-   Mit Version 2.1.4 wurde die Länderabdeckung einzelner :productname:`PayPal Checkout`-Zahlungsmethoden erweitert.
+   Mit Version 1.1.5 wurde die Länderabdeckung einzelner :productname:`PayPal Checkout`-Zahlungsmethoden erweitert.
 
    Stellen Sie sicher, dass Sie die erweiterte Länderabdeckung nutzen können.
 
-   Hintergrund: Mit :productname:`PayPal Checkout` Version 2.1.5 sind bei der Erstinstallation die Länder automatisch den Zahlungsarten zugeordnet (siehe :ref:`konfiguration:Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren`).
+   Hintergrund: Mit :productname:`PayPal Checkout` Version 1.1.5 sind bei der Erstinstallation die Länder automatisch den Zahlungsarten zugeordnet (siehe :ref:`konfiguration:Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren`).
 
    Dadurch kann es sein, dass Konfigurationseinstellungen Ihrer bestehenden Version die Nutzung neuer Länderzuordnungen blockieren.
 
