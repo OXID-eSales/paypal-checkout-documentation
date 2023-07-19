@@ -1,10 +1,10 @@
-PayPal Checkout V. 2.3
+PayPal Checkout V. 1.3
 ======================
 
-Release date: 24-05-2023
+Release date: 25-07-2023
 
 New or changed functions
-------------------------------
+------------------------
 
 * Offer your customers the new SEPA Direct Debit payment method for bank transfers in Germany.
 
@@ -29,13 +29,13 @@ New or changed functions
 Corrections
 -----------
 
-For fixes, see the changelog (GitHub) at https://github.com/OXID-eSales/paypal-module/blob/v2.3.0/CHANGELOG.md.
+For fixes, see the changelog (GitHub) at https://github.com/OXID-eSales/paypal-module/blob/v1.3.0/CHANGELOG.md.
 
 
 Update
 ------
 
-To use the features and fixes of :productname:`PayPal Checkout` V. 2.3, make an update.
+To use the features and fixes of :productname:`PayPal Checkout` V. 1.3, make an update.
 
 Requirements
 ^^^^^^^^^^^^
@@ -44,7 +44,7 @@ Requirements
     done: for OXID >=6.3 and OXID <=6.5 the version is: v2.3.0
     for OXID >=6.1 and OXID <=6.2 the version is: v1.3.0
 
-* You have OXID eShop v. 6.3.x to 6.5.x.
+* You have OXID eShop v. 6.1.x to 6.2.x.
 
 Procedure
 ^^^^^^^^^

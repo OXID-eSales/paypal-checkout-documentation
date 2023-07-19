@@ -3,12 +3,8 @@ Installation
 
 To install the :productname:`PayPal Checkout` payment module, follow different procedures depending on your OXID eShop version:
 
-* If you have OXID eShop version 6.3.x or higher, install :productname:`PayPal Checkout` 2.3.0 (see :ref:`installation:Installing PayPal Checkout for OXID eShop version 6.3 and higher`).
-* If you have OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` 1.3.0.
-
-  .. note::
-
-     :productname:`PayPal Checkout` 1.3.0 is not yet released as of 24-05-2023.
+* If you have OXID eShop version 6.3.x to 6.5.x, install :productname:`PayPal Checkout` 2.3.0 (see :ref:`installation:Installing PayPal Checkout for OXID eShop version 6.3 and higher`).
+* If you have OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` 1.3.0 (see :ref:`installation:Installing PayPal Checkout for OXID eShop version 6.1.x or 6.2.x`).
 
 Earlier versions of OXID eShop are not supported.
 
@@ -70,31 +66,37 @@ When the installation process is finished, the module :guilabel:`PayPal Checkout
 
    Figure: PayPal Checkout for OXID installed successfully
 
-.. todo: #tbd: Uncomment when 1.3 is available
-    Installing PayPal Checkout for OXID eShop version 6.1.x or 6.2.x
-    ----------------------------------------------------------------
-    To install :productname:`PayPal Checkout` for OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` V. 1.3.x.
-    |procedure|
-    Follow the same procedure for installation for OXID eShop version 6.3 and higher (see :ref:`installation:Installing PayPal Checkout for OXID eShop version 6.3 and higher`).
-    Execute the commands as follows:
-       .. code:: bash
-          composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
-          composer require oxid-solution-catalysts/paypal-module ^1.3.0
+
+Installing PayPal Checkout for OXID eShop version 6.1.x or 6.2.x
+----------------------------------------------------------------
+
+To install :productname:`PayPal Checkout` for OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` V. 1.3.x.
+
+|procedure|
+
+Follow the same procedure for installation for OXID eShop version 6.3 and higher (see :ref:`installation:Installing PayPal Checkout for OXID eShop version 6.3 and higher`).
+
+Execute the commands as follows:
+
+   .. code:: bash
+
+      composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
+      composer require oxid-solution-catalysts/paypal-module ^1.3.0
 
 
 Installing a Minor Update
 -------------------------
 
-If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.2.1 to version 2.3.0.
+If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 1.2.1 to version 1.3.0.
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.3.0
+      composer require oxid-solution-catalysts/paypal-module ^1.3.0
 
 Installing a patch update
 -------------------------
 
-If required, install a patch update, from :productname:`PayPal Checkout` version 2.1.4 to version 2.1.5, for example.
+If required, install a patch update, from :productname:`PayPal Checkout` version 1.1.4 to version 1.1.5, for example.
 
 
 |procedure|
@@ -110,13 +112,13 @@ If required, install a patch update, from :productname:`PayPal Checkout` version
 
 .. attention::
 
-   **Check country mappings after update to PayPal Checkout version 2.1.5**.
+   **Check country mappings after update to PayPal Checkout version 1.1.5**.
 
-   With version 2.1.4 the country coverage of individual :productname:`PayPal Checkout` payment methods has been extended.
+   With version 1.1.5 the country coverage of individual :productname:`PayPal Checkout` payment methods has been extended.
 
    Make sure that you can use the extended country coverage.
 
-   Background: With :productname:`PayPal Checkout` version 2.1.5, countries are automatically assigned to payment methods during initial installation (see :ref:`configuration:Optional: Configuring the country mapping of PayPal Checkout payment methods`).
+   Background: With :productname:`PayPal Checkout` version 1.1.5, countries are automatically assigned to payment methods during initial installation (see :ref:`configuration:Optional: Configuring the country mapping of PayPal Checkout payment methods`).
 
    This may cause configuration settings of your existing version to block the use of extended country mappings.
 
