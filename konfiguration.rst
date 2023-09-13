@@ -229,7 +229,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
 .. todo: #tbd 2.3, 1.3 / EN: Screenshot für Schritt 1, sonst. Felder leer
 
-1. Wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`nmeldung Händler PayPal-Integration (Sandbox)`.
+1. Wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
 #. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
 
    a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
