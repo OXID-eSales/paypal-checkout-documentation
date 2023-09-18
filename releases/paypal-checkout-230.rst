@@ -43,20 +43,7 @@ Update
 
 Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 2.3 zu nutzen, machen Sie ein Update.
 
-Voraussetzungen
-^^^^^^^^^^^^^^^
+Weitere Informationen finden Sie unter
 
-.. todo: #tbd: x.3
-        done: für OXID >=6.3 und OXID <=6.5 lautet die Version: v2.3.0
-        für OXID >=6.1 und OXID <=6.2 lautet die Version: v1.3.0
-
-* Sie haben OXID eShop V. 6.3.x bis 6.5.x.
-
-Vorgehen
-^^^^^^^^
-
-Führen Sie den folgenden Befehl aus.
-
-.. code:: bash
-
-   composer update
+* :ref:`installation:Minor Update installieren`
+* :ref:`installation:Patch-Update installieren`
