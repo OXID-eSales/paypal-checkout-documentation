@@ -90,7 +90,7 @@ If you use a deprecated version, perform a minor update, for example from :produ
 Installing a patch update
 -------------------------
 
-If required, install a patch update, from :productname:`PayPal Checkout` version 2.1.4 to version 2.1.5, for example.
+If required, install a patch update, from :productname:`PayPal Checkout` version 2.3.0 to version 2.3.1, for example.
 
 
 |procedure|
