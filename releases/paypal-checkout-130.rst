@@ -1,7 +1,7 @@
 PayPal Checkout V. 1.3
 ======================
 
-Release date: 25-07-2023
+Release date: 24-05-2023
 
 New or changed functions
 ------------------------
