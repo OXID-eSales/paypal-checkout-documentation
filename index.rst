@@ -16,7 +16,7 @@ Moduldokumentation
    Konfiguration <konfiguration>
    Betrieb <betrieb>
    Troubleshooting <troubleshooting>
-   Release Notes <releases/paypal-checkout-130>
+   Release Notes <releases/index>
 
 .. image:: media/Hero_Visual.png
     :alt: Bezahlen mit PayPal Checkout
