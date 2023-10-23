@@ -8,7 +8,8 @@ To install the :productname:`PayPal Checkout` payment module, follow different p
 
 Earlier versions of OXID eShop are not supported.
 
-Run the same Composer commands to install a patch update of :productname:`PayPal Checkout`
+..
+  Run the same Composer commands to install a patch update of :productname:`PayPal Checkout`
 
 
 Installing PayPal Checkout for OXID eShop version 6.1.x or 6.2.x
@@ -96,9 +97,9 @@ If required, install a patch update, from :productname:`PayPal Checkout` version
 
 .. attention::
 
-   **Check country mappings after update to PayPal Checkout version 1.1.5**.
+   **Checking country mappings after update to PayPal Checkout version 1.1.5**
 
-   With version 1.1.5 the country coverage of individual :productname:`PayPal Checkout` payment methods has been extended.
+   With version 1.1.5, the country coverage of individual :productname:`PayPal Checkout` payment methods has been extended.
 
    Make sure that you can use the extended country coverage.
 
