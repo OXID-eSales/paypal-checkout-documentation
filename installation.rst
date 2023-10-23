@@ -77,8 +77,7 @@ Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`
    .. code:: bash
 
       composer require oxid-solution-catalysts/paypal-module ^2.3.0
-
-
+      composer update
 
 Patch-Update installieren
 -------------------------
