@@ -134,7 +134,9 @@ Grundsätzliches Vorgehen
 
    a. Wenn Sie noch kein Händlerkonto haben, legen Sie für den Livebetrieb eins an.
    b. Wechseln Sie in den Betriebsmodus :guilabel:`Live`.
+#. Bei Bedarf: Wenn Sie besonders datenschutzsensible Kunden haben, implementieren Sie ein Zustimmungsverfahren, beispielsweise mit Usercentrics.
 
+   Weitere Informationen finden Sie unter :ref:`cmp-integration:Consent Management-Platformen (CMPs) integrieren`.
 
 PayPal Checkout aktivieren
 --------------------------
