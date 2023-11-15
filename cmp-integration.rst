@@ -19,10 +19,10 @@ von Fremdservern (Drittanbietern) geladen werden.
 Problem
 ^^^^^^^
 
-Bezahlbuttons, wie sie bei :productname:`PayPal Checkout` verwendet werden, sind elementare und funktionale Bestandteile eines Shops, weil sie Bezahlvorgänge schnell und unkompliziert zu ermöglichen.
+Bezahlbuttons, wie sie bei :productname:`PayPal Checkout` verwendet werden, sind elementare und funktionale Bestandteile eines Shops, weil sie schnelle und unkomplizierte Bezahlvorgänge ermöglichen.
 
 Für besonders datenschutzsensible Kunden stellen Bezahlbuttons jedoch möglicherweise ein Datenschutzproblem dar. Solche Kunden bevorzugen eventuell andere Bezahlfunktionen.
-
+|br|
 Denn Drittanbieter sind theoretisch in der Lage, anhand von Drittanbieter-Zugriffs-Logs den Besuch des Kunden auf der Shop-Webseite
 nachzuvollziehen.
 
