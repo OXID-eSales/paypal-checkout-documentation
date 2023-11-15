@@ -333,7 +333,6 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
    .. figure:: /media/screenshots/oxdajr07.png
       :alt: Zahlungsart PayPal aktiv
       :width: 650
-      :class: with-shadow
 
       Abb.: Zahlungsart PayPal aktiv
 
