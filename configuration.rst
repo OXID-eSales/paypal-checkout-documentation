@@ -247,7 +247,7 @@ We describe the process using a sandbox account as an example. The live process 
       .. figure:: /media/screenshots/oxdajr01.png
          :alt: Starting the registration of the sandbox merchant account
 
-         Figure: Starting the registration of the sandbox merchant account
+         Fig.: Starting the registration of the sandbox merchant account
 
    #. Finally, choose :guilabel:`Back to John Doe`s Test Store` (:ref:`oxdajr03`).
 
@@ -256,7 +256,7 @@ We describe the process using a sandbox account as an example. The live process 
       .. figure:: /media/screenshots/oxdajr03.png
          :alt: Completing the registration of the merchant account
 
-         Figure: Completing the registration of the merchant account
+         Fig.: Completing the registration of the merchant account
 
       A message indicates success (:ref:`oxdajr04`).
 
@@ -265,7 +265,7 @@ We describe the process using a sandbox account as an example. The live process 
       .. figure:: /media/screenshots/oxdajr04.png
          :alt: Message onboarding successful
 
-         Figure: Message onboarding successful
+         Fig.: Message onboarding successful
 
 #. Switch back to your OXID eShop.
 
@@ -280,7 +280,7 @@ We describe the process using a sandbox account as an example. The live process 
       :width: 650
       :class: with-shadow
 
-      Figure: Webhook created
+      Fig.: Webhook created
 
    .. _activation-creditcard:
 
@@ -303,7 +303,7 @@ We describe the process using a sandbox account as an example. The live process 
          :width: 650
          :class: with-shadow
 
-         Figure: Credit card options and SEPA Direct Debit
+         Fig.: Credit card options and SEPA Direct Debit
 
 
    .. hint::
@@ -324,9 +324,8 @@ Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :gu
    .. figure:: /media/screenshots/oxdajr07.png
       :alt: Payment method PayPal active
       :width: 650
-      :class: with-shadow
 
-      Figure: Payment method PayPal active
+      Fig.: Payment method PayPal active
 
 The payment methods "Credit card" and "Purchase upon invoice" are not available? Follow the instructions under :ref:`troubleshooting:"Credit card" and "Purchase upon invoice" not available`.
 
@@ -383,8 +382,9 @@ If you want your customers to have to register in your eShop, disable the quick 
 
 .. figure:: /media/screenshots/oxdajr09.png
    :alt: Mini shopping cart and Pay Later
+   :width: 650
 
-   Abb.: Mini shopping cart and Pay Later
+   Fig.: Mini shopping cart and Pay Later
 
 |procedure|
 
@@ -395,6 +395,7 @@ If you want your customers to have to register in your eShop, disable the quick 
 
 .. figure:: /media/screenshots/oxdajr10.png
    :alt: Controlling the display of PayPal buttons
+   :width: 650
 
    Fig.: Controlling the display of PayPal buttons
 
@@ -510,7 +511,7 @@ However, in certain cases it makes sense that the payment is only triggered by t
       :width: 650
       :class: with-shadow
 
-      Figure: Configuring deferred payment
+      Fig.: Configuring deferred payment
 
 #. Save your settings.
 #. Make sure you have assigned the :guilabel:`PayPal` payment method only to the customized products in your eShop.
@@ -536,7 +537,7 @@ However, in certain cases it makes sense that the payment is only triggered by t
          :width: 650
          :class: with-shadow
 
-         Figure: Choosing a dedicated shipping method in checkout
+         Fig.: Choosing a dedicated shipping method in checkout
 
 |result|
 
@@ -575,8 +576,9 @@ You have the following options:
 
 .. figure:: /media/screenshots/oxdajr11.png
    :alt: Configuring 3D Secure authentication
+   :width: 650
 
-   Figure: Configuring 3D Secure authentication
+   Fig.: Configuring 3D Secure authentication
 
 Configuring the handling of incomplete orders
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -625,7 +627,7 @@ For more information see :ref:`operation:Deleting incomplete orders manually`.
    :width: 650
    :class: with-shadow
 
-   Figure: Configuring automatic deletion of incomplete orders
+   Fig.: Configuring automatic deletion of incomplete orders
 
 
 Banner settings: Re-using your PayPal banner settings
@@ -660,8 +662,9 @@ If you want to take advantage of advertising PayPal installments, specify where 
 
 .. figure:: /media/screenshots/oxdajr08.png
    :alt: Example: Installment payment banner on a category page
+   :width: 650
 
-   Figure: Example: installment banner on a category page
+   Fig.: Example: installment banner on a category page
 
 .. attention::
 
