@@ -48,7 +48,7 @@ Nutzen Sie die folgende Anleitung zur Integration von Usercentrics in :productna
 
 * Sie sind als Shopbetreiber bei Usercentrics registriert und haben ein für Ihren OXID eShop passendes Paket gebucht.
 
-  Weitere Informationen finden Sie in der Dokumentation unseres Moduls :productname:`OXID Cookie Management powered by Usercentrics` unter `Usercentrics-Paket buchen <https://docs.oxid-esales.com/modules/Usercentrics/de/latest/einfuehrung.html#usercentrics-paket-buchen>`_.
+  Weitere Informationen finden Sie in der Dokumentation unseres Moduls :productname:`OXID Cookie Management powered by Usercentrics` unter `Usercentrics-Paket buchen <https://docs.oxid-esales.com/modules/usercentrics/de/latest/einfuehrung.html#usercentrics-paket-buchen>`_.
 
 * Sie haben :productname:`OXID Cookie Management powered by Usercentrics` installiert.
 
