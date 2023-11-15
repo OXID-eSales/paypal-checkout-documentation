@@ -322,7 +322,6 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
    .. figure:: /media/screenshots/oxdajr07.png
       :alt: Zahlungsart PayPal aktiv
       :width: 650
-      :class: with-shadow
 
       Abb.: Zahlungsart PayPal aktiv
 
@@ -508,7 +507,6 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst verzögert d
 
    .. figure:: /media/screenshots/oxdajr12.png
       :alt: Verzögerte Zahlung konfigurieren
-      :width: 650
       :class: with-shadow
 
       Abb.: Verzögerte Zahlung konfigurieren
