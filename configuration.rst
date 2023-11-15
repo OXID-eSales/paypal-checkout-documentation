@@ -135,7 +135,9 @@ Basic procedure
 
    a. If you do not have a merchant account yet, create one for live operation.
    b. Switch to :guilabel:`Live` operation mode.
+#. If required: If you have particularly privacy-sensitive customers, implement a consent procedure, for example with Usercentrics.
 
+   For more information, see :ref:`cmp-integration:Integrating Consent Management Platforms`.
 
 Activating PayPal Checkout
 --------------------------

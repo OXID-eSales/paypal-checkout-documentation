@@ -16,6 +16,7 @@ Module Documentation
    Configuration <configuration>
    Operation <operation>
    Troubleshooting <troubleshooting>
+   Consent Management Platforms Integration <cmp-integration>
    Release Notes <releases/index>
 
 .. image:: media/Hero_Visual.png
