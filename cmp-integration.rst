@@ -1,5 +1,5 @@
-Consent Management-Platformen (CMPs) integrieren
-================================================
+Consent Management-Platformen integrieren
+=========================================
 
 Implementieren Sie bei Bedarf ein Zustimmungsverfahren, beispielsweise mit Usercentrics.
 
@@ -37,7 +37,7 @@ Als Shopbetreiber müssen Sie daher abwägen zwischen
 Lösung
 ^^^^^^
 
-Wenn Datenschutz bei Ihren Kunden ein Problem sein könnte, bietet sich als Lösung die Nutzung eines Zustimmungsverfahrens an, so wie es Consent Management-Plattformen wie beispielsweise UserCentrics bieten.
+Wenn Datenschutz bei Ihren Kunden ein Problem sein könnte, bietet sich als Lösung die Nutzung eines Zustimmungsverfahrens an, so wie es Consent Management-Plattformen wie beispielsweise Usercentrics bieten.
 
 Beispiel: Usercentrics in :productname:`PayPal Checkout` integrieren
 --------------------------------------------------------------------
@@ -58,11 +58,11 @@ Nutzen Sie die folgende Anleitung zur Integration von Usercentrics in :productna
 
 1. Überschreiben Sie das :productname:`PayPal Checkout`-Module-Template.
 
-   **Hintergrund**: Das „PayPal Checkout“-Modul ist so vorbereitet, dass alle Templates durch individuelle Anpassungen überschrieben werden können.
+   **Hintergrund**: Das :productname:`PayPal Checkout`-Modul ist so vorbereitet, dass alle Templates durch individuelle Anpassungen überschrieben werden können.
    |br|
    Dazu kopieren Sie eine oder mehrere Dateien aus dem Modul in Ihr Theme-Template.
    |br|
-   Ihr OID eShop nimmt zuerst die Module-Templates, überschreibt diese aber mit Theme-Templates, wenn er identisch definierte Templates im Shop-Theme findet.
+   Ihr OXID eShop nimmt zuerst die Module-Templates, überschreibt diese aber mit Theme-Templates, wenn er identisch definierte Templates im Shop-Theme findet.
 
    Kopieren sie dazu die Datei :file:`/source/modules/osc/paypal/views/tpl/shared/layout/base_js.tpl` in das Verzeichnis :file:`/source/Application/views/<Theme des OXID eShops>/tpl/modules/osc/paypal/`.
 
@@ -77,6 +77,7 @@ Nutzen Sie die folgende Anleitung zur Integration von Usercentrics in :productna
    a. Starten Sie das Usercentrics-Dashboard.
    #. Wählen Sie :menuselection:`Service Settings --> Data Processing Services` (:ref:`oxdajv01`, Pos. 1, 2).
    #. Um einen Service für :productname:`PayPal Checkout` anzulegen, wählen Sie :guilabel:`Create Custom DPS` (:ref:`oxdajv01`, Pos. 3).
+
       Unter :guilabel:`Custom Data Processing Services` (:ref:`oxdajv01`, Pos. 4) wird der Name des Datenverarbeitungsdienstes angezeigt (:ref:`oxdajv01`, Pos. 5).
 
       .. todo: #tbd: screenshot EN
@@ -84,9 +85,9 @@ Nutzen Sie die folgende Anleitung zur Integration von Usercentrics in :productna
       .. _oxdajv01:
 
       .. figure:: /media/screenshots/oxdajv01.png
-         :alt: Datenverarbeitungsdienst im Usercentrics Admin Interface anlegen
+         :alt: Datenverarbeitungsdienst im Usercentrics-Dashboard anlegen
 
-         Abb.: Datenverarbeitungsdienst im Usercentrics Admin Interface anlegen
+         Abb.: Datenverarbeitungsdienst im Usercentrics-Dashboard anlegen
 
 #. Passen Sie alle bestehenden :productname:`PayPal Checkout`-Skripte in der Datei :file:`/source/Application/views/<Theme des OXID eShops>/tpl/modules/osc/paypal/base_js.tpl` an.
 
@@ -98,7 +99,9 @@ Nutzen Sie die folgende Anleitung zur Integration von Usercentrics in :productna
 
       Hintergrund: Sie stellen damit sicher, dass das Skript beim Aufruf der Seite nicht automatisch vom Browser interpretiert und ausgeführt wird.
 
-      Suchen Sie dazu nach dem Ausdruck :code:`<script ` und ergänzen Sie :code:`<script type="text/plain"` (siehe :ref:`Beispiel: Anpassen der PayPal Checkout-Skripte <Skripte-anpassen>`).
+      .. todo: #tbd: Im Folgenden vorläufig :code:`<script`, weil Sphinx das Leerzeichen in :code:`<script ` nicht verarbeitet.
+
+      Suchen Sie dazu nach dem Ausdruck :code:`<script`  und ergänzen Sie :code:`<script type="text/plain"` (siehe :ref:`Beispiel: Anpassen der PayPal Checkout-Skripte <Skripte-anpassen>`).
 
    #. Weisen Sie den Skripten der Datenverarbeitungsdienste, die Sie verwenden, ein benutzerdefiniertes Datenattribut zu.
 

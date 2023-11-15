@@ -136,7 +136,7 @@ Grundsätzliches Vorgehen
    b. Wechseln Sie in den Betriebsmodus :guilabel:`Live`.
 #. Bei Bedarf: Wenn Sie besonders datenschutzsensible Kunden haben, implementieren Sie ein Zustimmungsverfahren, beispielsweise mit Usercentrics.
 
-   Weitere Informationen finden Sie unter :ref:`cmp-integration:Consent Management-Platformen (CMPs) integrieren`.
+   Weitere Informationen finden Sie unter :ref:`cmp-integration:Consent Management-Platformen integrieren`.
 
 PayPal Checkout aktivieren
 --------------------------
