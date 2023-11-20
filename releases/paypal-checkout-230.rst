@@ -1,16 +1,10 @@
 PayPal Checkout V. 2.3
 ======================
 
-.. todo: #tbd: ReleaseDatum 2.3: 24.05.2023; 1.3: tbd
-
 Release-Datum: 24.05.2023
 
 Neue oder geänderte Funktionen
 ------------------------------
-
-.. todo: https://github.com/OXID-eSales/paypal-module/blob/v2.3.0/CHANGELOG.md
-.. todo: ML: Folgendes nicht doku-relevant: improved tests and static code analysis
-.. todo: #ML: Folgendes prüfen:
 
 * Bieten Sie Ihren Kunden für Überweisungen in Deutschland die neue Zahlungsart SEPA an.
 
@@ -38,12 +32,4 @@ Korrekturen
 Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/paypal-module/blob/v2.3.0/CHANGELOG.md.
 
 
-Update
-------
 
-Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 2.3 zu nutzen, machen Sie ein Update.
-
-Weitere Informationen finden Sie unter
-
-* :ref:`installation:Minor Update installieren`
-* :ref:`installation:Patch-Update installieren`
