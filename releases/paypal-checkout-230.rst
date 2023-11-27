@@ -1,5 +1,7 @@
+:orphan:
 PayPal Checkout V. 2.3
 ======================
+
 
 Release date: 24-05-2023
 
@@ -32,12 +34,3 @@ Corrections
 For fixes, see the changelog (GitHub) at https://github.com/OXID-eSales/paypal-module/blob/v2.3.0/CHANGELOG.md.
 
 
-Updating
---------
-
-To use the features and fixes of :productname:`PayPal Checkout` V. 2.3, make an update.
-
-For more information, see
-
-* :ref:`installation:Installing a minor update`
-* :ref:`installation:Installing a patch update`
