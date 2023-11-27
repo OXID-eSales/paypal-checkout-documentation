@@ -1,3 +1,4 @@
+:orphan:
 PayPal Checkout V. 2.3
 ======================
 
