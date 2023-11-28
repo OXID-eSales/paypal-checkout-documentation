@@ -9,7 +9,7 @@ To install the :productname:`PayPal Checkout` payment module, install different 
 
      **Restriction**
 
-     :productname:`PayPal Checkout` 3.3.x only supports the Twig Theme (APEX).
+     :productname:`PayPal Checkout` 3.3.x only supports Twig themes (APEX, for example).
 
      Do not install :productname:`PayPal Checkout` 3.3.x if you use Smarty.
 
@@ -31,6 +31,7 @@ For OXID eShop version 7.x, install the payment module :productname:`PayPal Chec
 |prerequisites|
 
 * You have installed OXID eShop version 7.x.
+* You use a Twig theme.
 * You have configured `https`.
 
    a. In the :file:`<root directory of the eShop>/source` directory, open the :file:`config.inc.php` file.
