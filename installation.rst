@@ -9,7 +9,7 @@ Um das Zahlungsmodul :productname:`PayPal Checkout` zu installieren, installiere
 
      **Einschränkung**
 
-     :productname:`PayPal Checkout` 3.3.x unterstützt nur Twig Themes (beispielsweise APEX).
+     :productname:`PayPal Checkout` 3.3.x unterstützt nur Twig-Themes (beispielsweise APEX).
 
      Installieren Sie :productname:`PayPal Checkout` 3.3.x nicht, wenn Sie Smarty einsetzen.
 
@@ -25,7 +25,7 @@ Frühere Versionen des OXID eShops werden nicht unterstützt.
 PayPal Checkout installieren
 ----------------------------
 
-Installieren Sie für den OXID eShop Version 7.x das Zahlungsmodul :productname:`PayPal Checkout` Version 3.3.x.
+Installieren Sie für den OXID eShop Version 7.x das Zahlungsmodul :productname:`PayPal Checkout`
 
 |prerequisites|
 
