@@ -57,7 +57,6 @@ For OXID eShop version 7.x, install the payment module :productname:`PayPal Chec
 
    .. code:: bash
 
-      composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
       composer require oxid-solution-catalysts/paypal-module ^3.3.0
 
 #. Optional: To activate the module, run the following command.
