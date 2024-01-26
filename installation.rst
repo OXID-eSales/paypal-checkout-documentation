@@ -46,7 +46,6 @@ Um :productname:`PayPal Checkout` für den OXID eShop Version 6.1.x oder 6.2.x z
 
    .. code:: bash
 
-      composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
       composer require oxid-solution-catalysts/paypal-module ^1.3.0
 
 #. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
