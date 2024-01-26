@@ -48,7 +48,6 @@ For OXID eShop version 6.3 and higher, install the payment module :productname:`
 
    .. code:: bash
 
-      composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
       composer require oxid-solution-catalysts/paypal-module ^2.3.0
 
 #. Optional: To activate the module, run the following command.
