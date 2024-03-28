@@ -6,13 +6,13 @@ Release-Datum: 17.11.2023
 Neue oder geänderte Funktionen
 ------------------------------
 
-Verwenden Sie :productname:`PayPal Checkout` 3.3.x OXID, wenn Sie eShop Version 7.x haben.
+Verwenden Sie :productname:`PayPal Checkout` 3.3.x, wenn Sie eShop Version 7.x haben.
 
 
 Installation
 ------------
 
-Um :productname:`PayPal Checkout` V. 3.3 zu nutzen, installieren Sie es in Ihrem OXID eShop 7.
+Um :productname:`PayPal Checkout` V. 3.3 zu nutzen, installieren Sie es in Ihrem OXID eShop 7.x.
 
 Weitere Informationen finden Sie unter :ref:`installation:Installation`.
 
