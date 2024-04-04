@@ -40,27 +40,19 @@ Weltweit	        PayPal
 Weltweit	        PayPal Express
 Weltweit            Kreditkarte
 Belgien	            Bancontact
-Belgien	            Sofort (Klarna Pay now)
 Deutschland	        GiroPay
 Deutschland	        PayPal - Später bezahlen
 Deutschland	        Rechnungskauf
-Deutschland	        Sofort (Klarna Pay now)
 Deutschland         SEPA Lastschrift
 Frankreich	        PayPal - Später bezahlen
 Großbritannien      PayPal - Später bezahlen
-Großbritannien	    Sofort (Klarna Pay now)
-Italien	            MyBank
-Italien	            Sofort (Klarna Pay now)
 Italien             PayPal - Später bezahlen
 Niederlande	        iDEAL
-Niederlande	        Sofort (Klarna Pay now)
 Österreich	        eps
 Österreich 	        PayPal - Später bezahlen
-Österreich	        Sofort (Klarna Pay now)
 Polen	            BLIK
 Polen	            Przelewy24
 Spanien 	        PayPal - Später bezahlen
-Spanien	            Sofort (Klarna Pay now)
 Vereinigte Staaten  PayPal - Später bezahlen
 ==================  ==========================
 
@@ -78,7 +70,6 @@ eps	                       Österreich
 GiroPay	                   Deutschland
 iDEAL 	                   Niederlande
 Kreditkarte                Weltweit
-MyBank	                   Italien
 PayPal	                   Weltweit
 PayPal Express             Weltweit
 PayPal - Später bezahlen   Deutschland
@@ -91,13 +82,6 @@ PayPal - Später bezahlen   Vereinigte Staaten
 Przelewy24	               Polen
 Rechnungskauf	           Deutschland
 SEPA Lastschrift           Deutschland
-Sofort (Klarna Pay now)	   Belgien
-Sofort (Klarna Pay now)	   Deutschland
-Sofort (Klarna Pay now)	   Großbritannien
-Sofort (Klarna Pay now)    Italien
-Sofort (Klarna Pay now)	   Niederlande
-Sofort (Klarna Pay now)	   Österreich
-Sofort (Klarna Pay now)	   Spanien
 ========================== ===============
 
 Währungsabdeckung nach Zahlungsmethode
@@ -116,9 +100,7 @@ BLIK                            PLN
 EPS                             EUR
 GiroPay                         EUR
 Ideal                           EUR
-MyBank                          EUR
 Przelewy24                      EUR, PLN
-Sofort (Klarna Pay now)         EUR, GBP
 =============================== ===============
 
 

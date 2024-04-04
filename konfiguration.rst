@@ -723,6 +723,37 @@ Beispiel: Nur Kunden mit einer Rechnungsadresse in Polen erhalten die Zahlungsme
 Um bei Bedarf die Zugänglichkeit einer :productname:`PayPal Checkout`-Zahlungsmethode auf bestimmte Länder einzuschränken, wählen Sie :menuselection:`Shopeinstellungen --> Zahlungsarten --> <Zahlungsart> --> Länder --> Länder zuordnen`.
 
 
+PayPal Vaulting aktivieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo: #ML: In welchem Fall würde ich es nicht aktivieren?
+
+.. todo: #ML: Was muss ich tun?:
+    * Unterstützung für "Pay Later"-Angebote: Ermöglicht es Kunden, "Pay Later"-Angebote zu nutzen und erfordert die Darstellung des "Pay Later"-Buttons zusätzlich zum PayPal-Button.
+
+    Wiederholungskäufe leicht gemacht: Speichern Sie die bevorzugten Zahlarten Ihrer Kunden.
+
+   Ermöglichen Sie so eine schnelle und einfache Kaufabwicklung ermöglichen.
+
+   Mit ihren gespeicherten Zahlungsdaten können Kunden mit nur wenigen Klicks Wiederholungskäufe tätigen.
+
+   Dies kann für Sie eine höhere Checkout-Conversion bedeuten.
+
+|procedure|
+
+1. Um PayPal Vaulting zu aktivieren, markieren Sie das Kontrollkästchen :guilabel:`PayPal Vaulting aktivieren` (:ref:`oxdajr14`).
+#. Speichern Sie Ihre Einstellungen.
+
+.. _oxdajr14:
+
+.. figure:: /media/screenshots/oxdajr14.png
+   :alt: PayPal Vaulting aktivieren
+
+   Abb.: PayPal Vaulting aktivieren
+
+|result|
+
+.. todo: #ML: Wie sieht das genau aus: "mit nur wenigen Klicks Wiederholungskäufe tätigen"
 
 PayPal Checkout testen
 ----------------------
