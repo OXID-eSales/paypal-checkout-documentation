@@ -13,11 +13,13 @@ Mit :productname:`PayPal Checkout` 3.4 für :productname:`OXID eShop` Version 7 
 PayPal Vaulting
 ^^^^^^^^^^^^^^^
 
-.. todo: #ML: prüfen/verifizieren
+.. todo: #ML: prüfen/verifizieren: siehe https://developer.paypal.com/braintree/docs/guides/paypal/checkout-with-vault/javascript/v3/
 
-Ermöglichen Sie mit PayPal Vaulting wiederkehrenden Kunden einen schnelleren und nahtloseren Checkout-Prozess und erhöhen Sie Ihre Konversionsrate.
+Ermöglichen Sie mit PayPal Vaulting wiederkehrenden Kunden einen nahtlosen Checkout-Prozess und erhöhen Sie so Ihre Konversionsrate.
 
-Speichern Sie dazu die PayPal-Zahlungsinformationen sicher im Braintree-Tresor, um sie für zukünftige Transaktionen wiederzuverwenden.
+**Hintergrund**
+
+PayPal Vaulting bedeutet: Ihre Kunden speichern ihre Zahlungsinformationen sicher im Braintree-Tresor, um sie für zukünftige Transaktionen wiederzuverwenden.
 
 PayPal Vaulting erstellt dazu automatisch eine PayPal-Abrechnungsvereinbarung. Dadurch können Sie das Konto in Zukunft belasten, ohne dass der Kunde sich erneut bei PayPal authentifizieren oder eine Zahlungsmethode aus seinem Wallet auswählen muss.
 
@@ -27,7 +29,29 @@ Hauptvorteile und Nutzungsmöglichkeiten:
 * Vielseitigkeit: Unterstützt die Auswahl oder Hinzufügung von Versandadressen und Finanzierungsinstrumenten im PayPal-Konto, sowie Zwei-Faktor-Authentifizierung in mehreren Ländern.
 * Verbesserte Kundenerfahrung bei Rückkehr: Kunden, die ihr PayPal Wallet im Tresor gespeichert haben, können bei zukünftigen Käufen schneller bezahlen und, falls gewünscht, ihre Zahlungsmethode ändern.
 
-Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting aktivieren`.
+PayPal Vaulting nachträglich aktivieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn Sie :productname:`PayPal Checkout` bereits nutzen, tun Sie folgendes, um PayPal Vaulting nachträglich zu aktivieren.
+
+|procedure|
+
+1. Machen Sie ein Update auf :productname:`PayPal Checkout` 3.4.0.
+
+   Weitere Informationen finden Sie unter :ref:`installation:Minor Update installieren`.
+
+#. Durchlaufen Sie den Registrierungs-Prozess (Onboarding) erneut.
+
+   Wenn technisch alles in Ordnung ist, wird unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` angezeigt, dass PayPal Vaulting verfügbar ist (:ref:`oxdajr05`, Pos. 4)
+
+   Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen`.
+
+|result|
+
+PayPal Vaulting ist standardmäßig aktiviert (:ref:`oxdajr14`, Pos. 1).
+
+Sie können es bei Bedarf deaktivieren. Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting deaktivieren`.
+
 
 Geänderte Zahlungsarten
 ^^^^^^^^^^^^^^^^^^^^^^^

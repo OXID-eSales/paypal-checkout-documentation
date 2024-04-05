@@ -151,9 +151,11 @@ Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktivie
 
 |result|
 
-Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
+* Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
 
-Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
+  Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
+
+* Links in der Navigation erscheint der neue Menüpunkt :menuselection:`PayPal --> Konfiguration`.
 
 |example|
 
@@ -163,12 +165,15 @@ Um iDEAL anbieten zu können, müssen Sie sichergestellt haben, dass Sie unter :
 PayPal Checkout konfigurieren
 -----------------------------
 
-Um die Konfiguration zu starten, wählen Sie :menuselection:`PayPal --> Konfiguration`. 
+Starten Sie das Konfigurieren.
 
-.. note::
+|prerequisites|
 
-   Um das Modul konfigurieren zu können, muss dieses zunächst aktiviert werden.
-   Nach der Aktivierung erscheint links in der Navigation der neue Menüpunkt **PayPal**.
+Sie haben das Modul :productname:`PayPal Checkout` aktiviert.
+
+|procedure|
+
+Wählen Sie :menuselection:`PayPal --> Konfiguration`.
 
 
 API-Anmeldeinformationen
@@ -216,7 +221,7 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
 
 |procedure|
 
-Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess ist analog.
+Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbox-Kontos. Der Live-Prozess ist analog.
 
 .. include:: /_static/reuse/note-ee-onboarding.rst
 
@@ -231,7 +236,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
 .. todo: #tbd 2.3, 1.3 / EN: Screenshot für Schritt 1, sonst. Felder leer
 
-1. Wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
+1. Wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` ().
 #. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
 
    a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
@@ -267,7 +272,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
    Der Webhook ist erzeugt.
 
-   Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 1, 2).
+   Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 2, 3).
 
    .. todo: #tbd: Bild neu en;
 
@@ -282,7 +287,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
    .. _freischaltung-kreditkarte:
 
-#. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 3), ob die Freischaltung erfolgt ist.
+#. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 4), ob die Freischaltung erfolgt ist.
 
    .. hint::
 
@@ -313,7 +318,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
 |result|
 
-Sobald Sie PayPal die Genehmigung erteilt haben, Ihr Sandbox-Konto mit dem PayPal-Test Store zu verbinden, werden die API-Anmeldeinformationen angezeigt, und das Modul ist aktiv :ref:`oxdajr05`.
+Sobald Sie PayPal die Genehmigung erteilt haben, Ihr Sandbox-Konto mit dem PayPal-Test Store zu verbinden, werden die API-Anmeldeinformationen angezeigt, und das Modul ist aktiv.
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal` (technischer Name :technicalname:`oscpaypal`) aktiv (:ref:`oxdajr07`).
 
@@ -699,6 +704,57 @@ Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, le
 #. Legen Sie unter :guilabel:`Farbe des Ratenzahlung-Banners auswählen` die gewünschte Farbe des Banners fest.
 #. Speichern Sie Ihre Einstellungen.
 
+.. todo: #ML: Was hat es mit "regionale Spracheinstellungen" auf sich?
+    Voreingestellt ist "de_DE,en_US".
+    Was bedeutet: PayPal unterstützt die Anzeige der PayPal-Buttons in regionalen Sprachen.
+    Bitte hinterlegen sie die Codes kommasepariert im ISO 639-1 alpha-2 / ISO 3166-1 alpha-2 - Format (z.B. de_DE).
+    Der erste Eintrag ist der Standard-Eintrag.
+
+
+PayPal Vaulting deaktivieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PayPal Vaulting ist standardmäßig aktiviert.
+
+PayPal Vaulting erstellt dazu automatisch eine PayPal-Abrechnungsvereinbarung. Dadurch können Sie das Konto in Zukunft belasten, ohne dass Ihre Kunden sich erneut bei PayPal authentifizieren oder eine Zahlungsmethode aus ihrem Wallet auswählen müssen.
+
+Ihre Kunden können damit ihre Zahlungsinformationen für zukünftige Käufe speichern (:ref:`oxdajr15`, Pos. 1). Das beschleunigt bei Stammkunden die Kaufabwicklung und erhöht die Benutzerfreundlichkeit Ihres OXID eShops.
+
+Dennoch können Sie die Funktion bei Bedarf deaktivieren.
+
+.. todo: #M: Shop nur auf EN erreichbar? -- ist die folgende Einstellung ((:ref:`oxdajr15`, Pos. 1)) gemeint?
+.. todo: #ML: Was bedeutet das Folgende?
+    Ob man qualifiziert für Vaulting ist, sieht man an der Stelle, wo bisher auch immer stand, ob man für ACDC oder PUI freigeschaltet wurde
+    evtl. Onboarding nochmal versuchen, evtl. Feature nicht da, nix mit Bonität
+    Im Frontend gibt es im Kundenkonto zwei Möglichkeiten, Kreditkarten bzw. PayPal-Konten zu hinterlegen bzw. auch wieder zu löschen
+    Im Checkout können während des Bezahlens ebenfalls Kreditkarten bzw. PayPal-Konten hinterlegt werden
+    Hinterlegte Kreditkarten bzw. PayPal-Konten können anschließend für neue Bestellungen genutzt werden
+
+.. _oxdajr15:
+
+.. figure:: /media/screenshots/oxdajr15.png
+   :alt: Zahlungsinformationen speichern
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Zahlungsinformationen speichern
+
+|procedure|
+
+1. Um PayPal Vaulting zu deaktivieren, deaktivieren Sie das Kontrollkästchen :guilabel:`PayPal Vaulting aktivieren` (:ref:`oxdajr14`, Pos. 1).
+#. Speichern Sie Ihre Einstellungen.
+
+
+.. _oxdajr14:
+
+.. figure:: /media/screenshots/oxdajr14.png
+   :alt: PayPal Vaulting aktivieren
+   :width: 650
+   :class: with-shadow
+
+   Abb.: PayPal Vaulting aktivieren
+
+
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
 
@@ -723,37 +779,6 @@ Beispiel: Nur Kunden mit einer Rechnungsadresse in Polen erhalten die Zahlungsme
 Um bei Bedarf die Zugänglichkeit einer :productname:`PayPal Checkout`-Zahlungsmethode auf bestimmte Länder einzuschränken, wählen Sie :menuselection:`Shopeinstellungen --> Zahlungsarten --> <Zahlungsart> --> Länder --> Länder zuordnen`.
 
 
-PayPal Vaulting aktivieren
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. todo: #ML: In welchem Fall würde ich es nicht aktivieren?
-
-.. todo: #ML: Was muss ich tun?:
-    * Unterstützung für "Pay Later"-Angebote: Ermöglicht es Kunden, "Pay Later"-Angebote zu nutzen und erfordert die Darstellung des "Pay Later"-Buttons zusätzlich zum PayPal-Button.
-
-    Wiederholungskäufe leicht gemacht: Speichern Sie die bevorzugten Zahlarten Ihrer Kunden.
-
-   Ermöglichen Sie so eine schnelle und einfache Kaufabwicklung ermöglichen.
-
-   Mit ihren gespeicherten Zahlungsdaten können Kunden mit nur wenigen Klicks Wiederholungskäufe tätigen.
-
-   Dies kann für Sie eine höhere Checkout-Conversion bedeuten.
-
-|procedure|
-
-1. Um PayPal Vaulting zu aktivieren, markieren Sie das Kontrollkästchen :guilabel:`PayPal Vaulting aktivieren` (:ref:`oxdajr14`).
-#. Speichern Sie Ihre Einstellungen.
-
-.. _oxdajr14:
-
-.. figure:: /media/screenshots/oxdajr14.png
-   :alt: PayPal Vaulting aktivieren
-
-   Abb.: PayPal Vaulting aktivieren
-
-|result|
-
-.. todo: #ML: Wie sieht das genau aus: "mit nur wenigen Klicks Wiederholungskäufe tätigen"
 
 PayPal Checkout testen
 ----------------------

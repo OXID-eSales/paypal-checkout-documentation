@@ -78,22 +78,26 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 
    Abb.: PayPal Checkout für OXID erfolgreich installiert
 
+Minor Update installieren
+-------------------------
+
+.. todo: #ML: so korrekt, wenn ich 3.4.0 mit Vaulting haben will?
+
+Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 3.3.0 auf Version 3.4.0.
+
+   .. code:: bash
+      composer require oxid-solution-catalysts/paypal-module ^3.4.0
+      composer update
 
 .. todo: Folgende Varianten später reaktivieren
-    Minor Update installieren
-    -------------------------
-    Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.2.1 auf Version 2.3.0.
-       .. code:: bash
-          composer require oxid-solution-catalysts/paypal-module ^2.3.0
-          composer update
-    Patch-Update installieren
-    -------------------------
-    Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
-    |procedure|
-    1. Führen Sie folgenden Befehl aus:
-       .. code:: bash
-          composer update
-    #. Bestätigen Sie die Abfrage, ob die :file:`oxid-solution-catalysts/paypal-module`-Dateien überschrieben werden sollen.
+Patch-Update installieren
+-------------------------
+Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
+|procedure|
+1. Führen Sie folgenden Befehl aus:
+   .. code:: bash
+      composer update
+#. Bestätigen Sie die Abfrage, ob die :file:`oxid-solution-catalysts/paypal-module`-Dateien überschrieben werden sollen.
 
 
 
