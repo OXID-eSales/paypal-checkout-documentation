@@ -152,25 +152,29 @@ Ensure :productname:`PayPal Checkout` is activated in each subshop where you wan
 
 |result|
 
-Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal` as well as important additional payment methods, are marked as active.
+* Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal` as well as important additional payment methods, are marked as active.
 
-To actually use a certain country-specific payment method, you must have marked the respective country as active under :menuselection:`Master Settings --> Countries`.
+  To actually use a certain country-specific payment method, you must have marked the respective country as active under :menuselection:`Master Settings --> Countries`.
+
+* On the left in the navigation, the new menu item :menuselection:`PayPal --> Configuration` appears.
+
 
 |example|
 
 To be able to offer iDEAL, you must have made sure that you have set the Netherlands as active under :menuselection:`Master Settings --> Countries`.
 
-
-
 Configuring PayPal Checkout
 ---------------------------
 
-To start the configuration, choose :menuselection:`PayPal --> Configuration`.
+Start the configuration.
 
-.. note::
+|prerequisites|
 
-   In order to be able to configure the module, it must first be activated.
-   After activation, the new menu item **PayPal** appears on the left navigation menu.
+* You have activated the :productname:`PayPal Checkout` module.
+
+|procedure|
+
+Choose  :menuselection:`PayPal --> Configuration`.
 
 API Credentials
 ^^^^^^^^^^^^^^^
