@@ -27,14 +27,13 @@ Display the credentials for your PayPal sandbox test accounts in the PayPal Deve
 |procedure|
 
 1. Access the PayPal Developer Portal under `developer.paypal.com <https://developer.paypal.com/home>`_.
-#. Choose :guilabel:`Log Into Dashboard`.
-#. Log in with the credentials of your real PayPal account.
+#. Log in with the access data of your real PayPal account
    |br|
-   Your PayPal account can be a merchant or customer account. You will need a merchant account only to unlock the live operation.
-#. Choose :menuselection:`Sandbox --> Accounts`.
+   Your PayPal account can be a merchant or customer account. You will only need a merchant account to activate live operation.
+#. Choose :menuselection:`Go to Dashboars --> Developer Dashboard`.
+#. Choose :guilabel:`Sandbox accounts`.
 
 |result|
-
 
 Two sandbox test accounts are displayed, a business (merchant) and a personal (customer) sandbox account (:ref:`oxdaju01`).
 

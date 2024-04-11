@@ -21,16 +21,18 @@ To do this, note the following two restrictions:
 Re-running the registration for PayPal Checkout
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you have :productname:`PayPal Plus`, please note the following:
+.. attention::
 
-The credentials and registration process of :productname:`PayPal Checkout` are outwardly similar to :productname:`PayPal Plus`.
+   **Do not reuse access data**
 
-However, do not let this tempt you to reuse the credentials from :productname:`PayPal Plus`.
+   Do not use the access data of your existing :productname:`PayPal Plus` account to set up :productname:`PayPal Checkout`.
 
-This would lead to the following undesirable behaviors:
+   If you reuse :productname:`PayPal Plus` credentials, you will encounter technical problems limiting the functionality of :productname:`PayPal Checkout`:
 
-* Webhooks are not activated correctly, information is not transmitted correctly, but without the errors being immediately apparent.
-* Payment methods such as installment purchase are not available, payment by credit card is not enabled.
+   * The webhooks are not activated correctly, information is not transmitted correctly, but without the errors being immediately recognizable.
+   * Payment methods such as installment purchase are not available, payment by credit card is not activated.
+
+   To ensure correct functioning and activation of all features, go through the registration process again to generate specific, new access data for :productname:`PayPal Checkout`.
 
 |procedure|
 
@@ -152,25 +154,28 @@ Ensure :productname:`PayPal Checkout` is activated in each subshop where you wan
 
 |result|
 
-Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal` as well as important additional payment methods, are marked as active.
+* Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal` as well as important additional payment methods, are marked as active.
 
-To actually use a certain country-specific payment method, you must have marked the respective country as active under :menuselection:`Master Settings --> Countries`.
+  To actually use a certain country-specific payment method, under :menuselection:`Master Settings --> Countries`, you must have marked the respective country as active.
+
+* On the left in the navigation., the new menu item :menuselection:`PayPal --> Configuration` appears.
 
 |example|
 
 To be able to offer iDEAL, you must have made sure that you have set the Netherlands as active under :menuselection:`Master Settings --> Countries`.
 
-
-
 Configuring PayPal Checkout
 ---------------------------
 
-To start the configuration, choose :menuselection:`PayPal --> Configuration`.
+Start the configuration.
 
-.. note::
+|prerequisites|
 
-   In order to be able to configure the module, it must first be activated.
-   After activation, the new menu item **PayPal** appears on the left navigation menu.
+* You have activated the :productname:`PayPal Checkout` module.
+
+|procedure|
+
+Choose :menuselection:`PayPal --> Configuration`.
 
 API Credentials
 ^^^^^^^^^^^^^^^
@@ -223,7 +228,7 @@ Only when everything works as you want, use the credentials for *live* operation
 
 |procedure|
 
-We describe the process using a sandbox account as an example. The live process is analogous.
+We describe the registration process (onboarding) using a sandbox account as an example. The live process is analogous.
 
 .. include:: /_static/reuse/note-ee-onboarding.rst
 
@@ -235,9 +240,7 @@ We describe the process using a sandbox account as an example. The live process 
 
    Background: Technically, it is also possible to enter already existing credentials :emphasis:`manually` instead of generating them again. But this would lead to restrictions (see :ref:`troubleshooting:"Credit card" and "Purchase upon invoice" not available`).
 
-.. todo: #tbd: Verify :guilabel:`Start Merchant Integration (Sandbox) in a new window` and :guilabel:`Sign Up Merchant Integration (Sandbox)`
-
-1. Under :guilabel:`API credentials` choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button.
+1. Under :guilabel:`API credentials` choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button (:ref:`oxdajr05`, item 2).
 #. Go through the registration process with the sandbox merchant account email address.
 
    a. Log in with your (sandbox) merchant account (:ref:`oxdajr01`) and confirm the prompts.
@@ -271,7 +274,7 @@ We describe the process using a sandbox account as an example. The live process 
 
    The webhook is created.
 
-   The client ID and the webhook ID are displayed (:ref:`oxdajr05`, items 1, 2).
+   The client ID and the webhook ID are displayed (:ref:`oxdajr05`, items 4, 5).
 
    .. _oxdajr05:
 
@@ -284,7 +287,7 @@ We describe the process using a sandbox account as an example. The live process 
 
    .. _activation-creditcard:
 
-#. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`, item 3), check whether the activation has been done.
+#. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`, item 5), check whether the activation has been done.
 
    .. hint::
 
@@ -315,7 +318,7 @@ We describe the process using a sandbox account as an example. The live process 
 
 |result|
 
-Once you have given PayPal permission to connect your sandbox account to the PayPal test store, the API credentials are displayed, and the module is active :ref:`oxdajr05`.
+Once you have given PayPal permission to connect your sandbox account to the PayPal test store, the API credentials are displayed, and the module is active (:ref:`oxdajr05`, item 1).
 
 Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :guilabel:`PayPal` (technical name :technicalname:`oscpaypal`) is active (:ref:`oxdajr07`).
 
@@ -482,7 +485,7 @@ Typically, the invoice amount is collected immediately.
 
 However, in certain cases it makes sense that the payment is only triggered by the delivery:
 
-* You sell certain individualized products that you do not manufacture, commission or order until the order is received.
+* You sell certain individualized products that you do not manufacture, commission, or order until the order is received.
 * You have an eShop for business customers. Here, the delivery quantities and payment amounts are larger than for private customers.
   |br|
   In the event of an error, returns management would be correspondingly more difficult.
@@ -563,7 +566,7 @@ You have the following options:
 * For the highest possible security, enforce a 3D Secure query for every credit card transaction.
 * Have PayPal ensure that 3D Secure is only used when necessary.
   |br|
-  PayPal ensures that the majority of your customers can shop undisturbed.
+  PayPal ensures that most of your customers can shop undisturbed.
 * Disable 3D Secure result evaluation: To learn in which cases this setting may be useful for you, contact PayPal Customer Service at `paypal.com/en/webapps/helpcenter/helphub/home/ <https://www.paypal.com/en/webapps/helpcenter/helphub/home/>`_.
 
 |procedure|
@@ -605,8 +608,6 @@ For more information, see :ref:`operation:Deleting incomplete orders manually`.
   If customers bounce during the order process, manual deletion allows you to determine if there may be difficulties with certain PayPal payment methods.
 
 |procedure|
-
-.. todo: #tbd: EN: :guilabel:`Automatically delete not finished orders?`
 
 1. If you want the system to automatically delete incomplete orders, choose the :guilabel:`Automatically delete not finished orders?` checkbox (:ref:`oxdajr13`, item 1).
 
@@ -699,6 +700,75 @@ If you want to take advantage of advertising PayPal installments, specify where 
 #. Set the desired color of the banner under :guilabel:`Select installment banner's color`.
 #. Save your settings.
 
+Locals: Localizing PayPal Checkout buttons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By default, German and American English are configured as languages in which customers are asked to enter their credit card details, for example.
+
+If you have configured additional languages under :menuselection:`Master data --> Languages`, make sure that you configure the appropriate variant (language abbreviation according to ISO 639-1 and country according to ISO 3166-1, for example fr_CA for Canadian French) for messages from :productname:`PayPal Checkout`.
+
+|procedure|
+
+1. Under :menuselection:`Master Settings --> Languages`, check the languages that you have configured.
+#. Under :menuselection:`Locals`, in the :guilabel:`regional language settings` field, enter the corresponding language abbreviations  separated by commas in the :technicalname:`<language abbreviation>_<country abbreviation>` format.
+
+   Or adapt the default language abbreviations. Example: If your OXID eShop is aimed at customers in Great Britain, enter the language abbreviation for English in :technicalname:`en_UK`.
+
+#. Save your settings.
+
+Deactivating PayPal Vaulting
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PayPal Vaulting is :emphasis:`activated` by default.
+
+In the checkout (:ref:`oxdajr15`, item 1) or in the account (:ref:`oxdajr16`, item 1), your customers can use it to save their payment information for credit cards or PayPal accounts for future purchases.
+
+.. _oxdajr15:
+
+.. figure:: /media/screenshots/oxdajr15.png
+   :alt: Saving payment information in the checkout
+   :width: 650
+   :class: with-shadow
+
+   Fig.: Saving payment information in the checkout
+
+.. _oxdajr16:
+
+.. figure:: /media/screenshots/oxdajr16.png
+   :alt: Saving and managing payment information in the account
+   :width: 650
+   :class: with-shadow
+
+   Fig.: Saving and managing payment information in the account
+
+This speeds up the checkout process for regular customers and increases the user-friendliness of your OXID eShop. The payment button is labeled accordingly (:ref:`oxdajr17`, Pos. 1).
+
+.. _oxdajr17:
+
+.. figure:: /media/screenshots/oxdajr17.png
+   :alt: Paying with saved payment method
+   :width: 650
+   :class: with-shadow
+
+   Fig.: Paying with saved payment method
+
+PayPal Vaulting automatically creates a PayPal billing agreement with your customers. This allows you to charge the account in the future without your customers having to re-authenticate with PayPal or select a payment method from their wallet.
+
+The function is practical, but you can deactivate it if required.
+
+|procedure|
+
+1. To deactivate PayPal Vaulting, deactivate the :guilabel:`PayPal Vaulting active` checkbox (:ref:`oxdajr14`, Pos. 1).
+#. Save your settings.
+
+.. _oxdajr14:
+
+.. figure:: /media/screenshots/oxdajr14.png
+   :alt: Deactivate PayPal Vaulting
+   :width: 650
+   :class: with-shadow
+
+   Figure: Deactivate PayPal Vaulting
 
 Optional: Configuring the country mapping of PayPal Checkout payment methods
 ----------------------------------------------------------------------------
@@ -713,12 +783,9 @@ Most :productname:`PayPal Checkout` payment methods cover multiple countries. Fo
 
 For more information about the country coverage of each :productname:`PayPal Checkout` payment method, see :ref:`introduction:Market coverage by payment methods`.
 
-
 The basic rule here is: A customer's :emphasis:`billing address`, not the shipping address, determines whether a :productname:`PayPal Checkout` payment method is available for the customer.
 |br|
 Example: Only customers with a billing address in Poland will be offered the :productname:`Przelewy24` payment method.
-
-
 
 |procedure|
 

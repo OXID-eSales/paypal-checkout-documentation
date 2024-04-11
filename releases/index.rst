@@ -5,5 +5,6 @@ Release Notes
    :maxdepth: 1
    :caption: Paypal Checkout
 
+   Release Notes Paypal Checkout 2.4.0 <paypal-checkout-240.rst>
    Release Notes Paypal Checkout 2.3.0 <paypal-checkout-230.rst>
-   Changelog (GitHub) <https://github.com/OXID-eSales/paypal-module/blob/v2.3.1/CHANGELOG.md>
+   Changelog (GitHub) <https://github.com/OXID-eSales/paypal-module/blob/v2.4.0/CHANGELOG.md>
