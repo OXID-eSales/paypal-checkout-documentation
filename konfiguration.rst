@@ -711,14 +711,16 @@ Wenn Sie unter :menuselection:`Stammdaten --> Sprachen` zusätzliche Sprachen ko
 .. todo: EN:  :menuselection:`Locals`, Feld :guilabel:`regional language settings`
 
 1. Prüfen Sie die Sprachen, die Sie unter :menuselection:`Stammdaten --> Sprachen` konfiguriert haben.
-2. Geben Sie unter :menuselection:`Spracheinstellungen` im Feld :guilabel:`regionale Spracheinstellungen` die entsprechenden Sprachenkürzel kommasepariert im Format :technicalname:`<Sprachkürzel>_<Länderkürzel>` ein.
+#. Geben Sie unter :menuselection:`Spracheinstellungen` im Feld :guilabel:`regionale Spracheinstellungen` die entsprechenden Sprachenkürzel kommasepariert im Format :technicalname:`<Sprachkürzel>_<Länderkürzel>` ein.
 
    Oder passen Sie die standardmäßig vorgegebenen Sprachkürzel an. Beispiel: Richtet sich Ihr OXID eShop an Kunden in Großbritannien, dann geben Sie das Sprachkürzel für Englisch in :technicalname:`en_UK`.
+
+#. Speichern Sie Ihre Einstellungen.
 
 PayPal Vaulting deaktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PayPal Vaulting ist standardmäßig aktiviert.
+PayPal Vaulting ist standardmäßig :emphasis:`aktiviert`.
 
 Ihre Kunden können damit ihre Zahlungsinformationen (für Kreditkarten oder PayPal-Konten) für zukünftige Käufe speichern (im Checkout: :ref:`oxdajr15`, Pos. 1, im Konto: :ref:`oxdajr16`, Pos. 1).
 
