@@ -540,9 +540,7 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst verzögert d
    .. todo: #ML: Oben beschriebenen Workaround prüfen: In der Praxis: muss der Kunde aus der Dropdownliste die dedizierte Versandart (z.B. "Customized") wählen, damit exklusiv PayPal angezeigt wird; Zuordnung zu Artikel ginge nur über ein Modul; Abhilfe: Im Artikel-Beschreibungstext beschreiben, dass nur Versandart "Customized" oder Zahlungsart PayPal möglich ist? -- LS: ja
     ML: Allen nicht-customized-Artikel das gleich machen: ausdrücklich einer Versandart/Versandkostenregel zuordnen
 
-
-
-.. todo: #tbd: EN: result erg.:
+.. todo: #tbd: EN: result erg.: --
 
 |result|
 
@@ -590,9 +588,7 @@ Behandlung nicht beendeter Bestellungen festlegen
 
 Legen Sie fest, ob Sie unvollständige Bestellungen automatisch oder manuell löschen wollen.
 
-
 -----------------------------------------------------------
-
 
 |background|
 
@@ -612,8 +608,6 @@ Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellunge
   Springen Kunden während des Bestellprozesses ab, können Sie durch das manuelle Löschen feststellen, ob es eventuell Schwierigkeiten bei bestimmten PayPal-Zahlungsarten gibt.
 
 |procedure|
-
-.. todo: #tbd: EN: :guilabel:`Automatically delete not finished orders?`
 
 1. Wenn das System unvollständige Bestellungen automatisch löschen soll, markieren Sie das Kontrollkästchen :guilabel:`Nicht beendete Bestellungen automatisch löschen?` (:ref:`oxdajr13`, Pos. 1).
 
@@ -705,45 +699,66 @@ Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, le
 #. Legen Sie unter :guilabel:`Farbe des Ratenzahlung-Banners auswählen` die gewünschte Farbe des Banners fest.
 #. Speichern Sie Ihre Einstellungen.
 
-.. todo: #ML: Was hat es mit "regionale Spracheinstellungen" auf sich?
-    Voreingestellt ist "de_DE,en_US".
-    Was bedeutet: PayPal unterstützt die Anzeige der PayPal-Buttons in regionalen Sprachen.
-    Bitte hinterlegen sie die Codes kommasepariert im ISO 639-1 alpha-2 / ISO 3166-1 alpha-2 - Format (z.B. de_DE).
-    Der erste Eintrag ist der Standard-Eintrag.
+Sprach-Konfiguration einrichten
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Standardmäßig sind Deutsch und amerikanisches Englisch als Sprachen konfiguriert, in denen Kunden beispielsweise aufgefordert werden, ihre Kreditkartendaten einzugeben.
+
+Wenn Sie unter :menuselection:`Stammdaten --> Sprachen` zusätzliche Sprachen konfiguriert haben, stellen Sie sicher, dass Sie die die passende Variante (Sprachkürzel nach ISO 639-1 und Land nach ISO 3166-1, beispielsweise fr_CA für kanadisches Französisch) für Meldungen von :productname:`PayPal Checkout` konfigurieren.
+
+|procedure|
+
+.. todo: EN:  :menuselection:`Locals`, Feld :guilabel:`regional language settings`
+
+1. Prüfen Sie die Sprachen, die Sie unter :menuselection:`Stammdaten --> Sprachen` konfiguriert haben.
+2. Geben Sie unter :menuselection:`Spracheinstellungen` im Feld :guilabel:`regionale Spracheinstellungen` die entsprechenden Sprachenkürzel kommasepariert im Format :technicalname:`<Sprachkürzel>_<Länderkürzel>` ein.
+
+   Oder passen Sie die standardmäßig vorgegebenen Sprachkürzel an. Beispiel: Richtet sich Ihr OXID eShop an Kunden in Großbritannien, dann geben Sie das Sprachkürzel für Englisch in :technicalname:`en_UK`.
 
 PayPal Vaulting deaktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PayPal Vaulting ist standardmäßig aktiviert.
 
-PayPal Vaulting erstellt dazu automatisch eine PayPal-Abrechnungsvereinbarung. Dadurch können Sie das Konto in Zukunft belasten, ohne dass Ihre Kunden sich erneut bei PayPal authentifizieren oder eine Zahlungsmethode aus ihrem Wallet auswählen müssen.
-
-Ihre Kunden können damit ihre Zahlungsinformationen (für Kreditkarten oder PayPal-Konten) für zukünftige Käufe speichern (:ref:`oxdajr15`, Pos. 1). Das beschleunigt bei Stammkunden die Kaufabwicklung und erhöht die Benutzerfreundlichkeit Ihres OXID eShops.
-
-Dennoch können Sie die Funktion bei Bedarf deaktivieren.
-
-.. todo: #ML: Shop nur auf EN erreichbar? -- ist die folgende Einstellung ((:ref:`oxdajr15`, Pos. 1)) gemeint?
-.. todo: done:
-    Ob man qualifiziert für Vaulting ist, sieht man an der Stelle, wo bisher auch immer stand, ob man für ACDC oder PUI freigeschaltet wurde
-    evtl. Onboarding nochmal versuchen, evtl. Feature nicht da, nix mit Bonität
-    Im Frontend gibt es im Kundenkonto zwei Möglichkeiten, Kreditkarten bzw. PayPal-Konten zu hinterlegen bzw. auch wieder zu löschen
-    Im Checkout können während des Bezahlens ebenfalls Kreditkarten bzw. PayPal-Konten hinterlegt werden
-    Hinterlegte Kreditkarten bzw. PayPal-Konten können anschließend für neue Bestellungen genutzt werden
+Ihre Kunden können damit ihre Zahlungsinformationen (für Kreditkarten oder PayPal-Konten) für zukünftige Käufe speichern (im Checkout: :ref:`oxdajr15`, Pos. 1, im Konto: :ref:`oxdajr16`, Pos. 1).
 
 .. _oxdajr15:
 
 .. figure:: /media/screenshots/oxdajr15.png
-   :alt: Zahlungsinformationen speichern
+   :alt: Zahlungsinformationen im Checkout speichern
    :width: 650
    :class: with-shadow
 
-   Abb.: Zahlungsinformationen speichern
+   Abb.: Zahlungsinformationen im Checkout speichern
+
+.. _oxdajr16:
+
+.. figure:: /media/screenshots/oxdajr16.png
+   :alt: Zahlungsinformationen im Konto speichern und verwalten
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Zahlungsinformationen im Konto speichern und verwalten
+
+Das beschleunigt bei Stammkunden die Kaufabwicklung und erhöht die Benutzerfreundlichkeit Ihres OXID eShops. Die Schaltfläche zum Bezahlen ist entsprechend gekennzeichnet (:ref:`oxdajr17`, Pos. 1).
+
+.. _oxdajr17:
+
+.. figure:: /media/screenshots/oxdajr17.png
+   :alt: Mit gespeicherter Zahlungsart zahlen
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Mit gespeicherter Zahlungsart zahlen
+
+PayPal Vaulting erstellt dabei automatisch eine PayPal-Abrechnungsvereinbarung mit Ihren Kunden. Dadurch können Sie das Konto in Zukunft belasten, ohne dass Ihre Kunden sich erneut bei PayPal authentifizieren oder eine Zahlungsmethode aus ihrem Wallet auswählen müssen.
+
+Die Funktion ist praktisch, dennoch können Sie sie bei Bedarf deaktivieren.
 
 |procedure|
 
 1. Um PayPal Vaulting zu deaktivieren, deaktivieren Sie das Kontrollkästchen :guilabel:`PayPal Vaulting aktivieren` (:ref:`oxdajr14`, Pos. 1).
 #. Speichern Sie Ihre Einstellungen.
-
 
 .. _oxdajr14:
 
@@ -777,15 +792,12 @@ Beispiel: Nur Kunden mit einer Rechnungsadresse in Polen erhalten die Zahlungsme
 
 Um bei Bedarf die Zugänglichkeit einer :productname:`PayPal Checkout`-Zahlungsmethode auf bestimmte Länder einzuschränken, wählen Sie :menuselection:`Shopeinstellungen --> Zahlungsarten --> <Zahlungsart> --> Länder --> Länder zuordnen`.
 
-
-
 PayPal Checkout testen
 ----------------------
 
 Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen Sie das Ergebnis.
 
 |procedure|
-
 
 1. Stellen Sie sicher, dass unter :menuselection:`Stammdaten --> Länder` die Märkte aktiv sind, die Sie abdecken wollen.
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` Folgendes:

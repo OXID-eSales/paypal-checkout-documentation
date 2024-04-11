@@ -1,5 +1,5 @@
-Consent Management-Platformen integrieren
-=========================================
+Consent Management-Plattformen integrieren
+==========================================
 
 Implementieren Sie bei Bedarf ein Zustimmungsverfahren, beispielsweise mit Usercentrics.
 
