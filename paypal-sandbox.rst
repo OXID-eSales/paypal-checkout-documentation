@@ -27,14 +27,13 @@ Zeigen Sie die Zugangsdaten für Ihre Sandbox-Test-Konten im PayPal-Entwickler-P
 |procedure|
 
 1. Rufen Sie das PayPal-Entwickler-Portal unter `developer.paypal.com <https://developer.paypal.com/home>`_ auf.
-#. Wählen Sie :guilabel:`Log Into Dashboard`.
 #. Melden Sie sich mit den Zugangsdaten Ihres echten PayPal-Kontos an
    |br|
    Ihr PayPal-Konto kann ein Händler- oder Kunden-Konto sein. Nur für das Freischalten des Live-Betriebs werden Sie ein Händlerkonto brauchen.
-#. Wählen Sie :menuselection:`Sandbox --> Accounts`.
+#. Wählen Sie :menuselection:`Go to Dashboars --> Developer Dashboard`.
+#. Wählen Sie :guilabel:`Sandbox accounts`.
 
 |result|
-
 
 Zwei Sandbox-Test-Konten werden angezeigt, ein Business-Sandbox-Konto (Händler-Konto) und ein Personal-Sandbox-Konto (Kunden-Konto) (:ref:`oxdaju01`).
 

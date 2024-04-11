@@ -3,7 +3,7 @@ Installation
 
 Um das Zahlungsmodul :productname:`PayPal Checkout` zu installieren, installieren Sie verschiedene Versionen je nach der Version Ihres OXID eShops:
 
-* Wenn Sie OXID eShop Version 6.3.x bis 6.5.x haben, installieren Sie :productname:`PayPal Checkout` 2.3.x (siehe :ref:`installation:PayPal Checkout installieren`).
+* Wenn Sie OXID eShop Version 6.3.x bis 6.5.x haben, installieren Sie :productname:`PayPal Checkout` 2.4.x (siehe :ref:`installation:PayPal Checkout installieren`).
 * Wenn Sie OXID eShop Version 7.x haben, installieren Sie :productname:`PayPal Checkout` 3.3.x.
   |br|
   Weitere Informationen finden Sie in der zugehörigen Modul-Documentation unter `PayPal Checkout 3.3.x installieren <https://docs.oxid-esales.com/modules/paypal-checkout/de/3.3/installation.html>`_.
@@ -18,7 +18,7 @@ Frühere Versionen des OXID eShops werden nicht unterstützt.
 PayPal Checkout installieren
 ----------------------------
 
-Installieren Sie für den OXID eShop ab Version 6.3. das Zahlungsmodul :productname:`PayPal Checkout` Version 2.3.x.
+Installieren Sie für den OXID eShop 6.3.x bis 6.5.x  das Zahlungsmodul :productname:`PayPal Checkout` Version 2.4.x.
 
 |prerequisites|
 
@@ -48,7 +48,7 @@ Installieren Sie für den OXID eShop ab Version 6.3. das Zahlungsmodul :productn
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.3.0
+      composer require oxid-solution-catalysts/paypal-module ^2.4.0
 
 #. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
    |br|
@@ -73,11 +73,11 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 Minor Update installieren
 -------------------------
 
-Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.2.1 auf Version 2.3.0.
+Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.4.0.
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.3.0
+      composer require oxid-solution-catalysts/paypal-module ^2.4.0
       composer update
 
 Patch-Update installieren

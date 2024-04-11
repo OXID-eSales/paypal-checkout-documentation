@@ -68,7 +68,7 @@ author = 'OXID eSales AG'
 # built documents.
 #
 # The short X.Y version.
-version = '2.3'
+version = '2.4'
 # The full version, including alpha/beta/rc tags.
 release = '2'
 
@@ -133,16 +133,17 @@ todo_include_todos = True
 html_theme = 'sphinx_rtd_theme'
 
 html_context = {
-    'current_version': '2.3',
+    'current_version': '2.4',
     'versions':
         [
 
          ('2.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.2/'),
          ('2.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.3/'),
+         ('2.4', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.4/'),
          ],
     'languages':
-       [('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.3/'),
-        ('EN', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.3/')],
+       [('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.4/'),
+        ('EN', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.4/')],
     'css_files': [('_static/oxid.css')],
     'theme_logo_only': True,
     'show_sphinx': False,
@@ -151,7 +152,7 @@ html_context = {
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
     'github_user': 'OXID-eSales',
     'github_repo': 'paypal-checkout-documentation',
-    'github_version': '2.3-de/'
+    'github_version': '2.4-de/'
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme

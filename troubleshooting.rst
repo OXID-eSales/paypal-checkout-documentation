@@ -27,7 +27,6 @@ Debug-Modus einschalten
 Wenn beispielsweise Verbindungsprobleme auftreten oder Zahlungsvorgänge mit :productname:`PayPal Checkout` nicht erwartungsgemäß funktionieren, wenden Sie sich an den Support von PayPal.
 
 .. todo: #ML: Was ist die Support-Adresse von Paypal?
-.. todo: #tbd: Pfad der Logdatei verifizieren: :file:`/source/source/log/oxideshop.log`
 
 Es ist hilfreich, wenn Sie bereits Log-Dateien haben, wenn Sie den PayPal-Support kontaktieren. Dazu aktivieren Sie den Debug-Modus.
 
