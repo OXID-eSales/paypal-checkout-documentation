@@ -64,7 +64,7 @@ Weitere Informationen über unterstützte Zahlungsarten finden Sie unter :ref:`e
 Installation
 ------------
 
-Um :productname:`PayPal Checkout` V. 2.4 zu nutzen, installieren Sie es in Ihrem OXID eShop 7.x.
+Um :productname:`PayPal Checkout` V. 2.4 zu nutzen, installieren Sie es in Ihrem :productname:`OXID eShop` 6.3.x to 6.5.x.
 
 Weitere Informationen finden Sie unter :ref:`installation:Installation`.
 
