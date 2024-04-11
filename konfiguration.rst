@@ -24,9 +24,9 @@ PayPal-Registrierung für PayPal Checkout neu durchlaufen
 
    **Zugangsdaten nicht wiederverwenden**
 
-   Verwenden Sie zum Einrichten von :productname:`PayPal Checkout` nicht die Zugangsdaten Ihres bestehenden PayPal Plus-Kontos.
+   Verwenden Sie zum Einrichten von :productname:`PayPal Checkout` nicht die Zugangsdaten Ihres bestehenden :productname:`PayPal Plus`-Kontos.
 
-   Das Wiederverwenden von „PayPal Plus“-Zugangsdaten würde zu technischen Problemen führen, die die Funktionalität von „:productname:`PayPal Checkout` einschränken:
+   Das Wiederverwenden von :productname:`PayPal Plus`-Zugangsdaten würde zu technischen Problemen führen, die die Funktionalität von „:productname:`PayPal Checkout` einschränken:
 
    * Die Webhooks sind nicht korrekt aktiviert, Informationen werden nicht korrekt übermittelt, ohne dass jedoch die Fehler sofort erkennbar sind.
    * Zahlungsarten wie Ratenkauf stehen nicht zur Verfügung, die Zahlung mit Kreditkarte wird nicht freigeschaltet.
@@ -699,8 +699,8 @@ Wenn Sie die Vorteile des Werbens für die PayPal-Ratenzahlung nutzen wollen, le
 #. Legen Sie unter :guilabel:`Farbe des Ratenzahlung-Banners auswählen` die gewünschte Farbe des Banners fest.
 #. Speichern Sie Ihre Einstellungen.
 
-Sprach-Konfiguration einrichten
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Spracheinstellungen: PayPal Checkout-Schaltflächen lokalisieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Standardmäßig sind Deutsch und amerikanisches Englisch als Sprachen konfiguriert, in denen Kunden beispielsweise aufgefordert werden, ihre Kreditkartendaten einzugeben.
 

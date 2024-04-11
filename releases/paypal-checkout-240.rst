@@ -68,7 +68,6 @@ Um :productname:`PayPal Checkout` V. 2.4 zu nutzen, installieren Sie es in Ihrem
 
 Weitere Informationen finden Sie unter :ref:`installation:Installation`.
 
-
 Update
 ------
 
