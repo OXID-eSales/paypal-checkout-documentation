@@ -718,12 +718,12 @@ PayPal Vaulting ist standardmäßig aktiviert.
 
 PayPal Vaulting erstellt dazu automatisch eine PayPal-Abrechnungsvereinbarung. Dadurch können Sie das Konto in Zukunft belasten, ohne dass Ihre Kunden sich erneut bei PayPal authentifizieren oder eine Zahlungsmethode aus ihrem Wallet auswählen müssen.
 
-Ihre Kunden können damit ihre Zahlungsinformationen für zukünftige Käufe speichern (:ref:`oxdajr15`, Pos. 1). Das beschleunigt bei Stammkunden die Kaufabwicklung und erhöht die Benutzerfreundlichkeit Ihres OXID eShops.
+Ihre Kunden können damit ihre Zahlungsinformationen (für Kreditkarten oder PayPal-Konten) für zukünftige Käufe speichern (:ref:`oxdajr15`, Pos. 1). Das beschleunigt bei Stammkunden die Kaufabwicklung und erhöht die Benutzerfreundlichkeit Ihres OXID eShops.
 
 Dennoch können Sie die Funktion bei Bedarf deaktivieren.
 
-.. todo: #M: Shop nur auf EN erreichbar? -- ist die folgende Einstellung ((:ref:`oxdajr15`, Pos. 1)) gemeint?
-.. todo: #ML: Was bedeutet das Folgende?
+.. todo: #ML: Shop nur auf EN erreichbar? -- ist die folgende Einstellung ((:ref:`oxdajr15`, Pos. 1)) gemeint?
+.. todo: ML: Was bedeutet das Folgende?
     Ob man qualifiziert für Vaulting ist, sieht man an der Stelle, wo bisher auch immer stand, ob man für ACDC oder PUI freigeschaltet wurde
     evtl. Onboarding nochmal versuchen, evtl. Feature nicht da, nix mit Bonität
     Im Frontend gibt es im Kundenkonto zwei Möglichkeiten, Kreditkarten bzw. PayPal-Konten zu hinterlegen bzw. auch wieder zu löschen
