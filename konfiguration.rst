@@ -11,11 +11,17 @@ Sorgen Sie für einen reibungslosen Übergang zum neuen Modul :productname:`PayP
 Beachten Sie dazu die beiden folgenden Einschränkungen:
 
 * Sie können :productname:`PayPal Checkout` nicht mit Ihren :productname:`PayPal Plus`-Zugangsdaten betreiben.
-  |br|
+
+  .. todo: #ML: neu:
+
+  Grund: Zugangsdaten und Webhook müssen neu generiert werden, damit die Anbindung von :productname:`PayPal Checkout` im vollen Funktionsumfang funktioniert.
+
   Folgen Sie den Anweisungen unter :ref:`konfiguration:PayPal-Registrierung für PayPal Checkout neu durchlaufen`.
+
 * Um bereits existierende Bestellungen verwalten zu können, müssen beide Module, beispielsweise :productname:`PayPal Checkout` und :productname:`PayPal`, gleichzeitig aktiv sein.
   |br|
   Folgen Sie den Anweisungen unter :ref:`konfiguration:Existierende PayPal- oder PayPal Plus-Bestellungen verwalten`.
+
 
 PayPal-Registrierung für PayPal Checkout neu durchlaufen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,10 +34,16 @@ PayPal-Registrierung für PayPal Checkout neu durchlaufen
 
    Das Wiederverwenden von :productname:`PayPal Plus`-Zugangsdaten würde zu technischen Problemen führen, die die Funktionalität von „:productname:`PayPal Checkout` einschränken:
 
-   * Die Webhooks sind nicht korrekt aktiviert, Informationen werden nicht korrekt übermittelt, ohne dass jedoch die Fehler sofort erkennbar sind.
-   * Zahlungsarten wie Ratenkauf stehen nicht zur Verfügung, die Zahlung mit Kreditkarte wird nicht freigeschaltet.
+   .. todo: #ML: neu: ", Funktionen stehen nicht zur Verfügung."
 
-   Um eine korrekte Funktionsweise und die Aktivierung aller Features zu gewährleisten, durchlaufen Sie den Registrierungs-Prozess erneut, um spezifische, neue Zugangsdaten für :productname:`PayPal Checkout` zu generieren.
+   * Die Webhooks sind nicht korrekt aktiviert, Informationen werden nicht korrekt übermittelt, ohne dass jedoch die Fehler sofort erkennbar sind.
+   * Zahlungsarten wie Ratenkauf stehen nicht zur Verfügung, die Zahlung mit Kreditkarte wird nicht freigeschaltet, Funktionen stehen nicht zur Verfügung.
+
+   Um eine korrekte Funktionsweise und die Aktivierung aller Features zu gewährleisten, durchlaufen Sie den Registrierungs-Prozess erneut.
+
+   .. todo: #ML: Neu
+
+   Nur so generieren Sie neue Zugangsdaten und Webhook, mit denen die Anbindung von :productname:`PayPal Checkout` in vollem Umfang funktioniert.
 
 |procedure|
 
@@ -41,6 +53,10 @@ Tun Sie Folgendes:
 #. Generieren Sie für das Freischalten Ihres :emphasis:`Live`-Systems die Zugangsdaten neu.
    |br|
    Durchlaufen Sie dazu den PayPal-Registrierungs-Prozess mit Ihren PayPal-Händlerkonto-Daten erneut.
+
+  .. todo: #ML: ergänzt:
+
+  Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
 
 Existierende PayPal- oder PayPal Plus-Bestellungen verwalten
@@ -115,12 +131,15 @@ Grundsätzliches Vorgehen
 
 1. Aktivieren Sie das Modul.
    |br|
-   Die wichtigsten Zahlungsmethoden sind damit automatisch aktiviert.
-#. Stellen Sie über einen Webhook die Verbindung zu PayPal her.
+   Die wichtigsten Zahlungsarten sind damit automatisch aktiviert.
 
+#. Durchlaufen Sie den Registrierungsprozess bei PayPal (Onboarding).
+
+   ..  todo: ##tbd: EN
+
+   .. todo: #tbd: Löschen, in der Überblicksdarstellung überflüssig
    .. attention::
-
-      * Benutzen Sie zum Herstellen der Verbindung nicht die Zugangsdaten für :productname:`PayPal Plus`.
+      * Benutzen Sie zum Herstellen der Verbindung :emphasis:`nicht` die Zugangsdaten für :productname:`PayPal Plus`.
       * Testen Sie :productname:`PayPal Plus` zunächst in der PayPal-Sandbox.
 
 #. Optional: Deaktivieren Sie bei Bedarf die Express-Checkout-Funktion von :productname:`PayPal Checkout`.
@@ -177,10 +196,14 @@ Sie haben das Modul :productname:`PayPal Checkout` aktiviert.
 
 Wählen Sie :menuselection:`PayPal --> Konfiguration`.
 
-API-Anmeldeinformationen
-^^^^^^^^^^^^^^^^^^^^^^^^
+API-Anmeldeinformationen: Onboarding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Registrieren Sie einen Webhook, um Ihren eShop mit PayPal zu verbinden.
+.. todo: #ML: Onboarding so klarer? Erstellung der Credentials: Händler-ID und Passwort?
+
+Durchlaufen Sie den Registrierungsprozess bei PayPal (Onboarding).
+
+Sie erstellen damit Zugangsdaten (Client-ID und Passwort), schalten Funktionen frei (beispielsweise Zahlungsarten oder neue Funktionen wie PayPal Vaulting) und generieren einen Webhook.
 
 Der Webhook erlaubt es PayPal, Ihren OXID eShop zu kontaktieren und in Echtzeit Statusmeldungen beispielsweise über abgeschlossene Transaktionen zu liefern.
 
@@ -227,15 +250,24 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 .. include:: /_static/reuse/note-ee-onboarding.rst
 
 
-.. hint::
+.. attention::
 
-   **Verfügbarkeit aller Zahlungsarten**
+   **Zugangsdaten und Webhook wiederverwenden**
 
-   Damit Ihnen :emphasis:`alle` PayPal-Zahlungsarten zur Verfügung stehen, generieren Sie den Webhook wie im Folgenden beschrieben mit der Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
+   .. todo: #ML: Hinweis neu gestaltet mit Fallunterscheidungen
 
-   Hintergrund: Technisch ist es auch möglich, bereits existierende Anmeldeinformationen :emphasis:`manuell` einzugeben, statt sie neu zu generieren. Aber das würde zu Einschränkungen führen (siehe :ref:`troubleshooting:"Kreditkarte" und "Rechnungskauf" nicht verfügbar`).
+   Stellen Sie in jedem Fall sicher, dass Ihnen :emphasis:`alle` PayPal-Zahlungsarten und Funktionen zur Verfügung stehen.
 
-.. todo: #tbd 2.3, 1.3 / EN: Screenshot für Schritt 1, sonst. Felder leer
+   * Fall 1: Sie haben :productname:`PayPal` oder :productname:`PayPal Plus`? -- Durchlaufen Sie den Registrierungsprozess neu, um für die Anbindung von :productname:`PayPal Checkout` Zugangsdaten und Webhook neu zu generieren.
+
+     Weitere Informationen finden Sie unter :ref:`konfiguration:Sie haben bereits PayPal oder PayPal Plus?`.
+
+   * Fall 2: Sie haben eine frühere Version von :productname:`PayPal Checkout` und machen ein Update? -- Durchlaufen Sie den Registrierungsprozess neu.
+
+     Andernfalls stehen Ihnen nicht die Zahlungsarten und Funktionen der neueren Version von :productname:`PayPal Checkout` zur Verfügung.
+
+   * Fall 3: Sie haben die Registrierung für die aktuelle Version von :productname:`PayPal Checkout` bereits durchlaufen und ziehen Ihren OXID eShop beispielsweise in eine andere Domäne um? -- In diesem Fall können Sie Zugangsdaten und Webhook wiederverwenden.
+
 
 1. Wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` (:ref:`oxdajr05`, Pos. 2).
 #. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
@@ -271,20 +303,22 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
 #. Wechseln Sie zurück in Ihren OXID eShop.
 
-   Der Webhook ist erzeugt.
+   Zugangsdaten (Client-ID/Passwort) und Webhook sind erzeugt.
 
-   Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 4, 5).
+   .. todo: #ML: Client-ID/Passwort und Webhook-ID
 
-   .. todo: #tbd: Bild neu en;
+   Client-ID/Passwort und Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 3, 4).
+
+   .. todo: #tbd: Bild neu en; #tbd: alt-Text neu, EN: Pos. mit Passwort; (:ref:`oxdajr05`, Pos. 3, 4) statt 4,5
 
    .. _oxdajr05:
 
    .. figure:: /media/screenshots/oxdajr05.png
-      :alt: Webhook erzeugt
+      :alt: Client-ID/Passwort und Webhook-ID erzeugt
       :width: 650
       :class: with-shadow
 
-      Abb.: Webhook erzeugt
+      Abb.: Client-ID/Passwort und Webhook-ID erzeugt
 
    .. _freischaltung-kreditkarte:
 
@@ -339,9 +373,13 @@ Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung?
 
    Manchmal kann es nötig sein, den bestehenden Webhook zu löschen und einen neuen zu generieren.
 
-   Um einen Webhook zu löschen, löschen Sie die Anmeldedaten und wählen :guilabel:`Speichern`.
+   Tun Sie Folgendes:
 
-   Die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` erscheint, und Sie können den Webhook neu generieren.
+   1. Um den Webhook zu löschen, löschen Sie die Anmeldedaten und wählen :guilabel:`Speichern`.
+
+      .. todo: #ML: hier auch "Um den Registrierungsprozess neu zu durchlaufen und Zugangsdaten und Webhook neu zu generieren"
+
+   #. Um den Registrierungsprozess neu zu durchlaufen und Zugangsdaten und Webhook neu zu generieren, wählen Sie die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration`.
 
 .. include:: /_static/reuse/hint-debugmode.rst
 

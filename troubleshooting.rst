@@ -4,22 +4,24 @@ Troubleshooting
 "Kreditkarte" und "Rechnungskauf" nicht verfügbar
 -------------------------------------------------
 
-Es kann sein, dass die Zahlungsarten "Kreditkarte" und "Rechnungskauf" nicht zur Verfügung stehen.
+Es kann sein, dass die Zahlungsarten "Kreditkarte" und "Rechnungskauf" oder eine bestimmte Funktion nicht wie beschrieben zur Verfügung stehen.
 
-Das ist der Fall, wenn Sie zum Generieren eines Webhooks bei PayPal die API-Anmeldeinformationen (beispiesweise aus einer existierenden Version von PayPal Checkout) :emphasis:`manuell` eingegeben haben, statt den Prozess mit der Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` zu starten.
+Das ist der Fall, wenn Sie zum Generieren eines Webhooks bei PayPal die API-Anmeldeinformationen (beispielsweise aus einer existierenden Version von PayPal Checkout) :emphasis:`manuell` eingegeben haben, statt den Registrierungs-Prozess mit der Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` zu starten und neu zu durchlaufen.
 
 |procedure|
 
-Um sicherzustellen, dass alle Zahlungsarten verfügbar sind, tun Sie (am Beispiel eines Sandbox-Kontos) Folgendes:
+Um sicherzustellen, dass alle Zahlungsarten und Funktionen verfügbar sind, tun Sie (am Beispiel eines Sandbox-Kontos) Folgendes:
 
 1. Wählen Sie :menuselection:`PayPal --> Konfiguration`.
 #. Löschen Sie unter :guilabel:`API-Anmeldeinformationen` alle Anmeldeinformationen und wählen :guilabel:`Speichern`.
    |br|
    Die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` erscheint.
 #. Wählen Sie :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
-#. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
+#. Um Zugangsdaten und Webhook neu zu generieren, durchlaufen Sie den Registrierungs-Prozess (Onboarding) mit der E-Mail-Adresse des Sandbox-Händlerkontos.
 
-Weitere Informationen finden Sie im Kapitel :ref:`konfiguration:Konfiguration` unter :ref:`konfiguration:API-Anmeldeinformationen`.
+   .. todo: #ML: Auch hier "Zugangsdaten und Webhook"
+
+Weitere Informationen finden Sie im Kapitel :ref:`konfiguration:Konfiguration` unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
 Debug-Modus einschalten
 -----------------------

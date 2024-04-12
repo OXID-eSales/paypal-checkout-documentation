@@ -73,46 +73,41 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 Minor Update installieren
 -------------------------
 
-Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.4.0.
+Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.4.0.
+
+.. todo: #ML: hier auch "Registrierungsprozess (Onboarding) neu":
+
+|procedure|
+
+1. Führen Sie folgenden Konsolen-Befehl aus:
 
    .. code:: bash
 
       composer require oxid-solution-catalysts/paypal-module ^2.4.0
       composer update
 
-Patch-Update installieren
--------------------------
+#. Um neue Zahlungsarten oder Funktionen nutzen zu können, durchlaufen Sie den Registrierungsprozess (Onboarding) neu.
 
-Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
+   Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
-
-|procedure|
-
-1. Führen Sie folgenden Befehl aus:
-
-   .. code:: bash
-
-      composer update
-
-#. Bestätigen Sie die Abfrage, ob die :file:`oxid-solution-catalysts/paypal-module`-Dateien überschrieben werden sollen.
-
-
-.. attention::
-
-   **Länderzuordnungen prüfen nach Update auf PayPal Checkout Version 2.1.5**
-
-   Mit Version 2.1.4 wurde die Länderabdeckung einzelner :productname:`PayPal Checkout`-Zahlungsmethoden erweitert.
-
-   Stellen Sie sicher, dass Sie die erweiterte Länderabdeckung nutzen können.
-
-   Hintergrund: Mit :productname:`PayPal Checkout` Version 2.1.5 sind bei der Erstinstallation die Länder automatisch den Zahlungsarten zugeordnet (siehe :ref:`konfiguration:Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren`).
-
-   Dadurch kann es sein, dass Konfigurationseinstellungen Ihrer bestehenden Version die Nutzung neuer Länderzuordnungen blockieren.
-
-   Tun Sie Folgendes:
-
-   1. Wählen Sie :menuselection:`Shopeinstellungen --> Zahlungsarten --> <Zahlungsart> --> Länder --> Länder zuordnen`.
-   #. Um die gesamte Länderabdeckung einer Zahlungsart zu nutzen, löschen Sie bestehende Zuordnungen.
+.. todo: ab 2.4.1 reaktivieren
+    Patch-Update installieren
+    -------------------------
+    Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
+    |procedure|
+    1. Führen Sie folgenden Befehl aus:
+       .. code:: bash
+          composer update
+    #. Bestätigen Sie die Abfrage, ob die :file:`oxid-solution-catalysts/paypal-module`-Dateien überschrieben werden sollen.
+    .. attention::
+       **Länderzuordnungen prüfen nach Update auf PayPal Checkout Version 2.1.5**
+       Mit Version 2.1.4 wurde die Länderabdeckung einzelner :productname:`PayPal Checkout`-Zahlungsmethoden erweitert.
+       Stellen Sie sicher, dass Sie die erweiterte Länderabdeckung nutzen können.
+       Hintergrund: Mit :productname:`PayPal Checkout` Version 2.1.5 sind bei der Erstinstallation die Länder automatisch den Zahlungsarten zugeordnet (siehe :ref:`konfiguration:Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren`).
+       Dadurch kann es sein, dass Konfigurationseinstellungen Ihrer bestehenden Version die Nutzung neuer Länderzuordnungen blockieren.
+       Tun Sie Folgendes:
+       1. Wählen Sie :menuselection:`Shopeinstellungen --> Zahlungsarten --> <Zahlungsart> --> Länder --> Länder zuordnen`.
+       #. Um die gesamte Länderabdeckung einer Zahlungsart zu nutzen, löschen Sie bestehende Zuordnungen.
 
 
 
