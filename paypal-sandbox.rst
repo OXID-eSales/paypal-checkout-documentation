@@ -179,7 +179,7 @@ Wie Sie die temporäre URL generieren, hängt von Ihrem System ab. Wir beschreib
 
 |result|
 
-Sie können den Webhook für das Testen von :productname:`PayPal Checkout` in der PayPal-Sandbox generieren (siehe :ref:`konfiguration:API-Anmeldeinformationen`).
+Sie können den Webhook für das Testen von :productname:`PayPal Checkout` in der PayPal-Sandbox generieren (siehe :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`).
 
 Sobald Sie das NGROK-Fenster schließen, ist der temporäre Kanal beendet, und Sie müssen eine neue temporäre URL generieren.
 
@@ -187,7 +187,7 @@ Sobald Sie das NGROK-Fenster schließen, ist der temporäre Kanal beendet, und S
 
    **Webhook in der Sandbox generieren**
 
-   Wenn Sie mit der temporären URL den Webhook für das Testen von :productname:`PayPal Checkout` in der PayPal-Sandbox (wie unter :ref:`konfiguration:API-Anmeldeinformationen` beschrieben) generieren, dann sind Sie mit dem Prozess vertraut.
+   Wenn Sie mit der temporären URL den Webhook für das Testen von :productname:`PayPal Checkout` in der PayPal-Sandbox (wie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding` beschrieben) generieren, dann sind Sie mit dem Prozess vertraut.
    |br|
    Denn der Onboarding-Prozess funktioniert in der Live-Umgebung mit dem Live-Account genau wie in der Testumgebung mit der temporären URL.
 

@@ -6,10 +6,13 @@ Release-Datum: 04.04.2024
 Neue oder geänderte Funktionen
 ------------------------------
 
+Wir haben
+
+* die Funktion PayPal Vaulting hinzugefügt
+* die Zahlungsarten Sofort und MyBank entfernt
+
 PayPal Vaulting
 ^^^^^^^^^^^^^^^
-
-.. todo: #ML: prüfen/verifizieren: siehe https://developer.paypal.com/braintree/docs/guides/paypal/checkout-with-vault/javascript/v3/
 
 Ermöglichen Sie mit PayPal Vaulting wiederkehrenden Kunden einen nahtlosen Checkout-Prozess und erhöhen Sie so Ihre Konversionsrate.
 

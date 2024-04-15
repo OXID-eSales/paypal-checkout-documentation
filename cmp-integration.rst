@@ -80,8 +80,6 @@ Nutzen Sie die folgende Anleitung zur Integration von Usercentrics in :productna
 
       Unter :guilabel:`Custom Data Processing Services` (:ref:`oxdajv01`, Pos. 4) wird der Name des Datenverarbeitungsdienstes angezeigt (:ref:`oxdajv01`, Pos. 5).
 
-      .. todo: #tbd: screenshot EN
-
       .. _oxdajv01:
 
       .. figure:: /media/screenshots/oxdajv01.png
