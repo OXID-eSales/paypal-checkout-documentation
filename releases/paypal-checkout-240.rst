@@ -6,6 +6,11 @@ Release date: 04-04-2024
 New or changed functions
 ------------------------
 
+We have
+
+* added the PayPal Vaulting function
+* removed two payment methods
+
 PayPal Vaulting
 ^^^^^^^^^^^^^^^
 
@@ -23,7 +28,7 @@ Main benefits and uses:
 * Versatility: Supports the selection or addition of shipping addresses and payment methods in the PayPal account, as well as two-factor authentication in multiple countries.
 * Improved customer experience on return: Customers who have saved their PayPal Wallet in the vault can pay faster for future purchases and, if desired, change their payment method.
 
-For more information on PayPal Vaulting, under :ref:`configuration:Configuration` see the section on :ref:`configuration:Disabling PayPal Vaulting`.
+For more information on PayPal Vaulting, under :ref:`configuration:Configuration` see the section on :ref:`configuration:Deactivating PayPal Vaulting`.
 
 Activating PayPal Vaulting retrospectively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -34,19 +39,19 @@ If you already use :productname:`PayPal Checkout`, activate PayPal Vaulting afte
 
 1. Update to :productname:`PayPal Checkout` 2.4.0.
 
-   For more information, see :ref:`installation:Install Minor Update`.
+   For more information, see :ref:`installation:Installing a minor update`.
 
 #. Go through the registration process (onboarding) again.
 
    After a successful technical check, the availability of PayPal Vaulting is confirmed in the :guilabel:`Activation for special payment methods has taken place` area (:ref:`oxdajr05`, item 4).
 
-   For more information on going through the registration process (onboarding), see :ref:`configuration:API credentials`.
+   For more information on going through the registration process (onboarding), see :ref:`configuration:API credentials: Onboarding`.
 
 |result|
 
 PayPal Vaulting is activated by default (:ref:`oxdajr14`, Pos. 1).
 
-Deactivate it if required. For more information, see :ref:`configuration:Disabling PayPal Vaulting`.
+Deactivate it if required. For more information, see :ref:`configuration:Deactivating PayPal Vaulting`.
 
 Changed payment methods
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -73,5 +78,7 @@ To use the functions and corrections of :productname:`PayPal Checkout` V. 2.4, u
 
 For more information, see
 
-* :ref:`installation:Install Minor Update`
-* :ref:`installation:Install patch update`
+* :ref:`installation:Installing a minor update`
+
+.. todo: reaktivierenmit 241
+    * :ref:`installation:Install patch update`

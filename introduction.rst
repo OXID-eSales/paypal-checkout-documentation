@@ -35,30 +35,22 @@ In each case, note the currency coverage of each payment method (see :ref:`intro
 ================= ==========================
 Market            Payment Methods
 ================= ==========================
-Worldwide         Creditcard
+Worldwide         Credit card
 Worldwide         PayPal
 Worldwide         PayPal Express
 Austria           eps
 Austria           PayPal - Pay Later
-Austria           Sofort (Klarna Pay now)
 Belgium           Bancontact
-Belgium           Sofort (Klarna Pay now)
 France            PayPal - Pay Later
 Germany           GiroPay
 Germany           PayPal - Pay Later
 Germany           Pay upon Invoice
 Germany           SEPA Direct Debit
-Germany           Sofort (Klarna Pay now)
-Great Britain     Sofort (Klarna Pay now)
 Great Britain     PayPal - Pay Later
-Italy             MyBank
-Italy             Sofort (Klarna Pay now)
 Italy             PayPal - Pay Later
 Netherlands       iDEAL
-Netherlands       Sofort (Klarna Pay now)
 Poland            BLIK
 Poland            Przelewy24
-Spain             Sofort (Klarna Pay now)
 Spain             PayPal - Pay Later
 United States     PayPal - Pay Later
 ================= ==========================
@@ -74,11 +66,10 @@ Payment methods                 Markets
 =============================== ===============
 Bancontact                      Belgium
 BLIK                            Poland
-Creditcard                      Worldwide
+Credit card                     Worldwide
 eps                             Austria
 GiroPay                         Germany
 iDEAL                           Netherlands
-MyBank                          Italy
 PayPal                          Worldwide
 PayPal Express                  Worldwide
 PayPal - Pay Later               Austria
@@ -91,13 +82,6 @@ PayPal - Pay Later               United States
 Przelewy24                      Poland
 Pay upon Invoice                Germany
 SEPA Direct Debit               Germany
-Sofort (Klarna Pay now)         Belgium
-Sofort (Klarna Pay now)         Germany
-Sofort (Klarna Pay now)         Great Britain
-Sofort (Klarna Pay now)         Italy
-Sofort (Klarna Pay now)         Netherlands
-Sofort (Klarna Pay now)         Austria
-Sofort (Klarna Pay now)         Spain
 =============================== ===============
 
 Currency coverage by payment method
@@ -116,9 +100,7 @@ BLIK                            PLN
 EPS                             EUR
 GiroPay                         EUR
 Ideal                           EUR
-MyBank                          EUR
 Przelewy24                      EUR, PLN
-Sofort (Klarna Pay now)         EUR, GBP
 =============================== ===============
 
 You have the PayPal module?

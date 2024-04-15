@@ -40,4 +40,4 @@ To use the features and fixes of :productname:`PayPal Checkout` V. 2.3, make an 
 For more information, see
 
 * :ref:`installation:Installing a minor update`
-* :ref:`installation:Installing a patch update`
+* `Installing a patch update <https://docs.oxid-esales.com/modules/paypal-checkout/en/2.3/installation.html#patch-update-installieren>`_

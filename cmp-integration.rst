@@ -77,8 +77,6 @@ Use the following instructions for integrating Usercentrics in :productname:`Pay
 
       Under :guilabel:`Custom Data Processing Services` (:ref:`oxdajv01`, item 4), the name of the data processing service is displayed (:ref:`oxdajv01`, item 5).
 
-      .. todo: #tbd: screenshot EN
-
       .. _oxdajv01:
 
       .. figure:: /media/screenshots/oxdajv01.png

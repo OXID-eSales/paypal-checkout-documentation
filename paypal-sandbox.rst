@@ -181,7 +181,7 @@ How you generate the temporary URL depends on your system. We describe the follo
 
 |result|
 
-You can generate the webhook for testing :productname:`PayPal Checkout` in the PayPal sandbox (see :ref:`configuration:API credentials`).
+You can generate the webhook for testing :productname:`PayPal Checkout` in the PayPal sandbox (see :ref:`configuration:API credentials: Onboarding`).
 
 Once you close the NGROK window, the temporary channel is finished, and you need to generate a new temporary URL.
 
@@ -189,7 +189,7 @@ Once you close the NGROK window, the temporary channel is finished, and you need
 
    **Generating a webhook in the PayPal sandbox**.
 
-   If you use the temporary URL to generate the webhook for testing :productname:`PayPal Checkout` in the PayPal sandbox (as described in :ref:`configuration:API credentials`), then you are familiar with the process.
+   If you use the temporary URL to generate the webhook for testing :productname:`PayPal Checkout` in the PayPal sandbox (as described in :ref:`configuration:API credentials: Onboarding`), then you are familiar with the process.
    |br|
    This is because the onboarding process works in the live environment with the live account just like in the test environment with the temporary URL.
 

@@ -12,8 +12,11 @@ Ensure a smooth transition to the new :productname:`PayPal Checkout` module.
 To do this, note the following two restrictions:
 
 * You cannot run :productname:`PayPal Checkout` with your :productname:`PayPal Plus` credentials.
-  |br|
+
+  Reason: Access data and webhook must be regenerated so that the connection to :productname:`PayPal Checkout` works with the full range of functions.
+
   Follow the instructions under :ref:`configuration:Re-running the registration for PayPal Checkout`.
+
 * To manage existing orders, both modules, for example :productname:`PayPal Checkout` and :productname:`PayPal`, must be active at the same time.
   |br|
   Follow the instructions under :ref:`configuration:Administering existing PayPal or PayPal Plus orders`.
@@ -29,10 +32,12 @@ Re-running the registration for PayPal Checkout
 
    If you reuse :productname:`PayPal Plus` credentials, you will encounter technical problems limiting the functionality of :productname:`PayPal Checkout`:
 
-   * The webhooks are not activated correctly, information is not transmitted correctly, but without the errors being immediately recognizable.
-   * Payment methods such as installment purchase are not available, payment by credit card is not activated.
+   * The webhooks are not activated correctly, information is not transmitted correctly, but the errors are not immediately recognizable.
+   * Payment methods such as installment purchase are not available, payment by credit card is not activated, functions are not available.
 
-   To ensure correct functioning and activation of all features, go through the registration process again to generate specific, new access data for :productname:`PayPal Checkout`.
+   To ensure correct functioning and activation of all features, go through the registration process again.
+
+   This is the only way to generate new access data and webhook, with which the connection to :productname:`PayPal Checkout` works to its full extent.
 
 |procedure|
 
@@ -43,10 +48,12 @@ Do the following:
    |br|
    To do this, go through the PayPal registration process again with your PayPal merchant account details.
 
+   For more information, see :ref:`configuration:API credentials: Onboarding`.
+
 Administering existing PayPal or PayPal Plus orders
 ---------------------------------------------------
 
-If you already use the :productname:`PayPal` or :productname:`PayPal Plus` module, please note the following limitation:
+If you already use the :productname:`PayPal` or :productname:`PayPal Plus` module, note the following limitation:
 
 To administer existing orders, both modules, :productname:`PayPal Checkout` and :productname:`PayPal` for example, must be active at the same time.
 
@@ -117,13 +124,7 @@ Basic procedure
 1. Activate the module.
    |br|
    The most important payment methods are automatically activated.
-#. Connect to PayPal via a webhook.
-
-   .. attention::
-
-      * Do not use the credentials for :productname:`PayPal Plus` to establish the connection.
-      * Test :productname:`PayPal Plus` in the PayPal sandbox first.
-
+#. Go through the registration process with PayPal (onboarding).
 #. Optional: Disable the express checkout feature of :productname:`PayPal Checkout` if needed.
 #. Optional: Specify if you want to offer PayPal installment payment (see :ref:`oxdajr08`) to your customers.
 #. If necessary, contact PayPal Customer Service to determine the best way for PayPal to handle 3D Secure authentication in your case (see :ref:`oxdajr11`).
@@ -177,21 +178,23 @@ Start the configuration.
 
 Choose :menuselection:`PayPal --> Configuration`.
 
-API Credentials
-^^^^^^^^^^^^^^^
+API Credentials: Onboarding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Register a webhook to connect your eShop with PayPal.
+Go through the registration process with PayPal (onboarding).
 
-The webhook allows PayPal to contact your OXID eShop and provide real-time status messages about, for example, completed transactions.
+You use it to create access data (client ID and password), activate functions (e.g. payment methods or new functions such as PayPal Vaulting) and generate a webhook.
 
-.. hint::
+The webhook allows PayPal to contact your OXID eShop and provide real-time status messages, for example about completed transactions.
 
-   It's possible to let the shop track the incoming webhooks by setting the config parameter `$this->sLogLevel` in the file `config.inc.php` to `debug`.
+In the first step, you test the payment methods provided with :productname:`PayPal Checkout` with test access data in a *sandbox*.
 
-   In this way, the webhook calls by PayPal are written to the file `oxideshop.log`.
+.. tip::
 
+   To debug, let the shop track the incoming webhooks.
 
-In the first run, you test the payment methods provided with :productname:`PayPal Checkout` with test credentials in a *sandbox*.
+   For more information, see :ref:`troubleshooting:Switching on the debug mode`.
+
 
 .. hint::
 
@@ -232,13 +235,22 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
 .. include:: /_static/reuse/note-ee-onboarding.rst
 
-.. hint::
+.. attention::
 
-   **Availability of all payment methods**
+   **Reusing access data and webhook**
 
-   To make :emphasis:`all` PayPal payment methods available to you, generate the webhook as described below using the :guilabel:`Signup Merchant PayPal Integration (Sandbox)` button.
+   In any case, make sure that :emphasis:`all` PayPal payment methods and functions are available to you.
 
-   Background: Technically, it is also possible to enter already existing credentials :emphasis:`manually` instead of generating them again. But this would lead to restrictions (see :ref:`troubleshooting:"Credit card" and "Purchase upon invoice" not available`).
+   * Case 1: You have :productname:`PayPal` or :productname:`PayPal Plus`? -- Go through the registration process again to regenerate access data and webhook to connect to :productname:`PayPal Checkout`.
+
+     For more information, see :ref:`configuration:You already have PayPal or PayPal Plus?`.
+
+   * Case 2: You have an earlier version of :productname:`PayPal Checkout` and are updating? -- Go through the registration process again.
+
+     Otherwise, the payment methods and functions of the newer version of :productname:`PayPal Checkout` will not be available to you.
+
+   * Case 3: You have already completed the registration process for the current version of :productname:`PayPal Checkout` and are moving your OXID eShop to another domain, for example? -- In this case, you can reuse the access data and webhook.
+
 
 1. Under :guilabel:`API credentials` choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button (:ref:`oxdajr05`, item 2).
 #. Go through the registration process with the sandbox merchant account email address.
@@ -272,18 +284,16 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
 #. Switch back to your OXID eShop.
 
-   The webhook is created.
-
-   The client ID and the webhook ID are displayed (:ref:`oxdajr05`, items 4, 5).
+   The access data (client ID/secret) and the webhook ID are displayed (:ref:`oxdajr05`, items 3, 4).
 
    .. _oxdajr05:
 
    .. figure:: /media/screenshots/oxdajr05.png
-      :alt: Webhook created
+      :alt: Client ID/secret and webhook ID created
       :width: 650
       :class: with-shadow
 
-      Fig.: Webhook created
+      Fig.: Client ID/secret and webhook ID created
 
    .. _activation-creditcard:
 
@@ -334,13 +344,14 @@ The payment methods "Credit card" and "Purchase upon invoice" are not available?
 
 .. hint::
 
-   **Generating a new webhook**.
+   **Generating a new webhook**
 
    Sometimes it may be necessary to delete the existing webhook and generate a new one.
 
-   To delete a webhook, delete the credentials and select :guilabel:`Save`.
+   Do the following:
 
-   The :guilabel:`Register Merchant PayPal Integration` button appears, and you can regenerate the webhook.
+   1. To delete the webhook, delete the login data and choose :guilabel:`Save`.
+   #. To go through the registration process again and regenerate access data and webhook, chose the :guilabel:`Signup Merchant Integration` button.
 
 .. include:: /_static/reuse/hint-debugmode.rst
 
@@ -764,11 +775,11 @@ The function is practical, but you can deactivate it if required.
 .. _oxdajr14:
 
 .. figure:: /media/screenshots/oxdajr14.png
-   :alt: Deactivate PayPal Vaulting
+   :alt: Deactivating PayPal Vaulting
    :width: 650
    :class: with-shadow
 
-   Figure: Deactivate PayPal Vaulting
+   Figure: Deactivating PayPal Vaulting
 
 Optional: Configuring the country mapping of PayPal Checkout payment methods
 ----------------------------------------------------------------------------

@@ -4,22 +4,22 @@ Troubleshooting
 "Credit card" and "Purchase upon invoice" not available
 -------------------------------------------------------
 
-It is possible that the payment methods "Credit card" and "Purchase on account" are not available.
+It is possible that the payment methods "Credit card" and "Purchase on account" or a certain function are not available as described.
 
-This is the case if, in order to generate a webhook at PayPal, you have entered the API credentials (for example, from an existing version of PayPal Checkout) :emphasis:`manually` instead of starting the process with the :guilabel:`Sign Up Merchant Integration` button.
+This is the case if you have entered the API credentials (for example from an existing version of PayPal Checkout) :emphasis:`manually` to generate a webhook at PayPal instead of starting the registration process with the :guilabel:`Sign Up Merchant Integration` button and going through it again.
 
 |procedure|
 
-To ensure that all payment types are available, do the following (using a Sandbox account as an example):
+To ensure that all payment types and functions are available, do the following (using a Sandbox account as an example):
 
 1. Choose :menuselection:`PayPal --> Configuration`.
 #. Under :guilabel:`API credentials`, delete all credentials and select :guilabel:`Save`.
    |br|
    The :guilabel:`Sign Up Merchant Integration (Sandbox)` button appears.
 #. Choose the :guilabel:`Sign Up Merchant Integration (sandbox)`.
-#. Go through the registration process using the email address of your Sandbox merchant account.
+#. To regenerate access data and webhook, go through the registration process (onboarding) with the e-mail address of the sandbox merchant account.
 
-For more information, see :ref:`configuration:configuration` in chapter :ref:`configuration:API credentials`.
+For more information, see :ref:`configuration:configuration` in chapter :ref:`configuration:API credentials: Onboarding`.
 
 Switching on the debug mode
 ---------------------------
@@ -32,7 +32,7 @@ This will record the webhook calls sent to the OXID eShop by PayPal in the :file
 
 |procedure|
 
-1. Open the file :file:`source/source/config.inc.php`.
+1. Open the :file:`source/source/config.inc.php` file.
 #. Change the value of the :technicalname:`sLogLevel` parameter to :technicalname:`debug`.
 
    .. code::
