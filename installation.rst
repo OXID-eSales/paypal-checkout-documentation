@@ -74,7 +74,7 @@ Installing a minor update
 
 If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 1.2.1 to version 1.3.0.
 
-   .. code:: bash
+.. code:: bash
 
       composer require oxid-solution-catalysts/paypal-module ^1.3.0
       composer update
