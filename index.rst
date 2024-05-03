@@ -16,11 +16,6 @@ Module Documentation
    Configuration <configuration>
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/paypal-module/blob/v1.2.3/CHANGELOG.md>
 
-.. image:: media/Hero_Visual.png
-    :alt: Paying with PayPal Checkout
-    :class: no-shadow
-
-
 .. image:: media/icons/home.png
    :width: 0 px
    :height: 0 px
