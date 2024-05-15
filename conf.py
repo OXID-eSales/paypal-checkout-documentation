@@ -134,11 +134,18 @@ html_theme = 'sphinx_rtd_theme'
 
 html_context = {
     'current_version': '2.4',
-    'versions':
-        [('2.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.2/'),
+    'versions62': [
+         ('1.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/1.2/'),
+         ('1.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/1.3/'),
+    ],
+    'versions65': [
+         ('2.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.2/'),
          ('2.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.3/'),
          ('2.4', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.4/'),
-         ],
+     ],
+    'versions70': [
+         ('3.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/3.3/'),
+    ],
     'languages':
        [('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.4/'),
         ('EN', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.4/')],
