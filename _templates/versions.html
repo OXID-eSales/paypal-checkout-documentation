@@ -7,12 +7,23 @@
     </span>
     <div class="rst-other-versions">
       <dl>
-        <dt>{{ _('Versionen') }}</dt>
-        {% for slug, url in versions %}
-          <dd><a href="{{ url }}">{{ slug }}</a></dd>
+        <dt>{{ _('OXID eShop Versionen 6.1 - 6.2:') }}</dt>
+        {% for slug, url in versions62 %}
+        <dd><a href="{{ url }}">{{ slug }}</a></dd>
         {% endfor %}
       </dl>
-
+      <dl>
+        <dt>{{ _('OXID eShop Versionen 6.3 - 6.5:') }}</dt>
+        {% for slug, url in versions65 %}
+        <dd><a href="{{ url }}">{{ slug }}</a></dd>
+        {% endfor %}
+      </dl>
+      <dl>
+        <dt>{{ _('OXID eShop Version 7:') }}</dt>
+        {% for slug, url in versions70 %}
+        <dd><a href="{{ url }}">{{ slug }}</a></dd>
+        {% endfor %}
+      </dl>
       <dl>
         <dt>{{ _('Sprachen') }}</dt>
         {% for slug, url in languages %}
