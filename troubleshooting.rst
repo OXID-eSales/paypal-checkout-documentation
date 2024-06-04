@@ -19,8 +19,6 @@ Um sicherzustellen, dass alle Zahlungsarten und Funktionen verfügbar sind, tun 
 #. Wählen Sie :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
 #. Um Zugangsdaten und Webhook neu zu generieren, durchlaufen Sie den Registrierungs-Prozess (Onboarding) mit der E-Mail-Adresse des Sandbox-Händlerkontos.
 
-   .. todo: #ML: Auch hier "Zugangsdaten und Webhook"
-
 Weitere Informationen finden Sie im Kapitel :ref:`konfiguration:Konfiguration` unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
 Debug-Modus einschalten

@@ -34,9 +34,10 @@ Beachten Sie jeweils die Währungsabdeckung der einzelnen Zahlungsmethoden (sieh
 ==================  ==========================
 Markt               Zahlungsmethoden
 ==================  ==========================
+Weltweit	        Google Pay
+Weltweit            Kreditkarte
 Weltweit	        PayPal
 Weltweit	        PayPal Express
-Weltweit            Kreditkarte
 Belgien	            Bancontact
 Deutschland	        GiroPay
 Deutschland	        PayPal - Später bezahlen
@@ -62,13 +63,14 @@ Beachten Sie jeweils die Währungsabdeckung der einzelnen Zahlungsmethoden (sieh
 ========================== ===============
 Zahlungsmethoden           Märkte
 ========================== ===============
-Bancontact	               Belgien
-BLIK	                   Polen
-eps	                       Österreich
-GiroPay	                   Deutschland
-iDEAL 	                   Niederlande
+Bancontact                 Belgien
+BLIK                       Polen
+eps                        Österreich
+GiroPay                    Deutschland
+Google Pay                 Weltweit
+iDEAL                      Niederlande
 Kreditkarte                Weltweit
-PayPal	                   Weltweit
+PayPal                     Weltweit
 PayPal Express             Weltweit
 PayPal - Später bezahlen   Deutschland
 PayPal - Später bezahlen   Frankreich
@@ -77,30 +79,31 @@ PayPal - Später bezahlen   Italien
 PayPal - Später bezahlen   Österreich
 PayPal - Später bezahlen   Spanien
 PayPal - Später bezahlen   Vereinigte Staaten
-Przelewy24	               Polen
-Rechnungskauf	           Deutschland
+Przelewy24                 Polen
+Rechnungskauf              Deutschland
 SEPA Lastschrift           Deutschland
 ========================== ===============
+
 
 Währungsabdeckung nach Zahlungsmethode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 =============================== ===============
-Payment methods                 Currencies
+Zahlungsmethoden                Währungen
 =============================== ===============
-PayPal                          AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
-PayPal Express                  AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
-PayPal - Später bezahlen        AUD, EUR, GBP, USD
-Rechnungskauf                   EUR
-Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY, NOK, NZD, PLN, SEK, SGD, USD
 Bancontact                      EUR
 BLIK                            PLN
 EPS                             EUR
 GiroPay                         EUR
+Google Pay                      AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
 Ideal                           EUR
+Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY, NOK, NZD, PLN, SEK, SGD, USD
+PayPal                          AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
+PayPal Express                  AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
+PayPal - Später bezahlen        AUD, EUR, GBP, USD
 Przelewy24                      EUR, PLN
+Rechnungskauf                   EUR
 =============================== ===============
-
 
 Sie haben das Modul PayPal?
 ---------------------------

@@ -230,6 +230,15 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
   |br|
   Weitere Informationen finden Sie unter :ref:`paypal-sandbox:Temporäres SSL einrichten`.
 
+* Wenn Sie Google Pay anbieten wollen, haben Sie für Testzahlungen
+
+  * ein Google-Konto
+  * eine Kreditkarte
+
+  Wenn Sie im Sandbox-Modus Zahlungen mit Ihrer Kreditarte ausführen, wird Ihre Kreditkarte :emphasis:`nicht` belastet. Google ersetzt Ihre echte Kreditkarten-Nummer durch eine Muster-Kreditkarten-Nummer.
+
+  .. todo: #ML: Unter welcher URL finde ich bei PayPal etwas über Google Pay?
+    Weitere Informationen finden Sie in der PayPal-Checkout-Dokumentation unter `Development resources --> Integration --> Testing --> Test card numbers --> Google Pay <https://docs.adyen.com/development-resources/testing/test-card-numbers#google-pay>`_.
 
 |procedure|
 
@@ -436,8 +445,8 @@ Weitere Informationen über Länder-Abdeckung und landesspezifische Funktionen d
 #. Speichern Sie Ihre Einstellungen.
 
 
-Login mit PayPal
-^^^^^^^^^^^^^^^^
+Login mit PayPal: Automatisches Anmelden aktivieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Legen Sie fest, dass Kunden automatisch in Ihrem OXID eShop angemeldet sind,
 
@@ -651,7 +660,7 @@ Banner-Einstellungen übernehmen
 
 Optional: Wenn Sie bereits das Modul :productname:`PayPal` nutzen, übernehmen Sie bequem die Bannereinstellungen für :productname:`PayPal Checkout`.
 
-Alternativ: Legen Sie die Bannereinstellungen manuell fest wie beschrieben unter :ref:`konfiguration:Banner-Einstellungen`.
+Alternativ: Legen Sie die Bannereinstellungen manuell fest wie beschrieben unter :ref:`konfiguration:Banner-Einstellungen: Ratenzahlung konfigurieren`.
 
 |prerequisites|
 
@@ -666,8 +675,8 @@ Alternativ: Legen Sie die Bannereinstellungen manuell fest wie beschrieben unter
 #. Speichern Sie Ihre Einstellungen.
 
 
-Banner-Einstellungen
-^^^^^^^^^^^^^^^^^^^^
+Banner-Einstellungen: Ratenzahlung konfigurieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Legen Sie fest, ob Sie mit Bannern für die PayPal-Ratenzahlung (:ref:`oxdajr08`) werben wollen.
 
