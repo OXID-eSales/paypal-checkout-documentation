@@ -1,21 +1,21 @@
-PayPal Checkout V. 2.4
-======================
+PayPal Checkout V. 2.4.1
+========================
+
+.. todo: #ML: determine date
 
 Release-Datum: #tbd.2024
 
 Neue oder geänderte Funktionen
 ------------------------------
 
-Wir haben
-
-* die Zahlungsart GooglePay hinzugefügt
+Wir haben die Zahlungsart GooglePay hinzugefügt.
 
 .. todo: #ML: Was steckt hinter folgendem?
     * PayPal-Request-Id based on serialized body, no extra PayPal-Request-Id necessary anymore
     * use PayPal-Client v2.0.14
 
 
-GooglePay
+Google Pay
 ^^^^^^^^^
 
 .. todo: #ML: Registrierungsprozess (Onboarding) (erneut) durchlaufen nach Update?
@@ -47,6 +47,8 @@ Weitere Informationen zur Abdeckung finden Sie unter
       Abb.: Client-ID/Passwort und Webhook-ID erzeugt
 
    Wenn keine Freischaltung erfolgt ist, kontaktieren Sie den PayPal-Support.
+
+   .. todo: #ML: kontaktieren Sie den PayPal-Support korekt?
 
 #. Konfigurieren Sie die Länderzuordnung von Google Pay.
 

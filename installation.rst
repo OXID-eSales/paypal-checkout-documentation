@@ -73,7 +73,7 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 Minor Update installieren
 -------------------------
 
-Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.4.0.
+Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.4.1.
 
 |procedure|
 
