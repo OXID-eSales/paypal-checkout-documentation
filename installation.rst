@@ -43,11 +43,11 @@ For OXID eShop version 6.3.x to 6.5.x, install the payment module :productname:`
 
       cd /var/www/oxideshop
 
-#. Execute the following commands:
+#. Execute the following command:
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.4.0
+      composer require oxid-solution-catalysts/paypal-module ^2.4.1
 
 #. Optional: To activate the module, run the following command.
    |br|
@@ -71,7 +71,7 @@ When the installation process is finished, the module :guilabel:`PayPal Checkout
 Installing a minor update
 -------------------------
 
-If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.3.0 to version 2.4.0.
+If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.3.0 to version 2.4.1.
 
 |procedure|
 
@@ -79,31 +79,30 @@ If you use a deprecated version, perform a minor update, for example from :produ
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.4.0
+      composer require oxid-solution-catalysts/paypal-module ^2.4.1
       composer update
 
 #. To be able to use new payment methods or functions, go through the registration process (onboarding) again.
 
    For more information, see :ref:`configuration:API credentials: Onboarding`.
 
-.. todo: mit 240 reaktivieren
-    Installing a patch update
-    -------------------------
-    If required, install a patch update, from :productname:`PayPal Checkout` version 2.3.0 to version 2.3.1, for example.
-    |procedure|
-    1. Execute the following command:
-       .. code:: bash
-          composer update
-    #. Confirm the prompt whether to overwrite the :file:`oxid-solution-catalysts/paypal-module` files.
-       .. attention::
-          **Check country mappings after update to PayPal Checkout version 2.1.5**.
-          With version 2.1.4 the country coverage of individual :productname:`PayPal Checkout` payment methods has been extended.
-          Make sure that you can use the extended country coverage.
-          Background: With :productname:`PayPal Checkout` version 2.1.5, countries are automatically assigned to payment methods during initial installation (see :ref:`configuration:Optional: Configuring the country mapping of PayPal Checkout payment methods`).
-          This may cause configuration settings of your existing version to block the use of extended country mappings.
-          Do the following:
-          1. Choose :menuselection:`Shop Settings --> Payment Methods --> <payment method> --> Country --> Assign Countries`.
-          #. To use the entire country coverage of a payment type, delete existing mappings.
+
+Installing a patch update
+-------------------------
+If required, install a patch update, from :productname:`PayPal Checkout` version 2.4.0 to version 2.4.1, for example.
+
+|procedure|
+
+1. Execute the following command:
+
+   .. code:: bash
+
+      composer update
+
+#. Confirm the prompt whether to overwrite the :file:`oxid-solution-catalysts/paypal-module` files.
+#. To be able to use new payment methods or functions, go through the registration process (onboarding) again.
+
+   For more information, see :ref:`configuration:API credentials: Onboarding`.
 
 
 .. Internal: oxdajq, status:

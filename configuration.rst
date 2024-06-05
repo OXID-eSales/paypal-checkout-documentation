@@ -1,7 +1,6 @@
 Configuration
 =============
 
-
 Make the :productname:`PayPal Checkout` module operational for your OXID eShop.
 
 You already have PayPal or PayPal Plus?
@@ -229,6 +228,16 @@ Only when everything works as you want, use the credentials for *live* operation
   |br|
   For more information, see :ref:`paypal-sandbox:Setting up temporary SSL`.
 
+* If you want to offer Google Pay, for test payments you have
+
+  * a Google account
+  * a credit card
+
+  If you make payments with your credit card in sandbox mode, your credit card will :emphasis:`not` be charged. Google will replace your real credit card number with a sample credit card number.
+
+  .. todo: #ML: Unter welcher URL finde ich bei PayPal etwas über Google Pay?
+    Weitere Informationen finden Sie in der PayPal-Checkout-Dokumentation unter `Development resources --> Integration --> Testing --> Test card numbers --> Google Pay <https://docs.adyen.com/development-resources/testing/test-card-numbers#google-pay>`_.
+
 |procedure|
 
 We describe the registration process (onboarding) using a sandbox account as an example. The live process is analogous.
@@ -432,8 +441,8 @@ For more information about country coverage and country-specific features of the
 1. To offer your customers Pay Later features, choose the :guilabel:`"Show Pay Later" button?` checkbox (:ref:`oxdajr10`, item 2).
 #. Save your settings.
 
-Login with PayPal
-^^^^^^^^^^^^^^^^^
+Login with PayPal: Activating automatic login
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Set customers to be automatically logged into your OXID eShop
 
@@ -647,7 +656,7 @@ Banner settings: Re-using your PayPal banner settings
 
 Optional: If you already use the :productname:`PayPal` module, conveniently re-use your banner settings for :productname:`PayPal Checkout`.
 
-Alternatively, set the banner settings manually as described below under :ref:`configuration:Banner settings`.
+Alternatively, set the banner settings manually as described below under :ref:`configuration:Banner settings: Configuring PayPal installments`.
 
 |prerequisites|
 
@@ -661,8 +670,8 @@ Alternatively, set the banner settings manually as described below under :ref:`c
    The button appears only if the :productname:`PayPal` module is still activated.
 #. Save your settings.
 
-Banner settings
-^^^^^^^^^^^^^^^
+Banner settings: Configuring PayPal installments
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Specify whether you want to advertise PayPal installments with banners (:ref:`oxdajr08`).
 
