@@ -234,11 +234,11 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
 
   * ein Google-Konto
   * eine Kreditkarte
+  * empfohlen: ein Sandbox-Konto
 
-  Wenn Sie im Sandbox-Modus Zahlungen mit Ihrer Kreditarte ausführen, wird Ihre Kreditkarte :emphasis:`nicht` belastet. Google ersetzt Ihre echte Kreditkarten-Nummer durch eine Muster-Kreditkarten-Nummer.
+    Wenn Sie, wie im Sandbox-Modus Zahlungen mit Ihrer Kreditarte ausführen, wird Ihre Kreditkarte :emphasis:`nicht` belastet. Google ersetzt Ihre echte Kreditkarten-Nummer durch eine Muster-Kreditkarten-Nummer.
 
-  .. todo: #ML: Unter welcher URL finde ich bei PayPal etwas über Google Pay?
-    Weitere Informationen finden Sie in der PayPal-Checkout-Dokumentation unter `Development resources --> Integration --> Testing --> Test card numbers --> Google Pay <https://docs.adyen.com/development-resources/testing/test-card-numbers#google-pay>`_.
+   Weitere Informationen finden Sie in der PayPal-Entwickler-Dokumentation unter `Set up your sandbox account to accept Google Pay <https://developer.paypal.com/docs/checkout/apm/google-pay/#link-setupyoursandboxaccounttoacceptgooglepay`_.
 
 |procedure|
 
@@ -368,6 +368,28 @@ Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung?
    #. Um den Registrierungsprozess neu zu durchlaufen und Zugangsdaten und Webhook neu zu generieren, wählen Sie die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration`.
 
 .. include:: /_static/reuse/hint-debugmode.rst
+
+Apple Pay als Zahlungsart aktivieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn Sie :productname:`Apple Pay` anbieten wollen, legen Sie ein Apple-Entwicklerkonto an und generieren Sie eine Apple-Händler-ID und Zertifikate.
+
+|prerequisites|
+
+* Sie haben ein Apple-Gerät zum Testen.
+
+  Hintergrund: Zahlungen über Apple Pay lassen sich nur mit einem Apple-Gerät ausführen.
+
+|procedure|
+
+.. todo: #DR: Wie geht man vor?
+
+Folgen Sie den Anweisungen in der PayPal-Dokumentation unter `Go live <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-golive>`_.
+
+.. todo: #DR:hat PayPal folgende Optionen?
+    * Am einfachsten und schnellsten ist es, ein fertiges Apple-Zertifikat von PayPal zu nutzen.
+    * Alternativ können Sie mit einem eigenen Zertifikat Schlüssel selbst generieren und bei Apple registrieren. Damit haben Sie die volle Kontrolle über die sichere Kommunikation mit Apple Pay.
+
 
 Einstellungen für die Buttonplatzierung: Schnellkauf-Funktion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -792,6 +814,60 @@ Die Funktion ist praktisch, dennoch können Sie sie bei Bedarf deaktivieren.
    :class: with-shadow
 
    Abb.: PayPal Vaulting deaktivieren
+
+
+Pseudoversandkosten für PayPal Express anpassen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo: #ML: "Um Zahlungen mit PayPal Express zu ermöglichen,..."? Was kann schiefgehen, wenn der Wert nicht stimmt?
+.. todo: #ML (10.23) : Was passiert, wenn die Toleranz überschritten ist? -- Ich kann beim Testen keinen Effekt wahrnehmen, wenn ich den Wert auf 0 setze. Wie sieht der "Overloading-Effekt" aus?
+
+Um Zahlungen mit PayPal Express zu ermöglichen, stellt das System stellt durch Standardversandkosten sicher, dass der Wert des Warenkorbs ungefähr dem Wert entspricht, der beim Checkout vom PayPal-Konto des Kunden eingezogen wird.
+
+.. todo: #ML: Woran merke ich, dass ich den Wert erhöhen sollte: Erhöhen Sie bei Bedarf den Standardwert von 3.50 Euro. (mit Dezimalpunkt)
+.. todo: #ML: Wie wird die Shopexperience verbessert?
+
+Erhöhen Sie bei Bedarf den Wert der Standardversandkosten (standardmäßig sind 3.50 Euro eingestellt).
+
+Das kann sinnvoll sein, wenn Sie überwiegend niedrigpreisige Produkte vertreiben.
+
+Wählen Sie für die Standardversandkosten einen Wert, der den Versandkosten der typischen Käufe in Ihrem OXID eShop entspricht.
+
+
+|background|
+
+Wenn ein Kunde PayPal Express nutzt und einen Artikel in den Warenkorb legt, autorisiert er eine Zahlung in Höhe des Warenkorbwerts zuzüglich einer Toleranz von 5 % für Versandkosten.
+
+Im Fall von niedrigpreisigen Artikeln kann es sein, dass der Anteil der Versandkosten mehr als 5 % des Artikelpreises beträgt.
+
+Beispiel: Der Artikelpreis ist 5 Euro, die Versandkosten betragen 4 Euro. Die Toleranz ist bei weitem überschritten.
+
+.. todo: #ML: Was ist die Folge: Wird der Zahlungsprozess abgebrochen?
+
+|procedure|
+
+Sie haben folgende Möglichkeiten:
+
+* Erhöhen Sie unter :guilabel:`Pseudoversandkosten für PayPal Express` den Standardwert von 3.50 Euro.
+* Alternativ: Aktivieren Sie Standardversandkosten in den Grundeinstellungen Ihres OXID eShops.
+
+  .. tip::
+
+     Die beiden Optionen sind gleichwertig.
+
+     Wir empfehlen, Standardverandkosten in den Grundeinstellungen zu aktivieren, um auch andere Zahlungsarten als PayPal zu unterstützen.
+
+  1. Wählen Sie :menuselection:`Stammdaten --> Grundeinstellungen`.
+  #. Öffnen Sie auf der Registerkarte :guilabel:`Einstell.` den Bereich :guilabel:`Weitere Einstellungen`.
+  #. Markieren Sie das Kontrollkästchen :guilabel:`Versandkosten auch dann berechnen, wenn der Kunde noch nicht eingeloggt ist`.
+
+.. todo: #ML/#SB: Weclche Pseudoversandkosten sind denn in den Grundeinstellungen angenommen?
+
+.. todo: EN:
+    1. Wählen Sie :menuselection:`Master Settings --> Core Settings`.
+    #. Öffnen Sie auf der Registerkarte :guilabel:`Settings.` den Bereich :guilabel:`Other settings`.
+    #. Markieren Sie das Kontrollkästchen :guilabel:`Calculate default Shipping costs when ser is not logged in yet`.
+
 
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------

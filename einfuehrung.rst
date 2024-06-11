@@ -34,6 +34,7 @@ Beachten Sie jeweils die Währungsabdeckung der einzelnen Zahlungsmethoden (sieh
 ==================  ==========================
 Markt               Zahlungsmethoden
 ==================  ==========================
+Weltweit	        Apple Pay
 Weltweit	        Google Pay
 Weltweit            Kreditkarte
 Weltweit	        PayPal
@@ -63,6 +64,7 @@ Beachten Sie jeweils die Währungsabdeckung der einzelnen Zahlungsmethoden (sieh
 ========================== ===============
 Zahlungsmethoden           Märkte
 ========================== ===============
+Apple Pay                  Weltweit
 Bancontact                 Belgien
 BLIK                       Polen
 eps                        Österreich
@@ -88,9 +90,10 @@ SEPA Lastschrift           Deutschland
 Währungsabdeckung nach Zahlungsmethode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-=============================== ===============
+=============================== ===================================================
 Zahlungsmethoden                Währungen
-=============================== ===============
+=============================== ===================================================
+Apple Pay                       AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
 Bancontact                      EUR
 BLIK                            PLN
 EPS                             EUR
@@ -103,7 +106,7 @@ PayPal Express                  AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS
 PayPal - Später bezahlen        AUD, EUR, GBP, USD
 Przelewy24                      EUR, PLN
 Rechnungskauf                   EUR
-=============================== ===============
+=============================== ===================================================
 
 Sie haben das Modul PayPal?
 ---------------------------
