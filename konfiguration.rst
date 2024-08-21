@@ -359,28 +359,81 @@ Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung?
 Apple Pay als Zahlungsart aktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn Sie :productname:`Apple Pay` anbieten wollen, legen Sie ein Apple-Entwicklerkonto an und generieren Sie eine Apple-Händler-ID und Zertifikate.
-
-|prerequisites|
-
-* Sie haben ein Apple-Gerät zum Testen.
-
-  Hintergrund: Zahlungen über Apple Pay lassen sich nur mit einem Apple-Gerät ausführen.
-
-* Sie haben einen PayPal Business-Konto
-
-  .. todo: #ML/#tbd: prüfen: Sie haben ein PayPal Business-Konto
+Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die Sandbox-Domain Ihres OXID e-Shops.
 
 |procedure|
 
-.. todo: #DR: Wie geht man vor?
+1. Legen Sie im Root-Verzeichnis Ihres OXID eShops ein Verzeichnis :file:`/.well-known/apple-developer-merchantid-domain-association` an.
+#. Öffnen Sie folgende URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ und melden Sie sich mit Ihrem PayPal (Sandbox-)Händlerkonto an.
+#. Wählen Sie :guilabel:`Domain hinzufügen` (:ref:`oxdajr18`).
 
-Folgen Sie den Anweisungen in der PayPal-Dokumentation unter `Go live <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-golive>`_.
+   Sie gelangen auf eine  Seite zum Registrieren Ihrer Website bei Apple Pay.
 
-.. todo: #DR: hat PayPal folgende Optionen?
-    * Am einfachsten und schnellsten ist es, ein fertiges Apple-Zertifikat von PayPal zu nutzen.
-    * Alternativ können Sie mit einem eigenen Zertifikat Schlüssel selbst generieren und bei Apple registrieren. Damit haben Sie die volle Kontrolle über die sichere Kommunikation mit Apple Pay.
+   .. _oxdajr18:
 
+   .. figure:: /media/screenshots/oxdajr18.png
+      :alt: Domain hinzufügen
+      :width: 650
+      :class: with-shadow
+
+      Abb.: Domain hinzufügen
+
+#. Geben Sie die den Domain-Namen (die URL ohne das Schema, z.B. ``https://``) Ihres OXID e-shops ein (beispielsweise ``www.my-oxid-eshop.com``) (:ref:`oxdajr18`, Pos. 1).
+
+   .. _oxdajr19:
+
+   .. figure:: /media/screenshots/oxdajr19.png
+      :alt: Domain-Namen eingeben
+      :width: 300
+      :class: with-shadow
+
+      Abb.: Domain-Namen eingeben
+
+   Das System generiert eine Domain-Zuordnungsdatei, mit der Sie nachweisen, dass Sie der Eigentümer der Webseite sind.
+
+#. Hosten Sie die Domain-Zuordnungsdatei:
+
+   a. Laden Sie die Domain-Zuordnungsdatei herunter (:ref:`oxdajr18`, Pos. 2).
+   #. Speichern Sie sie im Verzeichnis :file:`<Root-Verzeichnis Ihres OXID eShops>/.well-known/apple-developer-merchantid-domain-association`.
+
+#. Optional: Um zu prüfen, ob die Domain-Zuordnungsdatei bereitsteht, öffnen Sie die Datei per Browser.
+
+   Fügen Sie dazu den Verzeichnisnamen der URL Ihres OXID eShops hinzu (:ref:`oxdajr20`).
+
+   Schema: ``https://<Sandbox-Domain-Name>/.well-known/apple-developer-merchantid-domain-association``
+
+   .. _oxdajr20:
+
+   .. figure:: /media/screenshots/oxdajr20.png
+      :alt: Domain-Zuordnungsdatei verifizieren
+      :width: 350
+      :class: with-shadow
+
+      Abb.: Domain-Zuordnungsdatei verifizieren
+
+
+#. Wählen Sie :guilabel:`Domain registrieren` (:ref:`oxdajr18`, Pos. 3).
+
+   Eine Meldung bestätigt, dass Apple Pay Ihren OXID eShop registriert hat (:ref:`oxdajr21`).
+
+   .. _oxdajr21:
+
+   .. figure:: /media/screenshots/oxdajr21.png
+      :alt: Erfolgreiche Domain-Registrierung verifizieren
+      :width: 300
+      :class: with-shadow
+
+      Abb.: Erfolgreiche Domain-Registrierung verifizieren
+
+#. Konfigurieren Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` die Zahlungsart :technicalname:`ApplePay`.
+#. Führen Sie eine Testzahlung aus.
+
+   .. todo: #ML: Apple Pay erscheint nicht als Zahlungsart trotz Zahlungsregeln, Länderzuordnung etc.
+
+Weitere Informationen zum Registrieren Ihrer Sandbox-Domain finden Sie in der PayPal-Dokumentation unter
+
+* `Set up your sandbox account to accept Apple Pay <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-setupyoursandboxaccounttoacceptapplepay>`_.
+* `Go live <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-golive>`_.
 
 Einstellungen für die Buttonplatzierung: Schnellkauf-Funktion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

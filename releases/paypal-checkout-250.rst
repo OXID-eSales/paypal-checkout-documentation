@@ -48,8 +48,6 @@ Weitere Informationen zur Abdeckung finden Sie unter
 
    Wenn keine Freischaltung erfolgt ist, kontaktieren Sie den PayPal-Support.
 
-   .. todo: ML: kontaktieren Sie den PayPal-Support korrekt? -- ja, keine Adresse, s. Paypalseite oder Prtner
-
 #. Aktivieren Sie Apple Pay.
 
    Weitere Informationen finden Sie unter :ref:`konfiguration:Apple Pay als Zahlungsart aktivieren`.
