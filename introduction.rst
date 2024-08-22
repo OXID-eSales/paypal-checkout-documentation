@@ -35,6 +35,7 @@ In each case, note the currency coverage of each payment method (see :ref:`intro
 ================= ==========================
 Market            Payment Methods
 ================= ==========================
+Worldwide         Apple Pay
 Worldwide         Credit card
 Worldwide         Google Pay
 Worldwide         PayPal
@@ -65,6 +66,7 @@ In each case, note the currency coverage of each payment method (see :ref:`intro
 =============================== ===============
 Payment methods                 Markets
 =============================== ===============
+Apple Pay                       Worldwide
 Bancontact                      Belgium
 BLIK                            Poland
 Credit card                     Worldwide
@@ -92,6 +94,7 @@ Currency coverage by payment method
 =============================== ===============
 Payment methods                 Currencies
 =============================== ===============
+Apple Pay                       AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
 Bancontact                      EUR
 BLIK                            PLN
 EPS                             EUR

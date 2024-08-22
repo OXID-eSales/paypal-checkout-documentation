@@ -235,9 +235,6 @@ Only when everything works as you want, use the credentials for *live* operation
 
   If you make payments with your credit card in sandbox mode, your credit card will :emphasis:`not` be charged. Google will replace your real credit card number with a sample credit card number.
 
-  .. todo: #ML: Unter welcher URL finde ich bei PayPal etwas über Google Pay?
-    Weitere Informationen finden Sie in der PayPal-Checkout-Dokumentation unter `Development resources --> Integration --> Testing --> Test card numbers --> Google Pay <https://docs.adyen.com/development-resources/testing/test-card-numbers#google-pay>`_.
-
 |procedure|
 
 We describe the registration process (onboarding) using a sandbox account as an example. The live process is analogous.
@@ -282,15 +279,6 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
          Fig.: Completing the registration of the merchant account
 
-      A message indicates success (:ref:`oxdajr04`).
-
-      .. _oxdajr04:
-
-      .. figure:: /media/screenshots/oxdajr04.png
-         :alt: Message onboarding successful
-
-         Fig.: Message onboarding successful
-
 #. Switch back to your OXID eShop.
 
    The access data (client ID/secret) and the webhook ID are displayed (:ref:`oxdajr05`, items 3, 4).
@@ -334,7 +322,6 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
       PayPal offers the payment method Purchase upon invoice only to store operators from Germany.
 
-
 |result|
 
 Once you have given PayPal permission to connect your sandbox account to the PayPal test store, the API credentials are displayed, and the module is active (:ref:`oxdajr05`, item 1).
@@ -364,6 +351,86 @@ The payment methods "Credit card" and "Purchase upon invoice" are not available?
 
 .. include:: /_static/reuse/hint-debugmode.rst
 
+Activating the Apple Pay payment method
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of your OXID e-shop.
+
+|procedure|
+
+1. In the root directory of your OXID eShop (in which the :file:`config.inc.php` file is located), create a :file:`/.well-known/apple-developer-merchantid-domain-association` directory.
+#. Open the following URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ and log in with your PayPal (sandbox) merchant account.
+#. Choose :guilabel:`Add Domain` (:ref:`oxdajr18`).
+
+   You go to a page to register your website with Apple Pay.
+
+   .. _oxdajr18:
+
+   .. figure:: /media/screenshots/oxdajr18.png
+      :alt: Adding a domain
+      :width: 650
+      :class: with-shadow
+
+      Fig.: Adding a domain
+
+#. Specify the domain name (the URL without the schema, e.g. ``https://``) of your OXID e-shop (``www.my-oxid-eshop.com``, for example) (:ref:`oxdajr19`, item 1).
+
+   .. _oxdajr19:
+
+   .. figure:: /media/screenshots/oxdajr19.png
+      :alt: Registering the domain name
+      :width: 300
+      :class: with-shadow
+
+      Fig.: Registering the domain name
+
+   The system generates a domain association file which you use to proves that you are the owner of the website.
+
+#. Host the domain association file:
+
+   a. Download the domain association file (:ref:`oxdajr19`, item 2).
+   #. Save it in the directory :file:`<Root directory of your OXID eShop>/.well-known/apple-developer-merchantid-domain-association`.
+
+#. Optional: To check whether the domain association file is available, open the file via browser.
+
+   To do so, add the directory name to the URL of your OXID eShop (:ref:`oxdajr20`).
+
+   Schema: ``https://<sandbox-domain-name>/.well-known/apple-developer-merchantid-domain-association``
+
+   .. _oxdajr20:
+
+   .. figure:: /media/screenshots/oxdajr20.png
+      :alt: Verifying the domain association file
+      :width: 350
+      :class: with-shadow
+
+      Fig.: Verifying the domain association file
+
+#. Choose :guilabel:`Register Domain` (:ref:`oxdajr19`, item 3).
+#. Confirm the message confirming that Apple Pay has registered your OXID eShop (:ref:`oxdajr21`).
+
+   .. _oxdajr21:
+
+   .. figure:: /media/screenshots/oxdajr21.png
+      :alt: Confirming the domain registration
+      :width: 350
+      :class: with-shadow
+
+      Fig.: Confirming the domain registration
+
+#. Under :menuselection:`Shop settings --> Payment methods`, configure the :technicalname:`Apple Pay` payment method.
+#. Optional: Carry out a test payment.
+
+   .. note::
+      To make test payments with Apple Pay, you need an Apple device.
+
+      Customers without an Apple device will not be offered the :technicalname:`Apple Pay` payment method.
+
+For more information on registering your sandbox domain and going live with Apple Pay, see the PayPal documentation under
+
+* `Set up your sandbox account to accept Apple Pay <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-setupyoursandboxaccounttoacceptapplepay>`_
+* `Go live <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-golive>`_
+
 Button placement settings: Quick purchase
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -392,7 +459,7 @@ So, you determine,
 
 * on the product detail page
 * in the shopping cart
-* in the mini shopping cart (:ref:`oxdajr09`, Pos. 1)
+* in the mini shopping cart (:ref:`oxdajr09`, item 1)
 * on the checkout page
 
 So, your customers can use their PayPal account to trigger the order at any time.
@@ -429,7 +496,7 @@ The PayPal button appears only on the checkout page.
 Button placement settings: Pay later
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Decide whether you want to offer the Pay Later feature (:ref:`oxdajr09`, pos. 2).
+Decide whether you want to offer the Pay Later feature (:ref:`oxdajr09`, item 2).
 
 Pay Later means, for example, that PayPal offers customers in Germany the "Pay after 30 days" or PayPal installments options.
 
@@ -761,7 +828,7 @@ In the checkout (:ref:`oxdajr15`, item 1) or in the account (:ref:`oxdajr16`, it
 
    Fig.: Saving and managing payment information in the account
 
-This speeds up the checkout process for regular customers and increases the user-friendliness of your OXID eShop. The payment button is labeled accordingly (:ref:`oxdajr17`, Pos. 1).
+This speeds up the checkout process for regular customers and increases the user-friendliness of your OXID eShop. The payment button is labeled accordingly (:ref:`oxdajr17`, item 1).
 
 .. _oxdajr17:
 
@@ -778,7 +845,7 @@ The function is practical, but you can deactivate it if required.
 
 |procedure|
 
-1. To deactivate PayPal Vaulting, deactivate the :guilabel:`PayPal Vaulting active` checkbox (:ref:`oxdajr14`, Pos. 1).
+1. To deactivate PayPal Vaulting, deactivate the :guilabel:`PayPal Vaulting active` checkbox (:ref:`oxdajr14`, item 1).
 #. Save your settings.
 
 .. _oxdajr14:
@@ -789,6 +856,30 @@ The function is practical, but you can deactivate it if required.
    :class: with-shadow
 
    Figure: Deactivating PayPal Vaulting
+
+Adjusting pseudo shipping costs for PayPal Express
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To enable payments with PayPal Express, use so-called pseudo shipping costs. In this way you ensure that the value of the shopping basket corresponds approximately to the value that is collected from the customer's PayPal account at checkout.
+
+|background|
+
+When a customer uses PayPal Express and adds an item to the shopping basket, they authorize a payment in the amount of the basket value plus a tolerance of approximately 5% for shipping costs.
+
+In the case of low-priced items, the shipping costs may amount to more than 5% of the item price.
+
+Example: The item price is 5 euros, the shipping costs are 4 euros. The tolerance is far exceeded.
+
+If PayPal must permanently hold financial reserves because the real shipping costs permanently deviate from the shipping costs that PayPal estimates and that PayPal Express authorizes, then it may become difficult for PayPal to continue to provide you with the PayPal Express payment method.
+
+|procedure|
+
+Under :guilabel:`Pseudo shipping costs for PayPal Express`, adjust the default value of 3.50 euros.
+
+Specify a value for the standard shipping costs that corresponds to the shipping costs of typical purchases in your OXID eShop.
+
+A value that covers more than 90% of purchases is ideal.
+
 
 Optional: Configuring the country mapping of PayPal Checkout payment methods
 ----------------------------------------------------------------------------
@@ -801,7 +892,7 @@ With the initial installation, the :productname:`PayPal Checkout` payment method
 
 Most :productname:`PayPal Checkout` payment methods cover multiple countries. For example, the :productname:`Credit Card` payment method is available to customers worldwide, and the :productname:`Pay Later` payment method is available to your customers in countries in Europe, the USA, and Australia, for example.
 
-For more information about the country coverage of each :productname:`PayPal Checkout` payment method, see :ref:`introduction:Market coverage by payment methods`.
+For more information about the country coverage of each :productname:`PayPal Checkout` payment method, see :ref:`introduction:Market coverage by payment method`.
 
 The basic rule here is: A customer's :emphasis:`billing address`, not the shipping address, determines whether a :productname:`PayPal Checkout` payment method is available for the customer.
 |br|
