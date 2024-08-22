@@ -1,25 +1,15 @@
 PayPal Checkout V. 2.5.0
 ========================
 
-.. todo: #ML: determine date
-
-Release-Datum: #tbd.2024
+Release-Datum: 16.08.2024
 
 Neue oder geänderte Funktionen
 ------------------------------
 
-Wir haben die Zahlungsart GooglePay hinzugefügt.
-
-.. todo: #tbd: delete: ML: Was steckt hinter folgendem? -- ML: nur intern
-    * PayPal-Request-Id based on serialized body, no extra PayPal-Request-Id necessary anymore
-    * use PayPal-Client v2.0.14
-
+Wir haben die Zahlungsarten Google Pay und Apple Pay hinzugefügt.
 
 Apple Pay und Google Pay
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. todo: ML: Registrierungsprozess (Onboarding) (erneut) durchlaufen nach Update? -- ja
-.. todo: https://github.com/OXID-eSales/paypal-module/blob/v2.5.0-rc.1/src/Core/PayPalDefinitions.php
 
 Ermöglichen Sie mit Apple Pay und Google Pay Zahlungsvorgänge weltweit und in 25 Währungen.
 
@@ -35,7 +25,7 @@ Weitere Informationen zur Abdeckung finden Sie unter
 
    Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
-#. Verifizieren Sie, dass die Freischaltung für die Zahlungsart Google Pay erfolgt ist (:ref:`oxdajr05rn`, Pos. 5).
+#. Verifizieren Sie, dass die Freischaltung für die Zahlungsarten Apple Pay und Google Pay erfolgt ist (:ref:`oxdajr05rn`, Pos. 5).
 
    .. _oxdajr05rn:
 
@@ -48,7 +38,7 @@ Weitere Informationen zur Abdeckung finden Sie unter
 
    Wenn keine Freischaltung erfolgt ist, kontaktieren Sie den PayPal-Support.
 
-#. Aktivieren Sie Apple Pay.
+#. Aktivieren Sie Apple Pay mit Ihrem Sandbox-Konto.
 
    Weitere Informationen finden Sie unter :ref:`konfiguration:Apple Pay als Zahlungsart aktivieren`.
 
@@ -63,9 +53,12 @@ Weitere Informationen zur Abdeckung finden Sie unter
    * :menuselection:`Shopeinstellungen --> Zahlungsarten --> GooglePay`.
    * :menuselection:`Shopeinstellungen --> Zahlungsarten --> ApplePay`.
 
-#. Schalten Sie Google Pay nach dem Testen für den Live-Betrieb frei.
+#. Schalten Sie Apple Pay und Google Pay nach dem Testen für den Live-Betrieb frei.
 
-   Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Checkout freischalten`.
+   Weitere Informationen finden Sie unter
+
+   * Apple Pay: `Go live <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-golive>`_
+   * :ref:`konfiguration:PayPal Checkout freischalten`.
 
 Installation
 ------------

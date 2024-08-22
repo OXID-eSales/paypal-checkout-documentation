@@ -359,11 +359,11 @@ Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung?
 Apple Pay als Zahlungsart aktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die Sandbox-Domain Ihres OXID e-Shops.
+Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox-)Domain Ihres OXID e-Shops.
 
 |procedure|
 
-1. Legen Sie im Root-Verzeichnis Ihres OXID eShops ein Verzeichnis :file:`/.well-known/apple-developer-merchantid-domain-association` an.
+1. Legen Sie im Root-Verzeichnis (in dem die Datei :file:`config.inc.php` liegt) Ihres OXID eShops ein Verzeichnis :file:`/.well-known/apple-developer-merchantid-domain-association` an.
 #. Öffnen Sie folgende URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ und melden Sie sich mit Ihrem PayPal (Sandbox-)Händlerkonto an.
 #. Wählen Sie :guilabel:`Domain hinzufügen` (:ref:`oxdajr18`).
 
@@ -378,22 +378,22 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die Sandbox-
 
       Abb.: Domain hinzufügen
 
-#. Geben Sie die den Domain-Namen (die URL ohne das Schema, z.B. ``https://``) Ihres OXID e-shops ein (beispielsweise ``www.my-oxid-eshop.com``) (:ref:`oxdajr18`, Pos. 1).
+#. Geben Sie die den Domain-Namen (die URL ohne das Schema, z.B. ``https://``) Ihres OXID e-shops ein (beispielsweise ``www.my-oxid-eshop.com``) (:ref:`oxdajr19`, Pos. 1).
 
    .. _oxdajr19:
 
    .. figure:: /media/screenshots/oxdajr19.png
-      :alt: Domain-Namen eingeben
+      :alt: Domain-Namen registrieren
       :width: 300
       :class: with-shadow
 
-      Abb.: Domain-Namen eingeben
+      Abb.: Domain-Namen registrieren
 
    Das System generiert eine Domain-Zuordnungsdatei, mit der Sie nachweisen, dass Sie der Eigentümer der Webseite sind.
 
 #. Hosten Sie die Domain-Zuordnungsdatei:
 
-   a. Laden Sie die Domain-Zuordnungsdatei herunter (:ref:`oxdajr18`, Pos. 2).
+   a. Laden Sie die Domain-Zuordnungsdatei herunter (:ref:`oxdajr19`, Pos. 2).
    #. Speichern Sie sie im Verzeichnis :file:`<Root-Verzeichnis Ihres OXID eShops>/.well-known/apple-developer-merchantid-domain-association`.
 
 #. Optional: Um zu prüfen, ob die Domain-Zuordnungsdatei bereitsteht, öffnen Sie die Datei per Browser.
@@ -412,25 +412,27 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die Sandbox-
       Abb.: Domain-Zuordnungsdatei verifizieren
 
 
-#. Wählen Sie :guilabel:`Domain registrieren` (:ref:`oxdajr18`, Pos. 3).
-
-   Eine Meldung bestätigt, dass Apple Pay Ihren OXID eShop registriert hat (:ref:`oxdajr21`).
+#. Wählen Sie :guilabel:`Domain registrieren` (:ref:`oxdajr19`, Pos. 3).
+#. Bestätigen Sie die Meldung, dass Apple Pay Ihren OXID eShop registriert hat (:ref:`oxdajr21`).
 
    .. _oxdajr21:
 
    .. figure:: /media/screenshots/oxdajr21.png
       :alt: Erfolgreiche Domain-Registrierung verifizieren
-      :width: 300
+      :width: 350
       :class: with-shadow
 
       Abb.: Erfolgreiche Domain-Registrierung verifizieren
 
-#. Konfigurieren Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` die Zahlungsart :technicalname:`ApplePay`.
-#. Führen Sie eine Testzahlung aus.
+#. Konfigurieren Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` die Zahlungsart :technicalname:`Apple Pay`.
+#. Optional: Führen Sie eine Testzahlung aus.
 
-   .. todo: #ML: Apple Pay erscheint nicht als Zahlungsart trotz Zahlungsregeln, Länderzuordnung etc.
+   .. note::
+      Um Testzahlungen mit Apple Pay ausführen zu können, brauchen Sie ein Apple-Gerät.
 
-Weitere Informationen zum Registrieren Ihrer Sandbox-Domain finden Sie in der PayPal-Dokumentation unter
+      Kunden ohne Apple-Gerät wird die Zahlungsart nicht angeboten.
+
+Weitere Informationen zum Registrieren Ihrer Sandbox-Domain und zum Live-Schalten von Apple Pay finden Sie in der PayPal-Dokumentation unter
 
 * `Set up your sandbox account to accept Apple Pay <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-setupyoursandboxaccounttoacceptapplepay>`_.
 * `Go live <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-golive>`_.
@@ -868,12 +870,12 @@ Um Zahlungen mit PayPal Express zu ermöglichen, stellen Sie durch sogenannte Ps
 |background|
 
 .. todo: #ML: Background prüfen
-    Die Funktion guilabel:`Versandkosten auch dann berechnen, wenn der Kunde noch nicht eingeloggt ist`bewirkt, dass die Versandkosten in der Warenkorbvorschau angezeigt werden, das hat mit unserer Funktion offenbar nichts zu tun: siehe https://github.com/OXID-eSales/oxideshop-user-documentation/blob/b-6.5-de-OXDEV-8420/einrichtung/zahlung-und-versand/versandkosten-berechnen.rst
+    Die Funktion guilabel:`Versandkosten auch dann berechnen, wenn der Kunde noch nicht eingeloggt ist` bewirkt, dass die Versandkosten in der Warenkorbvorschau angezeigt werden, das hat mit unserer Funktion offenbar nichts zu tun: siehe https://github.com/OXID-eSales/oxideshop-user-documentation/blob/b-6.5-de-OXDEV-8420/einrichtung/zahlung-und-versand/versandkosten-berechnen.rst
     Die einzige Gemeinsamkeit scheint zu sein, dass es nicht-angemeldete Kunden betrifft.
 
-Wenn ein Kunde PayPal Express nutzt und einen Artikel in den Warenkorb legt, autorisiert er eine Zahlung in Höhe des Warenkorbwerts zuzüglich einer Toleranz von etwa 5 % für Versandkosten.
+Wenn ein Kunde PayPal Express nutzt und einen Artikel in den Warenkorb legt, autorisiert er eine Zahlung in Höhe des Warenkorbwerts zuzüglich einer Toleranz von etwa 5% für Versandkosten.
 
-Im Fall von niedrigpreisigen Artikeln kann es sein, dass der Anteil der Versandkosten mehr als 5 % des Artikelpreises beträgt.
+Im Fall von niedrigpreisigen Artikeln kann es sein, dass der Anteil der Versandkosten mehr als 5% des Artikelpreises beträgt.
 
 Beispiel: Der Artikelpreis ist 5 Euro, die Versandkosten betragen 4 Euro. Die Toleranz ist bei weitem überschritten.
 
