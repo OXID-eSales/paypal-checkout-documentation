@@ -858,7 +858,11 @@ Adjusting pseudo shipping costs for PayPal Express
 
 To enable payments with PayPal Express, use so-called pseudo shipping costs. In this way you ensure that the value of the shopping basket corresponds approximately to the value that is collected from the customer's PayPal account at checkout.
 
+The :emphasis:`actual` shipping costs are determined during the checkout process. The customer therefore does not pay the pseudo shipping costs, but the real costs.
+
 |background|
+
+The pseudo shipping costs are only used for the moment of authorisation (the customer cannot be logged in at that moment).
 
 When a customer uses PayPal Express and adds an item to the shopping basket, they authorize a payment in the amount of the basket value plus a tolerance of approximately 5% for shipping costs.
 
@@ -867,6 +871,10 @@ In the case of low-priced items, the shipping costs may amount to more than 5% o
 Example: The item price is 5 euros, the shipping costs are 4 euros. The tolerance is far exceeded.
 
 If PayPal must permanently hold financial reserves because the real shipping costs permanently deviate from the shipping costs that PayPal estimates and that PayPal Express authorizes, then it may become difficult for PayPal to continue to provide you with the PayPal Express payment method.
+
+To avoid this, bring the authorisation price as close as possible to the final price.
+
+Exception: If the customer is already registered, the system will use the real shipping costs for the authorisation from the outset.
 
 |procedure|
 
