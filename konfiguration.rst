@@ -863,11 +863,11 @@ Pseudoversandkosten für PayPal Express anpassen
 
 Um Zahlungen mit PayPal Express zu ermöglichen, stellen Sie durch sogenannte Pseudoversandkosten sicher, dass der Wert des Warenkorbs ungefähr dem Wert entspricht, der beim Checkout vom PayPal-Konto des Kunden eingezogen wird.
 
+Die :emphasis:`tatsächlichen` Versandkosten werden im Laufe des Checkouts ermittelt. Der Kunde zahlt also nicht die Pseudoversandkosten, sondern die realen Kosten.
+
 |background|
 
-.. todo: #ML: Background prüfen
-    Die Funktion guilabel:`Versandkosten auch dann berechnen, wenn der Kunde noch nicht eingeloggt ist` bewirkt, dass die Versandkosten in der Warenkorbvorschau angezeigt werden, das hat mit unserer Funktion offenbar nichts zu tun: siehe https://github.com/OXID-eSales/oxideshop-user-documentation/blob/b-6.5-de-OXDEV-8420/einrichtung/zahlung-und-versand/versandkosten-berechnen.rst
-    Die einzige Gemeinsamkeit scheint zu sein, dass es nicht-angemeldete Kunden betrifft.
+Die Pseudoversandkosten werden nur für den Moment der Autorisierung gebraucht (in dem Moment kann der Kunde nicht eingeloggt sein).
 
 Wenn ein Kunde PayPal Express nutzt und einen Artikel in den Warenkorb legt, autorisiert er eine Zahlung in Höhe des Warenkorbwerts zuzüglich einer Toleranz von etwa 5% für Versandkosten.
 
@@ -877,6 +877,15 @@ Beispiel: Der Artikelpreis ist 5 Euro, die Versandkosten betragen 4 Euro. Die To
 
 Wenn PayPal dauerhaft finanzielle Reserven vorhalten muss, weil die realen Versandkosten dauerhaft von den Versandkosten abweichen, die PayPal schätzt und die PayPal Express autorisiert, dann kann es für PayPal schwierig werden, Ihnen weiterhin die Zahlungsart PayPal Express bereitzustellen.
 
+Um das zu vermeiden, bringen Sie den Autorisierungspreis so nah wie möglich an den Endpreis.
+
+Ausnahme: Wenn der Kunde bereits angemeldet ist, dann nimmt das System für die Autorisierung von vornherein die echten Pseudoversandkosten.
+
+.. todo: #ML: Background prüfen
+   2) Hat der Merchant die Option gewählt "Versandkosten auch dann berechnen, wenn der Kunde nicht eingeloggt ist", dann werden diese Versandkosten genutzt, statt der Pseudo ...
+   Die Funktion guilabel:`Versandkosten auch dann berechnen, wenn der Kunde noch nicht eingeloggt ist` bewirkt, dass die Versandkosten in der Warenkorbvorschau angezeigt werden, das hat mit unserer Funktion offenbar nichts zu tun: siehe https://github.com/OXID-eSales/oxideshop-user-documentation/blob/b-6.5-de-OXDEV-8420/einrichtung/zahlung-und-versand/versandkosten-berechnen.rst
+   Die einzige Gemeinsamkeit scheint zu sein, dass es nicht-angemeldete Kunden betrifft.
+
 |procedure|
 
 Passen Sie unter :guilabel:`Pseudoversandkosten für PayPal Express` den Standardwert von 3.50 Euro an.
@@ -884,7 +893,6 @@ Passen Sie unter :guilabel:`Pseudoversandkosten für PayPal Express` den Standar
 Wählen Sie für die Standardversandkosten einen Wert, der den Versandkosten der typischen Käufe in Ihrem OXID eShop entspricht.
 
 Ideal ist ein Wert, der mehr als 90% der Käufe abdeckt.
-
 
 
 
