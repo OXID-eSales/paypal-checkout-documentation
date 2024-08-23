@@ -363,8 +363,7 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
 
 |procedure|
 
-1. Legen Sie im Root-Verzeichnis (in dem die Datei :file:`config.inc.php` liegt) Ihres OXID eShops ein Verzeichnis :file:`/.well-known/apple-developer-merchantid-domain-association` an.
-#. Öffnen Sie folgende URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ und melden Sie sich mit Ihrem PayPal (Sandbox-)Händlerkonto an.
+1. Öffnen Sie folgende URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ und melden Sie sich mit Ihrem PayPal (Sandbox-)Händlerkonto an.
 #. Wählen Sie :guilabel:`Domain hinzufügen` (:ref:`oxdajr18`).
 
    Sie gelangen auf eine  Seite zum Registrieren Ihrer Website bei Apple Pay.
@@ -391,10 +390,7 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
 
    Das System generiert eine Domain-Zuordnungsdatei, mit der Sie nachweisen, dass Sie der Eigentümer der Webseite sind.
 
-#. Hosten Sie die Domain-Zuordnungsdatei:
-
-   a. Laden Sie die Domain-Zuordnungsdatei herunter (:ref:`oxdajr19`, Pos. 2).
-   #. Speichern Sie sie im Verzeichnis :file:`<Root-Verzeichnis Ihres OXID eShops>/.well-known/apple-developer-merchantid-domain-association`.
+   Sie wird automatisch im Root-Verzeichnis Ihres OXID eShops gespeichert. Das :emphasis:`manuelle` Herunterladen und Hosten der Datei (:ref:`oxdajr19`, Pos. 2) ist also im Normalfall :emphasis:`nicht` nötig.
 
 #. Optional: Um zu prüfen, ob die Domain-Zuordnungsdatei bereitsteht, öffnen Sie die Datei per Browser.
 
@@ -425,7 +421,7 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
       Abb.: Erfolgreiche Domain-Registrierung verifizieren
 
 #. Konfigurieren Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` die Zahlungsart :technicalname:`Apple Pay`.
-#. Optional: Führen Sie eine Testzahlung aus.
+#. Optional: Führen Sie mit einem Apple-Gerät eine Testzahlung aus.
 
    .. note::
       Um Testzahlungen mit Apple Pay ausführen zu können, brauchen Sie ein Apple-Gerät.
