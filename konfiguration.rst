@@ -879,7 +879,7 @@ Wenn PayPal dauerhaft finanzielle Reserven vorhalten muss, weil die realen Versa
 
 Um das zu vermeiden, bringen Sie den Autorisierungspreis so nah wie möglich an den Endpreis.
 
-Ausnahme: Wenn der Kunde bereits angemeldet ist, dann nimmt das System für die Autorisierung von vornherein die echten Pseudoversandkosten.
+Ausnahme: Wenn der Kunde bereits angemeldet ist, dann nimmt das System für die Autorisierung von vornherein die echten Versandkosten.
 
 .. todo: #ML: Background prüfen
    2) Hat der Merchant die Option gewählt "Versandkosten auch dann berechnen, wenn der Kunde nicht eingeloggt ist", dann werden diese Versandkosten genutzt, statt der Pseudo ...
