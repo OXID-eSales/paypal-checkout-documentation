@@ -358,8 +358,7 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 
 |procedure|
 
-1. In the root directory of your OXID eShop (in which the :file:`config.inc.php` file is located), create a :file:`/.well-known/apple-developer-merchantid-domain-association` directory.
-#. Open the following URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ and log in with your PayPal (sandbox) merchant account.
+1. Open the following URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ and log in with your PayPal (sandbox) merchant account.
 #. Choose :guilabel:`Add Domain` (:ref:`oxdajr18`).
 
    You go to a page to register your website with Apple Pay.
@@ -386,10 +385,7 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 
    The system generates a domain association file which you use to proves that you are the owner of the website.
 
-#. Host the domain association file:
-
-   a. Download the domain association file (:ref:`oxdajr19`, item 2).
-   #. Save it in the directory :file:`<Root directory of your OXID eShop>/.well-known/apple-developer-merchantid-domain-association`.
+   It is automatically saved in the root directory of your OXID eShop. The :emphasis:`manual` download and hosting of the file (:ref:`oxdajr19`, item 2) is therefore normally :emphasis:`not` necessary.
 
 #. Optional: To check whether the domain association file is available, open the file via browser.
 
@@ -419,7 +415,7 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
       Fig.: Confirming the domain registration
 
 #. Under :menuselection:`Shop settings --> Payment methods`, configure the :technicalname:`Apple Pay` payment method.
-#. Optional: Carry out a test payment.
+#. Optional: Carry out a test payment with an Apple device.
 
    .. note::
       To make test payments with Apple Pay, you need an Apple device.
