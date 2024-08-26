@@ -862,7 +862,7 @@ The :emphasis:`actual` shipping costs are determined during the checkout process
 
 |background|
 
-The pseudo shipping costs are only used for the moment of authorisation (the customer cannot be logged in at that moment).
+The pseudo shipping costs are only used for the moment of authorization (the customer cannot be logged in at that moment).
 
 When a customer uses PayPal Express and adds an item to the shopping basket, they authorize a payment in the amount of the basket value plus a tolerance of approximately 5% for shipping costs.
 
@@ -872,9 +872,16 @@ Example: The item price is 5 euros, the shipping costs are 4 euros. The toleranc
 
 If PayPal must permanently hold financial reserves because the real shipping costs permanently deviate from the shipping costs that PayPal estimates and that PayPal Express authorizes, then it may become difficult for PayPal to continue to provide you with the PayPal Express payment method.
 
-To avoid this, bring the authorisation price as close as possible to the final price.
+To avoid this, bring the authorization price as close as possible to the final price.
 
-Exception: If the customer is already registered, the system will use the real shipping costs for the authorisation from the outset.
+Exceptions:
+
+* If the customer is already logged in, the system uses the real shipping costs for authorization from the outset.
+* If you have activated the :guilabel:`Calculate default Shipping costs when ser is not logged in yet` (in your  OXID eShop under :menuselection:`Master Settings --> Core Settings --> Settings --> Other Settings` ), the shipping costs will be displayed accordingly and not the PayPal pseudo shipping costs.
+
+  If you have :emphasis:`not` activated the function (default setting), the PayPal pseudo shipping costs are displayed.
+
+  For more information, in the OXID eShop user documentation under :menuselection:`Setup --> Payment and shipping`, see `Display shipping costs in the shopping basket overview <https://docs.oxid-esales.com/eshop/en/latest/setup/payment-and-shipping/displaying-shipping-costs.html>`_.
 
 |procedure|
 
