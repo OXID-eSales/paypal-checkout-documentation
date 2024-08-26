@@ -1,10 +1,10 @@
 Troubleshooting
 ===============
 
-"Kreditkarte" und "Rechnungskauf" nicht verfügbar
--------------------------------------------------
+Zahlungsarten oder Funktionen nicht verfügbar
+---------------------------------------------
 
-Es kann sein, dass die Zahlungsarten "Kreditkarte" und "Rechnungskauf" oder eine bestimmte Funktion nicht wie beschrieben zur Verfügung stehen.
+Es kann sein, dass Zahlungsarten wie Google Pay, Kreditkarte und Rechnungskauf oder eine bestimmte Funktion nicht wie beschrieben zur Verfügung stehen.
 
 Das ist der Fall, wenn Sie zum Generieren eines Webhooks bei PayPal die API-Anmeldeinformationen (beispielsweise aus einer existierenden Version von PayPal Checkout) :emphasis:`manuell` eingegeben haben, statt den Registrierungs-Prozess mit der Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` zu starten und neu zu durchlaufen.
 

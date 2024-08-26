@@ -35,7 +35,7 @@ PayPal-Registrierung für PayPal Checkout neu durchlaufen
    * Die Webhooks sind nicht korrekt aktiviert, Informationen werden nicht korrekt übermittelt, ohne dass jedoch die Fehler sofort erkennbar sind.
    * Zahlungsarten wie Ratenkauf stehen nicht zur Verfügung, die Zahlung mit Kreditkarte wird nicht freigeschaltet, Funktionen stehen nicht zur Verfügung.
 
-   Um eine korrekte Funktionsweise und die Aktivierung aller Features zu gewährleisten, durchlaufen Sie den Registrierungs-Prozess erneut.
+   Um eine korrekte Funktionsweise und die Aktivierung aller Features und Zahlungsarten zu gewährleisten, durchlaufen Sie den Registrierungs-Prozess erneut.
 
    Nur so generieren Sie neue Zugangsdaten und Webhook, mit denen die Anbindung von :productname:`PayPal Checkout` in vollem Umfang funktioniert.
 
