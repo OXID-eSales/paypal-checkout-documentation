@@ -21,6 +21,15 @@ Um sicherzustellen, dass alle Zahlungsarten und Funktionen verfügbar sind, tun 
 
 Weitere Informationen finden Sie im Kapitel :ref:`konfiguration:Konfiguration` unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
+Google Pay funktioniert nicht
+-----------------------------
+
+|procedure|
+
+* Prüfen Sie, ob Google Pay aktiv ist.
+
+  Weitere Informationen finden Sie unter :ref:`paypal-sandbox:Google Pay- and Apple Pay-Aktivierung prüfen`.
+
 Debug-Modus einschalten
 -----------------------
 
@@ -41,3 +50,4 @@ Damit zeichnen Sie die an den OXID eShop gesendeten Webhook Calls von PayPal in 
 
 #. Stellen Sie dem Support die Datei :file:`/source/source/log/oxideshop.log` zur Verfügung.
 #. Sobald das Problem gelöst ist, ändern Sie den Wert des Parameters :technicalname:`sLogLevel` wieder zum Standardwert :technicalname:`error`.
+

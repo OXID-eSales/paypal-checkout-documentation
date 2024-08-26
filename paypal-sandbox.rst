@@ -4,6 +4,8 @@ PayPal Checkout in der PayPal-Sandbox testen
 
 Um :productname:`PayPal Checkout` in der PayPal-Sandbox zu testen, legen Sie Sandbox-Konten an.
 
+Der Live-Betrieb funktioniert analog.
+
 Wenn Sie :productname:`PayPal Checkout` in einem lokalen System ohne SSL testen, richten Sie dafür temporär SSL ein.
 
 
@@ -91,6 +93,42 @@ Erst wenn alles klappt, wiederholen Sie den Onboarding-Prozess im Live-System mi
    :alt: Business-Sandbox-Konto anzeigen
 
    Abb.: Business-Sandbox-Konto anzeigen
+
+Google Pay- and Apple Pay-Aktivierung prüfen
+--------------------------------------------
+
+Apple Pay ist automatisch aktiviert, sobald Sie Ihre Domain bei Apple Pay registrieren (see :ref:`konfiguration:Apple Pay als Zahlungsart aktivieren`).
+
+Google Pay ist standardmäßig aktiv.
+
+In manchen Fällen kann es jedoch nötig sein, zu prüfen, ob Apple Pay und Google Pay aktiviert sind oder Google Pay manuell zu aktivieren.
+
+|procedure|
+
+1. Wählen Sie `sandbox.paypal.com <https://sandbox.paypal.com>`_. und melden Sie sich mit dem Händlerkonto an.
+#. Wählen Sie :guilabel:`Kontoeinstellungen`.
+
+   .. _oxdaju08:
+
+   .. figure:: /media/screenshots/oxdaju08.png
+      :alt: Kontoeinstellungen öffnen
+      :width: 250
+      :class: with-shadow
+
+      Abb.: Kontoeinstellungen öffnen
+
+#. Wählen Sie :guilabel:`Zahlungsquellen`.
+
+   Der Aktivierungsstatus wird angezeigt.
+
+   .. _oxdaju09:
+
+   .. figure:: /media/screenshots/oxdaju09.png
+      :alt: Aktivierungsstatus prüfen
+      :width: 650
+      :class: with-shadow
+
+      Abb.: Aktivierungsstatus prüfen
 
 Temporäres SSL einrichten
 -------------------------

@@ -174,7 +174,10 @@ Starten Sie das Konfigurieren.
 
 |prerequisites|
 
-Sie haben das Modul :productname:`PayPal Checkout` aktiviert.
+* Sie haben das Modul :productname:`PayPal Checkout` aktiviert.
+* Sie haben ein PayPal Sandbox-Konto angelegt.
+
+  Weitere Informationen finden Sie unter :ref:`paypal-sandbox:PayPal Checkout in der PayPal-Sandbox testen`.
 
 |procedure|
 
@@ -236,6 +239,8 @@ Erst wenn alles nach Ihren Vorstellungen funktioniert, nutzen Sie die Zugangsdat
   * eine Kreditkarte
 
     Wenn Sie im Sandbox-Modus Zahlungen mit Ihrer Kreditkarte ausführen, wird Ihre Kreditkarte :emphasis:`nicht` belastet. Google ersetzt Ihre echte Kreditkarten-Nummer durch eine Muster-Kreditkarten-Nummer.
+
+  Prüfen Sie bei Bedarf, ob Google Pay aktiv ist. Weitere Informationen finden Sie unter :ref:`paypal-sandbox:Google Pay- and Apple Pay-Aktivierung prüfen`.
 
 |procedure|
 
@@ -366,8 +371,6 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
 1. Öffnen Sie folgende URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ und melden Sie sich mit Ihrem PayPal (Sandbox-)Händlerkonto an.
 #. Wählen Sie :guilabel:`Domain hinzufügen` (:ref:`oxdajr18`).
 
-   Sie gelangen auf eine  Seite zum Registrieren Ihrer Website bei Apple Pay.
-
    .. _oxdajr18:
 
    .. figure:: /media/screenshots/oxdajr18.png
@@ -376,6 +379,8 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
       :class: with-shadow
 
       Abb.: Domain hinzufügen
+
+   Sie gelangen auf eine  Seite zum Registrieren Ihrer Website bei Apple Pay (:ref:`oxdajr19`).
 
 #. Geben Sie die den Domain-Namen (die URL ohne das Schema, z.B. ``https://``) Ihres OXID e-shops ein (beispielsweise ``www.my-oxid-eshop.com``) (:ref:`oxdajr19`, Pos. 1).
 
@@ -895,8 +900,6 @@ Passen Sie unter :guilabel:`Pseudoversandkosten für PayPal Express` den Standar
 Wählen Sie für die Standardversandkosten einen Wert, der den Versandkosten der typischen Käufe in Ihrem OXID eShop entspricht.
 
 Ideal ist ein Wert, der mehr als 90% der Käufe abdeckt.
-
-
 
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
