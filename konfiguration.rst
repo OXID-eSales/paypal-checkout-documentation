@@ -882,13 +882,11 @@ Um das zu vermeiden, bringen Sie den Autorisierungspreis so nah wie möglich an 
 Ausnahmen:
 
 * Wenn der Kunde bereits angemeldet ist, dann nimmt das System für die Autorisierung von vornherein die echten Versandkosten.
-* Wenn Sie Unter :menuselection:`Stammdaten --> Grundeinstellungen --> Einstell. --> Weitere Einstellungen` das Kontrollkästchen :guilabel:`Versandkosten auch dann berechnen, wenn der Kunde noch nicht eingeloggt ist` aktiviert haben, werden die Versandkosten entsprechend angezeigt und nicht die PayPal-Pseudo-Versandkosten.
+* Wenn Sie in Ihrem OXID eShop unter :menuselection:`Stammdaten --> Grundeinstellungen --> Einstell. --> Weitere Einstellungen` das Kontrollkästchen :guilabel:`Versandkosten auch dann berechnen, wenn der Kunde noch nicht eingeloggt ist` aktiviert haben, werden die Versandkosten entsprechend angezeigt und nicht die PayPal-Pseudo-Versandkosten.
 
   Wenn Sie die Funktion :emphasis:`nicht` aktiviert haben (Standardeinstellung), werden die PayPal-Pseudo-Versandkosten angezeigt.
 
   Weitere Informationen finden Sie in der OXID eShop-Anwenderdokumentation unter :menuselection:`Einrichtung --> Zahlung und Versand` im Kapitel `Versandkosten in der Warenkorbübersicht anzeigen <https://docs.oxid-esales.com/eshop/de/7.1/einrichtung/zahlung-und-versand/versandkosten-anzeigen.html>`_.
-
-.. todo: EN: :menuselection:`Setup --> Payment and shipping` im Kapitel `Displaying shipping costs in the shopping cart overview <https://docs.oxid-esales.com/eshop/en/latest/setup/payment-and-shipping/displaying-shipping-costs.html>`_
 
 |procedure|
 
