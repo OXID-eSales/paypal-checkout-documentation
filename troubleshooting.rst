@@ -1,10 +1,10 @@
 Troubleshooting
 ===============
 
-"Credit card" and "Purchase upon invoice" not available
--------------------------------------------------------
+Payment methods or functions not available
+------------------------------------------
 
-It is possible that the payment methods "Credit card" and "Purchase on account" or a certain function are not available as described.
+It is possible that the payment methods Google Pay, Credit card, and Purchase on account or a certain function are not available as described.
 
 This is the case if you have entered the API credentials (for example from an existing version of PayPal Checkout) :emphasis:`manually` to generate a webhook at PayPal instead of starting the registration process with the :guilabel:`Sign Up Merchant Integration` button and going through it again.
 
@@ -13,13 +13,13 @@ This is the case if you have entered the API credentials (for example from an ex
 To ensure that all payment types and functions are available, do the following (using a Sandbox account as an example):
 
 1. Choose :menuselection:`PayPal --> Configuration`.
-#. Under :guilabel:`API credentials`, delete all credentials and select :guilabel:`Save`.
+#. Under :guilabel:`API credentials`, delete all credentials and choose :guilabel:`Save`.
    |br|
    The :guilabel:`Sign Up Merchant Integration (Sandbox)` button appears.
 #. Choose the :guilabel:`Sign Up Merchant Integration (sandbox)`.
 #. To regenerate access data and webhook, go through the registration process (onboarding) with the e-mail address of the sandbox merchant account.
 
-For more information, see :ref:`configuration:configuration` in chapter :ref:`configuration:API credentials: Onboarding`.
+For more information, in chapter :ref:`configuration:configuration`, see :ref:`configuration:API credentials: Onboarding`.
 
 Google Pay does not work
 ------------------------

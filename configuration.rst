@@ -34,7 +34,7 @@ Re-running the registration for PayPal Checkout
    * The webhooks are not activated correctly, information is not transmitted correctly, but the errors are not immediately recognizable.
    * Payment methods such as installment purchase are not available, payment by credit card is not activated, functions are not available.
 
-   To ensure correct functioning and activation of all features, go through the registration process again.
+   To ensure correct functioning and activation of all features and payment methods, go through the registration process again.
 
    This is the only way to generate new access data and webhook, with which the connection to :productname:`PayPal Checkout` works to its full extent.
 
