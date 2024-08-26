@@ -235,6 +235,8 @@ Only when everything works as you want, use the credentials for *live* operation
 
   If you make payments with your credit card in sandbox mode, your credit card will :emphasis:`not` be charged. Google will replace your real credit card number with a sample credit card number.
 
+  If necessary, check whether Google Pay is active. For more information, see :ref:`paypal-sandbox:Checking Google Pay and Apple Pay activation`.
+
 |procedure|
 
 We describe the registration process (onboarding) using a sandbox account as an example. The live process is analogous.
@@ -361,8 +363,6 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 1. Open the following URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ and log in with your PayPal (sandbox) merchant account.
 #. Choose :guilabel:`Add Domain` (:ref:`oxdajr18`).
 
-   You go to a page to register your website with Apple Pay.
-
    .. _oxdajr18:
 
    .. figure:: /media/screenshots/oxdajr18.png
@@ -371,6 +371,8 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
       :class: with-shadow
 
       Fig.: Adding a domain
+
+   You go to a page to register your website with Apple Pay (:ref:`oxdajr19`).
 
 #. Specify the domain name (the URL without the schema, e.g. ``https://``) of your OXID e-shop (``www.my-oxid-eshop.com``, for example) (:ref:`oxdajr19`, item 1).
 

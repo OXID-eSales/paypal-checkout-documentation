@@ -4,8 +4,9 @@ Testing PayPal Checkout in the PayPal Sandbox
 
 To test :productname:`PayPal Checkout` in the PayPal sandbox, create sandbox accounts.
 
-If you are testing :productname:`PayPal Checkout` in a local system without SSL, temporarily set up SSL for it.
+Live operation is analogue.
 
+If you are testing :productname:`PayPal Checkout` in a local system without SSL, temporarily set up SSL for it.
 
 Generating PayPal sandbox accounts
 ----------------------------------
@@ -92,6 +93,42 @@ Only if everything works, repeat the onboarding process in the live system with 
    :alt: Displaying the business sandbox account
 
    Figure: Displaying the business sandbox account
+
+Checking Google Pay and Apple Pay activation
+--------------------------------------------
+
+Apple Pay is automatically activated as soon as you register your domain with Apple Pay (see :ref:`configuration:Activate Apple Pay as payment method`).
+
+Google Pay is active by default.
+
+In some cases, however, it may be necessary to check whether Apple Pay and Google Pay are activated or to activate Google Pay manually.
+
+|procedure|
+
+1. Choose `sandbox.paypal.com <https://sandbox.paypal.com>`_. and log in with the merchant account.
+#. Choose :guilabel:`Account Settings`.
+
+   .. _oxdaju08:
+
+   .. figure:: /media/screenshots/oxdaju08.png
+      :alt: Open account settings
+      :width: 250
+      :class: with-shadow
+
+      Fig.: Open account settings
+
+#. Choose :guilabel:`Payment methods`.
+
+   The activation status is displayed.
+
+   .. _oxdaju09:
+
+   .. figure:: /media/screenshots/oxdaju09.png
+      :alt: Checking the activation status
+      :width: 650
+      :class: with-shadow
+
+      Fig: Checking the activation status
 
 
 Setting up temporary SSL

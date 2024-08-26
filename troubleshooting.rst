@@ -21,6 +21,15 @@ To ensure that all payment types and functions are available, do the following (
 
 For more information, see :ref:`configuration:configuration` in chapter :ref:`configuration:API credentials: Onboarding`.
 
+Google Pay does not work
+------------------------
+
+|procedure|
+
+* Check whether Google Pay is active.
+
+  For more information, see :ref:`paypal-sandbox:Checking Google Pay and Apple Pay activation`.
+
 Switching on the debug mode
 ---------------------------
 
