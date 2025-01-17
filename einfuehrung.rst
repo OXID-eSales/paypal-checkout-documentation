@@ -39,7 +39,6 @@ Weltweit	        PayPal Express
 Weltweit            Kreditkarte
 Belgien	            Bancontact
 Belgien	            Sofort (Klarna Pay now)
-Deutschland	        GiroPay
 Deutschland	        PayPal - Später bezahlen
 Deutschland	        Rechnungskauf
 Deutschland	        Sofort (Klarna Pay now)
@@ -72,7 +71,6 @@ Zahlungsmethoden           Märkte
 Bancontact	               Belgien
 BLIK	                   Polen
 eps	                       Österreich
-GiroPay	                   Deutschland
 iDEAL 	                   Niederlande
 Kreditkarte                Weltweit
 MyBank	                   Italien
@@ -110,7 +108,6 @@ Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY
 Bancontact                      EUR
 BLIK                            PLN
 EPS                             EUR
-GiroPay                         EUR
 Ideal                           EUR
 MyBank                          EUR
 Przelewy24                      EUR, PLN
