@@ -153,7 +153,6 @@ Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktivie
 1. Wählen Sie :menuselection:`Erweiterungen --> Module`. 
 2. Wählen Sie das Modul :guilabel:`PayPal Checkout für OXID` und wählen Sie :menuselection:`Stamm --> Aktivieren`.
 
-
 |result|
 
 * Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
