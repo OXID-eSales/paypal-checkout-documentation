@@ -42,7 +42,6 @@ Austria           eps
 Austria           PayPal - Pay Later
 Belgium           Bancontact
 France            PayPal - Pay Later
-Germany           GiroPay
 Germany           PayPal - Pay Later
 Germany           Pay upon Invoice
 Germany           SEPA Direct Debit
@@ -68,7 +67,6 @@ Bancontact                      Belgium
 BLIK                            Poland
 Credit card                     Worldwide
 eps                             Austria
-GiroPay                         Germany
 iDEAL                           Netherlands
 PayPal                          Worldwide
 PayPal Express                  Worldwide
@@ -98,7 +96,6 @@ Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY
 Bancontact                      EUR
 BLIK                            PLN
 EPS                             EUR
-GiroPay                         EUR
 Ideal                           EUR
 Przelewy24                      EUR, PLN
 =============================== ===============
