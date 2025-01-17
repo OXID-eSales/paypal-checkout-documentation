@@ -44,7 +44,6 @@ Austria           Sofort (Klarna Pay now)
 Belgium           Bancontact
 Belgium           Sofort (Klarna Pay now)
 France            PayPal - Pay Later
-Germany           GiroPay
 Germany           PayPal - Pay Later
 Germany           Pay upon Invoice
 Germany           SEPA Direct Debit
@@ -76,7 +75,6 @@ Bancontact                      Belgium
 BLIK                            Poland
 Creditcard                      Worldwide
 eps                             Austria
-GiroPay                         Germany
 iDEAL                           Netherlands
 MyBank                          Italy
 PayPal                          Worldwide
@@ -114,7 +112,6 @@ Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY
 Bancontact                      EUR
 BLIK                            PLN
 EPS                             EUR
-GiroPay                         EUR
 Ideal                           EUR
 MyBank                          EUR
 Przelewy24                      EUR, PLN
