@@ -40,7 +40,7 @@ Weltweit            Kreditkarte
 Weltweit	        PayPal
 Weltweit	        PayPal Express
 Belgien	            Bancontact
-Deutschland	        GiroPay
+Belgien	            Sofort (Klarna Pay now)
 Deutschland	        PayPal - Später bezahlen
 Deutschland	        Rechnungskauf
 Deutschland         SEPA Lastschrift
@@ -68,7 +68,6 @@ Apple Pay                  Weltweit
 Bancontact                 Belgien
 BLIK                       Polen
 eps                        Österreich
-GiroPay                    Deutschland
 Google Pay                 Weltweit
 iDEAL                      Niederlande
 Kreditkarte                Weltweit
@@ -97,8 +96,6 @@ Apple Pay                       AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS
 Bancontact                      EUR
 BLIK                            PLN
 EPS                             EUR
-GiroPay                         EUR
-Google Pay                      AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
 Ideal                           EUR
 Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY, NOK, NZD, PLN, SEK, SGD, USD
 PayPal                          AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
