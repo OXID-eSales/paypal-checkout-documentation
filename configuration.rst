@@ -86,7 +86,7 @@ We recommend the following procedure.
       After deleting the database, you will still be able to view and administer the old orders in your PayPal merchant account.
 
 
-#. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout`.
+#. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout manually`.
 #. Select :menuselection:`Shop Settings --> Payment Methods`.
 #. Identify the payment methods corresponding to :productname:`PayPal` or :productname:`PayPal Plus`:
 
@@ -137,8 +137,8 @@ Basic procedure
    b. Switch to :guilabel:`Live` operation mode.
 
 
-Activating PayPal Checkout
---------------------------
+Activating PayPal Checkout manually
+-----------------------------------
 
 Ensure :productname:`PayPal Checkout` is activated in each subshop where you want to use the module.
 
@@ -223,50 +223,49 @@ We describe the process using a sandbox account as an example. The live process 
 
 .. include:: /_static/reuse/note-ee-onboarding.rst
 
-1. To log in to the sandbox, under :guilabel:`API credentials` choose the :guilabel:`Start Merchant Integration (Sandbox) in a new window` button.
-#. Select :guilabel:`Sign Up Merchant Integration (Sandbox)`.
-#. Go through the registration process with the sandbox merchant account email address.
+1. To log in to the sandbox, under :guilabel:`API credentials`, choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button (:ref:`oxdajr03`, item 1).
 
-   a. Log in with your (sandbox) merchant account (:ref:`oxdajr01`), and confirm the prompts.
+   .. _oxdajr03:
 
-      .. _oxdajr01:
+   .. figure:: /media/screenshots/oxdajr03.png
+      :alt: Starting the webhook generation
+      :width: 650
+      :class: with-shadow
 
-      .. figure:: /media/screenshots/oxdajr01.png
-         :alt: Starting the registration of the sandbox merchant account
+      Fig.: Starting the webhook generation
 
-         Figure: Starting the registration of the sandbox merchant account
+#. Log in with the e-mail address of the sandbox merchant account (:ref:`oxdajr01`) and confirm the queries.
 
-   #. Finally, choose :guilabel:`Back to John Doe`s Test Store` (:ref:`oxdajr03`).
+    .. _oxdajr01:
 
-      .. _oxdajr03:
+    .. figure:: /media/screenshots/oxdajr01.png
+       :alt: Starting the registration of the sandbox merchant account
 
-      .. figure:: /media/screenshots/oxdajr03.png
-         :alt: Completing the registration of the merchant account
+       Fig.: Starting the registration of the sandbox merchant account
 
-         Figure: Completing the registration of the merchant account
+    A message indicates success (:ref:`oxdajr04`).
 
-      A message indicates success (:ref:`oxdajr04`).
+    .. _oxdajr04:
 
-      .. _oxdajr04:
+    .. figure:: /media/screenshots/oxdajr04.png
+       :alt: Message onboarding successful
+       :width: 650
+       :class: with-shadow
 
-      .. figure:: /media/screenshots/oxdajr04.png
-         :alt: Message onboarding successful
+       Fig.: Message onboarding successful
 
-         Figure: Message onboarding successful
+    You go back to your OXID eShop.
 
-#. Switch back to your OXID eShop.
+    The webhook is created.
 
-   The webhook is created.
+    The client ID and the webhook ID are displayed (:ref:`oxdajr05`).
 
-   The client ID and the webhook ID are displayed (:ref:`oxdajr05`).
+    .. _oxdajr05:
 
-   .. _oxdajr05:
+    .. figure:: /media/screenshots/oxdajr05.png
+       :alt: Webhook created
 
-   .. figure:: /media/screenshots/oxdajr05.png
-      :alt: Webhook created
-
-      Figure: Webhook created
-
+       Fig.: Webhook created
 
 #. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`) check whether the activation has been done.
    |br|
@@ -307,7 +306,7 @@ Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :gu
    .. figure:: /media/screenshots/oxdajr07.png
       :alt: Payment method PayPal active
 
-      Figure: Payment method PayPal active
+      Fig.: Payment method PayPal active
 
 .. hint::
 
@@ -508,7 +507,7 @@ However, in certain cases it makes sense that the payment is only triggered by t
    :width: 450
    :class: with-shadow
 
-   Figure: Configuring delayed payment
+   Fig.: Configuring delayed payment
 
 
 Configuring 3D Secure for debit and credit cards
@@ -541,7 +540,7 @@ You have the following options:
 .. figure:: /media/screenshots/oxdajr11.png
    :alt: Configuring 3D Secure authentication
 
-   Figure: Configuring 3D Secure authentication
+   Fig.: Configuring 3D Secure authentication
 
 
 
@@ -581,7 +580,7 @@ If you want to take advantage of advertising PayPal installments, specify where 
 .. figure:: /media/screenshots/oxdajr08.png
    :alt: Example: Installment payment banner on a category page
 
-   Figure: Example: installment banner on a category page
+   Fig.: Example: installment banner on a category page
 
 .. attention::
 
