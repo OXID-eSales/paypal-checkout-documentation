@@ -50,7 +50,7 @@ Installieren Sie das Zahlungsmodul :productname:`PayPal Checkout` für den OXID 
 
 #. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
    |br|
-   Alternativ: Aktivieren Sie das Modul im Zuge der Konfiguration manuell (siehe :ref:`konfiguration:PayPal Checkout aktivieren`).
+   Alternativ: Aktivieren Sie das Modul im Zuge der Konfiguration manuell (siehe :ref:`konfiguration:PayPal Checkout manuell aktivieren`).
 
    .. code:: bash
 
@@ -64,9 +64,11 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 .. _oxdajq01:
 
 .. figure:: /media/screenshots/oxdajq01.png
-   :alt: PayPal Checkout für OXID erfolgreich installiert
+   :alt: PayPal Checkout für OXID installiert und aktiviert
+   :width: 650
+   :class: with-shadow
 
-   Abb.: PayPal Checkout für OXID erfolgreich installiert
+   Abb.: PayPal Checkout für OXID installiert und aktiviert
 
 
 
