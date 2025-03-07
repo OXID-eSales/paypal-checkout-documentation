@@ -276,11 +276,7 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
        Abb.: Webhook erzeugt
 
-#. Wenn Sie die Zahlungsmethoden Rechnungskauf oder Kreditkarte nutzen wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`), ob die Freischaltung erfolgt ist.
-   |br|
-   Wenn die Freischaltung nicht automatisch erfolgt ist, wenden Sie sich an Ihren Ansprechpartner bei PayPal.
-
-   .. _freischaltung-kreditkarte:
+    .. _freischaltung-kreditkarte:
 
 #. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 3), ob die Freischaltung erfolgt ist.
 
