@@ -143,8 +143,8 @@ Grundsätzliches Vorgehen
 
    Weitere Informationen finden Sie unter :ref:`cmp-integration:Consent Management-Plattformen integrieren`.
 
-PayPal Checkout aktivieren
---------------------------
+PayPal Checkout manuell aktivieren
+----------------------------------
 
 Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktiviert ist, in dem Sie das Modul nutzen wollen.
 
@@ -254,53 +254,55 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
    * Fall 3: Sie haben die Registrierung für die aktuelle Version von :productname:`PayPal Checkout` bereits durchlaufen und ziehen Ihren OXID eShop beispielsweise in eine andere Domäne um? -- In diesem Fall können Sie Zugangsdaten und Webhook wiederverwenden.
 
+1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` (:ref:`oxdajr03`, Pos.1).
 
-1. Wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` (:ref:`oxdajr05`, Pos. 2).
-#. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
+   .. _oxdajr03:
 
-   a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
-
-      .. todo: #tbd: screenshot EN
-
-      .. _oxdajr01:
-
-      .. figure:: /media/screenshots/oxdajr01.png
-         :alt: Registrierung des Sandbox-Händler-Kontos starten
-
-         Abb.: Registrierung des Sandbox-Händler-Kontos starten
-
-   #. Wählen Sie zum Abschluss :guilabel:`Zurück zu John Doe`s Test Store` (:ref:`oxdajr03`).
-
-      .. _oxdajr03:
-
-      .. figure:: /media/screenshots/oxdajr03.png
-         :alt: Registrierung des Händlerkontos abschließen
-
-         Abb.: Registrierung des Händlerkontos abschließen
-
-      Eine Meldung zeigt den Erfolg an (:ref:`oxdajr04`).
-
-      .. _oxdajr04:
-
-      .. figure:: /media/screenshots/oxdajr04.png
-         :alt: Meldung Onboarding erfolgreich
-
-         Abb.: Meldung Onboarding erfolgreich
-
-#. Wechseln Sie zurück in Ihren OXID eShop.
-
-   Die Zugangsdaten (Client-ID/Passwort) und Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 3, 4).
-
-   .. _oxdajr05:
-
-   .. figure:: /media/screenshots/oxdajr05.png
-      :alt: Client-ID/Passwort und Webhook-ID erzeugt
+   .. figure:: /media/screenshots/oxdajr03.png
+      :alt: Webhookgenerieren starten
       :width: 650
       :class: with-shadow
 
-      Abb.: Client-ID/Passwort und Webhook-ID erzeugt
+      Abb.: Webhookgenerieren starten
 
-   .. _freischaltung-kreditkarte:
+#.  Melden Sie sich mit der E-Mail-Adresse des Sandbox-Händlerkontos an (:ref:`oxdajr01`) und bestätigen Sie die Abfragen.
+
+    .. _oxdajr01:
+
+    .. figure:: /media/screenshots/oxdajr01.png
+       :alt: Registrierung des Sandbox-Händler-Kontos starten
+
+       Abb.: Registrierung des Sandbox-Händler-Kontos starten
+
+    Eine Meldung zeigt den Erfolg an (:ref:`oxdajr04`).
+
+    .. _oxdajr04:
+
+    .. figure:: /media/screenshots/oxdajr04.png
+       :alt: Meldung Onboarding erfolgreich
+       :width: 650
+       :class: with-shadow
+
+       Abb.: Meldung Onboarding erfolgreich
+
+    Sie gelangen zurück in Ihren OXID eShop.
+
+    Der Webhook ist erzeugt.
+
+    Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`).
+   Die Zugangsdaten (Client-ID/Passwort) und Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 3, 4).
+
+    .. _oxdajr05:
+
+
+    .. figure:: /media/screenshots/oxdajr05.png
+       :alt: Client-ID/Passwort und Webhook-ID erzeugt
+       :width: 650
+       :class: with-shadow
+
+       Abb.: Client-ID/Passwort und Webhook-ID erzeugt
+
+    .. _freischaltung-kreditkarte:
 
 #. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 5), ob die Freischaltung erfolgt ist.
 
