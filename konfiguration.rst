@@ -356,7 +356,7 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :
 
       Abb.: Zahlungsart PayPal aktiv
 
-Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung? Folgen Sie den Anweisungen unter :ref:`troubleshooting:"Kreditkarte" und "Rechnungskauf" nicht verfügbar`.
+Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung? Folgen Sie den Anweisungen unter :ref:`troubleshooting:Zahlungsarten oder Funktionen nicht verfügbar`.
 
 .. hint::
 
