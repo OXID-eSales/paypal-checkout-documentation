@@ -97,7 +97,7 @@ Only if everything works, repeat the onboarding process in the live system with 
 Checking Google Pay and Apple Pay activation
 --------------------------------------------
 
-Apple Pay is automatically activated as soon as you register your domain with Apple Pay (see :ref:`configuration:Activate Apple Pay as payment method`).
+Apple Pay is automatically activated as soon as you register your domain with Apple Pay (see :ref:`configuration:Activating the Apple Pay payment method`).
 
 Google Pay is active by default.
 

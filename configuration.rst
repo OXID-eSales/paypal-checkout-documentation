@@ -348,7 +348,7 @@ Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :gu
 
       Fig.: Payment method PayPal active
 
-The payment methods "Credit card" and "Purchase upon invoice" are not available? Follow the instructions under :ref:`troubleshooting:"Credit card" and "Purchase upon invoice" not available`.
+The payment methods "Credit card" and "Purchase upon invoice" are not available? Follow the instructions under :ref:`troubleshooting:Payment methods or functions not available`.
 
 .. hint::
 
