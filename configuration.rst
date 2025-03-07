@@ -241,9 +241,6 @@ We describe the process using a sandbox account as an example. The live process 
 
    .. _oxdajr03:
 
-1. Under :guilabel:`API credentials` choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button.
-#. Go through the registration process with the sandbox merchant account email address.
-
    .. figure:: /media/screenshots/oxdajr03.png
       :alt: Starting the webhook generation
       :width: 650
@@ -253,14 +250,14 @@ We describe the process using a sandbox account as an example. The live process 
 
 #. Log in with the e-mail address of the sandbox merchant account (:ref:`oxdajr01`) and confirm the queries.
 
-    .. _oxdajr01:
+   .. _oxdajr01:
 
-    .. figure:: /media/screenshots/oxdajr01.png
-       :alt: Starting the registration of the sandbox merchant account
+   .. figure:: /media/screenshots/oxdajr01.png
+      :alt: Starting the registration of the sandbox merchant account
 
-       Fig.: Starting the registration of the sandbox merchant account
+      Fig.: Starting the registration of the sandbox merchant account
 
-    A message indicates success (:ref:`oxdajr04`).
+   A message indicates success (:ref:`oxdajr04`).
 
     .. _oxdajr04:
 
