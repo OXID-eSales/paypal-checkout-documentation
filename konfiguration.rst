@@ -138,8 +138,8 @@ Grundsätzliches Vorgehen
 
    Weitere Informationen finden Sie unter :ref:`cmp-integration:Consent Management-Platformen integrieren`.
 
-PayPal Checkout aktivieren
---------------------------
+PayPal Checkout manuell aktivieren
+----------------------------------
 
 Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktiviert ist, in dem Sie das Modul nutzen wollen.
 
@@ -220,7 +220,6 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
 .. include:: /_static/reuse/note-ee-onboarding.rst
 
-
 .. hint::
 
    **Verfügbarkeit aller Zahlungsarten**
@@ -231,54 +230,55 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
 .. todo: #tbd 2.3, 1.3 / EN: Screenshot für Schritt 1, sonst. Felder leer
 
-1. Wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)`.
-#. Durchlaufen Sie den Registrierungs-Prozess mit der E-Mail-Adresse des Sandbox-Händlerkontos.
+1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` (:ref:`oxdajr03`, Pos.1).
 
-   a. Melden Sie sich an (:ref:`oxdajr01`), und bestätigen Sie die Abfragen.
+   .. _oxdajr03:
 
-      .. todo: #tbd: screenshot EN
-
-      .. _oxdajr01:
-
-      .. figure:: /media/screenshots/oxdajr01.png
-         :alt: Registrierung des Sandbox-Händler-Kontos starten
-
-         Abb.: Registrierung des Sandbox-Händler-Kontos starten
-
-   #. Wählen Sie zum Abschluss :guilabel:`Zurück zu John Doe`s Test Store` (:ref:`oxdajr03`).
-
-      .. _oxdajr03:
-
-      .. figure:: /media/screenshots/oxdajr03.png
-         :alt: Registrierung des Händlerkontos abschließen
-
-         Abb.: Registrierung des Händlerkontos abschließen
-
-      Eine Meldung zeigt den Erfolg an (:ref:`oxdajr04`).
-
-      .. _oxdajr04:
-
-      .. figure:: /media/screenshots/oxdajr04.png
-         :alt: Meldung Onboarding erfolgreich
-
-         Abb.: Meldung Onboarding erfolgreich
-
-#. Wechseln Sie zurück in Ihren OXID eShop.
-
-   Der Webhook ist erzeugt.
-
-   Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 1, 2).
-
-   .. todo: #tbd: Bild neu en;
-
-   .. _oxdajr05:
-
-   .. figure:: /media/screenshots/oxdajr05.png
-      :alt: Webhook erzeugt
+   .. figure:: /media/screenshots/oxdajr03.png
+      :alt: Webhookgenerieren starten
       :width: 650
       :class: with-shadow
 
-      Abb.: Webhook erzeugt
+      Abb.: Webhookgenerieren starten
+
+#.  Melden Sie sich mit der E-Mail-Adresse des Sandbox-Händlerkontos an (:ref:`oxdajr01`) und bestätigen Sie die Abfragen.
+
+    .. _oxdajr01:
+
+    .. figure:: /media/screenshots/oxdajr01.png
+       :alt: Registrierung des Sandbox-Händler-Kontos starten
+
+       Abb.: Registrierung des Sandbox-Händler-Kontos starten
+
+    Eine Meldung zeigt den Erfolg an (:ref:`oxdajr04`).
+
+    .. _oxdajr04:
+
+    .. figure:: /media/screenshots/oxdajr04.png
+       :alt: Meldung Onboarding erfolgreich
+       :width: 650
+       :class: with-shadow
+
+       Abb.: Meldung Onboarding erfolgreich
+
+    Sie gelangen zurück in Ihren OXID eShop.
+
+    Der Webhook ist erzeugt.
+
+    Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`).
+
+    .. _oxdajr05:
+
+    .. figure:: /media/screenshots/oxdajr05.png
+       :alt: Webhook erzeugt
+       :width: 650
+       :class: with-shadow
+
+       Abb.: Webhook erzeugt
+
+#. Wenn Sie die Zahlungsmethoden Rechnungskauf oder Kreditkarte nutzen wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`), ob die Freischaltung erfolgt ist.
+   |br|
+   Wenn die Freischaltung nicht automatisch erfolgt ist, wenden Sie sich an Ihren Ansprechpartner bei PayPal.
 
    .. _freischaltung-kreditkarte:
 
