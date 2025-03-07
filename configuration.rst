@@ -288,12 +288,12 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
     .. _oxdajr05:
 
-   .. figure:: /media/screenshots/oxdajr05.png
-      :alt: Client ID/secret and webhook ID created
-      :width: 650
-      :class: with-shadow
+    .. figure:: /media/screenshots/oxdajr05.png
+       :alt: Client ID/secret and webhook ID created
+       :width: 650
+       :class: with-shadow
 
-      Fig.: Client ID/secret and webhook ID created
+       Fig.: Client ID/secret and webhook ID created
 
 
     .. _activation-creditcard:
