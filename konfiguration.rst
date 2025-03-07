@@ -289,8 +289,8 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
     Der Webhook ist erzeugt.
 
-    Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`).
-   Die Zugangsdaten (Client-ID/Passwort) und Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 3, 4).
+
+    Die Zugangsdaten (Client-ID/Passwort) und Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 3, 4).
 
     .. _oxdajr05:
 
