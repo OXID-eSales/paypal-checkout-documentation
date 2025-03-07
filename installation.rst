@@ -51,7 +51,7 @@ For OXID eShop version 6.3.x to 6.5.x, install the payment module :productname:`
 
 #. Optional: To activate the module, run the following command.
    |br|
-   Alternatively: Activate the module manually during configuration (see :ref:`configuration:Activating PayPal Checkout`).
+   Alternatively: Activate the module manually during configuration (see :ref:`configuration:Activating PayPal Checkout manually`).
 
    .. code:: bash
 
@@ -64,9 +64,11 @@ When the installation process is finished, the module :guilabel:`PayPal Checkout
 .. _oxdajq01:
 
 .. figure:: /media/screenshots/oxdajq01.png
-   :alt: PayPal Checkout for OXID installed successfully
+   :alt: PayPal Checkout for OXID installed and activated
+   :width: 650
+   :class: with-shadow
 
-   Figure: PayPal Checkout for OXID installed successfully
+   Figure: PayPal Checkout for OXID installed and activated
 
 Installing a minor update
 -------------------------

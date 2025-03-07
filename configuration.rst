@@ -95,7 +95,7 @@ We recommend the following procedure.
       After deleting the database, you will still be able to view and administer the old orders in your PayPal merchant account.
 
 
-#. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout`.
+#. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout manually`.
 #. Select :menuselection:`Shop Settings --> Payment Methods`.
 #. Identify the payment methods corresponding to :productname:`PayPal` or :productname:`PayPal Plus`:
 
@@ -142,8 +142,8 @@ Basic procedure
 
    For more information, see :ref:`cmp-integration:Integrating Consent Management Platforms`.
 
-Activating PayPal Checkout
---------------------------
+Activating PayPal Checkout manually
+-----------------------------------
 
 Ensure :productname:`PayPal Checkout` is activated in each subshop where you want to use the module.
 
@@ -251,42 +251,42 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
    * Case 3: You have already completed the registration process for the current version of :productname:`PayPal Checkout` and are moving your OXID eShop to another domain, for example? -- In this case, you can reuse the access data and webhook.
 
+1. To log in to the sandbox, under :guilabel:`API credentials`, choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button (:ref:`oxdajr03`, item 1).
 
-1. Under :guilabel:`API credentials` choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button (:ref:`oxdajr05`, item 2).
-#. Go through the registration process with the sandbox merchant account email address.
+   .. _oxdajr03:
 
-   a. Log in with your (sandbox) merchant account (:ref:`oxdajr01`) and confirm the prompts.
+   .. figure:: /media/screenshots/oxdajr03.png
+      :alt: Starting the webhook generation
+      :width: 650
+      :class: with-shadow
 
-      .. _oxdajr01:
+      Fig.: Starting the webhook generation
 
-      .. figure:: /media/screenshots/oxdajr01.png
-         :alt: Starting the registration of the sandbox merchant account
+#. Log in with the e-mail address of the sandbox merchant account (:ref:`oxdajr01`) and confirm the queries.
 
-         Fig.: Starting the registration of the sandbox merchant account
+   .. _oxdajr01:
 
-   #. Finally, choose :guilabel:`Back to John Doe`s Test Store` (:ref:`oxdajr03`).
+   .. figure:: /media/screenshots/oxdajr01.png
+      :alt: Starting the registration of the sandbox merchant account
 
-      .. _oxdajr03:
+      Fig.: Starting the registration of the sandbox merchant account
 
-      .. figure:: /media/screenshots/oxdajr03.png
-         :alt: Completing the registration of the merchant account
+   A message indicates success (:ref:`oxdajr04`).
 
-         Fig.: Completing the registration of the merchant account
+    .. _oxdajr04:
 
-      A message indicates success (:ref:`oxdajr04`).
+    .. figure:: /media/screenshots/oxdajr04.png
+       :alt: Message onboarding successful
+       :width: 650
+       :class: with-shadow
 
-      .. _oxdajr04:
+       Fig.: Message onboarding successful
 
-      .. figure:: /media/screenshots/oxdajr04.png
-         :alt: Message onboarding successful
+    You go back to your OXID eShop.
 
-         Fig.: Message onboarding successful
+    The client ID and the webhook ID are displayed (:ref:`oxdajr05`, items 1, 2).
 
-#. Switch back to your OXID eShop.
-
-   The access data (client ID/secret) and the webhook ID are displayed (:ref:`oxdajr05`, items 3, 4).
-
-   .. _oxdajr05:
+    .. _oxdajr05:
 
    .. figure:: /media/screenshots/oxdajr05.png
       :alt: Client ID/secret and webhook ID created
@@ -295,7 +295,8 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
       Fig.: Client ID/secret and webhook ID created
 
-   .. _activation-creditcard:
+
+    .. _activation-creditcard:
 
 #. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`, item 5), check whether the activation has been done.
 
