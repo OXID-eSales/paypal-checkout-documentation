@@ -276,14 +276,14 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
      Die Client-ID und die Webhook-ID werden angezeigt (:ref:`oxdajr05`).
 
-    .. _oxdajr05:
+     .. _oxdajr05:
 
-    .. figure:: /media/screenshots/oxdajr05.png
-       :alt: Webhook erzeugt
+     .. figure:: /media/screenshots/oxdajr05.png
+        :alt: Webhook erzeugt
 
-       Abb.: Webhook erzeugt
+        Abb.: Webhook erzeugt
 
-   .. _freischaltung-kreditkarte:
+    .. _freischaltung-kreditkarte:
 
 #. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 3), ob die Freischaltung erfolgt ist.
 
