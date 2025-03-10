@@ -74,9 +74,11 @@ When the installation process is finished, the module :guilabel:`PayPal Checkout
 .. _oxdajq01:
 
 .. figure:: /media/screenshots/oxdajq01.png
-   :alt: PayPal Checkout for OXID installed successfully
+   :alt: PayPal Checkout for OXID installed and activated
+   :width: 650
+   :class: with-shadow
 
-   Figure: PayPal Checkout for OXID installed successfully
+   Fig.: PayPal Checkout for OXID installed successfully
 
 .. todo: Folgende Varianten später reaktivieren
     Installing a Minor Update
