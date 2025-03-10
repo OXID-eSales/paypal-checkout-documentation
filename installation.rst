@@ -61,7 +61,7 @@ For OXID eShop version 7.x, install the payment module :productname:`PayPal Chec
 
 #. Optional: To activate the module, run the following command.
    |br|
-   Alternatively: Activate the module manually during configuration (see :ref:`configuration:Activating PayPal Checkout`).
+   Alternatively: Activate the module manually during configuration (see :ref:`configuration:Activating PayPal Checkout manually`).
 
    .. code:: bash
 

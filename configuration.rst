@@ -86,7 +86,7 @@ We recommend the following procedure.
       After deleting the database, you will still be able to view and administer the old orders in your PayPal merchant account.
 
 
-#. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout`.
+#. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Unlocking PayPal Checkout`.
 #. Select :menuselection:`Shop Settings --> Payment Methods`.
 #. Identify the payment methods corresponding to :productname:`PayPal` or :productname:`PayPal Plus`:
 
@@ -139,8 +139,8 @@ Basic procedure
 
    For more information, see :ref:`cmp-integration:Integrating Consent Management Platforms`.
 
-Activating PayPal Checkout
---------------------------
+Activating PayPal Checkout manually
+-----------------------------------
 
 Ensure :productname:`PayPal Checkout` is activated in each subshop where you want to use the module.
 
