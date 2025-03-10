@@ -138,8 +138,8 @@ Grundsätzliches Vorgehen
 
    Weitere Informationen finden Sie unter :ref:`cmp-integration:Consent Management-Platformen integrieren`.
 
-PayPal Checkout aktivieren
---------------------------
+PayPal Checkout manuell aktivieren
+----------------------------------
 
 Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktiviert ist, in dem Sie das Modul nutzen wollen.
 

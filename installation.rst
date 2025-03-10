@@ -60,7 +60,7 @@ Installieren Sie für den OXID eShop Version 7.x das Zahlungsmodul :productname:
 
 #. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
    |br|
-   Alternativ: Aktivieren Sie das Modul im Zuge der Konfiguration manuell (siehe :ref:`konfiguration:PayPal Checkout aktivieren`).
+   Alternativ: Aktivieren Sie das Modul im Zuge der Konfiguration manuell (siehe :ref:`konfiguration:PayPal Checkout manuell aktivieren`).
 
    .. code:: bash
 
