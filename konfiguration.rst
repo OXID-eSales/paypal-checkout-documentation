@@ -278,8 +278,9 @@ Wir beschreiben den Prozess am Beispiel eines Sandbox-Kontos. Der Live-Prozess i
 
      .. _oxdajr05:
 
-     .. figure:: /media/screenshots/oxdajr05.png
-        :alt: Webhook erzeugt
+    .. figure:: /media/screenshots/oxdajr05.png
+       :alt: Webhook erzeugt
+       :class: with-shadow
 
         Abb.: Webhook erzeugt
 
