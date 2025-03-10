@@ -74,9 +74,9 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 .. _oxdajq01:
 
 .. figure:: /media/screenshots/oxdajq01.png
-   :alt: PayPal Checkout für OXID erfolgreich installiert
+   :alt: PayPal Checkout für OXID installiert und aktiviert
 
-   Abb.: PayPal Checkout für OXID erfolgreich installiert
+   Abb.: PayPal Checkout für OXID erfolgreich und aktiviert
 
 
 .. todo: Folgende Varianten später reaktivieren
