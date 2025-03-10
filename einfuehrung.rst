@@ -40,7 +40,6 @@ Weltweit            Kreditkarte
 Weltweit	        PayPal
 Weltweit	        PayPal Express
 Belgien	            Bancontact
-Belgien	            Sofort (Klarna Pay now)
 Deutschland	        PayPal - Später bezahlen
 Deutschland	        Rechnungskauf
 Deutschland         SEPA Lastschrift
