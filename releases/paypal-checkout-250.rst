@@ -6,7 +6,11 @@ Release-Datum: 16.08.2024
 Neue oder geänderte Funktionen
 ------------------------------
 
-Wir haben die Zahlungsarten Google Pay und Apple Pay hinzugefügt.
+Wir haben
+
+* die Zahlungsarten Google Pay und Apple Pay hinzugefügt: :ref:`releases/paypal-checkout-250:Apple Pay und Google Pay`
+* das Konfigurieren von Pseudoversandkosten für PayPal Express ergänzt: :ref:`releases/paypal-checkout-250:Konfigurieren von Pseudoversandkosten für PayPal Express`
+
 
 Apple Pay und Google Pay
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -59,6 +63,15 @@ Weitere Informationen zur Abdeckung finden Sie unter
 
    * Apple Pay: `Go live <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-golive>`_
    * :ref:`konfiguration:PayPal Checkout freischalten`.
+
+
+Konfigurieren von Pseudoversandkosten für PayPal Express
+--------------------------------------------------------
+
+Um Zahlungen mit PayPal Express zu ermöglichen, stellen Sie durch sogenannte Pseudoversandkosten sicher, dass der Wert des Warenkorbs ungefähr dem Wert entspricht, der beim Checkout vom PayPal-Konto des Kunden eingezogen wird.
+
+Weitere Informationen finden Sie unter :ref:`konfiguration:Pseudoversandkosten für PayPal Express anpassen`.
+
 
 Installation
 ------------
