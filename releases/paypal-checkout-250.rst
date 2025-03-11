@@ -6,7 +6,11 @@ Release date: 16-08-2024
 New or changed functions
 ------------------------
 
-We have added the Google Pay and Apple Pay payment methods.
+We have
+
+* added the Google Pay and Apple Pay payment methods: :ref:`releases/paypal-checkout-250:Google Pay and Apple Pay`
+* added the Configuring of pseudo shipping costs for PayPal Express: :ref:`releases/paypal-checkout-250:Configuring pseudo shipping costs for PayPal Express`
+
 
 Google Pay and Apple Pay
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -59,6 +63,13 @@ For more information on coverage, see
 
    * Apple Pay: `Go live <https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-golive>`_
    * :ref:`configuration:Unlocking PayPal Checkout`
+
+Configuring pseudo shipping costs for PayPal Express
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To enable payments with PayPal Express, use so-called pseudo shipping costs to ensure that the value of the shopping cart corresponds approximately to the value that is collected from the customer's PayPal account at checkout.
+
+For more information, see :ref:`configuration:Adjusting pseudo shipping costs for PayPal Express`.
 
 
 Installation
