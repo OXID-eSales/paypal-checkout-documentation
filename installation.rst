@@ -3,15 +3,15 @@ Installation
 
 To install the :productname:`PayPal Checkout` payment module, install different versions depending on your OXID eShop version:
 
-* If you have OXID eShop version 7.x, install :productname:`PayPal Checkout` 3.3.x (see :ref:`installation:Installing PayPal Checkout`).
+* If you have OXID eShop version 7.x, install :productname:`PayPal Checkout` 3.x (see :ref:`installation:Installing PayPal Checkout`).
 
   .. important::
 
      **Restriction**
 
-     :productname:`PayPal Checkout` 3.3.x only supports Twig themes (APEX, for example).
+     :productname:`PayPal Checkout` 3.x only supports Twig themes (APEX, for example).
 
-     Do not install :productname:`PayPal Checkout` 3.3.x if you use Smarty.
+     Do not install :productname:`PayPal Checkout` 3.x if you use Smarty.
 
 * If you have OXID eShop version 6.3.x to 6.5.x, install :productname:`PayPal Checkout` 2.3.x.
   |br|
@@ -26,7 +26,7 @@ Earlier versions of OXID eShop are not supported.
 Installing PayPal Checkout
 --------------------------
 
-For OXID eShop version 7.x, install the payment module :productname:`PayPal Checkout` version 3.3.x.
+For OXID eShop version 7.x, install the payment module :productname:`PayPal Checkout` version 3.4.x.
 
 |prerequisites|
 
@@ -57,7 +57,7 @@ For OXID eShop version 7.x, install the payment module :productname:`PayPal Chec
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^3.3.0
+      composer require oxid-solution-catalysts/paypal-module ^3.4.0
 
 #. Optional: To activate the module, run the following command.
    |br|
@@ -80,13 +80,24 @@ When the installation process is finished, the module :guilabel:`PayPal Checkout
 
    Fig.: PayPal Checkout for OXID installed successfully
 
+
+Installing a Minor Update
+-------------------------
+
+1. To perform a minor update, for example from :productname:`PayPal Checkout` version 3.3.0 to version 3.4.0, execute the following commands:.
+
+   .. code:: bash
+
+      composer require oxid-solution-catalysts/paypal-module ^3.4.0
+      composer update
+
+
+#. To be able to use new payment methods or functions, go through the registration process (onboarding) again.
+
+   For more information, see :ref:`configuration:API credentials: Onboarding`.
+
+
 .. todo: Folgende Varianten später reaktivieren
-    Installing a Minor Update
-    -------------------------
-    If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.2.1 to version 2.3.0.
-       .. code:: bash
-          composer require oxid-solution-catalysts/paypal-module ^3.3.0
-          composer update
     Installing a patch update
     -------------------------
     If required, install a patch update, from :productname:`PayPal Checkout` version 2.3.0 to version 2.3.1, for example.

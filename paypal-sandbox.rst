@@ -4,8 +4,9 @@ Testing PayPal Checkout in the PayPal Sandbox
 
 To test :productname:`PayPal Checkout` in the PayPal sandbox, create sandbox accounts.
 
-If you are testing :productname:`PayPal Checkout` in a local system without SSL, temporarily set up SSL for it.
+Live operation is analogue.
 
+If you are testing :productname:`PayPal Checkout` in a local system without SSL, temporarily set up SSL for it.
 
 Generating PayPal sandbox accounts
 ----------------------------------
@@ -27,14 +28,13 @@ Display the credentials for your PayPal sandbox test accounts in the PayPal Deve
 |procedure|
 
 1. Access the PayPal Developer Portal under `developer.paypal.com <https://developer.paypal.com/home>`_.
-#. Choose :guilabel:`Log Into Dashboard`.
-#. Log in with the credentials of your real PayPal account.
+#. Log in with the access data of your real PayPal account
    |br|
-   Your PayPal account can be a merchant or customer account. You will need a merchant account only to unlock the live operation.
-#. Choose :menuselection:`Sandbox --> Accounts`.
+   Your PayPal account can be a merchant or customer account. You will only need a merchant account to activate live operation.
+#. Choose :menuselection:`Go to Dashboars --> Developer Dashboard`.
+#. Choose :guilabel:`Sandbox accounts`.
 
 |result|
-
 
 Two sandbox test accounts are displayed, a business (merchant) and a personal (customer) sandbox account (:ref:`oxdaju01`).
 
@@ -93,6 +93,42 @@ Only if everything works, repeat the onboarding process in the live system with 
    :alt: Displaying the business sandbox account
 
    Figure: Displaying the business sandbox account
+
+Checking Google Pay and Apple Pay activation
+--------------------------------------------
+
+Apple Pay is automatically activated as soon as you register your domain with Apple Pay (see :ref:`configuration:Activating the Apple Pay payment method`).
+
+Google Pay is active by default.
+
+In some cases, however, it may be necessary to check whether Apple Pay and Google Pay are activated or to activate Google Pay manually.
+
+|procedure|
+
+1. Choose `sandbox.paypal.com <https://sandbox.paypal.com>`_. and log in with the merchant account.
+#. Choose :guilabel:`Account Settings`.
+
+   .. _oxdaju08:
+
+   .. figure:: /media/screenshots/oxdaju08.png
+      :alt: Open account settings
+      :width: 250
+      :class: with-shadow
+
+      Fig.: Open account settings
+
+#. Choose :guilabel:`Payment methods`.
+
+   The activation status is displayed.
+
+   .. _oxdaju09:
+
+   .. figure:: /media/screenshots/oxdaju09.png
+      :alt: Checking the activation status
+      :width: 650
+      :class: with-shadow
+
+      Fig: Checking the activation status
 
 
 Setting up temporary SSL
@@ -182,7 +218,7 @@ How you generate the temporary URL depends on your system. We describe the follo
 
 |result|
 
-You can generate the webhook for testing :productname:`PayPal Checkout` in the PayPal sandbox (see :ref:`configuration:API credentials`).
+You can generate the webhook for testing :productname:`PayPal Checkout` in the PayPal sandbox (see :ref:`configuration:API credentials: Onboarding`).
 
 Once you close the NGROK window, the temporary channel is finished, and you need to generate a new temporary URL.
 
@@ -190,7 +226,7 @@ Once you close the NGROK window, the temporary channel is finished, and you need
 
    **Generating a webhook in the PayPal sandbox**.
 
-   If you use the temporary URL to generate the webhook for testing :productname:`PayPal Checkout` in the PayPal sandbox (as described in :ref:`configuration:API credentials`), then you are familiar with the process.
+   If you use the temporary URL to generate the webhook for testing :productname:`PayPal Checkout` in the PayPal sandbox (as described in :ref:`configuration:API credentials: Onboarding`), then you are familiar with the process.
    |br|
    This is because the onboarding process works in the live environment with the live account just like in the test environment with the temporary URL.
 
