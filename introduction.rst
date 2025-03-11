@@ -95,6 +95,7 @@ Apple Pay                       AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS
 Bancontact                      EUR
 BLIK                            PLN
 EPS                             EUR
+GooglePay                       AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
 Ideal                           EUR
 Kreditkarte                     AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, JPY, NOK, NZD, PLN, SEK, SGD, USD
 PayPal                          AUD, BRL, CAD, CNY, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, TWD, NZD, NOK, PHP, PLN, GBP, RUB, SGD, SEK, CHF, THB, USD
