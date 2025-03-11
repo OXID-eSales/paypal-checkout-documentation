@@ -1,7 +1,7 @@
 PayPal Checkout V. 3.3
 ======================
 
-Release-Datum: 17.11.2023
+Release-Datum: `17.11.2023 <https://github.com/OXID-eSales/paypal-module/blob/v3.3.2/CHANGELOG.md>`_
 
 Neue oder geänderte Funktionen
 ------------------------------
@@ -12,7 +12,7 @@ Verwenden Sie :productname:`PayPal Checkout` 3.3.x, wenn Sie eShop Version 7.x h
 Installation
 ------------
 
-Um :productname:`PayPal Checkout` V. 3.3 zu nutzen, installieren Sie es in Ihrem OXID eShop 7.x.
+Um :productname:`PayPal Checkout` V. 3.x zu nutzen, installieren Sie es in Ihrem OXID eShop 7.x.
 
 Weitere Informationen finden Sie unter :ref:`installation:Installation`.
 

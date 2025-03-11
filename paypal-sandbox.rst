@@ -4,6 +4,8 @@ PayPal Checkout in der PayPal-Sandbox testen
 
 Um :productname:`PayPal Checkout` in der PayPal-Sandbox zu testen, legen Sie Sandbox-Konten an.
 
+Der Live-Betrieb funktioniert analog.
+
 Wenn Sie :productname:`PayPal Checkout` in einem lokalen System ohne SSL testen, richten Sie dafür temporär SSL ein.
 
 
@@ -27,14 +29,13 @@ Zeigen Sie die Zugangsdaten für Ihre Sandbox-Test-Konten im PayPal-Entwickler-P
 |procedure|
 
 1. Rufen Sie das PayPal-Entwickler-Portal unter `developer.paypal.com <https://developer.paypal.com/home>`_ auf.
-#. Wählen Sie :guilabel:`Log Into Dashboard`.
 #. Melden Sie sich mit den Zugangsdaten Ihres echten PayPal-Kontos an
    |br|
    Ihr PayPal-Konto kann ein Händler- oder Kunden-Konto sein. Nur für das Freischalten des Live-Betriebs werden Sie ein Händlerkonto brauchen.
-#. Wählen Sie :menuselection:`Sandbox --> Accounts`.
+#. Wählen Sie :menuselection:`Go to Dashboars --> Developer Dashboard`.
+#. Wählen Sie :guilabel:`Sandbox accounts`.
 
 |result|
-
 
 Zwei Sandbox-Test-Konten werden angezeigt, ein Business-Sandbox-Konto (Händler-Konto) und ein Personal-Sandbox-Konto (Kunden-Konto) (:ref:`oxdaju01`).
 
@@ -92,6 +93,42 @@ Erst wenn alles klappt, wiederholen Sie den Onboarding-Prozess im Live-System mi
    :alt: Business-Sandbox-Konto anzeigen
 
    Abb.: Business-Sandbox-Konto anzeigen
+
+Google Pay- and Apple Pay-Aktivierung prüfen
+--------------------------------------------
+
+Apple Pay ist automatisch aktiviert, sobald Sie Ihre Domain bei Apple Pay registrieren (see :ref:`konfiguration:Apple Pay als Zahlungsart aktivieren`).
+
+Google Pay ist standardmäßig aktiv.
+
+In manchen Fällen kann es jedoch nötig sein, zu prüfen, ob Apple Pay und Google Pay aktiviert sind oder Google Pay manuell zu aktivieren.
+
+|procedure|
+
+1. Wählen Sie `sandbox.paypal.com <https://sandbox.paypal.com>`_. und melden Sie sich mit dem Händlerkonto an.
+#. Wählen Sie :guilabel:`Kontoeinstellungen`.
+
+   .. _oxdaju08:
+
+   .. figure:: /media/screenshots/oxdaju08.png
+      :alt: Kontoeinstellungen öffnen
+      :width: 250
+      :class: with-shadow
+
+      Abb.: Kontoeinstellungen öffnen
+
+#. Wählen Sie :guilabel:`Zahlungsquellen`.
+
+   Der Aktivierungsstatus wird angezeigt.
+
+   .. _oxdaju09:
+
+   .. figure:: /media/screenshots/oxdaju09.png
+      :alt: Aktivierungsstatus prüfen
+      :width: 650
+      :class: with-shadow
+
+      Abb.: Aktivierungsstatus prüfen
 
 Temporäres SSL einrichten
 -------------------------
@@ -180,7 +217,7 @@ Wie Sie die temporäre URL generieren, hängt von Ihrem System ab. Wir beschreib
 
 |result|
 
-Sie können den Webhook für das Testen von :productname:`PayPal Checkout` in der PayPal-Sandbox generieren (siehe :ref:`konfiguration:API-Anmeldeinformationen`).
+Sie können den Webhook für das Testen von :productname:`PayPal Checkout` in der PayPal-Sandbox generieren (siehe :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`).
 
 Sobald Sie das NGROK-Fenster schließen, ist der temporäre Kanal beendet, und Sie müssen eine neue temporäre URL generieren.
 
@@ -188,7 +225,7 @@ Sobald Sie das NGROK-Fenster schließen, ist der temporäre Kanal beendet, und S
 
    **Webhook in der Sandbox generieren**
 
-   Wenn Sie mit der temporären URL den Webhook für das Testen von :productname:`PayPal Checkout` in der PayPal-Sandbox (wie unter :ref:`konfiguration:API-Anmeldeinformationen` beschrieben) generieren, dann sind Sie mit dem Prozess vertraut.
+   Wenn Sie mit der temporären URL den Webhook für das Testen von :productname:`PayPal Checkout` in der PayPal-Sandbox (wie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding` beschrieben) generieren, dann sind Sie mit dem Prozess vertraut.
    |br|
    Denn der Onboarding-Prozess funktioniert in der Live-Umgebung mit dem Live-Account genau wie in der Testumgebung mit der temporären URL.
 

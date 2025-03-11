@@ -3,20 +3,20 @@ Installation
 
 Um das Zahlungsmodul :productname:`PayPal Checkout` zu installieren, installieren Sie verschiedene Versionen je nach der Version Ihres OXID eShops:
 
-* Wenn Sie OXID eShop Version 7.x haben, installieren Sie :productname:`PayPal Checkout` 3.3.x (siehe :ref:`installation:PayPal Checkout installieren`).
+* Wenn Sie OXID eShop Version 7.x haben, installieren Sie :productname:`PayPal Checkout` 3.4.x (siehe :ref:`installation:PayPal Checkout installieren`).
 
   .. important::
 
      **Einschränkung**
 
-     :productname:`PayPal Checkout` 3.3.x unterstützt nur Twig-Themes (beispielsweise APEX).
+     :productname:`PayPal Checkout` 3.x unterstützt nur Twig-Themes (beispielsweise APEX).
 
-     Installieren Sie :productname:`PayPal Checkout` 3.3.x nicht, wenn Sie Smarty einsetzen.
+     Installieren Sie :productname:`PayPal Checkout` 3.x nicht, wenn Sie Smarty einsetzen.
 
-* Wenn Sie OXID eShop Version 6.3.x bis 6.5.x haben, installieren Sie :productname:`PayPal Checkout` 2.3.x.
+* Wenn Sie OXID eShop Version 6.3.x bis 6.5.x haben, installieren Sie :productname:`PayPal Checkout` 2.x.x.
   |br|
   Weitere Informationen finden Sie in der zugehörigen Modul-Documentation unter `PayPal Checkout 2.3.x installieren <https://docs.oxid-esales.com/modules/paypal-checkout/de/2.3/installation.html>`_.
-* Wenn Sie OXID eShop Version 6.1.x oder 6.2.x haben, installieren Sie :productname:`PayPal Checkout` 1.3.x.
+* Wenn Sie OXID eShop Version 6.1.x oder 6.2.x haben, installieren Sie :productname:`PayPal Checkout` 1.x.x.
   |br|
   Weitere Informationen finden Sie in der zugehörigen Modul-Documentation unter `PayPal Checkout 1.3.x installieren <https://docs.oxid-esales.com/modules/paypal-checkout/de/1.3/installation.html>`_.
 
@@ -52,11 +52,11 @@ Installieren Sie für den OXID eShop Version 7.x das Zahlungsmodul :productname:
 
       cd /var/www/oxideshop
 
-#. Führen Sie folgende Befehle aus:
+#. Führen Sie folgenden Befehl aus:
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^3.3.0
+      composer require oxid-solution-catalysts/paypal-module ^3.4.0
 
 #. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
    |br|
@@ -75,17 +75,33 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 
 .. figure:: /media/screenshots/oxdajq01.png
    :alt: PayPal Checkout für OXID installiert und aktiviert
+   :width: 650
+   :class: with-shadow
 
-   Abb.: PayPal Checkout für OXID erfolgreich und aktiviert
+   Abb.: PayPal Checkout für OXID installiert und aktiviert
+
+
+
+
+Minor Update installieren
+-------------------------
+Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 3.3.0 auf Version 3.4.0.
+
+|procedure|
+
+1. Führen Sie folgenden Konsolen-Befehl aus:
+
+   .. code:: bash
+
+      composer require oxid-solution-catalysts/paypal-module ^3.4.0
+      composer update
+
+#. Um neue Zahlungsarten oder Funktionen nutzen zu können, durchlaufen Sie den Registrierungsprozess (Onboarding) neu.
+
+   Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
 
 .. todo: Folgende Varianten später reaktivieren
-    Minor Update installieren
-    -------------------------
-    Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.2.1 auf Version 2.3.0.
-       .. code:: bash
-          composer require oxid-solution-catalysts/paypal-module ^2.3.0
-          composer update
     Patch-Update installieren
     -------------------------
     Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
@@ -94,10 +110,6 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
        .. code:: bash
           composer update
     #. Bestätigen Sie die Abfrage, ob die :file:`oxid-solution-catalysts/paypal-module`-Dateien überschrieben werden sollen.
-
-
-
-
 
 
 .. Intern: oxdajq, Status:
