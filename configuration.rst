@@ -370,7 +370,10 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 
 |procedure|
 
-1. Open the following URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ and log in with your PayPal (sandbox) merchant account.
+1. Under `paypal.com/signin <https://www.paypal.com/signin>`_, log in with your PayPal (sandbox) merchant account.
+
+   Alternatively: To jump directly to step :ref:`Add Domain <addDomain>`, log in at the following URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_.
+
 #. In the menu under your name, choose the :guilabel:`Account Settings` menu item (:ref:`oxdajr18`, item 1).
 
    .. _oxdajr18:
@@ -395,6 +398,8 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
       :class: with-shadow
 
       Fig.: Managing the ApplePay payment method
+
+   .. _addDomain:
 
 #. Choose :guilabel:`Add Domain` (:ref:`oxdajr18b`).
 
