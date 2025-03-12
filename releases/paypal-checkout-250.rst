@@ -25,7 +25,7 @@ For more information on coverage, see
 |procedure|
 
 1. Install or update :productname:`PayPal Checkout`.
-#. Go through the registration process (onboarding) (also for an update).
+#. Go through the registration process (onboarding) again (also for an update).
 
    For more information, see :ref:`configuration:API credentials: Onboarding`.
 
