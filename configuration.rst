@@ -371,16 +371,41 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 |procedure|
 
 1. Open the following URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ and log in with your PayPal (sandbox) merchant account.
-#. Choose :guilabel:`Add Domain` (:ref:`oxdajr18`).
+#. In the menu under your name, choose the :guilabel:`Account Settings` menu item (:ref:`oxdajr18`, item 1).
 
    .. _oxdajr18:
 
    .. figure:: /media/screenshots/oxdajr18.png
-      :alt: Adding a domain
+      :alt: Open account settings
       :width: 650
       :class: with-shadow
 
-      Fig.: Adding a domain
+      Fig.: Open account settings
+
+#. In the left navigation bar, choose :guilabel:`Payment methods`.
+#. Choose :guilabel:`ApplePay verwalten` (:ref:`oxdajr18a`).
+
+   .. todo: :guilabel:`ApplePay verwalten` im Original deutsch!
+
+   .. _oxdajr18a:
+
+   .. figure:: /media/screenshots/oxdajr18a.png
+      :alt: Managing the ApplePay payment method
+      :width: 650
+      :class: with-shadow
+
+      Fig.: Managing the ApplePay payment method
+
+#. Choose :guilabel:`Add Domain` (:ref:`oxdajr18b`).
+
+   .. _oxdajr18b:
+
+   .. figure:: /media/screenshots/oxdajr18b.png
+      :alt: Adding the domain
+      :width: 650
+      :class: with-shadow
+
+      Fig.: Adding the domain
 
    You go to a page to register your website with Apple Pay (:ref:`oxdajr19`).
 
