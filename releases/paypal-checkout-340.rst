@@ -26,7 +26,7 @@ Weitere Informationen zur Abdeckung finden Sie unter
 |procedure|
 
 1. Installieren Sie :productname:`PayPal Checkout` neu oder machen Sie ein Update.
-#. Durchlaufen Sie den Registrierungsprozess (Onboarding) (auch bei einem Update).
+#. Durchlaufen Sie den Registrierungsprozess (Onboarding) erneut (auch bei einem Update).
 
    Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
