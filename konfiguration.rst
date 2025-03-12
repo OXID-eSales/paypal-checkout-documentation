@@ -379,11 +379,34 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
 |procedure|
 
 1. Öffnen Sie folgende URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_ und melden Sie sich mit Ihrem PayPal (Sandbox-)Händlerkonto an.
-#. Wählen Sie :guilabel:`Domain hinzufügen` (:ref:`oxdajr18`).
+#. Wählen Sie im Menü unter Ihrem Namen den Menüpunkt :guilabel:`Kontoeinstellungen` (:ref:`oxdajr18`, Pos. 1).
 
    .. _oxdajr18:
 
    .. figure:: /media/screenshots/oxdajr18.png
+      :alt: Kontoeinstellungen öffnen
+      :width: 650
+      :class: with-shadow
+
+      Abb.: Kontoeinstellungen öffnen
+
+#. Wählen Sie in der linken Navigationsleiste den Eintrag :guilabel:`Zahlungsquellen`.
+#. Wählen Sie :guilabel:`ApplePay verwalten` (:ref:`oxdajr18a`).
+
+   .. _oxdajr18a:
+
+   .. figure:: /media/screenshots/oxdajr18a.png
+      :alt: Zahlungsart ApplePay verwalten
+      :width: 650
+      :class: with-shadow
+
+      Abb.: Zahlungsart ApplePay verwalten
+
+#. Wählen Sie :guilabel:`Domain hinzufügen` (:ref:`oxdajr18b`).
+
+   .. _oxdajr18b:
+
+   .. figure:: /media/screenshots/oxdajr18b.png
       :alt: Domain hinzufügen
       :width: 650
       :class: with-shadow
