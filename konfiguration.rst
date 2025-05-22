@@ -155,11 +155,9 @@ Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktivie
 
 |result|
 
-* Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
+Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
 
-  Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
-
-* Links in der Navigation erscheint der neue Menüpunkt :menuselection:`PayPal --> Konfiguration`.
+Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
 
 |example|
 
@@ -180,7 +178,8 @@ Starten Sie das Konfigurieren.
 
 |procedure|
 
-Wählen Sie :menuselection:`PayPal --> Konfiguration`.
+1. Wählen Sie unter :menuselection:`Erweiterungen --> Module` das Modul `PayPal Checkout für OXID`.
+#. Wählen Sie die Registerkarte :guilabel:`Einstell.`
 
 API-Anmeldeinformationen: Onboarding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

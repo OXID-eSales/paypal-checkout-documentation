@@ -75,17 +75,19 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 Minor Update installieren
 -------------------------
 
-Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.4.0 auf Version 2.5.0.
+Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.5.0 auf Version 2.5.0.
 
 |procedure|
 
-1. Führen Sie folgenden Konsolen-Befehl aus:
+1. Deaktivieren Sie das Modul.
+#. Führen Sie folgenden Konsolen-Befehl aus:
 
    .. code:: bash
 
       composer require oxid-solution-catalysts/paypal-module ^2.6.0
       composer update
 
+#. Aktivieren Sie das Modul.
 #. Um neue Zahlungsarten oder Funktionen nutzen zu können, durchlaufen Sie den Registrierungsprozess (Onboarding) neu.
 
    Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
