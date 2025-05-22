@@ -550,6 +550,48 @@ Weitere Informationen über Länder-Abdeckung und landesspezifische Funktionen d
 1. Um Ihren Kunden Später Bezahlen-Funktionen anzubieten, aktivieren Sie das Kontrollkästchen :guilabel:`"Später Bezahlen"-Button anzeigen?` (:ref:`oxdajr10`, Pos. 2).
 #. Speichern Sie Ihre Einstellungen.
 
+PayPal Checkout-Schaltflächen konfigurieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Passen Sie die PayPal Checkout-Schaltflächen an das Design Ihres OXID eShops an.
+
+Legen Sie fest, wie die PayPal Checkout-Schaltflächen hinsichtlich Anordnung, Farbe, Form und Beschriftung auf der Produktdetailseite, im Warenkorb und im Checkout angezeigt werden sollen.
+
+|procedure|
+
+1. Wählen Sie :guilabel:`Anpassung der Schaltflächen`.
+#. Wählen Sie die gewünschten Einstellungen (:ref:`oxdajr22`).
+
+   .. todo: #ML: Kann ich die Labels konfigurieren (? Sie ergeben teilweise keinen Sinn ("PayPal jetzt kaufen", "Checkout") und sind sind sprachlich nicht harmonisiert.
+    Siehe https://teams.microsoft.com/l/message/19:c8a52a4811c9405e982835844c1c6140@thread.v2/1747909645572?context=%7B%22contextType%22%3A%22chat%22%7D
+    Shape-Option: "Rect" -> "Rectangle"
+    Label-Optionen EN: "PayPal", "Checkout", "Buy now", "Pay"
+    Label-Optionen DE: "PayPal", "Direkt zu PayPal", "PayPal jetzt kaufen", "Mit PayPal zahlen"
+
+
+   .. _oxdajr22:
+
+   .. figure:: /media/screenshots/oxdajr22.png
+      :alt: PayPal Checkout-Schaltflächen konfigurieren
+      :width: 650
+      :class: with-shadow
+
+      Abb.: PayPal Checkout-Schaltflächen konfigurieren
+
+#. Speichern Sie Ihre Einstellungen.
+
+|result|
+
+Die PayPal Checkout-Schaltflächen erscheinen im gewünschten Design (:ref:`oxdajr23`), in unserem Beispiel rund und schwarz.
+
+.. _oxdajr23:
+
+.. figure:: /media/screenshots/oxdajr23.png
+   :alt: PayPal Checkout-Schaltflächen: Layout prüfen
+   :width: 350
+   :class: with-shadow
+
+   Abb.: PayPal Checkout-Schaltflächen: Layout prüfen
 
 Login mit PayPal: Automatisches Anmelden aktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

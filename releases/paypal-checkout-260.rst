@@ -6,10 +6,13 @@ PayPal Checkout V. 2..0
 Neue oder geänderte Funktionen
 ------------------------------
 
+* Konfigurieren Sie PayPal Checkout auf der Registerkarte :guilabel:`Einstell.` des Moduls (siehe :ref:`konfiguration:PayPal Checkout konfigurieren`).
+* Gestalten Sie Anordnung, Farbe, Form und Beschriftung der PayPal Checkout-Schaltflächen.
+
+  Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Checkout-Schaltflächen konfigurieren`).
+
 .. todo:
 
-* Konfigurieren Sie PayPal Checkout auf der Registerkarte :guilabel:`Einstell.` des Moduls (siehe :ref:`konfiguration:PayPal Checkout konfigurieren`).
-* PP-Buttons now stylable
 * PP-Standard works with Smart-Buttons in the Checkout-Flow (no redirect anymore).
 * Vaulting and PayLater are enabled for the Smart-Buttons in the Checkout-Flow
 
