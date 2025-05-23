@@ -980,6 +980,19 @@ Wählen Sie für die Standardversandkosten einen Wert, der den Versandkosten der
 
 Ideal ist ein Wert, der mehr als 90% der Käufe abdeckt.
 
+Übermitteln von Daten an PayPal deaktivieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Unter :guilabel:`Pseudoversandkosten für PayPal Express anpassen` ist standardmäßig das Kontrollkästchen :guilabel:`Das benutzerdefinierte PayPal-ID-Feld kann entweder nur den Bestellnummernwert oder ein JSON mit zusätzlichen Daten enthalten` aktiviert.
+
+Damit stimmen Sie zu, dass bei einer Bestellung im Feld `Bestellnummer` nicht nur die Bestellnummer zu PayPal übermittelt wird, sondern zusätzlich auch die Version Ihres OXID eShops und des PayPal Checkout-Moduls.
+
+Im Fall einer Support-Anfrage kann PayPal mithilfe dieser Informationen Ihr Anliegen schneller bearbeiten.
+
+|procedure|
+
+Um bei Bedarf das Übermitteln von OXID eShop- und PayPalCheckout-Version zu deaktivieren, entfernen Sie das Kontrollkästchen :guilabel:`Das benutzerdefinierte PayPal-ID-Feld kann entweder nur den Bestellnummernwert oder ein JSON mit zusätzlichen Daten enthalten`.
+
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-PayPal Checkout V. 2..0
+PayPal Checkout V. 2.6.0
 ========================
 
 .. todo: #ML: Release-Datum:
