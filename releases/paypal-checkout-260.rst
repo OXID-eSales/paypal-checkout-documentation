@@ -6,34 +6,31 @@ PayPal Checkout V. 2.6.0
 Neue oder geänderte Funktionen
 ------------------------------
 
-* Konfigurieren Sie PayPal Checkout auf der Registerkarte :guilabel:`Einstell.` des Moduls (siehe :ref:`konfiguration:PayPal Checkout konfigurieren`).
+* Wir haben die Navigation geändert: Konfigurieren Sie PayPal Checkout auf der Registerkarte :guilabel:`Einstell.` des Moduls (siehe :ref:`konfiguration:PayPal Checkout konfigurieren`).
 * Gestalten Sie Anordnung, Farbe, Form und Beschriftung der PayPal Checkout-Schaltflächen.
 
-  Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Checkout-Schaltflächen konfigurieren`).
+  Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Checkout-Schaltflächen konfigurieren`.
 
-.. todo:
+.. todo: #ML: Was bedeutet "enabled for the Smart-Buttons in the Checkout-Flow"? gemeint ist : Kredit- oder Debitkarte verwalten, PayPal verwalten
 
-* PP-Standard works with Smart-Buttons in the Checkout-Flow (no redirect anymore).
-* Vaulting and PayLater are enabled for the Smart-Buttons in the Checkout-Flow
+* Die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten sind bei der Neuinstallation mit dem Präfix `PayPal` markiert (siehe :ref:`oxdajr07`).
 
+  Dies verschafft Ihnen beim Konfigurieren Ihrer Zahlungsarten eine bessere Übersicht.
 
+  Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Checkout testen`, :ref:`Schritt 4 <praefix-anpassen>`.
 
+* Ermöglichen Sie PayPal ein schnelleres Bearbeiten Ihrer Support-Anfragen. Standardmäßig ist dazu bei Bestellungen das Übermitteln der Versionsnummer Ihres OXID eShops und des PayPal Checkout-Moduls aktiviert.
 
+  Weitere Informationen finden Sie unter :ref:`konfiguration:Übermitteln von Daten an PayPal deaktivieren`.
 
+* Kunden speichern Zahlungsinformationen (Kreditkarte und PayPal) für spätere Wiederverwendung im Checkout und können diese Zahlungsinformationen in ihrem Konto verwalten.
 
-Apple Pay und Google Pay
-^^^^^^^^^^^^^^^^^^^^^^^^
+  Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting deaktivieren`.
 
-
-
-
-Konfigurieren von Pseudoversandkosten für PayPal Express
---------------------------------------------------------
-
-Um Zahlungen mit PayPal Express zu ermöglichen, stellen Sie durch sogenannte Pseudoversandkosten sicher, dass der Wert des Warenkorbs ungefähr dem Wert entspricht, der beim Checkout vom PayPal-Konto des Kunden eingezogen wird.
-
-Weitere Informationen finden Sie unter :ref:`konfiguration:Pseudoversandkosten für PayPal Express anpassen`.
-
+.. todo: nicht doku-relevant:Paypal Später zahlen ist deprecated: nicht mhr in Liste, sondern ist jetzt Button;
+.. todo: nicht doku-relevant: PP-Standard works with Smart-Buttons in the Checkout-Flow (no redirect anymore) 25:18)
+.. todo: #ML: Nur wichtig, wenn Screenshots da; Vorschlag: weglassen
+    * Wenn Ihr Kunde im Checkout die :guilabel:`PayPal`-Schaltfläche zum Bezahlen wählt, gelangt er ohne Redirect in das Dialogfenster zum Anmelden bei PayPal.
 
 Installation
 ------------

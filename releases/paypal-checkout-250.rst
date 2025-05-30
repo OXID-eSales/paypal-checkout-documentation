@@ -29,7 +29,7 @@ Weitere Informationen zur Abdeckung finden Sie unter
 
    Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
-#. Verifizieren Sie, dass die Freischaltung für die Zahlungsarten Apple Pay und Google Pay erfolgt ist (:ref:`oxdajr05rn`, Pos. 5).
+#. Verifizieren Sie, dass die Freischaltung für die Zahlungsarten Apple Pay und Google Pay erfolgt ist (:ref:`oxdajr05rn`, Pos. 5).
 
    .. _oxdajr05rn:
 

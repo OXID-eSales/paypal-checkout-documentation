@@ -43,13 +43,13 @@ Wenn Sie :productname:`PayPal Checkout` bereits nutzen, aktivieren Sie PayPal Va
 
 #. Durchlaufen Sie den Registrierungs-Prozess (Onboarding) erneut.
 
-   Nach erfolgreicher technischer Überprüfung wird die Verfügbarkeit von PayPal Vaulting im Bereich :guilabel:`Freischaltung für besondere Zahlarten erfolgt` bestätigt (:ref:`oxdajr05`, Pos. 4).
+   Nach erfolgreicher technischer Überprüfung wird die Verfügbarkeit von PayPal Vaulting im Bereich :guilabel:`Freischaltung für besondere Zahlarten erfolgt` bestätigt (:ref:`oxdajr05`, Pos. 4).
 
    Weitere Informationen zum Durchlaufen Sie den Registrierungs-Prozesses (Onboarding) finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
 |result|
 
-PayPal Vaulting ist standardmäßig aktiviert (:ref:`oxdajr14`, Pos. 1).
+PayPal Vaulting ist standardmäßig aktiviert (:ref:`oxdajr14`, Pos. 1).
 
 Deaktivieren Sie es bei Bedarf. Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting deaktivieren`.
 

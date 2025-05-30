@@ -8,7 +8,7 @@ Neue oder geänderte Funktionen
 
 * Bieten Sie Ihren Kunden für Überweisungen in Deutschland die neue Zahlungsart SEPA an.
 
-  Für den Checkout-Schritt Versand & Zahlungsart können Sie damit die entsprechende Schaltfläche SEPA-Lastschrift konfigurieren (:ref:`oxdajr02`, Pos. 3)
+  Für den Checkout-Schritt Versand & Zahlungsart können Sie damit die entsprechende Schaltfläche SEPA-Lastschrift konfigurieren (:ref:`oxdajr02`, Pos. 3)
 
 * Wenn Sie Ihren Kunden bisher keine Zahlung per Kreditkarte anbieten konnten, nutzen Sie die Fallback-Lösung von PayPal.
 
