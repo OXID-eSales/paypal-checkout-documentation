@@ -903,11 +903,7 @@ PayPal Vaulting deaktivieren
 
 PayPal Vaulting ist standardmäßig :emphasis:`aktiviert`.
 
-Ihre Kunden können damit ihre Zahlungsinformationen (für Kreditkarten oder PayPal-Konten) für zukünftige Käufe speichern (im Checkout: :ref:`oxdajr15`, Pos. 1, im Konto: :ref:`oxdajr16`, Pos. 1) und unter :guilabel:`Kredit- oder Debitkarte verwalten` bei Bedarf löschen (:ref:`oxdajr16`).
-
-.. todo: #ML/#ES: Prozess des Verwaltens von gespeicherten Kreditkaten infos geht noch nicht in meiner Installation von 2.6-RC9: https://teams.microsoft.com/l/message/19:c8a52a4811c9405e982835844c1c6140@thread.v2/1748586968030?context=%7B%22contextType%22%3A%22chat%22%7D
-
-.. todo: Bild OK
+Ihre Kunden können damit im Checkout ihre Zahlungsinformationen (für Kreditkarten oder PayPal-Konten) für zukünftige Käufe speichern (:ref:`oxdajr15`, Pos. 1) und unter :guilabel:`PayPal verwalten` oder :guilabel:`Kredit- oder Debitkarte verwalten` bei Bedarf löschen (:ref:`oxdajr16`).
 
 .. _oxdajr15:
 
@@ -917,8 +913,6 @@ Ihre Kunden können damit ihre Zahlungsinformationen (für Kreditkarten oder Pay
    :class: with-shadow
 
    Abb.: Zahlungsinformationen im Checkout speichern
-
-.. todo: #tbd: Bild neu:
 
 .. _oxdajr16:
 
