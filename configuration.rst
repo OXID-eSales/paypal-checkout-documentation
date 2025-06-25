@@ -167,15 +167,19 @@ To be able to offer iDEAL, you must have made sure that you have set the Netherl
 Configuring PayPal Checkout
 ---------------------------
 
-Start the configuration.
+Start configuring.
 
 |prerequisites|
 
 * You have activated the :productname:`PayPal Checkout` module.
+* You have created a PayPal Sandbox account.
+
+  For more information, see :ref:`paypal-sandbox:Testing PayPal Checkout in the PayPal Sandbox`.
 
 |procedure|
 
-Choose :menuselection:`PayPal --> Configuration`.
+1. Under :menuselection:`Extensions --> Modules`, choose the `PayPal Checkout for OXID` module.
+2. Select the :guilabel:`Settings` tab.
 
 API Credentials: Onboarding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
