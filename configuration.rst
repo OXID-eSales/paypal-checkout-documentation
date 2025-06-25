@@ -559,6 +559,43 @@ For more information about country coverage and country-specific features of the
 1. To offer your customers Pay Later features, choose the :guilabel:`"Show Pay Later" button?` checkbox (:ref:`oxdajr10`, item 2).
 #. Save your settings.
 
+Configuring PayPal Checkout Buttons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Customize the PayPal Checkout buttons to match the design of your OXID eShop.
+
+Specify how the PayPal Checkout buttons should be displayed in terms of layout, color, shape, and label on the product detail page, in the cart, and during checkout.
+
+|procedure|
+
+1. Choose :guilabel:`Buttons Customization`.
+2. Choose the desired settings (:ref:`oxdajr22`).
+
+   .. _oxdajr22:
+
+   .. figure:: /media/screenshots/oxdajr22.png
+      :alt: Configuring PayPal Checkout buttons
+      :width: 650
+      :class: with-shadow
+
+      Fig.: Configuring PayPal Checkout buttons
+
+3. Save your settings.
+
+|result|
+
+The PayPal Checkout buttons will appear in the desired design, in our example, round and black (:ref:`oxdajr23`).
+
+.. _oxdajr23:
+
+.. figure:: /media/screenshots/oxdajr23.png
+   :alt: PayPal Checkout buttons: Checking the layout
+   :width: 350
+   :class: with-shadow
+
+   Fig.: PayPal Checkout buttons: Checking the layout
+
+
 Login with PayPal: Activating automatic login
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
