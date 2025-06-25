@@ -3,8 +3,8 @@ Installation
 
 To install the :productname:`PayPal Checkout` payment module, install different versions depending on your OXID eShop version:
 
-* If you have OXID eShop version 6.3.x to 6.5.x, install :productname:`PayPal Checkout` 2.5.x (see :ref:`installation:Installing PayPal Checkout`).
-* If you have OXID eShop version 7.x, install :productname:`PayPal Checkout` 3.3.x.
+* If you have OXID eShop version 6.3.x to 6.5.x, install :productname:`PayPal Checkout` 2.6.x (see :ref:`installation:Installing PayPal Checkout`).
+* If you have OXID eShop version 7.x, install :productname:`PayPal Checkout` 3.5.x.
   |br|
   For more Informationen, see the corresponding module documentation under `Installing PayPal Checkout 3.3.x <https://docs.oxid-esales.com/modules/paypal-checkout/en/3.3/installation.html>`_.
 
@@ -17,7 +17,7 @@ Earlier versions of OXID eShop are not supported.
 Installing PayPal Checkout
 --------------------------
 
-For OXID eShop version 6.3.x to 6.5.x, install the payment module :productname:`PayPal Checkout` version 2.5.x.
+For OXID eShop version 6.3.x to 6.5.x, install the payment module :productname:`PayPal Checkout` version 2.6.x.
 
 |prerequisites|
 
@@ -47,7 +47,7 @@ For OXID eShop version 6.3.x to 6.5.x, install the payment module :productname:`
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.5.0
+      composer require oxid-solution-catalysts/paypal-module ^2.6.0
 
 #. Optional: To activate the module, run the following command.
    |br|
@@ -73,7 +73,7 @@ When the installation process is finished, the module :guilabel:`PayPal Checkout
 Installing a minor update
 -------------------------
 
-If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.4.0 to version 2.5.0.
+If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.5.0 to version 2.6.0.
 
 |procedure|
 
@@ -81,7 +81,7 @@ If you use a deprecated version, perform a minor update, for example from :produ
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.5.0
+      composer require oxid-solution-catalysts/paypal-module ^2.6.0
       composer update
 
 #. To be able to use new payment methods or functions, go through the registration process (onboarding) again.
