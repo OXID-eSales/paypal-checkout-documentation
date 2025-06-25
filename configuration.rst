@@ -340,17 +340,26 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
 |result|
 
-Once you have given PayPal permission to connect your sandbox account to the PayPal test store, the API credentials are displayed, and the module is active (:ref:`oxdajr05`, item 1).
+* As soon as you have authorized PayPal to connect your sandbox account with the PayPal test store, the API credentials will be displayed. The module is active (:ref:`oxdajr05a`, item 1).
 
-Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :guilabel:`PayPal` (technical name :technicalname:`oscpaypal`) is active (:ref:`oxdajr07`).
+  .. _oxdajr05a:
 
-   .. _oxdajr07:
+  .. figure:: /media/screenshots/oxdajr05a.png
+     :alt: PayPal Checkout module active
+     :width: 650
 
-   .. figure:: /media/screenshots/oxdajr07.png
-      :alt: Payment method PayPal active
-      :width: 650
+     Fig.: PayPal Checkout module active
 
-      Fig.: Payment method PayPal active
+* Under :menuselection:`Shop Settings --> Payment Methods`, the payment method :guilabel:`PayPal` (technical name :technicalname:`oscpaypal`, shown at the bottom left) is active (:ref:`oxdajr07`).
+
+  .. _oxdajr07:
+
+  .. figure:: /media/screenshots/oxdajr07.png
+     :alt: PayPal payment method active
+     :width: 650
+
+     Fig.: PayPal payment method active
+
 
 The payment methods "Credit card" and "Purchase upon invoice" are not available? Follow the instructions under :ref:`troubleshooting:Payment methods or functions not available`.
 
