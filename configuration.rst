@@ -154,11 +154,11 @@ Ensure :productname:`PayPal Checkout` is activated in each subshop where you wan
 
 |result|
 
-* Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal` as well as important additional payment methods, are marked as active.
+Under :menuselection:`Shop Settings --> Payment Methods`, the payment methods :guilabel:`PayPal` as well as other important payment methods are marked as active.
 
-  To actually use a certain country-specific payment method, under :menuselection:`Master Settings --> Countries`, you must have marked the respective country as active.
+The payment methods that belong to :guilabel:`PayPal Checkout for OXID` have the prefix `PayPal`, for example, `PayPal ApplePay`. This allows you to easily distinguish them from similar payment methods provided by other payment modules.
 
-* On the left in the navigation., the new menu item :menuselection:`PayPal --> Configuration` appears.
+To actually use a specific country-specific payment method, under :menuselection:`Master Settings --> Countries`, mark the relevant country as active .
 
 |example|
 
