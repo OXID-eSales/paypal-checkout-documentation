@@ -984,6 +984,20 @@ Specify a value for the standard shipping costs that corresponds to the shipping
 
 A value that covers more than 90% of purchases is ideal.
 
+Disabling Transmitting Data to PayPal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Under :guilabel:`PayPal custom id field contents`, the checkbox :guilabel:`PayPal custom id field will be JSON encoded string with order number, shop version and the PayPal module version` is enabled by default.
+
+By enabling this, you agree that, when placing an order, not only the order number but also the version of your OXID eShop and the PayPal Checkout module will be transmitted to PayPal in the `Order Number` field.
+
+In the event of a support request, PayPal can use this information to process your inquiry more quickly.
+
+|procedure|
+
+If you want to disable the transmission of the OXID eShop and PayPal Checkout version, simply uncheck the box :guilabel:`PayPal custom id field will be JSON encoded string with order number, shop version and the PayPal module version`.
+
+
 
 Optional: Configuring the country mapping of PayPal Checkout payment methods
 ----------------------------------------------------------------------------
