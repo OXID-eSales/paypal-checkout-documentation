@@ -1032,6 +1032,9 @@ Configure :productname:`PayPal Checkout` according to your needs and test the re
 #. Under :menuselection:`Shop Settings --> Payment Methods`, do the following:
 
    a. Assign at least one user group to each of the desired :productname:`PayPal Checkout` payment methods (for example :guilabel:`iDEAL (via PayPal)`.
+
+      Die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten haben das Präfix PayPal, beispielsweise `PayPal Bancontact`.
+
    b. On corresponding :guilabel:`Master` tab, make sure that you have set the desired minimum and maximum purchase value for the :productname:`PayPal Checkout` payment methods.
       |br|
       Example: The maximum purchase value for :guilabel:`PayPal` payment type is limited to €10,000 by default. The minimum purchase value is €10.
