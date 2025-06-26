@@ -896,25 +896,26 @@ Deactivating PayPal Vaulting
 
 PayPal Vaulting is :emphasis:`activated` by default.
 
-In the checkout (:ref:`oxdajr15`, item 1) or in the account (:ref:`oxdajr16`, item 1), your customers can use it to save their payment information for credit cards or PayPal accounts for future purchases.
+Your customers can use this feature to save their payment information (for credit cards or PayPal accounts) during checkout for future purchases (:ref:`oxdajr15`, item 1) and, if needed, delete them under :guilabel:`Manage PayPal` or :guilabel:`Manage Credit or Debit Card` (:ref:`oxdajr16`).
+
 
 .. _oxdajr15:
 
 .. figure:: /media/screenshots/oxdajr15.png
-   :alt: Saving payment information in the checkout
+   :alt: Saving payment information during checkout
    :width: 650
    :class: with-shadow
 
-   Fig.: Saving payment information in the checkout
+   Fig.: Saving payment information during checkout
 
 .. _oxdajr16:
 
 .. figure:: /media/screenshots/oxdajr16.png
-   :alt: Saving and managing payment information in the account
+   :alt: Managing payment information in the account
    :width: 650
    :class: with-shadow
 
-   Fig.: Saving and managing payment information in the account
+   Fig.: Managing payment information in the account
 
 This speeds up the checkout process for regular customers and increases the user-friendliness of your OXID eShop. The payment button is labeled accordingly (:ref:`oxdajr17`, item 1).
 
