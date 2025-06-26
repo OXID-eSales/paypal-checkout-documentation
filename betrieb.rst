@@ -115,7 +115,7 @@ Sie haben das manuelle Löschen unvollständiger Bestellungen aktiviert (siehe :
 
 1. Wählen Sie :menuselection:`Bestellungen verwalten --> Bestellungen`.
 
-   Unabgeschlossene Bestellungen haben die Bestellnummer :technicalname:`0` (:ref:`oxdajt04`, Pos.Pos. 1a,Pos. 1b).
+   Unabgeschlossene Bestellungen haben die Bestellnummer :technicalname:`0` (:ref:`oxdajt04`, Pos.Pos. 1a, Pos. 1b).
 
 #. Wählen Sie :guilabel:`Eintrag löschen` (:ref:`oxdajt04`, Pos. 2).
 

@@ -160,7 +160,7 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarte
 .. todo: #ML: Alle Zahlungsarten von PayApl haben Paypal als Präfix:: #ML: das stimmt so nicht:  iDEAL ha kein Präfix, ebenso Kreditkarte , Bancontact etc., sondern nur PayPal, PayPal - später bezahlen, PayPal ApplePay, PayPal Express, PayPal Kreditkarte Fallback
 .. todo: https://teams.microsoft.com/l/message/19:c8a52a4811c9405e982835844c1c6140@thread.v2/1748249877848?context=%7B%22contextType%22%3A%22chat%22%7D
 
-Alle Zahlungsarten, die zu :guilabel:`PayPal Checkout für OXID` gehören, haben das Präfix `PayPal`, beispielsweise `PayPal ApplePay`. Auf diese Weise können Sie sie leicht unterscheiden von gleichartigen Zahlungsarten, die von anderen Zahlungsmodulen bereitgestellt werden.
+Die Zahlungsarten, die zu :guilabel:`PayPal Checkout für OXID` gehören, haben das Präfix `PayPal`, beispielsweise `PayPal ApplePay`. Auf diese Weise können Sie sie leicht unterscheiden von gleichartigen Zahlungsarten, die von anderen Zahlungsmodulen bereitgestellt werden.
 
 Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
 
@@ -555,7 +555,6 @@ Später Bezahlen bedeutet beispielsweise, dass PayPal Kunden in Deutschland die 
 
 Weitere Informationen über Länder-Abdeckung und landesspezifische Funktionen der Später Bezahlen-Funktion finden Sie unter `developer.paypal.com/docs/checkout/pay-later/de <https://developer.paypal.com/docs/checkout/pay-later/de/>`_.
 
-
 |procedure|
 
 1. Um Ihren Kunden Später Bezahlen-Funktionen anzubieten, aktivieren Sie das Kontrollkästchen :guilabel:`"Später Bezahlen"-Button anzeigen?` (:ref:`oxdajr10`, Pos. 2).
@@ -573,13 +572,6 @@ Legen Sie fest, wie die PayPal Checkout-Schaltflächen hinsichtlich Anordnung, F
 1. Wählen Sie :guilabel:`Anpassung der Schaltflächen`.
 #. Wählen Sie die gewünschten Einstellungen (:ref:`oxdajr22`).
 
-   .. todo: #ML: Kann ich die Labels konfigurieren (? Sie ergeben teilweise keinen Sinn ("PayPal jetzt kaufen", "Checkout") und sind sind sprachlich nicht harmonisiert.
-    Siehe https://teams.microsoft.com/l/message/19:c8a52a4811c9405e982835844c1c6140@thread.v2/1747909645572?context=%7B%22contextType%22%3A%22chat%22%7D
-    Shape-Option: "Rect" -> "Rectangle"
-    Label-Optionen EN: "PayPal", "Checkout", "Buy now", "Pay"
-    Label-Optionen DE: "PayPal", "Direkt zu PayPal", "PayPal jetzt kaufen", "Mit PayPal zahlen"
-
-
    .. _oxdajr22:
 
    .. figure:: /media/screenshots/oxdajr22.png
@@ -588,12 +580,12 @@ Legen Sie fest, wie die PayPal Checkout-Schaltflächen hinsichtlich Anordnung, F
       :class: with-shadow
 
       Abb.: PayPal Checkout-Schaltflächen konfigurieren
-
+ (:ref:`oxdajr23`)
 #. Speichern Sie Ihre Einstellungen.
 
 |result|
 
-Die PayPal Checkout-Schaltflächen erscheinen im gewünschten Design (:ref:`oxdajr23`), in unserem Beispiel rund und schwarz.
+Die PayPal Checkout-Schaltflächen erscheinen im gewünschten Design, in unserem Beispiel rund und schwarz (:ref:`oxdajr23`).
 
 .. _oxdajr23:
 
@@ -925,8 +917,6 @@ Ihre Kunden können damit im Checkout ihre Zahlungsinformationen (für Kreditkar
 
 Das beschleunigt bei Stammkunden die Kaufabwicklung und erhöht die Benutzerfreundlichkeit Ihres OXID eShops. Die Schaltfläche zum Bezahlen ist entsprechend gekennzeichnet (:ref:`oxdajr17`, Pos. 1).
 
-.. todo: #tbd: Bild verifizieren
-
 .. _oxdajr17:
 
 .. figure:: /media/screenshots/oxdajr17.png
@@ -996,7 +986,7 @@ Ideal ist ein Wert, der mehr als 90% der Käufe abdeckt.
 Übermitteln von Daten an PayPal deaktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Unter :guilabel:`Pseudoversandkosten für PayPal Express anpassen` ist standardmäßig das Kontrollkästchen :guilabel:`Das benutzerdefinierte PayPal-ID-Feld kann entweder nur den Bestellnummernwert oder ein JSON mit zusätzlichen Daten enthalten` aktiviert.
+Unter :guilabel:`PayPal Inhalte des benutzerdefinierten ID-Feldes` ist standardmäßig das Kontrollkästchen :guilabel:`Das benutzerdefinierte PayPal-ID-Feld kann entweder nur den Bestellnummernwert oder ein JSON mit zusätzlichen Daten enthalten` aktiviert.
 
 Damit stimmen Sie zu, dass bei einer Bestellung im Feld `Bestellnummer` nicht nur die Bestellnummer zu PayPal übermittelt wird, sondern zusätzlich auch die Version Ihres OXID eShops und des PayPal Checkout-Moduls.
 
