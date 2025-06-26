@@ -1031,9 +1031,7 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
 
    a. Ordnen Sie den gewünschten :productname:`PayPal Checkout`-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
 
-      .. todo: #tbd: verifizieren: #ML: geht aktuell nicht: https://teams.microsoft.com/l/message/19:c8a52a4811c9405e982835844c1c6140@thread.v2/1748249877848?context=%7B%22contextType%22%3A%22chat%22%7D
-
-      Die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten haben das Präfix PayPal, beispielsweise `PayPAl Bancontact`.
+      Die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten haben das Präfix PayPal, beispielsweise `PayPal Bancontact`.
 
    b. Stellen Sie sicher, dass Sie für die :productname:`PayPal Checkout`-Zahlungsarten auf der Registerkarte :guilabel:`Stamm` den jeweils gewünschten minimalen und maximalen Einkaufswert festgelegt haben.
       |br|
