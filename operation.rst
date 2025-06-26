@@ -16,7 +16,7 @@ If you use this option, make sure to monitor the orders that have not been paid 
 
 |procedure|
 
-1. Under :menuselection:`Administer Orders --> Orders`, choose the unpaid order (:ref:`oxdajt01`, item 1).
+1. Under :menuselection:`Administer Orders --> Orders`, choose the unpaid order (:ref:`oxdajt01`, item 1).
 #. Do the following, depending on how you have configured deferred money collection:
 
    * If you have selected :guilabel:`Automatically upon delivery`, mark the item as shipped.
@@ -25,7 +25,7 @@ If you use this option, make sure to monitor the orders that have not been paid 
    * If you have selected :guilabel:`Manually`, do the following:
 
      a. Technically optional: Mark the item as shipped (see :ref:`operation:Marking an item as shipped`).
-     #. On the :guilabel:`PayPal Checkout` tab, choose the :guilabel:`Capture` button (:ref:`oxdajt01`, item 2).
+     #. On the :guilabel:`PayPal Checkout` tab, choose the :guilabel:`Capture` button (:ref:`oxdajt01`, item 2).
 
 .. _oxdajt01:
 
@@ -38,9 +38,9 @@ If you use this option, make sure to monitor the orders that have not been paid 
 
 |result|
 
-With the next page refresh, the order is marked as paid in the list of orders (:ref:`oxdajt02`, item 1).
+With the next page refresh, the order is marked as paid in the list of orders (:ref:`oxdajt02`, item 1).
 
-The PayPal status is :technicalname:`Completed` (:ref:`oxdajt02`, item 2).
+The PayPal status is :technicalname:`Completed` (:ref:`oxdajt02`, item 2).
 
 .. _oxdajt02:
 
@@ -64,8 +64,8 @@ With the tracking code you can
 |procedure|
 
 1. Under :menuselection:`Administer Orders --> Orders` choose the order.
-#. On the :guilabel:`Main` tab, enter the tracking code in the corresponding input field (:ref:`oxdajt03`, item 2) as usual.
-#. In addition, enter the following information in the corresponding drop-down lists (:ref:`oxdajt03`, item 1):
+#. On the :guilabel:`Main` tab, enter the tracking code in the corresponding input field (:ref:`oxdajt03`, item 2) as usual.
+#. In addition, enter the following information in the corresponding drop-down lists (:ref:`oxdajt03`, item 1):
 
    * Tracking Carrier (Country): Country-specific version of the shipping service provider.
 
@@ -115,9 +115,9 @@ You have enabled manual deletion of incomplete orders (see :ref:`configuration:C
 
 1. Choose :menuselection:`Administer Orders --> Orders`.
 
-   Unfinished orders have order number :technicalname:`0` (:ref:`oxdajt04`, item 1a, 1b).
+   Unfinished orders have order number :technicalname:`0` (:ref:`oxdajt04`, item 1a, 1b).
 
-#. Choose :guilabel:`Delete Entry` (:ref:`oxdajt04`, item 2).
+#. Choose :guilabel:`Delete Entry` (:ref:`oxdajt04`, item 2).
 
 .. _oxdajt04:
 

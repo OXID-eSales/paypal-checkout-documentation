@@ -8,7 +8,7 @@ New or changed functions
 
 * Offer your customers the new SEPA Direct Debit payment method for bank transfers in Germany.
 
-  For the checkout step Shipping & Payment Method, you can use it to configure the corresponding SEPA Direct Debit button (:ref:`oxdajr02`, item 3).
+  For the checkout step Shipping & Payment Method, you can use it to configure the corresponding SEPA Direct Debit button (:ref:`oxdajr02`, item 3).
 
 * If you were previously unable to offer your customers payment by credit card, use PayPal's fallback solution.
 

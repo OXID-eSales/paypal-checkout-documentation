@@ -95,7 +95,7 @@ We recommend the following procedure.
 
 
 #. Enable :productname:`PayPal Checkout` for live operation as described under :ref:`configuration:Activating PayPal Checkout manually`.
-#. Select :menuselection:`Shop Settings --> Payment Methods`.
+#. Choose :menuselection:`Shop Settings --> Payment Methods`.
 #. Identify the payment methods corresponding to :productname:`PayPal` or :productname:`PayPal Plus`:
 
    * :guilabel:`PayPal` (ID: :technicalname:`oxidpaypal`)
@@ -179,7 +179,7 @@ Start configuring.
 |procedure|
 
 1. Under :menuselection:`Extensions --> Modules`, choose the `PayPal Checkout for OXID` module.
-2. Select the :guilabel:`Settings` tab.
+2. Choose the :guilabel:`Settings` tab.
 
 API Credentials: Onboarding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -263,7 +263,7 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
    * Case 3: You have already completed the registration process for the current version of :productname:`PayPal Checkout` and are moving your OXID eShop to another domain, for example? -- In this case, you can reuse the access data and webhook.
 
-1. To log in to the sandbox, under :guilabel:`API credentials`, choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button (:ref:`oxdajr03`, item 1).
+1. To log in to the sandbox, under :guilabel:`API credentials`, choose the :guilabel:`Sign Up Merchant Integration (Sandbox)` button (:ref:`oxdajr03`, item 1).
 
    .. _oxdajr03:
 
@@ -310,7 +310,7 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
     .. _activation-creditcard:
 
-#. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`, item 5), check whether the activation has been done.
+#. If you want to use the payment methods Pay upon Invoice or credit card, under :guilabel:`Activation for special payment methods has taken place` (:ref:`oxdajr05`, item 5), check whether the activation has been done.
 
    .. hint::
 
@@ -318,7 +318,7 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
       If the activation :emphasis:`did not` happen automatically (:guilabel:`credit card: No`), contact your PayPal representative.
 
-      If the activation has taken place, the credit card payment method is available in the checkout step Shipping & Payment Method (:ref:`oxdajr02`, item 1).
+      If the activation has taken place, the credit card payment method is available in the checkout step Shipping & Payment Method (:ref:`oxdajr02`, item 1).
 
       If activation is :emphasis:`not` possible, a fallback solution is available as an alternative (:ref:`oxdajr02`, ìtem 2).
 
@@ -340,7 +340,7 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
 |result|
 
-* As soon as you have authorized PayPal to connect your sandbox account with the PayPal test store, the API credentials will be displayed. The module is active (:ref:`oxdajr05a`, item 1).
+* As soon as you have authorized PayPal to connect your sandbox account with the PayPal test store, the API credentials will be displayed. The module is active (:ref:`oxdajr05a`, item 1).
 
   .. _oxdajr05a:
 
@@ -387,7 +387,7 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 
    Alternatively: To jump directly to step :ref:`Add Domain <addDomain>`, log in at the following URL: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_.
 
-#. In the menu under your name, choose the :guilabel:`Account Settings` menu item (:ref:`oxdajr18`, item 1).
+#. In the menu under your name, choose the :guilabel:`Account Settings` menu item (:ref:`oxdajr18`, item 1).
 
    .. _oxdajr18:
 
@@ -427,7 +427,7 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 
    You go to a page to register your website with Apple Pay (:ref:`oxdajr19`).
 
-#. Specify the domain name (the URL without the schema, e.g. ``https://``) of your OXID e-shop (``www.my-oxid-eshop.com``, for example) (:ref:`oxdajr19`, item 1).
+#. Specify the domain name (the URL without the schema, e.g. ``https://``) of your OXID e-shop (``www.my-oxid-eshop.com``, for example) (:ref:`oxdajr19`, item 1).
 
    .. _oxdajr19:
 
@@ -440,7 +440,7 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 
    The system generates a domain association file which you use to proves that you are the owner of the website.
 
-   It is automatically saved in the root directory of your OXID eShop. The :emphasis:`manual` download and hosting of the file (:ref:`oxdajr19`, item 2) is therefore normally :emphasis:`not` necessary.
+   It is automatically saved in the root directory of your OXID eShop. The :emphasis:`manual` download and hosting of the file (:ref:`oxdajr19`, item 2) is therefore normally :emphasis:`not` necessary.
 
 #. Optional: To check whether the domain association file is available, open the file via browser.
 
@@ -457,7 +457,7 @@ If you want to offer :productname:`Apple Pay`, register the (sandbox) domain of 
 
       Fig.: Verifying the domain association file
 
-#. Choose :guilabel:`Register Domain` (:ref:`oxdajr19`, item 3).
+#. Choose :guilabel:`Register Domain` (:ref:`oxdajr19`, item 3).
 #. Confirm the message confirming that Apple Pay has registered your OXID eShop (:ref:`oxdajr21`).
 
    .. _oxdajr21:
@@ -510,7 +510,7 @@ So, you determine,
 
 * on the product detail page
 * in the shopping cart
-* in the mini shopping cart (:ref:`oxdajr09`, item 1)
+* in the mini shopping cart (:ref:`oxdajr09`, item 1)
 * on the checkout page
 
 So, your customers can use their PayPal account to trigger the order at any time.
@@ -529,7 +529,7 @@ If you want your customers to have to register in your eShop, disable the quick 
 
 |procedure|
 
-1. To disable :productname:`PayPal Checkout`'s express checkout feature, uncheck :guilabel:`Product details page`, :guilabel:`Basket`, and :guilabel:`Mini-Basket` (:ref:`oxdajr10`, item 1).
+1. To disable :productname:`PayPal Checkout`'s express checkout feature, uncheck :guilabel:`Product details page`, :guilabel:`Basket`, and :guilabel:`Mini-Basket` (:ref:`oxdajr10`, item 1).
 2. Save your settings.
 
 .. _oxdajr10:
@@ -547,7 +547,7 @@ The PayPal button appears only on the checkout page.
 Button placement settings: Pay later
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Decide whether you want to offer the Pay Later feature (:ref:`oxdajr09`, item 2).
+Decide whether you want to offer the Pay Later feature (:ref:`oxdajr09`, item 2).
 
 Pay Later means, for example, that PayPal offers customers in Germany the "Pay after 30 days" or PayPal installments options.
 
@@ -556,7 +556,7 @@ For more information about country coverage and country-specific features of the
 
 |procedure|
 
-1. To offer your customers Pay Later features, choose the :guilabel:`"Show Pay Later" button?` checkbox (:ref:`oxdajr10`, item 2).
+1. To offer your customers Pay Later features, choose the :guilabel:`"Show Pay Later" button?` checkbox (:ref:`oxdajr10`, item 2).
 #. Save your settings.
 
 Configuring PayPal Checkout Buttons
@@ -706,7 +706,7 @@ However, in certain cases it makes sense that the payment is only triggered by t
       |br|
       Make sure that the :guilabel:`Quantity` condition is correctly specified.
    b. Create a dedicated shipping method and assign the :guilabel:`PayPal` payment method and shipping cost rule for individualized products to it.
-   c. In the description text of the item, instruct your customers to choose only the dedicated shipping method for payment (:ref:`oxdajr06`, item 1).
+   c. In the description text of the item, instruct your customers to choose only the dedicated shipping method for payment (:ref:`oxdajr06`, item 1).
 
       .. _oxdajr06:
 
@@ -784,9 +784,9 @@ For more information, see :ref:`operation:Deleting incomplete orders manually`.
 
 |procedure|
 
-1. If you want the system to automatically delete incomplete orders, choose the :guilabel:`Automatically delete not finished orders?` checkbox (:ref:`oxdajr13`, item 1).
+1. If you want the system to automatically delete incomplete orders, choose the :guilabel:`Automatically delete not finished orders?` checkbox (:ref:`oxdajr13`, item 1).
 
-   If necessary, adjust the default retention time of 60 minutes :ref:`oxdajr13`, item 2).
+   If necessary, adjust the default retention time of 60 minutes :ref:`oxdajr13`, item 2).
 
 #. Save your settings.
 
@@ -896,7 +896,7 @@ Deactivating PayPal Vaulting
 
 PayPal Vaulting is :emphasis:`activated` by default.
 
-Your customers can use this feature to save their payment information (for credit cards or PayPal accounts) during checkout for future purchases (:ref:`oxdajr15`, item 1) and, if needed, delete them under :guilabel:`Manage PayPal` or :guilabel:`Manage Credit or Debit Card` (:ref:`oxdajr16`).
+Your customers can use this feature to save their payment information (for credit cards or PayPal accounts) during checkout for future purchases (:ref:`oxdajr15`, item 1) and, if needed, delete them under :guilabel:`Manage PayPal` or :guilabel:`Manage Credit or Debit Card` (:ref:`oxdajr16`).
 
 
 .. _oxdajr15:
@@ -917,7 +917,7 @@ Your customers can use this feature to save their payment information (for credi
 
    Fig.: Managing payment information in the account
 
-This speeds up the checkout process for regular customers and increases the user-friendliness of your OXID eShop. The payment button is labeled accordingly (:ref:`oxdajr17`, item 1).
+This speeds up the checkout process for regular customers and increases the user-friendliness of your OXID eShop. The payment button is labeled accordingly (:ref:`oxdajr17`, item 1).
 
 .. _oxdajr17:
 
@@ -934,7 +934,7 @@ The function is practical, but you can deactivate it if required.
 
 |procedure|
 
-1. To deactivate PayPal Vaulting, deactivate the :guilabel:`PayPal Vaulting active` checkbox (:ref:`oxdajr14`, item 1).
+1. To deactivate PayPal Vaulting, deactivate the :guilabel:`PayPal Vaulting active` checkbox (:ref:`oxdajr14`, item 1).
 #. Save your settings.
 
 .. _oxdajr14:
@@ -996,8 +996,6 @@ In the event of a support request, PayPal can use this information to process yo
 |procedure|
 
 If you want to disable the transmission of the OXID eShop and PayPal Checkout version, simply uncheck the box :guilabel:`PayPal custom id field will be JSON encoded string with order number, shop version and the PayPal module version`.
-
-
 
 Optional: Configuring the country mapping of PayPal Checkout payment methods
 ----------------------------------------------------------------------------

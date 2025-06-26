@@ -73,9 +73,9 @@ Use the following instructions for integrating Usercentrics in :productname:`Pay
 
    a. Start the Usercentrics dashboard.
    #. Choose :menuselection:`Service Settings --> Data Processing Services` (:ref:`oxdajv01`, items 1, 2).
-   #. To create a service for :productname:`PayPal Checkout`, choose :guilabel:`Create Custom DPS` (:ref:`oxdajv01`, item 3).
+   #. To create a service for :productname:`PayPal Checkout`, choose :guilabel:`Create Custom DPS` (:ref:`oxdajv01`, item 3).
 
-      Under :guilabel:`Custom Data Processing Services` (:ref:`oxdajv01`, item 4), the name of the data processing service is displayed (:ref:`oxdajv01`, item 5).
+      Under :guilabel:`Custom Data Processing Services` (:ref:`oxdajv01`, item 4), the name of the data processing service is displayed (:ref:`oxdajv01`, item 5).
 
       .. _oxdajv01:
 
@@ -108,7 +108,7 @@ Use the following instructions for integrating Usercentrics in :productname:`Pay
 
       When copying the name, pay attention to upper and lower case and any spaces.
 
-      In our example (:ref:`oxdajv01`, item 5), the data attribute is therefore :code:`data-usercentrics="PayPal Checkout"` (see :ref:`Example: Customizing the PayPal Checkout scripts <customizing-scripts>`).
+      In our example (:ref:`oxdajv01`, item 5), the data attribute is therefore :code:`data-usercentrics="PayPal Checkout"` (see :ref:`Example: Customizing the PayPal Checkout scripts <customizing-scripts>`).
 
    .. _customizing-scripts:
 

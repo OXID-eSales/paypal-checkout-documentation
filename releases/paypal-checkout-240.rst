@@ -43,13 +43,13 @@ If you already use :productname:`PayPal Checkout`, activate PayPal Vaulting afte
 
 #. Go through the registration process (onboarding) again.
 
-   After a successful technical check, the availability of PayPal Vaulting is confirmed in the :guilabel:`Activation for special payment methods has taken place` area (:ref:`oxdajr05`, item 4).
+   After a successful technical check, the availability of PayPal Vaulting is confirmed in the :guilabel:`Activation for special payment methods has taken place` area (:ref:`oxdajr05`, item 4).
 
    For more information on going through the registration process (onboarding), see :ref:`configuration:API credentials: Onboarding`.
 
 |result|
 
-PayPal Vaulting is activated by default (:ref:`oxdajr14`, Pos. 1).
+PayPal Vaulting is activated by default (:ref:`oxdajr14`, item 1).
 
 Deactivate it if required. For more information, see :ref:`configuration:Deactivating PayPal Vaulting`.
 

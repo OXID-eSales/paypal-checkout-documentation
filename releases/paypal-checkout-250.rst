@@ -29,7 +29,7 @@ For more information on coverage, see
 
    For more information, see :ref:`configuration:API credentials: Onboarding`.
 
-#. Verify that the Apple Pay and Google Pay payment methods have been activated (:ref:`oxdajr05rn`, item 5).
+#. Verify that the Apple Pay and Google Pay payment methods have been activated (:ref:`oxdajr05rn`, item 5).
 
    .. _oxdajr05rn:
 
