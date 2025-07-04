@@ -1,7 +1,9 @@
 PayPal Checkout V. 2.6.0
 ========================
 
-.. todo: #ML: Release-Datum:
+Release-Datum: 14.07.2025
+
+.. todo: #ML: verify Release date
 
 Neue oder geänderte Funktionen
 ------------------------------
@@ -10,8 +12,6 @@ Neue oder geänderte Funktionen
 * Gestalten Sie Anordnung, Farbe, Form und Beschriftung der PayPal Checkout-Schaltflächen.
 
   Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Checkout-Schaltflächen konfigurieren`.
-
-.. todo: #ML: Was bedeutet "enabled for the Smart-Buttons in the Checkout-Flow"? gemeint ist : Kredit- oder Debitkarte verwalten, PayPal verwalten
 
 * Die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten sind bei der Neuinstallation mit dem Präfix `PayPal` markiert (siehe :ref:`oxdajr07`).
 
@@ -26,11 +26,6 @@ Neue oder geänderte Funktionen
 * Kunden speichern Zahlungsinformationen (Kreditkarte und PayPal) für spätere Wiederverwendung im Checkout und können diese Zahlungsinformationen in ihrem Konto verwalten.
 
   Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting deaktivieren`.
-
-.. todo: nicht doku-relevant:Paypal Später zahlen ist deprecated: nicht mhr in Liste, sondern ist jetzt Button;
-.. todo: nicht doku-relevant: PP-Standard works with Smart-Buttons in the Checkout-Flow (no redirect anymore) 25:18)
-.. todo: #ML: Nur wichtig, wenn Screenshots da; Vorschlag: weglassen
-    * Wenn Ihr Kunde im Checkout die :guilabel:`PayPal`-Schaltfläche zum Bezahlen wählt, gelangt er ohne Redirect in das Dialogfenster zum Anmelden bei PayPal.
 
 Installation
 ------------

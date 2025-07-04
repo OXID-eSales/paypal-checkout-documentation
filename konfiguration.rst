@@ -157,9 +157,6 @@ Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktivie
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
 
-.. todo: #ML: Alle Zahlungsarten von PayApl haben Paypal als Präfix:: #ML: das stimmt so nicht:  iDEAL ha kein Präfix, ebenso Kreditkarte , Bancontact etc., sondern nur PayPal, PayPal - später bezahlen, PayPal ApplePay, PayPal Express, PayPal Kreditkarte Fallback
-.. todo: https://teams.microsoft.com/l/message/19:c8a52a4811c9405e982835844c1c6140@thread.v2/1748249877848?context=%7B%22contextType%22%3A%22chat%22%7D
-
 Die Zahlungsarten, die zu :guilabel:`PayPal Checkout für OXID` gehören, haben das Präfix `PayPal`, beispielsweise `PayPal ApplePay`. Auf diese Weise können Sie sie leicht unterscheiden von gleichartigen Zahlungsarten, die von anderen Zahlungsmodulen bereitgestellt werden.
 
 Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
@@ -267,7 +264,7 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
    * Fall 3: Sie haben die Registrierung für die aktuelle Version von :productname:`PayPal Checkout` bereits durchlaufen und ziehen Ihren OXID eShop beispielsweise in eine andere Domäne um? -- In diesem Fall können Sie Zugangsdaten und Webhook wiederverwenden.
 
-1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` (:ref:`oxdajr03`, Pos.1).
+1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` (:ref:`oxdajr03`, Pos. 1).
 
    .. _oxdajr03:
 
