@@ -1,7 +1,9 @@
 PayPal Checkout V. 2.6.0
 ========================
 
-.. todo: #ML: Release date:
+Release date: 14-07-2025
+
+.. todo: #ML: verify Release date
 
 New or Changed Features
 -----------------------
