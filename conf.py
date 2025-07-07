@@ -133,17 +133,15 @@ todo_include_todos = True
 html_theme = 'sphinx_rtd_theme'
 
 html_context = {
-    'current_version': '3.4',
-    'versions62': [
-         ('1.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/1.2/'),
-         ('1.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/1.3/'),
+    'current_version': '3.5',
+
+    'versions70': [
+         ('3.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.3/'),
+         ('3.4', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.4/'),
+         ('3.5', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.5/'),
     ],
-    'versions65': [
-    'current_version': '2.6',
-    'versions62': [
-         ('1.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/1.2/'),
-         ('1.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/1.3/'),
-    ],
+
+
     'versions65': [
          ('2.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.2/'),
          ('2.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.3/'),
@@ -151,13 +149,15 @@ html_context = {
          ('2.5', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.5/'),
          ('2.6', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.6/'),
      ],
-    'versions70': [
-         ('3.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.3/'),
-         ('3.4', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.4/'),
+
+    'versions62': [
+         ('1.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/1.2/'),
+         ('1.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/1.3/'),
     ],
+
     'languages':
-       [('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.6/'),
-        ('EN', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.6/')],
+       [('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.5/'),
+        ('EN', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/3.5/')],
     'css_files': [('_static/oxid.css')],
     'theme_logo_only': True,
     'show_sphinx': False,

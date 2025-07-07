@@ -1,4 +1,4 @@
-PayPal Checkout V. 2.6.0
+PayPal Checkout V. 3.5.0
 ========================
 
 Release-Datum: 14.07.2025
@@ -30,16 +30,16 @@ Neue oder geänderte Funktionen
 Installation
 ------------
 
-Um :productname:`PayPal Checkout` V. 2.6.0 zu nutzen, installieren Sie es in Ihrem :productname:`OXID eShop` 6.3.x to 6.5.x.
+Um :productname:`PayPal Checkout` V. 3.5.0 zu nutzen, installieren Sie es in Ihrem :productname:`OXID eShop` 7.x.
 
 Weitere Informationen finden Sie unter :ref:`installation:Installation`.
 
 Update
 ------
 
-Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 2.6.0 in einer bestehenden Installation zu nutzen, machen Sie ein Update.
+Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 3.5.0 in einer bestehenden Installation zu nutzen, machen Sie ein Update.
 
 Weitere Informationen finden Sie unter :ref:`installation:Minor Update installieren`.
 
-.. todo: reaktivieren in 2.5.1
+.. todo: reaktivieren in 3.5.1
     * :ref:`installation:Patch-Update installieren`

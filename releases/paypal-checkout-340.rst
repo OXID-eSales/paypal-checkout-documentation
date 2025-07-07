@@ -137,7 +137,7 @@ Weitere Informationen finden Sie unter :ref:`installation:Installation`.
 Update
 ------
 
-Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 2.3 zu nutzen, machen Sie ein Update.
+Um die Funktionen und Korrekturen von :productname:`PayPal Checkout` V. 3.4 zu nutzen, machen Sie ein Update.
 Weitere Informationen finden Sie unter :ref:`installation:Minor Update installieren`.
 
 .. todo: für spätere Verwendung:
