@@ -75,10 +75,10 @@ Nutzen Sie die folgende Anleitung zur Integration von Usercentrics in :productna
    Wenn Sie wie in unserem Beispiel Usercentrics benutzen, tun Sie Folgendes:
 
    a. Starten Sie das Usercentrics-Dashboard.
-   #. Wählen Sie :menuselection:`Service Settings --> Data Processing Services` (:ref:`oxdajv01`, Pos. 1, 2).
-   #. Um einen Service für :productname:`PayPal Checkout` anzulegen, wählen Sie :guilabel:`Create Custom DPS` (:ref:`oxdajv01`, Pos. 3).
+   #. Wählen Sie :menuselection:`Service Settings --> Data Processing Services` (:ref:`oxdajv01`, Pos. 1, Pos. 2).
+   #. Um einen Service für :productname:`PayPal Checkout` anzulegen, wählen Sie :guilabel:`Create Custom DPS` (:ref:`oxdajv01`, Pos. 3).
 
-      Unter :guilabel:`Custom Data Processing Services` (:ref:`oxdajv01`, Pos. 4) wird der Name des Datenverarbeitungsdienstes angezeigt (:ref:`oxdajv01`, Pos. 5).
+      Unter :guilabel:`Custom Data Processing Services` (:ref:`oxdajv01`, Pos. 4) wird der Name des Datenverarbeitungsdienstes angezeigt (:ref:`oxdajv01`, Pos. 5).
 
       .. _oxdajv01:
 
@@ -113,7 +113,7 @@ Nutzen Sie die folgende Anleitung zur Integration von Usercentrics in :productna
 
       Achten Sie beim Kopieren des Namens auf die Groß- und Kleinschreibung und eventuelle Leerzeichen.
 
-      In unserem Beispiel (:ref:`oxdajv01`, Pos. 5) ist das Datenattribut also :code:`data-usercentrics="PayPal Checkout"` (siehe :ref:`Beispiel: Anpassen der PayPal Checkout-Skripte <Skripte-anpassen>`).
+      In unserem Beispiel (:ref:`oxdajv01`, Pos. 5) ist das Datenattribut also :code:`data-usercentrics="PayPal Checkout"` (siehe :ref:`Beispiel: Anpassen der PayPal Checkout-Skripte <Skripte-anpassen>`).
 
    .. _Skripte-anpassen:
 

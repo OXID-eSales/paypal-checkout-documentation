@@ -157,7 +157,9 @@ Stellen Sie sicher, dass :productname:`PayPal Checkout` in jedem Subshop aktivie
 
 * Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten :guilabel:`PayPal` sowie wichtige weitere Zahlungsarten als aktiv gekennzeichnet.
 
-  Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
+Die Zahlungsarten, die zu :guilabel:`PayPal Checkout für OXID` gehören, haben das Präfix `PayPal`, beispielsweise `PayPal ApplePay`. Auf diese Weise können Sie sie leicht unterscheiden von gleichartigen Zahlungsarten, die von anderen Zahlungsmodulen bereitgestellt werden.
+
+Um eine bestimmte länderspezifische Zahlungsart tatsächlich nutzen zu können, müssen Sie unter :menuselection:`Stammdaten --> Länder` das betreffende Land als aktiv markiert haben.
 
 * Links in der Navigation erscheint der neue Menüpunkt :menuselection:`PayPal --> Konfiguration`.
 
@@ -180,7 +182,8 @@ Starten Sie das Konfigurieren.
 
 |procedure|
 
-Wählen Sie :menuselection:`PayPal --> Konfiguration`.
+1. Wählen Sie unter :menuselection:`Erweiterungen --> Module` das Modul `PayPal Checkout für OXID`.
+#. Wählen Sie die Registerkarte :guilabel:`Einstell.`
 
 API-Anmeldeinformationen: Onboarding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -263,7 +266,7 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
    * Fall 3: Sie haben die Registrierung für die aktuelle Version von :productname:`PayPal Checkout` bereits durchlaufen und ziehen Ihren OXID eShop beispielsweise in eine andere Domäne um? -- In diesem Fall können Sie Zugangsdaten und Webhook wiederverwenden.
 
-1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` (:ref:`oxdajr03`, Pos.1).
+1. Um sich auf der Sandbox anzumelden, wählen Sie unter :guilabel:`API-Anmeldeinformationen` die Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration (Sandbox)` (:ref:`oxdajr03`, Pos. 1).
 
    .. _oxdajr03:
 
@@ -298,11 +301,9 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
     Der Webhook ist erzeugt.
 
-
-    Die Zugangsdaten (Client-ID/Passwort) und Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 3, 4).
+    Die Zugangsdaten (Client-ID/Passwort) und Webhook-ID werden angezeigt (:ref:`oxdajr05`, Pos. 1, 2).
 
     .. _oxdajr05:
-
 
     .. figure:: /media/screenshots/oxdajr05.png
        :alt: Client-ID/Passwort und Webhook-ID erzeugt
@@ -313,7 +314,7 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
     .. _freischaltung-kreditkarte:
 
-#. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 5), ob die Freischaltung erfolgt ist.
+#. Wenn Sie Ihren Kunden die Zahlungsmethoden Rechnungskauf oder Kreditkarte anbieten wollen, prüfen Sie unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` (:ref:`oxdajr05`, Pos. 3), ob die Freischaltung erfolgt ist.
 
    .. hint::
 
@@ -321,9 +322,9 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
       Wenn die Freischaltung :emphasis:`nicht` automatisch erfolgt ist (:guilabel:`Kreditkarte: Nein`), wenden Sie sich an Ihren Ansprechpartner bei PayPal.
 
-      Ist die Freischaltung erfolgt, steht die Zahlungsart Kreditkarte im Checkout-Schritt Versand & Zahlungsart zur Verfügung (:ref:`oxdajr02`, Pos. 1).
+      Ist die Freischaltung erfolgt, steht die Zahlungsart Kreditkarte im Checkout-Schritt Versand & Zahlungsart zur Verfügung (:ref:`oxdajr02`, Pos. 1).
 
-      Wenn eine Freischaltung :emphasis:`nicht möglich ist, steht alternativ eine Fallback-Lösung bereit (:ref:`oxdajr02`, Pos. 2).
+      Wenn eine Freischaltung :emphasis:`nicht möglich ist, steht alternativ eine Fallback-Lösung bereit (:ref:`oxdajr02`, Pos. 2).
 
       .. _oxdajr02:
 
@@ -344,17 +345,25 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
 |result|
 
-Sobald Sie PayPal die Genehmigung erteilt haben, Ihr Sandbox-Konto mit dem PayPal-Test Store zu verbinden, werden die API-Anmeldeinformationen angezeigt. Das Modul ist aktiv (:ref:`oxdajr05`, Pos. 1).
+* Sobald Sie PayPal die Genehmigung erteilt haben, Ihr Sandbox-Konto mit dem PayPal-Test Store zu verbinden, werden die API-Anmeldeinformationen angezeigt. Das Modul ist aktiv (:ref:`oxdajr05a`, Pos. 1).
 
-Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal` (technischer Name :technicalname:`oscpaypal`) aktiv (:ref:`oxdajr07`).
+  .. _oxdajr05a:
 
-   .. _oxdajr07:
+  .. figure:: /media/screenshots/oxdajr05a.png
+     :alt: Modul PayPal Checkout aktiv
+     :width: 650
 
-   .. figure:: /media/screenshots/oxdajr07.png
-      :alt: Zahlungsart PayPal aktiv
-      :width: 650
+     Abb.: Modul PayPal Checkout aktiv
 
-      Abb.: Zahlungsart PayPal aktiv
+* Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` ist die Zahlungsart :guilabel:`PayPal` (technischer Name :technicalname:`oscpaypal`, angezeigt unten links) aktiv (:ref:`oxdajr07`).
+
+  .. _oxdajr07:
+
+  .. figure:: /media/screenshots/oxdajr07.png
+     :alt: Zahlungsart PayPal aktiv
+     :width: 650
+
+     Abb.: Zahlungsart PayPal aktiv
 
 Die Zahlungsarten "Kreditkarte" und "Rechnungskauf" stehen nicht zur Verfügung? Folgen Sie den Anweisungen unter :ref:`troubleshooting:Zahlungsarten oder Funktionen nicht verfügbar`.
 
@@ -382,7 +391,7 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
 
    Alternativ: Um direkt zu Schritt :ref:`Add Domain <addDomain>` zu springen, melden Sie sich unter folgender URL an: `sandbox.paypal.com/uccservicing/apm/applepay <https://www.sandbox.paypal.com/uccservicing/apm/applepay>`_.
 
-#. Wählen Sie im Menü unter Ihrem Namen den Menüpunkt :guilabel:`Kontoeinstellungen` (:ref:`oxdajr18`, Pos. 1).
+#. Wählen Sie im Menü unter Ihrem Namen den Menüpunkt :guilabel:`Kontoeinstellungen` (:ref:`oxdajr18`, Pos. 1).
 
    .. _oxdajr18:
 
@@ -420,7 +429,7 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
 
    Sie gelangen auf eine  Seite zum Registrieren Ihrer Website bei Apple Pay (:ref:`oxdajr19`).
 
-#. Geben Sie die den Domain-Namen (die URL ohne das Schema, z.B. ``https://``) Ihres OXID e-shops ein (beispielsweise ``www.my-oxid-eshop.com``) (:ref:`oxdajr19`, Pos. 1).
+#. Geben Sie die den Domain-Namen (die URL ohne das Schema, z.B. ``https://``) Ihres OXID e-shops ein (beispielsweise ``www.my-oxid-eshop.com``) (:ref:`oxdajr19`, Pos. 1).
 
    .. _oxdajr19:
 
@@ -433,7 +442,7 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
 
    Das System generiert eine Domain-Zuordnungsdatei, mit der Sie nachweisen, dass Sie der Eigentümer der Webseite sind.
 
-   Sie wird automatisch im Root-Verzeichnis Ihres OXID eShops gespeichert. Das :emphasis:`manuelle` Herunterladen und Hosten der Datei (:ref:`oxdajr19`, Pos. 2) ist also im Normalfall :emphasis:`nicht` nötig.
+   Sie wird automatisch im Root-Verzeichnis Ihres OXID eShops gespeichert. Das :emphasis:`manuelle` Herunterladen und Hosten der Datei (:ref:`oxdajr19`, Pos. 2) ist also im Normalfall :emphasis:`nicht` nötig.
 
 #. Optional: Um zu prüfen, ob die Domain-Zuordnungsdatei bereitsteht, öffnen Sie die Datei per Browser.
 
@@ -451,7 +460,7 @@ Wenn Sie :productname:`Apple Pay` anbieten wollen, registrieren Sie die (Sandbox
       Abb.: Domain-Zuordnungsdatei verifizieren
 
 
-#. Wählen Sie :guilabel:`Domain registrieren` (:ref:`oxdajr19`, Pos. 3).
+#. Wählen Sie :guilabel:`Domain registrieren` (:ref:`oxdajr19`, Pos. 3).
 #. Bestätigen Sie die Meldung, dass Apple Pay Ihren OXID eShop registriert hat (:ref:`oxdajr21`).
 
    .. _oxdajr21:
@@ -504,12 +513,12 @@ Sie legen also fest,
 
 * auf der Produkt-Detailseite
 * im Warenkorb
-* im Mini-Warenkorb (:ref:`oxdajr09`, Pos. 1)
+* im Mini-Warenkorb (:ref:`oxdajr09`, Pos. 1)
 * auf der Checkout-Seite
 
 Ihre Kunden können also jederzeit mit ihrem PayPal-Konto die Bestellung auslösen.
 
-Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deaktivieren Sie die Schnellkauf-Funktion.
+Wenn Sie wollen, dass Ihre Kunden sich in Ihrem OXID eShop registrieren müssen, deaktivieren Sie die Schnellkauf-Funktion.
 
 .. todo: #tbd: Screenshot EN
 
@@ -522,7 +531,7 @@ Wenn Sie wollen, dass Ihre Kunden sich in Ihrem eShop registrieren müssen, deak
 
 |procedure|
 
-1. Um die Schnellkauf-Funktion von :productname:`PayPal Checkout` zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Mini-Warenkorb` (:ref:`oxdajr10`, Pos. 1).
+1. Um die Schnellkauf-Funktion von :productname:`PayPal Checkout` zu deaktivieren, deaktivieren Sie die Kontrollkästchen :guilabel:`Produktdetailseite`, :guilabel:`Warenkorb` und :guilabel:`Mini-Warenkorb` (:ref:`oxdajr10`, Pos. 1).
 #. Speichern Sie Ihre Einstellungen.
 
 .. _oxdajr10:
@@ -539,18 +548,52 @@ Die PayPal-Schaltfläche erscheint nur auf der Checkout-Seite.
 Einstellungen für die Buttonplatzierung: Später Bezahlen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Entscheiden Sie, ob Sie die Später Bezahlen-Funktion (:ref:`oxdajr09`, Pos. 2) anbieten wollen
+Entscheiden Sie, ob Sie die Später Bezahlen-Funktion (:ref:`oxdajr09`, Pos. 2) anbieten wollen
 
 Später Bezahlen bedeutet beispielsweise, dass PayPal Kunden in Deutschland die Option "Bezahlung nach 30 Tagen" oder PayPal-Ratenzahlung anbietet.
 
 Weitere Informationen über Länder-Abdeckung und landesspezifische Funktionen der Später Bezahlen-Funktion finden Sie unter `developer.paypal.com/docs/checkout/pay-later/de <https://developer.paypal.com/docs/checkout/pay-later/de/>`_.
 
+|procedure|
+
+1. Um Ihren Kunden Später Bezahlen-Funktionen anzubieten, aktivieren Sie das Kontrollkästchen :guilabel:`"Später Bezahlen"-Button anzeigen?` (:ref:`oxdajr10`, Pos. 2).
+#. Speichern Sie Ihre Einstellungen.
+
+PayPal Checkout-Schaltflächen konfigurieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Passen Sie die PayPal Checkout-Schaltflächen an das Design Ihres OXID eShops an.
+
+Legen Sie fest, wie die PayPal Checkout-Schaltflächen hinsichtlich Anordnung, Farbe, Form und Beschriftung auf der Produktdetailseite, im Warenkorb und im Checkout angezeigt werden sollen.
 
 |procedure|
 
-1. Um Ihren Kunden Später Bezahlen-Funktionen anzubieten, aktivieren Sie das Kontrollkästchen :guilabel:`"Später Bezahlen"-Button anzeigen?` (:ref:`oxdajr10`, Pos. 2).
+1. Wählen Sie :guilabel:`Anpassung der Schaltflächen`.
+#. Wählen Sie die gewünschten Einstellungen (:ref:`oxdajr22`).
+
+   .. _oxdajr22:
+
+   .. figure:: /media/screenshots/oxdajr22.png
+      :alt: PayPal Checkout-Schaltflächen konfigurieren
+      :width: 650
+      :class: with-shadow
+
+      Abb.: PayPal Checkout-Schaltflächen konfigurieren
+ (:ref:`oxdajr23`)
 #. Speichern Sie Ihre Einstellungen.
 
+|result|
+
+Die PayPal Checkout-Schaltflächen erscheinen im gewünschten Design, in unserem Beispiel rund und schwarz (:ref:`oxdajr23`).
+
+.. _oxdajr23:
+
+.. figure:: /media/screenshots/oxdajr23.png
+   :alt: PayPal Checkout-Schaltflächen: Layout prüfen
+   :width: 350
+   :class: with-shadow
+
+   Abb.: PayPal Checkout-Schaltflächen: Layout prüfen
 
 Login mit PayPal: Automatisches Anmelden aktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -657,7 +700,7 @@ In bestimmten Fällen ist es jedoch sinnvoll, dass die Zahlung erst verzögert d
       |br|
       Achten Sie darauf, dass die Bedingung :guilabel:`Menge` richtig spezifiziert ist.
    b. Legen Sie eine dedizierte Versandart an und ordnen Sie ihr die Zahlungsart :guilabel:`PayPal` sowie die Versandkostenregel für individualisierten Produkte zu.
-   c. Weisen Sie Ihre Kunden im Beschreibungstext des Artikels an, zum Bezahlen ausschließlich die dedizierte Versandart zu wählen (:ref:`oxdajr06`, Pos. 1).
+   c. Weisen Sie Ihre Kunden im Beschreibungstext des Artikels an, zum Bezahlen ausschließlich die dedizierte Versandart zu wählen (:ref:`oxdajr06`, Pos. 1).
 
       .. _oxdajr06:
 
@@ -738,9 +781,9 @@ Weitere Informationen finden Sie unter :ref:`betrieb:Unvollständige Bestellunge
 
 |procedure|
 
-1. Wenn das System unvollständige Bestellungen automatisch löschen soll, markieren Sie das Kontrollkästchen :guilabel:`Nicht beendete Bestellungen automatisch löschen?` (:ref:`oxdajr13`, Pos. 1).
+1. Wenn das System unvollständige Bestellungen automatisch löschen soll, markieren Sie das Kontrollkästchen :guilabel:`Nicht beendete Bestellungen automatisch löschen?` (:ref:`oxdajr13`, Pos. 1).
 
-   Passen Sie bei Bedarf die standardmäßige Rückhaltezeit von 60 Minuten an :ref:`oxdajr13`, Pos. 2).
+   Passen Sie bei Bedarf die standardmäßige Rückhaltezeit von 60 Minuten an :ref:`oxdajr13`, Pos. 2).
 
 #. Speichern Sie Ihre Einstellungen.
 
@@ -851,7 +894,7 @@ PayPal Vaulting deaktivieren
 
 PayPal Vaulting ist standardmäßig :emphasis:`aktiviert`.
 
-Ihre Kunden können damit ihre Zahlungsinformationen (für Kreditkarten oder PayPal-Konten) für zukünftige Käufe speichern (im Checkout: :ref:`oxdajr15`, Pos. 1, im Konto: :ref:`oxdajr16`, Pos. 1).
+Ihre Kunden können damit im Checkout ihre Zahlungsinformationen (für Kreditkarten oder PayPal-Konten) für zukünftige Käufe speichern (:ref:`oxdajr15`, Pos. 1) und unter :guilabel:`PayPal verwalten` oder :guilabel:`Kredit- oder Debitkarte verwalten` bei Bedarf löschen (:ref:`oxdajr16`).
 
 .. _oxdajr15:
 
@@ -865,13 +908,13 @@ Ihre Kunden können damit ihre Zahlungsinformationen (für Kreditkarten oder Pay
 .. _oxdajr16:
 
 .. figure:: /media/screenshots/oxdajr16.png
-   :alt: Zahlungsinformationen im Konto speichern und verwalten
+   :alt: Zahlungsinformationen im Konto verwalten
    :width: 650
    :class: with-shadow
 
-   Abb.: Zahlungsinformationen im Konto speichern und verwalten
+   Abb.: Zahlungsinformationen im Konto verwalten
 
-Das beschleunigt bei Stammkunden die Kaufabwicklung und erhöht die Benutzerfreundlichkeit Ihres OXID eShops. Die Schaltfläche zum Bezahlen ist entsprechend gekennzeichnet (:ref:`oxdajr17`, Pos. 1).
+Das beschleunigt bei Stammkunden die Kaufabwicklung und erhöht die Benutzerfreundlichkeit Ihres OXID eShops. Die Schaltfläche zum Bezahlen ist entsprechend gekennzeichnet (:ref:`oxdajr17`, Pos. 1).
 
 .. _oxdajr17:
 
@@ -888,7 +931,7 @@ Die Funktion ist praktisch, dennoch können Sie sie bei Bedarf deaktivieren.
 
 |procedure|
 
-1. Um PayPal Vaulting zu deaktivieren, deaktivieren Sie das Kontrollkästchen :guilabel:`PayPal Vaulting aktivieren` (:ref:`oxdajr14`, Pos. 1).
+1. Um PayPal Vaulting zu deaktivieren, deaktivieren Sie das Kontrollkästchen :guilabel:`PayPal Vaulting aktivieren` (:ref:`oxdajr14`, Pos. 1).
 #. Speichern Sie Ihre Einstellungen.
 
 .. _oxdajr14:
@@ -939,6 +982,19 @@ Wählen Sie für die Standardversandkosten einen Wert, der den Versandkosten der
 
 Ideal ist ein Wert, der mehr als 90% der Käufe abdeckt.
 
+Übermitteln von Daten an PayPal deaktivieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Unter :guilabel:`PayPal Inhalte des benutzerdefinierten ID-Feldes` ist standardmäßig das Kontrollkästchen :guilabel:`Das benutzerdefinierte PayPal-ID-Feld kann entweder nur den Bestellnummernwert oder ein JSON mit zusätzlichen Daten enthalten` aktiviert.
+
+Damit stimmen Sie zu, dass bei einer Bestellung im Feld `Bestellnummer` nicht nur die Bestellnummer zu PayPal übermittelt wird, sondern zusätzlich auch die Version Ihres OXID eShops und des PayPal Checkout-Moduls.
+
+Im Fall einer Support-Anfrage kann PayPal mithilfe dieser Informationen Ihr Anliegen schneller bearbeiten.
+
+|procedure|
+
+Um bei Bedarf das Übermitteln von OXID eShop- und PayPalCheckout-Version zu deaktivieren, entfernen Sie das Kontrollkästchen :guilabel:`Das benutzerdefinierte PayPal-ID-Feld kann entweder nur den Bestellnummernwert oder ein JSON mit zusätzlichen Daten enthalten`.
+
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
 
@@ -973,6 +1029,9 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
 #. Tun Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` Folgendes:
 
    a. Ordnen Sie den gewünschten :productname:`PayPal Checkout`-Zahlungsarten (beispielsweise :guilabel:`iDEAL (über PayPal)` jeweils mindestens eine Benutzergruppen zu.
+
+      Die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten haben das Präfix PayPal, beispielsweise `PayPal Bancontact`.
+
    b. Stellen Sie sicher, dass Sie für die :productname:`PayPal Checkout`-Zahlungsarten auf der Registerkarte :guilabel:`Stamm` den jeweils gewünschten minimalen und maximalen Einkaufswert festgelegt haben.
       |br|
       Beispiel: Der maximale Einkaufswert für die Zahlungsart :guilabel:`PayPal` ist standardmäßig auf 10.000 € begrenzt. Der Mindest-Einkaufswert ist 10 €.
@@ -987,6 +1046,13 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
    |br|
    Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
 
+   .. todo: #tbd: verifizieren: PayPal
+
+   .. _praefix-anpassen:
+
+#. Stellen Sie sicher, dass Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` im Feld :guilabel:`Name` den Namen jeder Zahlungsart so eingetragen haben, wie er im Checkout erscheinen soll.
+
+   Prüfen Sie, ob Sie das Präfix `PayPal`, das die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten haben, entfernen wollen. Beispiel: Der im Checkout angezeigte Name soll `Bancontact` sein statt `PayPal Bancontact`.
 
 PayPal Checkout freischalten
 ----------------------------

@@ -56,7 +56,7 @@ Installieren Sie für den OXID eShop Version 7.x das Zahlungsmodul :productname:
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^3.4.0
+      composer require oxid-solution-catalysts/paypal-module ^3.5.0
 
 #. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
    |br|
@@ -80,36 +80,37 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
 
    Abb.: PayPal Checkout für OXID installiert und aktiviert
 
-
-
-
 Minor Update installieren
 -------------------------
 Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 3.3.0 auf Version 3.4.0.
 
+Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.5.0 auf Version 2.6.0.
+
 |procedure|
 
-1. Führen Sie folgenden Konsolen-Befehl aus:
+1. Deaktivieren Sie das Modul.
+#. Führen Sie folgenden Konsolen-Befehl aus:
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^3.4.0
+      composer require oxid-solution-catalysts/paypal-module ^2.6.0
       composer update
 
+#. Aktivieren Sie das Modul.
 #. Um neue Zahlungsarten oder Funktionen nutzen zu können, durchlaufen Sie den Registrierungsprozess (Onboarding) neu.
 
    Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
-
-.. todo: Folgende Varianten später reaktivieren
+.. todo: reaktivieren für 2.5.1
     Patch-Update installieren
     -------------------------
-    Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
+    Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.4.0 auf Version 2.4.1.
     |procedure|
     1. Führen Sie folgenden Befehl aus:
        .. code:: bash
           composer update
     #. Bestätigen Sie die Abfrage, ob die :file:`oxid-solution-catalysts/paypal-module`-Dateien überschrieben werden sollen.
-
+    #. Um neue Zahlungsarten oder Funktionen nutzen zu können, durchlaufen Sie den Registrierungsprozess (Onboarding) neu.
+       Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding`.
 
 .. Intern: oxdajq, Status:

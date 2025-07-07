@@ -31,7 +31,8 @@ Bieten Sie mit dem :productname:`PayPal Checkout`-Modul für OXID die in folgend
 
 Beachten Sie jeweils die Währungsabdeckung der einzelnen Zahlungsmethoden (siehe :ref:`einfuehrung:Währungsabdeckung nach Zahlungsmethode`).
 
-
+==================  ==========================
+Markt               Zahlungsmethoden
 ==================  ==========================
 Weltweit	        Apple Pay
 Weltweit	        Google Pay
@@ -83,6 +84,7 @@ Rechnungskauf              Deutschland
 SEPA Lastschrift           Deutschland
 ========================== ===============
 
+
 Währungsabdeckung nach Zahlungsmethode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -102,7 +104,6 @@ PayPal - Später bezahlen        AUD, EUR, GBP, USD
 Przelewy24                      EUR, PLN
 Rechnungskauf                   EUR
 =============================== ===================================================
-
 
 Sie haben das Modul PayPal?
 ---------------------------

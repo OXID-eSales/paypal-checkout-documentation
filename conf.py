@@ -68,7 +68,7 @@ author = 'OXID eSales AG'
 # built documents.
 #
 # The short X.Y version.
-version = '3.4'
+version = '3.5'
 # The full version, including alpha/beta/rc tags.
 release = '3'
 
@@ -139,19 +139,25 @@ html_context = {
          ('1.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/1.3/'),
     ],
     'versions65': [
+    'current_version': '2.6',
+    'versions62': [
+         ('1.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/1.2/'),
+         ('1.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/1.3/'),
+    ],
+    'versions65': [
          ('2.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.2/'),
          ('2.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.3/'),
          ('2.4', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.4/'),
          ('2.5', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.5/'),
+         ('2.6', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.6/'),
      ],
     'versions70': [
-             ('3.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.3/'),
-             ('3.4', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.4/'),
-        ],
-    'languages': [
-             ('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.4/'),
-             ('EN', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/3.4/'),
-        ],
+         ('3.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.3/'),
+         ('3.4', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.4/'),
+    ],
+    'languages':
+       [('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.6/'),
+        ('EN', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.6/')],
     'css_files': [('_static/oxid.css')],
     'theme_logo_only': True,
     'show_sphinx': False,
@@ -160,7 +166,7 @@ html_context = {
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
     'github_user': 'OXID-eSales',
     'github_repo': 'paypal-checkout-documentation',
-    'github_version': '3.4-de/'
+    'github_version': '3.5-de/'
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme

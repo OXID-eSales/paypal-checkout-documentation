@@ -16,7 +16,7 @@ Wenn Sie diese Möglichkeit nutzen, dann überwachen Sie die noch nicht bezahlte
 
 |procedure|
 
-1. Wählen Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die noch nicht bezahlte Bestellung (:ref:`oxdajt01`, Pos. 1).
+1. Wählen Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die noch nicht bezahlte Bestellung (:ref:`oxdajt01`, Pos. 1).
 #. Tun Sie Folgendes, abhängig davon, wie Sie den verzögerten Geldeinzug konfiguriert haben:
 
    * Wenn Sie :guilabel:`automatisch bei Lieferung` gewählt haben, markieren Sie den Artikel als versendet.
@@ -25,7 +25,7 @@ Wenn Sie diese Möglichkeit nutzen, dann überwachen Sie die noch nicht bezahlte
    * Wenn Sie :guilabel:`manuell` gewählt haben, tun Sie Folgendes:
 
      a. Technisch optional: Markieren Sie den Artikel als versendet (siehe :ref:`betrieb:Artikel als versendet markieren`).
-     #. Wählen Sie auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` (:ref:`oxdajt01`, Pos. 2).
+     #. Wählen Sie auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` (:ref:`oxdajt01`, Pos. 2).
 
 .. _oxdajt01:
 
@@ -38,9 +38,9 @@ Wenn Sie diese Möglichkeit nutzen, dann überwachen Sie die noch nicht bezahlte
 
 |result|
 
-Mit der nächsten Aktualisierung der Seite ist die Bestellung in der Liste der Bestellungen als bezahlt markiert (:ref:`oxdajt02`, Pos. 1).
+Mit der nächsten Aktualisierung der Seite ist die Bestellung in der Liste der Bestellungen als bezahlt markiert (:ref:`oxdajt02`, Pos. 1).
 
-Der PayPal-Status ist :technicalname:`abgeschlossen` (:ref:`oxdajt02`, Pos. 2).
+Der PayPal-Status ist :technicalname:`abgeschlossen` (:ref:`oxdajt02`, Pos. 2).
 
 .. _oxdajt02:
 
@@ -64,8 +64,8 @@ Mit dem Tracking-Code können Sie
 |procedure|
 
 1. Wählen Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung.
-#. Erfassen Sie auf der Registerkarte :guilabel:`Stamm` wie gewohnt den Tracking Code im gleichnamigen Eingabefeld (:ref:`oxdajt03`, Pos. 2).
-#. Erfassen Sie zusätzlich auch folgende Informationen in den entsprechenden Auswahllisten (:ref:`oxdajt03`, Pos. 1):
+#. Erfassen Sie auf der Registerkarte :guilabel:`Stamm` wie gewohnt den Tracking Code im gleichnamigen Eingabefeld (:ref:`oxdajt03`, Pos. 2).
+#. Erfassen Sie zusätzlich auch folgende Informationen in den entsprechenden Auswahllisten (:ref:`oxdajt03`, Pos. 1):
 
    * Versanddienstleister (Land): Landespezifische Version des Versanddienstleisters
 
@@ -115,9 +115,9 @@ Sie haben das manuelle Löschen unvollständiger Bestellungen aktiviert (siehe :
 
 1. Wählen Sie :menuselection:`Bestellungen verwalten --> Bestellungen`.
 
-   Unabgeschlossene Bestellungen haben die Bestellnummer :technicalname:`0` (:ref:`oxdajt04`, Pos. 1a, 1b).
+   Unabgeschlossene Bestellungen haben die Bestellnummer :technicalname:`0` (:ref:`oxdajt04`, Pos. 1a, Pos. 1b).
 
-#. Wählen Sie :guilabel:`Eintrag löschen` (:ref:`oxdajt04`, Pos. 2).
+#. Wählen Sie :guilabel:`Eintrag löschen` (:ref:`oxdajt04`, Pos. 2).
 
 .. _oxdajt04:
 
