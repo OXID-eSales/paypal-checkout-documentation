@@ -133,7 +133,7 @@ todo_include_todos = True
 html_theme = 'sphinx_rtd_theme'
 
 html_context = {
-    'current_version': '3.4',
+    'current_version': '2.6',
     'versions62': [
          ('1.2', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/1.2/'),
          ('1.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/1.3/'),
@@ -143,6 +143,7 @@ html_context = {
          ('2.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.3/'),
          ('2.4', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.4/'),
          ('2.5', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.5/'),
+         ('2.6', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/2.6/'),
      ],
     'versions70': [
          ('3.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/en/3.3/'),

@@ -53,7 +53,7 @@ For OXID eShop version 7.x, install the payment module :productname:`PayPal Chec
 
       cd /var/www/oxideshop
 
-#. Execute the following commands:
+#. Execute the following command:
 
    .. code:: bash
 
@@ -78,36 +78,38 @@ When the installation process is finished, the module :guilabel:`PayPal Checkout
    :width: 650
    :class: with-shadow
 
-   Fig.: PayPal Checkout for OXID installed successfully
+   Figure: PayPal Checkout for OXID installed and activated
 
-
-Installing a Minor Update
+Installing a minor update
 -------------------------
 
-1. To perform a minor update, for example from :productname:`PayPal Checkout` version 3.3.0 to version 3.4.0, execute the following commands:.
+If you use a deprecated version, perform a minor update, for example from :productname:`PayPal Checkout` version 2.5.0 to version 2.6.0.
+
+|procedure|
+
+1. Execute the following console command:
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^3.4.0
+      composer require oxid-solution-catalysts/paypal-module ^2.6.0
       composer update
-
 
 #. To be able to use new payment methods or functions, go through the registration process (onboarding) again.
 
    For more information, see :ref:`configuration:API credentials: Onboarding`.
 
 
-.. todo: Folgende Varianten später reaktivieren
-    Installing a patch update
-    -------------------------
-    If required, install a patch update, from :productname:`PayPal Checkout` version 2.3.0 to version 2.3.1, for example.
-    |procedure|
-    1. Execute the following command:
-       .. code:: bash
-          composer update
-    #. Confirm the prompt whether to overwrite the :file:`oxid-solution-catalysts/paypal-module` files.
-
-
+.. todo: reaktivieren für 2.5.1
+        Installing a patch update
+        -------------------------
+        If required, install a patch update, from :productname:`PayPal Checkout` version 2.4.0 to version 2.4.1, for example.
+        |procedure|
+        1. Execute the following command:
+           .. code:: bash
+              composer update
+        #. Confirm the prompt whether to overwrite the :file:`oxid-solution-catalysts/paypal-module` files.
+        #. To be able to use new payment methods or functions, go through the registration process (onboarding) again.
+           For more information, see :ref:`configuration:API credentials: Onboarding`.
 
 
 .. Internal: oxdajq, status:
