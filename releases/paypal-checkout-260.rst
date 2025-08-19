@@ -1,7 +1,7 @@
 PayPal Checkout V. 2.6.0
 ========================
 
-Release date: 18-08-2025
+Release date: 28-07-2025
 
 New or Changed Features
 -----------------------
