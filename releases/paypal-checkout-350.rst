@@ -1,9 +1,7 @@
 PayPal Checkout V. 3.5.0
 ========================
 
-Release date: 14-07-2025
-
-.. todo: #ML: verify Release date
+Release date: 18-08-2025
 
 New or Changed Features
 -----------------------

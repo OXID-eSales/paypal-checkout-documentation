@@ -70,6 +70,7 @@ Bancontact                      Belgium
 BLIK                            Poland
 Credit card                     Worldwide
 eps                             Austria
+Google Pay                      Worldwide
 iDEAL                           Netherlands
 PayPal                          Worldwide
 PayPal Express                  Worldwide
