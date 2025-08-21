@@ -579,7 +579,7 @@ Legen Sie fest, wie die PayPal Checkout-Schaltflächen hinsichtlich Anordnung, F
       :class: with-shadow
 
       Abb.: PayPal Checkout-Schaltflächen konfigurieren
- (:ref:`oxdajr23`)
+
 #. Speichern Sie Ihre Einstellungen.
 
 |result|
