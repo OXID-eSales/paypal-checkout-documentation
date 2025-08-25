@@ -23,7 +23,7 @@ Neue oder geänderte Funktionen
 
 * Kunden speichern Zahlungsinformationen (Kreditkarte und PayPal) für spätere Wiederverwendung im Checkout und können diese Zahlungsinformationen in ihrem Konto verwalten.
 
-  Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting deaktivieren`.
+  Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting verwenden`.
 
 Installation
 ------------
