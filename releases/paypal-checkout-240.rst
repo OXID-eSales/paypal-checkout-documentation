@@ -28,7 +28,7 @@ Hauptvorteile und Nutzungsmöglichkeiten:
 * Vielseitigkeit: Unterstützt die Auswahl oder Hinzufügung von Versandadressen und Zahlungsarten im PayPal-Konto, sowie Zwei-Faktor-Authentifizierung in mehreren Ländern.
 * Verbesserte Kundenerfahrung bei Rückkehr: Kunden, die ihr PayPal Wallet im Tresor gespeichert haben, können bei zukünftigen Käufen schneller bezahlen und, falls gewünscht, ihre Zahlungsmethode ändern.
 
-Weitere Informationen zu PayPal Vaulting finden Sie unter :ref:`konfiguration:Konfiguration` im Abschnitt :ref:`konfiguration:PayPal Vaulting deaktivieren`.
+Weitere Informationen zu PayPal Vaulting finden Sie unter :ref:`konfiguration:Konfiguration` im Abschnitt :ref:`konfiguration:PayPal Vaulting verwenden`.
 
 PayPal Vaulting nachträglich aktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -51,7 +51,7 @@ Wenn Sie :productname:`PayPal Checkout` bereits nutzen, aktivieren Sie PayPal Va
 
 PayPal Vaulting ist standardmäßig aktiviert (:ref:`oxdajr14`, Pos. 1).
 
-Deaktivieren Sie es bei Bedarf. Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting deaktivieren`.
+Deaktivieren Sie es bei Bedarf. Weitere Informationen finden Sie unter :ref:`konfiguration:PayPal Vaulting verwenden`.
 
 
 Geänderte Zahlungsarten
