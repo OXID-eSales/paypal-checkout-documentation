@@ -890,8 +890,8 @@ If you have configured additional languages under :menuselection:`Master data --
 
 #. Save your settings.
 
-Deactivating PayPal Vaulting
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using PayPal Vaulting
+^^^^^^^^^^^^^^^^^^^^^
 
 PayPal Vaulting is :emphasis:`activated` by default.
 
