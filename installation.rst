@@ -23,7 +23,6 @@ For OXID eShop version 7.x, install the payment module :productname:`PayPal Chec
 |prerequisites|
 
 * You have installed OXID eShop version 7.x.
-* You use a Twig theme.
 * You have configured `https`.
 
    a. In the :file:`<root directory of the eShop>/source` directory, open the :file:`config.inc.php` file.
