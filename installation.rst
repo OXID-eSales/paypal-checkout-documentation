@@ -11,8 +11,6 @@ Um das Zahlungsmodul :productname:`PayPal Checkout` zu installieren, installiere
   |br|
   Weitere Informationen finden Sie in der zugehörigen Modul-Documentation unter `PayPal Checkout 1.3.x installieren <https://docs.oxid-esales.com/modules/paypal-checkout/de/1.3/installation.html>`_.
 
-
-
 Frühere Versionen des OXID eShops werden nicht unterstützt.
 
 PayPal Checkout installieren
