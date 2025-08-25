@@ -84,7 +84,7 @@ Main benefits and uses:
 * Versatility: Supports the selection or addition of shipping addresses and payment methods in the PayPal account, as well as two-factor authentication in multiple countries.
 * Improved customer experience on return: Customers who have saved their PayPal Wallet in the vault can pay faster for future purchases and, if desired, change their payment method.
 
-For more information on PayPal Vaulting, under :ref:`configuration:Configuration` see the section on :ref:`configuration:Deactivating PayPal Vaulting`.
+For more information on PayPal Vaulting, under :ref:`configuration:Configuration` see the section on :ref:`configuration:Using PayPal Vaulting`.
 
 Activating PayPal Vaulting retrospectively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -107,7 +107,7 @@ If you already use :productname:`PayPal Checkout`, activate PayPal Vaulting afte
 
 PayPal Vaulting is activated by default (:ref:`oxdajr14`, Pos. 1).
 
-Deactivate it if required. For more information, see :ref:`configuration:Deactivating PayPal Vaulting`.
+Deactivate it if required. For more information, see :ref:`configuration:Using PayPal Vaulting`.
 
 Changed payment methods
 -----------------------
