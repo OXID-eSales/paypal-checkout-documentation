@@ -889,8 +889,8 @@ Wenn Sie unter :menuselection:`Stammdaten --> Sprachen` zusätzliche Sprachen ko
 
 #. Speichern Sie Ihre Einstellungen.
 
-PayPal Vaulting deaktivieren
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PayPal Vaulting verwenden
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PayPal Vaulting ist standardmäßig :emphasis:`aktiviert`.
 
