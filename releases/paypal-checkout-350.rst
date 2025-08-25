@@ -23,7 +23,7 @@ New or Changed Features
 
 * Customers can save payment information (credit card and PayPal) for later reuse during checkout and manage this payment information in their account.
 
-  For more information, see :ref:`configuration:Deactivating PayPal Vaulting`.
+  For more information, see :ref:`configuration:Using PayPal Vaulting`.
 
 
 Installation
