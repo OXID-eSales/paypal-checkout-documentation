@@ -22,7 +22,6 @@ Installieren Sie für den OXID eShop Version 7.x das Zahlungsmodul :productname:
 |prerequisites|
 
 * Sie haben die OXID eShop-Version 7.x installiert.
-* Sie verwenden ein Twig Theme.
 * Sie haben `https` konfiguriert.
 
    a. Öffnen Sie im Verzeichnis :file:`<Rootverzeichnis des eShops>/source` die Datei :file:`config.inc.php`.
