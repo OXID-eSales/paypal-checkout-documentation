@@ -1050,7 +1050,13 @@ Configure :productname:`PayPal Checkout` according to your needs and test the re
 
 #. Under :menuselection:`Shop Settings --> Payment Methods`, make sure you have entered the name of each payment method in the :guilabel:`Name` field as you want it to appear during checkout.
 
-   Check whether you want to remove the `PayPal` prefix from the payment methods provided by :productname:`PayPal Checkout`. Example: The name displayed during checkout should be `Bancontact` instead of `PayPal Bancontact`.
+   .. important::
+
+      Typically, you remove the `PayPal` prefix that the payment methods provided by :productname:`PayPal Checkout` have.
+
+      The prefix is used solely for clarity during configuration.
+
+      Example: The name displayed at checkout should be `GooglePay` instead of `PayPal GooglePay`, `Bancontact` instead of `PayPal Bancontact`, and so on.
 
 Unlocking PayPal Checkout
 -------------------------
