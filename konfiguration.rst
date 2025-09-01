@@ -1044,13 +1044,17 @@ Konfigurieren Sie :productname:`PayPal Checkout` nach Ihren Wünschen und testen
    |br|
    Ändern Sie ggf. den Einkaufswert (€) in 0 bis 99999.
 
-   .. todo: #tbd: verifizieren: PayPal
-
    .. _praefix-anpassen:
 
 #. Stellen Sie sicher, dass Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` im Feld :guilabel:`Name` den Namen jeder Zahlungsart so eingetragen haben, wie er im Checkout erscheinen soll.
 
-   Prüfen Sie, ob Sie das Präfix `PayPal`, das die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten haben, entfernen wollen. Beispiel: Der im Checkout angezeigte Name soll `Bancontact` sein statt `PayPal Bancontact`.
+   .. important::
+
+      Typischerweise entfernen Sie das Präfix `PayPal`, das die von :productname:`PayPal Checkout` bereitgestellten Zahlungsarten  haben.
+
+      Das Präfix dient nur der Übersichtlichkeit beim Konfigurieren.
+
+      Beispiel: Der im Checkout angezeigte Name soll `GooglePay` sein statt `PayPal GooglePay`, `Bancontact` statt `PayPal Bancontact` usw.
 
 PayPal Checkout freischalten
 ----------------------------
