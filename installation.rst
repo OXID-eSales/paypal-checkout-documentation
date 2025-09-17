@@ -4,13 +4,12 @@ Installation
 Um das Zahlungsmodul :productname:`PayPal Checkout` zu installieren, installieren Sie verschiedene Versionen je nach der Version Ihres OXID eShops:
 
 * Wenn Sie OXID eShop Version 7.x haben, installieren Sie :productname:`PayPal Checkout` 3.3.x (siehe :ref:`installation:PayPal Checkout installieren`).
-
 * Wenn Sie OXID eShop Version 6.3.x bis 6.5.x haben, installieren Sie :productname:`PayPal Checkout` 2.3.x.
   |br|
-  Weitere Informationen finden Sie in der zugehörigen Modul-Documentation unter `PayPal Checkout 2.3.x installieren <https://docs.oxid-esales.com/modules/paypal-checkout/de/2.3/installation.html>`_.
+  Weitere Informationen finden Sie in der zugehörigen Modul-Dokumentation unter `PayPal Checkout 2.3.x installieren <https://docs.oxid-esales.com/modules/paypal-checkout/de/2.3/installation.html>`_.
 * Wenn Sie OXID eShop Version 6.1.x oder 6.2.x haben, installieren Sie :productname:`PayPal Checkout` 1.3.x.
   |br|
-  Weitere Informationen finden Sie in der zugehörigen Modul-Documentation unter `PayPal Checkout 1.3.x installieren <https://docs.oxid-esales.com/modules/paypal-checkout/de/1.3/installation.html>`_.
+  Weitere Informationen finden Sie in der zugehörigen Modul-Dokumentation unter `PayPal Checkout 1.3.x installieren <https://docs.oxid-esales.com/modules/paypal-checkout/de/1.3/installation.html>`_.
 
 Frühere Versionen des OXID eShops werden nicht unterstützt.
 
@@ -68,27 +67,5 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul :guilabel
    :alt: PayPal Checkout für OXID installiert und aktiviert
 
    Abb.: PayPal Checkout für OXID erfolgreich und aktiviert
-
-
-.. todo: Folgende Varianten später reaktivieren
-    Minor Update installieren
-    -------------------------
-    Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.2.1 auf Version 2.3.0.
-       .. code:: bash
-          composer require oxid-solution-catalysts/paypal-module ^2.3.0
-          composer update
-    Patch-Update installieren
-    -------------------------
-    Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
-    |procedure|
-    1. Führen Sie folgenden Befehl aus:
-       .. code:: bash
-          composer update
-    #. Bestätigen Sie die Abfrage, ob die :file:`oxid-solution-catalysts/paypal-module`-Dateien überschrieben werden sollen.
-
-
-
-
-
 
 .. Intern: oxdajq, Status:
