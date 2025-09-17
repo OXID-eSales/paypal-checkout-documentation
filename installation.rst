@@ -55,7 +55,7 @@ Next step: To configure :productname:`PayPal Checkout`, choose :guilabel:`Next`.
 Installing a patch update
 -------------------------
 
-If required, install a patch update, from :productname:`PayPal Checkout` version 1.2.2 to version 1.2.3, for example.
+If required, install a patch update, from :productname:`PayPal Checkout` version 2.2.0 to version 2.2.1, for example.
 
 |procedure|
 
