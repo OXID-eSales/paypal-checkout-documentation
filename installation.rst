@@ -58,7 +58,6 @@ Um :productname:`PayPal Checkout` für den OXID eShop Version 6.1.x oder 6.2.x z
 
 Nächster Schritt: Um :productname:`PayPal Checkout` zu konfigurieren, wählen Sie :guilabel:`Weiter`.
 
-
 Minor Update installieren
 -------------------------
 
@@ -73,7 +72,6 @@ Patch-Update installieren
 -------------------------
 
 Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 1.3.0 auf Version 1.3.1.
-
 
 |procedure|
 
