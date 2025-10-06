@@ -77,7 +77,7 @@ If you use a deprecated version, perform a minor update, for example from :produ
 
 |procedure|
 
-1. Execute the following console command:
+1. Execute the following console commands:
 
    .. code:: bash
 
