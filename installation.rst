@@ -69,22 +69,6 @@ When the installation process is finished, the module :guilabel:`PayPal Checkout
 
 Next step: To configure :productname:`PayPal Checkout`, choose :guilabel:`Next`.
 
-Installing PayPal Checkout for OXID eShop version 6.1.x or 6.2.x
-----------------------------------------------------------------
-
-To install :productname:`PayPal Checkout` for OXID eShop version 6.1.x or 6.2.x, install :productname:`PayPal Checkout` V. 1.2.x.
-
-|procedure|
-
-Follow the same procedure for installation for OXID eShop version 6.3 and higher (see :ref:`installation:Installing PayPal Checkout for OXID eShop version 6.3 and higher`).
-
-Execute the commands as follows:
-
-   .. code:: bash
-
-      composer config repositories.oscpaypal composer https://paypal-module.packages.oxid-esales.com/
-      composer require oxid-solution-catalysts/paypal-module ^1.2.0
-
 Installing a patch update
 -------------------------
 
