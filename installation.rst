@@ -77,14 +77,13 @@ Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.3.0
+      composer require oxid-solution-catalysts/paypal-module ^2.3.0 -W --with-all-dependencies
       composer update
 
 Patch-Update installieren
 -------------------------
 
 Installieren Sie bei Bedarf ein Patch-Update, beispielsweise von :productname:`PayPal Checkout` Version 2.3.0 auf Version 2.3.1.
-
 
 |procedure|
 
