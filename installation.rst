@@ -82,8 +82,7 @@ Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`P
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.6.0 -W --with-all-dependencies
-      composer update
+      composer require --with-all-dependencies oxid-solution-catalysts/paypal-module ^2.6.0
 
 #. Aktivieren Sie das Modul.
 #. Um neue Zahlungsarten oder Funktionen nutzen zu können, durchlaufen Sie den Registrierungsprozess (Onboarding) neu.
