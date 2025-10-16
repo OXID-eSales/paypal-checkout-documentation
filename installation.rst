@@ -77,12 +77,11 @@ Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`P
 
 |procedure|
 
-1. Führen Sie folgenden Konsolen-Befehl aus:
+1. Führen Sie folgenden Befehl aus:
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^2.5.0 -W --with-all-dependencies
-      composer update
+      composer require --with-all-dependencies oxid-solution-catalysts/paypal-module ^2.5.0
 
 #. Um neue Zahlungsarten oder Funktionen nutzen zu können, durchlaufen Sie den Registrierungsprozess (Onboarding) neu.
 
