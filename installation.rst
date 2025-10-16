@@ -74,8 +74,7 @@ If you use a deprecated version, perform a minor update, for example from :produ
 
 .. code:: bash
 
-      composer require oxid-solution-catalysts/paypal-module ^1.3.0 -W --with-all-dependencies
-      composer update
+   composer require --with-all-dependencies oxid-solution-catalysts/paypal-module ^1.3.0
 
 Installing a patch update
 -------------------------
