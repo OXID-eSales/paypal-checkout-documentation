@@ -77,10 +77,6 @@ Installieren Sie bei Bedarf ein Minor Update, beispielsweise von :productname:`P
 
 |procedure|
 
-1. Führen Sie folgenden Konsolen-Befehl aus:
-
-|procedure|
-
 1. Führen Sie folgenden Befehl aus:
 
    .. code:: bash
