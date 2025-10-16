@@ -75,10 +75,14 @@ Minor Update installieren
 
 Installieren Sie bei Bedarf ein  Minor Update, beispielsweise von :productname:`PayPal Checkout` Version 2.2.1 auf Version 2.3.0.
 
-   .. code:: bash
+|procedure|
 
-      composer require oxid-solution-catalysts/paypal-module ^2.3.0 -W --with-all-dependencies
-      composer update
+Führen Sie folgenden Befehl aus:
+
+.. code:: bash
+
+   composer require --with-all-dependencies oxid-solution-catalysts/paypal-module ^2.3.0
+
 
 Patch-Update installieren
 -------------------------
