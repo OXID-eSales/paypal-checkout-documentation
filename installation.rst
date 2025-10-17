@@ -81,7 +81,7 @@ Führen Sie folgenden Befehl aus:
 
 .. code:: bash
 
-   composer require --with-all-dependencies oxid-solution-catalysts/paypal-module ^2.3.0
+   composer require --update-with-all-dependencies oxid-solution-catalysts/paypal-module ^2.3.0
 
 
 Patch-Update installieren
