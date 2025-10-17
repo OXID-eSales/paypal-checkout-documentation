@@ -81,11 +81,11 @@ If you use a deprecated version, perform a minor update, for example from :produ
 
    .. code:: bash
 
-      composer require --with-all-dependencies oxid-solution-catalysts/paypal-module ^2.5.0
+      composer require composer require --update-with-all-dependencies oxid-solution-catalysts/paypal-module ^2.5.0
 
 #. To be able to use new payment methods or functions, go through the registration process (onboarding) again.
 
-   For more information, see :ref:`configuration:API credentials: Onboarding`.
+For more information, see :ref:`configuration:API credentials: Onboarding`.
 
 
 .. todo: reaktivieren für 2.5.1
