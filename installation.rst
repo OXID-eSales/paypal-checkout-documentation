@@ -78,7 +78,7 @@ Installing a Minor Update
 
    .. code:: bash
 
-      composer require --with-all-dependencies oxid-solution-catalysts/paypal-module ^3.4.0
+      composer require --update-with-all-dependencies oxid-solution-catalysts/paypal-module ^3.4.0
 
 #. To be able to use new payment methods or functions, go through the registration process (onboarding) again.
 
