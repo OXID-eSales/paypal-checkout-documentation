@@ -77,13 +77,13 @@ If you use a deprecated version, perform a minor update, for example from :produ
 
 |procedure|
 
-1. Execute the following console command:
+Execute the following console command:
 
-   .. code:: bash
+.. code:: bash
 
    composer require --update-with-all-dependencies oxid-solution-catalysts/paypal-module ^2.4.0
 
-   For more information, see :ref:`configuration:API credentials: Onboarding`.
+For more information, see :ref:`configuration:API credentials: Onboarding`.
 
 .. todo: mit 240 reaktivieren
     Installing a patch update
