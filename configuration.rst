@@ -996,6 +996,50 @@ In the event of a support request, PayPal can use this information to process yo
 
 If you want to disable the transmission of the OXID eShop and PayPal Checkout version, simply uncheck the box :guilabel:`PayPal custom id field will be JSON encoded string with order number, shop version and the PayPal module version`.
 
+Configure Debug Level
+^^^^^^^^^^^^^^^^^^^^^
+
+Specify the extent to which the :productname:`PayPal Checkout` module logs PayPal API calls.
+
+You have the following options:
+
+* :guilabel:`Off` (default): No logging.
+* :guilabel:`Debug`: All requests and responses are logged. Recommended for troubleshooting.
+* :guilabel:`Error`: Only errors are logged.
+
+.. hint::
+
+   **Identifying connection issues with PayPal**
+
+   If connection problems occur or payment processes do not work as expected, select :guilabel:`Debug` and provide the PayPal support team with the :file:`/source/log/oxideshop.log` file.
+
+   After the analysis, set the debug level back to :guilabel:`Off` or :guilabel:`Error`.
+
+|procedure|
+
+1. Under :guilabel:`Debug Level`, select the desired logging level.
+#. Save your settings.
+
+Configure Webhook
+^^^^^^^^^^^^^^^^^
+
+Specify how long the system waits after receiving a webhook before processing it.
+
+|background|
+
+PayPal webhooks inform the shop about the current order status and partially finalize orders if a customer does not complete the checkout process through to the "Thank you" page.
+
+For certain alternative payment methods — for example iDEAL or Bancontact — PayPal confirms the payment asynchronously: the customer completes the checkout in the frontend, but the actual payment confirmation only arrives shortly after via webhook.
+
+In this time window, a race condition can occur: the webhook tries to mark the order as paid before the shop has fully saved the order data.
+
+The time delay prevents this conflict. If a webhook arrives before the waiting time has elapsed, the system responds with HTTP 503 and a :technicalname:`Retry-After` header. PayPal automatically retries the delivery.
+
+|procedure|
+
+1. Under :guilabel:`Webhook`, enter the desired waiting time in seconds in the :guilabel:`Time delay in seconds (default: 20)` field.
+#. Save your settings.
+
 Optional: Configuring the country mapping of PayPal Checkout payment methods
 ----------------------------------------------------------------------------
 
