@@ -995,6 +995,50 @@ Im Fall einer Support-Anfrage kann PayPal mithilfe dieser Informationen Ihr Anli
 
 Um bei Bedarf das Übermitteln von OXID eShop- und PayPalCheckout-Version zu deaktivieren, entfernen Sie das Kontrollkästchen :guilabel:`Das benutzerdefinierte PayPal-ID-Feld kann entweder nur den Bestellnummernwert oder ein JSON mit zusätzlichen Daten enthalten`.
 
+Debug-Level konfigurieren
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie fest, in welchem Umfang das Modul :productname:`PayPal Checkout` PayPal-API-Aufrufe protokolliert.
+
+Sie haben folgende Möglichkeiten:
+
+* :guilabel:`Aus` (Standard): Keine Protokollierung.
+* :guilabel:`Debug`: Alle Anfragen und Antworten werden protokolliert. Empfohlen zur Fehlersuche.
+* :guilabel:`Fehler`: Nur Fehler werden protokolliert.
+
+.. hint::
+
+   **Fehler mit der Verbindung zu PayPal identifizieren**
+
+   Wenn Verbindungsprobleme auftreten oder Zahlungsvorgänge nicht erwartungsgemäß funktionieren, wählen Sie :guilabel:`Debug` und stellen Sie dem PayPal-Support die Datei :file:`/source/log/oxideshop.log` zur Verfügung.
+
+   Setzen Sie den Debug-Level nach der Fehleranalyse wieder auf :guilabel:`Aus` oder :guilabel:`Fehler` zurück.
+
+|procedure|
+
+1. Wählen Sie unter :guilabel:`Debug-Level` die gewünschte Protokollierungsstufe.
+#. Speichern Sie Ihre Einstellungen.
+
+Webhook konfigurieren
+^^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie fest, wie lange das System nach Eingang eines Webhooks wartet, bevor es den Webhook verarbeitet.
+
+|background|
+
+PayPal-Webhooks informieren den Shop in Echtzeit über den aktuellen Status einer Bestellung und schließen Bestellungen ab, wenn ein Kunde den Checkout-Prozess nicht bis zur Danke-Seite durchläuft.
+
+Bei bestimmten alternativen Zahlungsmethoden — beispielsweise iDEAL oder Bancontact — bestätigt PayPal die Zahlung asynchron: Der Kunde schließt den Checkout im Frontend ab, die eigentliche Zahlungsbestätigung trifft jedoch erst kurz danach per Webhook ein.
+
+In diesem Zeitfenster kann es zu einem Wettlauf kommen: Der Webhook versucht, die Bestellung als bezahlt zu markieren, bevor der Shop die Bestelldaten vollständig gespeichert hat.
+
+Die Zeitverzögerung verhindert diesen Konflikt. Trifft ein Webhook ein, bevor die Wartezeit abgelaufen ist, antwortet das System mit HTTP 503 und einem :technicalname:`Retry-After`-Header. PayPal wiederholt den Zustellversuch automatisch.
+
+|procedure|
+
+1. Geben Sie unter :guilabel:`Webhook` im Feld :guilabel:`Zeitverzögerung (Standard: 20s)` die gewünschte Wartezeit in Sekunden ein.
+#. Speichern Sie Ihre Einstellungen.
+
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
 
