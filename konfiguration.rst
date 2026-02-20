@@ -993,6 +993,26 @@ Im Fall einer Support-Anfrage kann PayPal mithilfe dieser Informationen Ihr Anli
 
 Um bei Bedarf das Übermitteln von OXID eShop- und PayPalCheckout-Version zu deaktivieren, entfernen Sie das Kontrollkästchen :guilabel:`Das benutzerdefinierte PayPal-ID-Feld kann entweder nur den Bestellnummernwert oder ein JSON mit zusätzlichen Daten enthalten`.
 
+Webhook konfigurieren
+^^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie fest, wie lange das System nach Eingang eines Webhooks wartet, bevor es den Webhook verarbeitet.
+
+|background|
+
+PayPal-Webhooks informieren den Shop in Echtzeit über den aktuellen Status einer Bestellung und schließen Bestellungen ab, wenn ein Kunde den Checkout-Prozess nicht bis zur Danke-Seite durchläuft.
+
+Bei bestimmten alternativen Zahlungsmethoden — beispielsweise iDEAL oder Bancontact — bestätigt PayPal die Zahlung asynchron: Der Kunde schließt den Checkout im Frontend ab, die eigentliche Zahlungsbestätigung trifft jedoch erst kurz danach per Webhook ein.
+
+In diesem Zeitfenster kann es zu einem Wettlauf kommen: Der Webhook versucht, die Bestellung als bezahlt zu markieren, bevor der Shop die Bestelldaten vollständig gespeichert hat.
+
+Die Zeitverzögerung verhindert diesen Konflikt. Trifft ein Webhook ein, bevor die Wartezeit abgelaufen ist, antwortet das System mit HTTP 503 und einem :technicalname:`Retry-After`-Header. PayPal wiederholt den Zustellversuch automatisch.
+
+|procedure|
+
+1. Geben Sie unter :guilabel:`Webhook` im Feld :guilabel:`Zeitverzögerung in Sekunden (Standard: 20)` die gewünschte Wartezeit in Sekunden ein.
+#. Speichern Sie Ihre Einstellungen.
+
 Optional: Länderzuordnung von PayPal Checkout-Zahlungsmethoden konfigurieren
 ----------------------------------------------------------------------------
 
