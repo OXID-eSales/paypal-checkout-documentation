@@ -997,6 +997,30 @@ In the event of a support request, PayPal can use this information to process yo
 
 If you want to disable the transmission of the OXID eShop and PayPal Checkout version, simply uncheck the box :guilabel:`PayPal custom id field will be JSON encoded string with order number, shop version and the PayPal module version`.
 
+Configure Debug Level
+^^^^^^^^^^^^^^^^^^^^^
+
+Specify the extent to which the :productname:`PayPal Checkout` module logs PayPal API calls.
+
+You have the following options:
+
+* :guilabel:`Off` (default): No logging.
+* :guilabel:`Debug`: All requests and responses are logged. Recommended for troubleshooting.
+* :guilabel:`Error`: Only errors are logged.
+
+.. hint::
+
+   **Identifying connection issues with PayPal**
+
+   If connection problems occur or payment processes do not work as expected, select :guilabel:`Debug` and provide the PayPal support team with the :file:`/source/log/oxideshop.log` file.
+
+   After the analysis, set the debug level back to :guilabel:`Off` or :guilabel:`Error`.
+
+|procedure|
+
+1. Under :guilabel:`Debug Level`, select the desired logging level.
+#. Save your settings.
+
 Configure Webhook
 ^^^^^^^^^^^^^^^^^
 
