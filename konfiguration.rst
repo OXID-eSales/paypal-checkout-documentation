@@ -318,13 +318,11 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
 
    .. hint::
 
-      **Zahlungsmethode Fallback-Kreditkarte**
+      **Zahlungsmethode Kreditkarte**
 
       Wenn die Freischaltung :emphasis:`nicht` automatisch erfolgt ist (:guilabel:`Kreditkarte: Nein`), wenden Sie sich an Ihren Ansprechpartner bei PayPal.
 
       Ist die Freischaltung erfolgt, steht die Zahlungsart Kreditkarte im Checkout-Schritt Versand & Zahlungsart zur Verfügung (:ref:`oxdajr02`, Pos. 1).
-
-      Wenn eine Freischaltung :emphasis:`nicht möglich ist, steht alternativ eine Fallback-Lösung bereit (:ref:`oxdajr02`, Pos. 2).
 
       .. _oxdajr02:
 
@@ -341,6 +339,16 @@ Wir beschreiben den Registrierungs-Prozess (Onboarding) am Beispiel eines Sandbo
       **Zahlungsmethode Rechnungskauf**
 
       Die Zahlungsmethode Rechnungskauf bietet PayPal nur Shop-Betreibern aus Deutschland an.
+
+   .. important::
+
+      **Kreditkarte steht Shop-Betreibern aus der Schweiz nicht zur Verfügung**
+
+      PayPal bietet die Kreditkartenzahlung Shop-Betreibern mit Sitz in der Schweiz nicht an. Maßgeblich ist das Land :emphasis:`Ihres Shops`, nicht das Land Ihrer Kunden: Betreiben Sie Ihren Shop beispielsweise in Deutschland, können Ihre Schweizer Kunden weiterhin mit Kreditkarte bezahlen.
+
+      Bei einem Shop mit Sitz in der Schweiz blendet :productname:`PayPal Checkout` die Zahlungsart Kreditkarte und das Hinterlegen von Karten aus — auch dann, wenn Ihr PayPal-Konto die Freischaltung dafür meldet. Unter :guilabel:`Freischaltung für besondere Zahlarten erfolgt` steht in diesem Fall :guilabel:`Kreditkarte: Nein` mit einem entsprechenden Hinweis.
+
+      Eine Ausweichlösung gibt es nicht. Auch die Zahlungsart :guilabel:`PayPal Kredit- oder Debitkarte Fallback` funktioniert bei einem Schweizer Shop nicht.
 
 
 |result|
