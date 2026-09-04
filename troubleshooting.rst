@@ -6,7 +6,17 @@ Zahlungsarten oder Funktionen nicht verfügbar
 
 Es kann sein, dass Zahlungsarten wie Google Pay, Kreditkarte und Rechnungskauf oder eine bestimmte Funktion nicht wie beschrieben zur Verfügung stehen.
 
-Das ist der Fall, wenn Sie zum Generieren eines Webhooks bei PayPal die API-Anmeldeinformationen (beispielsweise aus einer existierenden Version von PayPal Checkout) :emphasis:`manuell` eingegeben haben, statt den Registrierungs-Prozess mit der Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` zu starten und neu zu durchlaufen.
+.. important::
+
+   **Sitzt Ihr Shop in der Schweiz und fehlt die Kreditkarte?**
+
+   Dann ist das kein Konfigurationsfehler. PayPal bietet die Kreditkartenzahlung Shop-Betreibern mit Sitz in der Schweiz nicht an; :productname:`PayPal Checkout` blendet die Zahlungsart deshalb aus. Das erneute Onboarding weiter unten hilft in diesem Fall :emphasis:`nicht`.
+
+   Weitere Informationen finden Sie unter :ref:`konfiguration:API-Anmeldeinformationen: Onboarding` beim Hinweis :guilabel:`Kreditkarte steht Shop-Betreibern aus der Schweiz nicht zur Verfügung`.
+
+   Schlagen Zahlungsversuche stattdessen mit der Meldung :technicalname:`CURRENCY_NOT_SUPPORTED_BY_PAYMENT_SOURCE` fehl, ist ebenfalls das Land Ihres Shops die Ursache und nicht die Währung.
+
+Ansonsten ist das der Fall, wenn Sie zum Generieren eines Webhooks bei PayPal die API-Anmeldeinformationen (beispielsweise aus einer existierenden Version von PayPal Checkout) :emphasis:`manuell` eingegeben haben, statt den Registrierungs-Prozess mit der Schaltfläche :guilabel:`Anmeldung Händler PayPal-Integration` zu starten und neu zu durchlaufen.
 
 |procedure|
 
