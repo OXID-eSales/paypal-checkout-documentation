@@ -314,13 +314,11 @@ We describe the registration process (onboarding) using a sandbox account as an 
 
    .. hint::
 
-      **Payment method fallback credit card**.
+      **Payment method credit card**
 
       If the activation :emphasis:`did not` happen automatically (:guilabel:`credit card: No`), contact your PayPal representative.
 
       If the activation has taken place, the credit card payment method is available in the checkout step Shipping & Payment Method (:ref:`oxdajr02`, item 1).
-
-      If activation is :emphasis:`not` possible, a fallback solution is available as an alternative (:ref:`oxdajr02`, ìtem 2).
 
       .. _oxdajr02:
 
@@ -337,6 +335,16 @@ We describe the registration process (onboarding) using a sandbox account as an 
       **Payment method Purchase upon invoice**
 
       PayPal offers the payment method Purchase upon invoice only to store operators from Germany.
+
+   .. important::
+
+      **Credit card is not available to store operators in Switzerland**
+
+      PayPal does not offer card payments to merchants based in Switzerland. What counts is the country :emphasis:`your shop` sits in, not the country your customers are in: if you run your shop from Germany, your Swiss customers can still pay by credit card.
+
+      For a shop based in Switzerland, :productname:`PayPal Checkout` hides the credit card payment method and the storing of cards — even when your PayPal account reports the activation for it. Under :guilabel:`Activation for special payment methods has taken place`, it then reads :guilabel:`credit card: No` with a corresponding note.
+
+      There is no way around it. The payment method :guilabel:`PayPal Credit or Debit Card Fallback` does not work for a Swiss shop either.
 
 |result|
 

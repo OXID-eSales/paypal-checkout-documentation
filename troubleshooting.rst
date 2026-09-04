@@ -6,7 +6,17 @@ Payment methods or functions not available
 
 It is possible that the payment methods Google Pay, Credit card, and Purchase on account or a certain function are not available as described.
 
-This is the case if you have entered the API credentials (for example from an existing version of PayPal Checkout) :emphasis:`manually` to generate a webhook at PayPal instead of starting the registration process with the :guilabel:`Sign Up Merchant Integration` button and going through it again.
+.. important::
+
+   **Is your shop based in Switzerland and the credit card missing?**
+
+   Then this is not a configuration error. PayPal does not offer card payments to merchants based in Switzerland, so :productname:`PayPal Checkout` hides the payment method. The onboarding described below does :emphasis:`not` help in this case.
+
+   For further information, see :ref:`configuration:API Credentials: Onboarding`, note :guilabel:`Credit card is not available to store operators in Switzerland`.
+
+   If payment attempts fail with the message :technicalname:`CURRENCY_NOT_SUPPORTED_BY_PAYMENT_SOURCE` instead, the cause is likewise the country your shop sits in, not the currency.
+
+Otherwise, this is the case if you have entered the API credentials (for example from an existing version of PayPal Checkout) :emphasis:`manually` to generate a webhook at PayPal instead of starting the registration process with the :guilabel:`Sign Up Merchant Integration` button and going through it again.
 
 |procedure|
 
