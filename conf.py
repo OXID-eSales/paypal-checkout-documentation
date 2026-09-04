@@ -146,6 +146,7 @@ html_context = {
          ('2.6', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.6/'),
          ('2.7', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.7/'),
          ('2.8', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.8/'),
+         ('2.10', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/2.10/'),
      ],
     'versions70': [
          ('3.3', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.3/'),
@@ -153,6 +154,7 @@ html_context = {
          ('3.5', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.5/'),
          ('3.6', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.6/'),
          ('3.7', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.7/'),
+         ('3.9', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/3.9/'),
     ],
     'languages':
        [('DE', 'https://docs.oxid-esales.com/modules/paypal-checkout/de/1.2/'),
