@@ -732,6 +732,69 @@ In case of deferred money collection, under :menuselection:`Administer orders --
 * If you have chosen :guilabel:`manually`: You trigger the payment by choosing the order under :menuselection:`Administer Orders --> Orders` and choosing the :guilabel:`PayPal Checkout` button on the :guilabel:`Collect` tab.
 
 
+Configuring cancellation and refund
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Decide whether cancelling an order in the admin area refunds the PayPal payment automatically, and who is notified about it by email.
+
+|background|
+
+Without these settings, a cancellation leaves the payment at PayPal untouched -- you would have to issue the refund by hand afterwards. With the automated refund, the shop does both in one step.
+
+|procedure|
+
+1. Go to :menuselection:`PayPal --> Configuration`.
+#. Open the section :guilabel:`Cancellation and refund`.
+#. Set the options as required:
+
+   .. list-table::
+      :header-rows: 1
+      :widths: 38 15 47
+
+      * - Setting
+        - Default
+        - Description
+      * - :guilabel:`Refund automatically when an order is cancelled`
+        - disabled
+        - When an order is cancelled, the shop refunds what the PayPal payment still holds -- the captured amount minus anything refunded before.
+      * - :guilabel:`Confirmation mail on refund`
+        - :guilabel:`Do not send a mail`
+        - Who is notified once a refund was triggered and PayPal confirmed it as completed. The mail states the order number and the refunded amount.
+      * - :guilabel:`Confirmation mail on cancellation`
+        - :guilabel:`Do not send a mail`
+        - Who is notified once a PayPal order was cancelled.
+
+#. For each of the two mails, choose who receives it:
+
+   * :guilabel:`Do not send a mail`
+   * :guilabel:`To the customer`
+   * :guilabel:`To the shop owner`
+   * :guilabel:`To customer and shop owner`
+
+#. Save your settings.
+
+|result|
+
+When an order is cancelled, the shop refunds the outstanding amount if the option is enabled, and sends the confirmation mails you configured.
+
+.. note::
+
+   **When nothing is refunded**
+
+   If nothing is left to refund, or the payment was never captured, the automated refund does nothing. This is not an error.
+
+.. note::
+
+   **One mail instead of two**
+
+   If the cancellation refunded automatically, the cancellation mail states the refunded amount as well, so the customer receives a single message. Without the automated refund it confirms the cancellation only, and a refund issued by hand later is confirmed separately.
+
+.. important::
+
+   **If the automated refund fails**
+
+   The cancellation still stands -- the order is cancelled, but the money has not been returned yet. You see the message :guilabel:`The automated refund for this order failed` and issue the refund by hand with the button in the PayPal tab of the order. The details are in the PayPal log (see :ref:`configuration:Configure Debug Level`).
+
 Configuring 3D Secure for debit and credit cards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
