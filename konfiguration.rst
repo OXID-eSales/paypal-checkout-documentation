@@ -728,6 +728,69 @@ Bei verzögertem Geldeinzug ziehen Sie die Rechnungsbeträge unter :menuselectio
 * Wenn Sie :guilabel:`manuell` gewählt haben: Sie lösen die Zahlung aus, indem Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
 
 
+Storno und Rückerstattung konfigurieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie fest, ob das Stornieren einer Bestellung im Admin-Bereich die PayPal-Zahlung automatisch erstattet, und wer darüber per E-Mail informiert wird.
+
+|background|
+
+Ohne diese Einstellungen lässt ein Storno die Zahlung bei PayPal unberührt — Sie müssten die Rückerstattung anschließend von Hand auslösen. Mit der automatischen Erstattung erledigt der Shop beides in einem Schritt.
+
+|procedure|
+
+1. Wählen Sie :menuselection:`PayPal --> Konfiguration`.
+#. Öffnen Sie den Bereich :guilabel:`Storno und Rückerstattung`.
+#. Setzen Sie die Einstellungen nach Bedarf:
+
+   .. list-table::
+      :header-rows: 1
+      :widths: 38 15 47
+
+      * - Einstellung
+        - Standard
+        - Beschreibung
+      * - :guilabel:`Beim Storno einer Bestellung automatisch erstatten`
+        - deaktiviert
+        - Beim Stornieren einer Bestellung erstattet der Shop den noch offenen Betrag der PayPal-Zahlung — den eingezogenen Betrag abzüglich bereits erstatteter Teilbeträge.
+      * - :guilabel:`Bestätigungsmail bei Rückerstattung`
+        - :guilabel:`Keine Mail versenden`
+        - Wer informiert wird, sobald eine Rückerstattung ausgelöst wurde und PayPal sie als abgeschlossen bestätigt hat. Die Mail nennt Bestellnummer und erstatteten Betrag.
+      * - :guilabel:`Bestätigungsmail bei Storno`
+        - :guilabel:`Keine Mail versenden`
+        - Wer informiert wird, sobald eine PayPal-Bestellung storniert wurde.
+
+#. Wählen Sie für beide Mails jeweils einen Empfängerkreis:
+
+   * :guilabel:`Keine Mail versenden`
+   * :guilabel:`An den Kunden`
+   * :guilabel:`An den Shop-Betreiber`
+   * :guilabel:`An Kunden und Shop-Betreiber`
+
+#. Speichern Sie Ihre Einstellungen.
+
+|result|
+
+Beim Storno einer Bestellung erstattet der Shop den offenen Betrag, sofern die Option aktiv ist, und verschickt die eingestellten Bestätigungsmails.
+
+.. note::
+
+   **Wann nichts erstattet wird**
+
+   Ist nichts mehr offen oder wurde die Zahlung nie eingezogen, geschieht bei der automatischen Erstattung nichts. Das ist kein Fehler.
+
+.. note::
+
+   **Eine Mail statt zwei**
+
+   Wurde beim Storno automatisch erstattet, nennt die Storno-Mail auch den erstatteten Betrag — der Kunde erhält dann nur eine Nachricht. Ohne automatische Rückerstattung bestätigt sie lediglich die Stornierung, und eine später von Hand ausgelöste Rückerstattung wird separat bestätigt.
+
+.. important::
+
+   **Wenn die automatische Rückerstattung scheitert**
+
+   Das Storno bleibt in diesem Fall trotzdem bestehen — die Bestellung ist storniert, das Geld aber noch nicht zurück. Sie sehen die Meldung :guilabel:`Die automatische Rückerstattung zu dieser Bestellung ist fehlgeschlagen` und lösen die Rückerstattung über die Schaltfläche im PayPal-Reiter der Bestellung von Hand nach. Einzelheiten stehen im PayPal-Log (siehe :ref:`konfiguration:Debug-Level konfigurieren`).
+
 3D Secure für Debit- und Kreditkarten konfigurieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
