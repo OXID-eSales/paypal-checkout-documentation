@@ -730,6 +730,51 @@ Bei verzögertem Geldeinzug ziehen Sie die Rechnungsbeträge unter :menuselectio
 * Wenn Sie :guilabel:`manuell` gewählt haben: Sie lösen die Zahlung aus, indem Sie unter :menuselection:`Bestellungen verwalten --> Bestellungen` die Bestellung wählen und auf der Registerkarte :guilabel:`PayPal Checkout` die Schaltfläche :guilabel:`Einziehen` wählen.
 
 
+Checkout-Ablauf für PayPal Standard festlegen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Legen Sie fest, wie Ihre Kunden auf der Bestellseite mit der Zahlungsart :guilabel:`PayPal` bezahlen: über den PayPal-Button mit Popup oder über den Bestell-Button Ihres Shops mit Weiterleitung zu PayPal.
+
+|background|
+
+Standardmäßig ersetzt auf der Bestellseite der PayPal-Button den Bestell-Button Ihres Shops. Wählt der Kunde ihn, öffnet sich PayPal in einem Popup-Fenster, und der Kunde bleibt in Ihrem Shop.
+
+Alternativ wählen Sie die Weiterleitung. Die Bestellseite zeigt dann den gewohnten Bestell-Button im Stil Ihres Themes. Wählt der Kunde ihn, wird er zu PayPal weitergeleitet und kehrt nach der Zahlung in Ihren Shop zurück.
+
+|procedure|
+
+1. Wählen Sie :menuselection:`PayPal --> Konfiguration`.
+#. Öffnen Sie den Bereich :guilabel:`PayPal Standard - Checkout-Ablauf`.
+#. Wählen Sie unter :guilabel:`Wie soll der Kunde auf der Bestellseite mit PayPal Standard bezahlen?` eine der folgenden Möglichkeiten:
+
+   * :guilabel:`PayPal-Button, PayPal öffnet sich in einem Popup` (Standard)
+   * :guilabel:`Bestell-Button des Shops, Weiterleitung zu PayPal`
+
+#. Speichern Sie Ihre Einstellungen.
+
+|result|
+
+Wenn Sie die Weiterleitung gewählt haben, gilt Folgendes:
+
+* Wählt der Kunde den Bestell-Button, legt der Shop die Bestellung an und leitet den Kunden zu PayPal weiter.
+* Nach der Zahlung kehrt der Kunde in Ihren Shop zurück. Der Betrag wird je nach Ihrer Einstellung unter :ref:`konfiguration:Geldeinzug festlegen` sofort eingezogen oder reserviert.
+* Bricht der Kunde die Zahlung bei PayPal ab, storniert der Shop die angelegte Bestellung. Der Kunde kehrt zur Auswahl der Zahlungsart zurück und kann eine andere Zahlungsart wählen.
+
+.. note::
+
+   **Nur für die Zahlungsart PayPal**
+
+   Die Einstellung betrifft ausschließlich die Zahlungsart :guilabel:`PayPal`. :guilabel:`PayPal Express` und die übrigen Zahlungsarten von :productname:`PayPal Checkout` verhalten sich unverändert.
+
+.. note::
+
+   **PayPal Vaulting**
+
+   Kunden, die ihr PayPal-Konto bereits gespeichert haben, sehen auf der Bestellseite weiterhin den PayPal-Button (siehe :ref:`konfiguration:PayPal Vaulting verwenden`).
+   |br|
+   Die Option, das PayPal-Konto für künftige Einkäufe zu speichern, steht auch bei der Weiterleitung zur Verfügung.
+
+
 Storno und Rückerstattung konfigurieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
