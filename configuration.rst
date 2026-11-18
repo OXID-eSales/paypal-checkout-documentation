@@ -733,6 +733,51 @@ In case of deferred money collection, under :menuselection:`Administer orders --
 * If you have chosen :guilabel:`manually`: You trigger the payment by choosing the order under :menuselection:`Administer Orders --> Orders` and choosing the :guilabel:`PayPal Checkout` button on the :guilabel:`Collect` tab.
 
 
+Configuring the checkout flow for PayPal Standard
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Specify how your customers pay with the :guilabel:`PayPal` payment method on the order page: with the PayPal button in a popup, or with the order button of your shop and a redirect to PayPal.
+
+|background|
+
+By default, the PayPal button replaces the order button of your shop on the order page. When the customer chooses it, PayPal opens in a popup window and the customer stays in your shop.
+
+Alternatively, choose the redirect. The order page then shows the usual order button in the style of your theme. When the customer chooses it, they are redirected to PayPal and return to your shop after the payment.
+
+|procedure|
+
+1. Go to :menuselection:`PayPal --> Configuration`.
+#. Open the :guilabel:`PayPal Standard - Checkout flow` section.
+#. Under :guilabel:`How should the customer pay with PayPal Standard on the order page?`, choose one of the following options:
+
+   * :guilabel:`PayPal button, PayPal opens in a popup` (default)
+   * :guilabel:`Order button of the shop, redirect to PayPal`
+
+#. Save your settings.
+
+|result|
+
+If you have chosen the redirect, the following applies:
+
+* When the customer chooses the order button, the shop creates the order and redirects the customer to PayPal.
+* After the payment, the customer returns to your shop. Depending on your setting under :ref:`configuration:Configuring money collection`, the amount is collected immediately or reserved.
+* If the customer cancels the payment at PayPal, the shop cancels the order it has created. The customer returns to the choice of payment method and can choose a different one.
+
+.. note::
+
+   **For the PayPal payment method only**
+
+   The setting only affects the :guilabel:`PayPal` payment method. :guilabel:`PayPal Express` and the other payment methods of :productname:`PayPal Checkout` are not affected.
+
+.. note::
+
+   **PayPal Vaulting**
+
+   Customers who have already saved their PayPal account still see the PayPal button on the order page (see :ref:`configuration:Using PayPal Vaulting`).
+   |br|
+   The option to save the PayPal account for future purchases is also available with the redirect.
+
+
 Configuring cancellation and refund
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
